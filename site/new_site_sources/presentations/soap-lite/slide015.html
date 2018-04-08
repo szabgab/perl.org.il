@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Debugging SOAP problems</TITLE>
+<META NAME="generator" CONTENT="txt2html v1.25">
+<LINK REL='start' HREF='slide010.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='first' HREF='slide010.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='last' HREF='slide017.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='next' HREF='slide016.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='previous' HREF='slide010.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='contents' HREF='TABLE_OF_CONTENTS.html' TYPE='text/html; charset=utf-8'>
+</HEAD>
+<BODY BGCOLOR="#ffffff" BACKGROUND="background.jpg"><FONT SIZE=4>
+
+<table width=100% bgcolor=black cellspacing=0 border=0>
+<tr><td width=33%><a href="slide016.html"><font color="white">Next</font></a></td>
+    <td align=center width=33% ><font color="white">SOAP::Lite Client Experiences</font></td>
+    <td align=right width=33%><font size="+1" color="white"><b>15</b></font></td>
+</tr>
+</table>
+
+
+
+<H1><A NAME="section-1">Debugging SOAP problems</A></H1>
+
+<UL>
+  <LI><p> You need to look at the XML being sent to the server and coming back.<!-- list end--></p>
+
+</UL>
+<PRE><B>
+     use SOAP::Lite +trace =&gt; 'debug';
+</B></PRE>
+
+<P>
+<ul><li>Here is an <a href="addDefect.xml">example.</a></li></ul>
+
+<UL>
+  <LI><p> You can save the XML to a file, and run the CGI program directly from a command shell.<!-- list end--></p>
+
+  <LI><p> This way, you can see what XML really works with the server, and then try to figure out how to get SOAP::Lite to generate the correct message.<!-- list end--></p>
+
+</UL>
+
+
+<br clear=all>
+
+<table width=100% bgcolor=black cellspacing=0 border=0>
+<tr>
+    <td align=right width=33%><font color="white">Copyright &copy; 2004 David Baird</font></td>
+</tr>
+</table>
+
+
+
+</FONT></BODY>
+</HTML>

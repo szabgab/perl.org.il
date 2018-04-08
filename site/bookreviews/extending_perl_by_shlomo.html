@@ -1,0 +1,73 @@
+<head><head><title>Extending and Embedding Perl</title></head>
+<body bgcolor=white>
+<table width=70% align=center><tr><td>
+<h1>Extending and Embedding Perl</h1> 
+<p>
+<table><tr><td width=150>
+<a href=http://www.manning.com/jenness/><img border=0 src=/img/extending_perl_small.jpg></a>
+</td><td>
+<table>
+<tr><td>Title:</td><td>Extending and Embedding Perl</td></tr>
+<tr><td>Author:</td><td><a href=http://www.jach.hawaii.edu/~timj/>Tim Jenness</a> and <b>
+<a href=http://simon-cozens.org/>Simon Cozens</a></td></tr>
+<tr><td>Publisher</td><td><a href=http://www.manning.com/>Manning</a></td></tr>
+<tr><td>ISBN:</td><td>1-930110-820</td></tr>
+<tr><td>Publishing date:</td><td>2002 July</td></tr>
+<tr><td>Reviewer:</td><td><a href=http://cs.haifa.ac.il/~shlomo/>Shlomo Yona</a></td></tr>
+<tr><td>Review date:</td><td>2002 November</td></tr>
+<tr><td>Rating:</td><td>5/5 stars</td></tr>
+<tr><td></td><td></td></tr>
+</table>
+</td></tr></table>
+I got a copy of this book in one of the Israel Perl Mongers meetings 
+(<a href=http://www.perl.org.il/>www.perl.org.il</a>), to read and review it.
+<p>
+The topic is useful as this subject was considered as voodoo done by Perl hackers and "mappers of the Perl internals". I suppose you can say this claim is not true anymore, because this book collects the know-how from the perldocs, the newsgroups, the camel book (and other resources) and the personal experience of authors of the book.
+<p>
+Finally, you don't have to pick up small pieces of information about
+this subject in many places as people did prior to this book. What one
+would do, if one wanted to learn how to extend Perl or embed Perl
+before this book was available was doing one or more of the following:
+<p>
+<ul>
+<li> Read relevant small parts of the Camel book (preferably the
+recent edition rather than the 1st or 2nd) and "Advanced Perl
+Programming" (which is rather old, and only touches this matters).
+<br>
+This would give you some idea about Perl internals and perhaps some clues about XS, but that's about it.
+<li> browse through newsgroups, mail archives and mailing lists to look for clues, and ask expert users, which usually, are not polite to answer newbies questions about such matters.
+<li> figure out some cryptic (though, personally, I like them) incomplete (examples-wise) perldocs such as:<br>
+		perlembed, perldebguts, perlxstut, perlxs, <br>
+		perlclib, perlguts, perlcall, perlapi, <br>
+		perlintern, perliol, perlapio, perlhack<br>
+<li> locate and dig into available CPAN module using this technology.
+</ul>
+I think reading one book, with common terminology and many examples, is better than doing one or more of the above.
+<p>
+The book starts with an introduction of C for Perl programmers. It is very short and in my opinion not so accurate (due to its shortness), but  since this should be a short introduction - it lives up to the promise. You can write a lot more than a "hello world" program after reading this short chapter, and you get a bonus, how to compile on gcc (gcc is ANSI-C and is available for all platforms), which is a wise idea. Perl programmers might be a bit disappointed to discover how much code and how complicated  code you need to write in C to produce something that does the same as any Perl oneliner. The third chapter about Advanced C is a very good continuation to this introduction, especially, becuase the authors can assume you know some Perl (although I'm not sure they do). As someone giving lectures in "introduction to Computer Science, C language", I was tempted to borrow several very nice examples and explenations from this chapter. And I might also do that :-)
+<p>
+The next chapter explains how C code can be incorporated into a Perl Module and more generally into a CPAN package of a Perl module. This is very useful. Many resources (including books), focus on writing C/Perl code, and they say nothing or next to nothing about packaging (what you should do in order to make sure others can use your code, what you can and can't assume about the target system, etc.)
+<p>
+The fourth chapter is a useful cover of Perl variable types. This is somehting you could find in the "camel book", you can also find this in the (rather old) "Advanced Perl Programming", and of course in perldocs - but having it in one place, in order with examples and explenations is a real joy. Now you can figure it our reading one thing, and if you feel you want more, go to the perldocs.
+<p>
+Explaining Perl API, XS and advanced XS, alternatives to XS explain how you can add to your Perl programs some code (or programs or libraries) in C. I, personally wanted to have a module in Perl that gives interface to a data structure. Since the implementation I had is in C and it is tested and verified, I wanted to have a Perl module which exports the functionality, and offers a perl-oriented interface, without needing to reimplement the data structure in Perl. These book chapters made all the difference, and with the knowlede in chapter 2, I can now finish this, and after doing my testing, put it on CPAN. Isn't that great?!
+<p>
+If you are interested in doing the opposite, write Perl in C code, you can learn it in chapter 8. And if theory does not meet practice, you can read chapter 9 (and also try it out yourself) which presents a case study. Pretty useful stuff.
+<p>
+For people who are taking their first steps, the material so far is more than enough. But once you go deeper you want to know more about how to do more complicated stuff, and how stuff actually works. Chapter 10 which introduces you to the Perl internals is just what you would be looking for. Chapter 11 will be the tour into the depts, teaching you some perl hacking, i.e. how to alter Perl's behaviour.
+<p>
+The indices are useful, though can be found (though, not in similar format) elsewhere.
+<p>
+To sum this review, I loved the book. I wish I could take more time to practice what I read there thoroughly. I will surely get a copy of this book to have it on my bookshelf, and when the need comes, on my desk.
+<p>
+Another review with some discussion can be found on 
+<a href=http://books.slashdot.org/article.pl?sid=02/10/15/0125254>slashdot</a>
+<p>
+</td></tr></table>
+<!--#include virtual="../footer.html" -->
+</body>
+</html>
+
+
+
+

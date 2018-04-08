@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Rewriting the Script with the WSDL</TITLE>
+<META NAME="generator" CONTENT="txt2html v1.25">
+<LINK REL='start' HREF='slide001.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='first' HREF='slide001.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='last' HREF='slide017.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='next' HREF='slide012.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='previous' HREF='slide010.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='contents' HREF='TABLE_OF_CONTENTS.html' TYPE='text/html; charset=utf-8'>
+</HEAD>
+<BODY BGCOLOR="#ffffff" BACKGROUND="background.jpg"><FONT SIZE=4>
+
+<table width=100% bgcolor=black cellspacing=0 border=0>
+<tr><td width=33%><a href="slide012.html"><font color="white">Next</font></a></td>
+    <td align=center width=33% ><font color="white">SOAP::Lite Client Experiences</font></td>
+    <td align=right width=33%><font size="+1" color="white"><b>11</b></font></td>
+</tr>
+</table>
+
+
+
+<H1><A NAME="section-1">Rewriting the Script with the WSDL</A></H1>
+
+<UL>
+  <LI><p> Does this look a little simpler?<!-- list end--></p>
+
+</UL>
+<PRE><B>
+     my $wsdl   = 'http://localhost/cgi-bin/ttsoapcgi.wsdl';
+     my $schema = 'http://www.w3.org/2001/XMLSchema';
+     my $soap = SOAP::Lite-&gt;service($wsdl)-&gt;xmlschema($schema);
+
+     my $cookie = $soap-&gt;DatabaseLogon($dbName, $dbUser, $dbPass);
+     if ($soap-&gt;call-&gt;fault) {
+         my $faultstring = $soap-&gt;call-&gt;faultstring;
+         die "$0: login error: $faultstring\n";
+     }
+
+     my $recordList = $soap-&gt;getRecordListForTable(
+          $cookie, 'Defect', 'Assigned with Estimated Date', '');
+     if ( $soap-&gt;call-&gt;fault ) {
+         my $faultstring = $soap-&gt;call-&gt;faultstring;
+         die "$0: record list error: $faultstring\n";
+     }
+
+     for my $recnum (
+         map { $_-&gt;{row}[0]-&gt;{value} }
+         @{$recordList-&gt;{records}}
+     ) {
+         my $action = $soap-&gt;getDefect($cookie, $recnum, '');
+         ...
+     }
+</B></PRE>
+
+<UL>
+  <LI><p> The SOAP::Lite module now can create the data types from the WSDL descriptors.<!-- list end--></p>
+
+  <LI><p> It also has methods for finding the fault codes in the return messages.<!-- list end--></p>
+
+</UL>
+
+
+<br clear=all>
+
+<table width=100% bgcolor=black cellspacing=0 border=0>
+<tr>
+    <td align=right width=33%><font color="white">Copyright &copy; 2004 David Baird</font></td>
+</tr>
+</table>
+
+
+
+</FONT></BODY>
+</HTML>

@@ -1,0 +1,57 @@
+= Review: Learning Perl Objects, References & Modules
+
+[Book's Homepage http://www.oreilly.com/catalog/lrnperlorm/]
+
+http://www.oreilly.com/catalog/covers/lrnperlorm.s.gif
+
+*Title*: Learning Perl Objects, References & Modules
+
+*Authors*: Randal L. Schwartz and Tom Phoenix
+
+*Publisher*: [O'Reilly and Associates http://www.oreilly.com/]
+
+*ISBN*: 0-596-00478-8
+
+*Publishing date*: June 2003
+
+*Reviewer*: Eitan Schuler
+
+*Review date*: January 2004
+
+*Rating*: Very good
+
+I have read this book in the last week.
+
+I really like 'learning' books; I have previously read 'Learning perl'. This time - just like before - it didn't cause me any dissapointment.
+
+The book explains very well almost all introduced topic. It brings very good examples (I loved the sailing skipper), which escort the reader as far as possiable. What I really liked in the book that it doesn't make any comparison with any other language.
+
+The book does not open with 'hello world', but it does make an assumption of a normal level of knowledge in perl. It brings a complex example of how to bring code from different files (eval, do, @INC, require)
+
+The next chapter inroduces references to variables, arrays, hashes and explains how to dereference them. Brings some examples of nested data-structures, reference-counting and anonymous objects. Chapter 5 gives a clear picture of grep and map operators.
+
+Then it goes to subroutine references and callbacks. It gives then good ideas on sort efficiency as well.
+
+The next chapters are dedicated for the real OOP: objects, overriding methods, @ISA, data access in classes, inheritance and multiple inheritance. It uses the very classical animal example to explain classes, Setters, Getters, and object-distructors. SUPER, UNIVERSAL and AUTOLOAD are some of the next topics.
+
+Chapter 12 gives a deeper look into 'use', exporter and explains @EXPORT and @EXPORT_OK. For those interested: the next chapters deal with distribution - how to create Makefile.pl's and make essential testing (Test), make install - packaging up a module for sharing, including portable installation instructions.
+
+The last part of the book gives the reader some guidelines on how to publish modules at CPAN.
+
+You might find almost every topic of "Learning Perl Objects, References & Modules' in other Perl books as well. But this book really teaches the reader these very important techniques. At the end of each chapter there are exercises related to the actual topics. I admit: I didn't do all of them, but the solutions are at the appendix. It's a relatively quick overview of advanced perl topics (less than 200 pages).
+
+In general I really recommend this book.
+
+Other books from the same author.
+
+ELearning Perl (O'Reilly) November 1993
+
+Learning Perl on Win32 Systems (O'Reilly) August 1997
+
+Learning Perl, 2nd Edition (O'Reilly) July 1997
+
+Learning Perl, 3rd Edition (O'Reilly) July 2001
+
+Programming perl (O'Reilly) January 1991
+
+Programming Perl, 2nd Edition (O'Reilly)

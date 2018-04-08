@@ -1,0 +1,181 @@
+<html><head><title>All in one</title></head><body>
+
+<hr>
+<h1>There and Back Again, or How I Started With C Code and Finished With a Perl Module</h1>
+
+<title>There and Back Again, or How I Started With C Code and Finished With a Perl Module</title>
+<p>
+<h3>Apologies to Tolkien...</h3>
+<p>
+<h2>A lightning talk</h2>
+<p>
+Offer Kaye
+&lt;offerk@netvision.net.il&gt;
+<p>
+
+<hr>
+<h1>In this talk</h1>
+
+<title>In this talk</title>
+<p>
+I shall describe the process of taking a (portable) ANSI-C library and using SWIG (see [1]) to quickly and easily build a Perl wrapper for it and package the results into a CPAN module, a process studied jointly by Offer Kaye and Shlomo Yona.
+<p>
+
+<hr>
+<h1>In the beginning</h1>
+
+<title>In the beginning</title>
+<p>
+We begun with a nice implementation in ANSI-C of a complex data structure called a "Suffix Tree" (See [2] for a concise definition or [3] for much more info).
+<p>
+We knew people on the web were looking for such an implementation, but in Perl.
+<p>
+Why in Perl, you ask? Because writing C code, as we all know, is loads of fun, but writing Perl is just, well, even more fun :-)
+<p>
+
+<hr>
+<h1>We started with</h1>
+
+<title>We started with</title>
+<p>
+So we started with the files<li>suffix_tree.h  -- the interface file <li>suffix_tree.c  -- the implementation file
+<p>
+and ended up with "SuffixTree.pm", which can be used simply by writing "use SuffixTree" in your Perl program, and which we even uploaded to CPAN.
+<p>
+
+<hr>
+<h1>What We Did, The Short Version</h1>
+
+<title>What We Did, The Short Version</title>
+<p>
+So how did we do it? The short version is:
+<font color="green"><b><pre><prompt>
+   swig -perl -module SuffixTree suffix_tree.h
+   edit SuffixTree.pm
+   edit suffix_tree_wrap.c
+   h2xs -X SuffixTree
+   cp suffix_tree* SuffixTree
+   cd SuffixTree
+   edit files (such as Makefile.PL) and add files (such as test files, README, etc.) to SuffixTree dir as necessary
+   tar zcvf SuffixTree-0.01 SuffixTree
+   register and upload to PAUSE
+</prompt></pre></b></font>
+<p>
+
+<hr>
+<h1>Using SWIG</h1>
+
+<title>Using SWIG</title>
+<p>
+"SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages" ([1]).
+<p>
+In other words, when you run SWIG it creates a platform specific wrapper file for your (C) functions that is targeted at a specific language (eleven different target languages are supported as of this writing).
+<p>
+We generated our version for use under Linux. The command we used:
+<font color="green"><b><pre><prompt>
+   swig -perl -module SuffixTree suffix_tree.h
+</prompt></pre></b></font>
+<p>
+
+<hr>
+<h1>Using SWIG - cont'd</h1>
+
+<title>Using SWIG - cont'd</title>
+<p>
+Note that the suffix_tree.h given is the original unmodified file- a great benifit for the lazy, err <I>enlightened</I>, Perl programmer.
+The two files generated are<li>SuffixTree.pm<li>suffix_tree_wrap.c
+<p>
+Both of which need to be edited- the SuffixTree.pm *A LOT* (grin :-))- our final version is shown at the end of this presentation; and the suffix_tree_wrap.c needs just a single line near the beginning which SWIG forgot for some reason:
+<font color="green"><b><pre><prompt>
+   #include "suffix_tree.h"
+</prompt></pre></b></font>
+<p>
+
+<hr>
+<h1>Creating a Module for CPAN</h1>
+
+<title>Creating a Module for CPAN</title>
+<p>
+Once you've finished the previous, SuffixTree is basically ready for personal use, but to let the world enjoy the fruits of your labor, and earn the undying admiration of thousands worldwide, you need to package the results into a tarball and upload it to CPAN.
+<p>
+One way would be to go to the CPAN site, read the guidelines ([4]), download and peruse a few choice modules, and build your own module directory based on the good examples.
+<p>
+
+<hr>
+<h1>Creating a Module for CPAN - cont'd</h1>
+
+<title>Creating a Module for CPAN - cont'd</title>
+<p>
+For the lazy among you, though, there's another way :-) which uses h2xs ([5]) and goes something like this:
+<font color="green"><b><pre><prompt>
+   h2xs -X SuffixTree
+   cp suffix_tree* SuffixTree  # this copies the source files
+   cp -f SuffixTree.pm SuffixTree # overwrite the pm file created by h2xs with your edited version.
+   cd SuffixTree
+   edit, edit, edit
+   tarball   # remember the version number: SuffixTree-0.04.tar.gz
+   You're done :-)
+</prompt></pre></b></font>
+<p>
+
+<hr>
+<h1>Makefile.PL</h1>
+
+<title>Makefile.PL</title>
+<p>
+Important among the files created by h2xs is Makefile.PL
+<pre><code><font color="brown"><b>
+use ExtUtils::MakeMaker;
+# See lib/ExtUtils/MakeMaker.pm for details of how to influence
+# the contents of the Makefile that is written.
+WriteMakefile(
+	'NAME' => 'SuffixTree',
+	'OBJECT' => 'suffix_tree_wrap.o suffix_tree.o',
+	'VERSION_FROM'	=> 'SuffixTree.pm', # finds $VERSION
+);
+print "\n";
+print "Please take a moment to review the license.\n\n";
+print "Do a 'make' to create the Makefile\n";
+print "Do a 'make test' to test the module before installation\n";
+print "Do a 'make install' to install the module.\n";
+</b></font></code></pre>
+<p>
+What the makefile actually does is compile the C code (now with the wrapper) in order to create a shared object file which will be used by SuffixTree.pm.
+<p>
+
+<hr>
+<h1>SuffixTree.pm</h1>
+
+<title>SuffixTree.pm</title>
+<p>
+The functions from the .h file need to added manually to the @EXPORT array:
+<pre><code><font color="brown"><b>
+@EXPORT = qw(ST_CreateTree ST_PrintTree ST_FindSubstring ST_DeleteTree
+		create_tree print_tree find_substring delete_tree);
+</b></font></code></pre>
+<p>
+This addition (for example) was also added manually:
+<pre><code><font color="brown"><b>
+sub create_tree($) {
+	return ST_CreateTree($_[0], length($_[0]));
+}
+</b></font></code></pre>
+The interface created by SWIG works, but is not very perlish. This is where a little manual labour is required (or at least desirable), to wrap those not so pretty functions with your own, more perlish, functions.
+<p>
+For those interested, the complete SuffixTree tarball can be found at it's CPAN page ([6]).
+<p>
+
+<hr>
+<h1>References</h1>
+
+<title>References</title>
+<p>
+<ol><li>[1] <a href="http://www.swig.org/">http://www.swig.org/</a> <li>[2] <a href="http://www.nist.gov/dads/HTML/suffixtree.html">http://www.nist.gov/dads/HTML/suffixtree.html</a> <li>[3] <a href="http://www.csse.monash.edu.au/~lloyd/tildeAlgDS/Tree/Suffix/">http://www.csse.monash.edu.au/~lloyd/tildeAlgDS/Tree/Suffix/</a> <li>[4] <a href="http://www.cpan.org/modules/00modlist.long.html#ID2_Guidelinesf">http://www.cpan.org/modules/00modlist.long.html#ID2_Guidelinesf</a> <li>[5] <a href="http://www.perldoc.com/perl5.8.0/bin/h2xs.html">http://www.perldoc.com/perl5.8.0/bin/h2xs.html</a> <li>[6] <a href="http://search.cpan.org/dist/SuffixTree/">http://search.cpan.org/dist/SuffixTree/</a>
+</ol>
+<p>
+
+<hr>
+<h1>Thank you</h1>
+
+<title>Thank you</title>
+</body></html>

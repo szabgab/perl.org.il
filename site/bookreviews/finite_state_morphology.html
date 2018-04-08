@@ -1,0 +1,38 @@
+<html><head><title>Finite State Morphology</title></head>
+<body bgcolor="white">
+
+<h1>Finite State Morphology</h1> 
+
+<table>
+<tr><td><a href="http://csli-publications.stanford.edu/site/1575864347.html"><img src="/img/finite_state_morphology.jpg" width="175" height="245"></a></td><td><table>
+	<tr><td>Title:</td><td>Finite State Morphology</td></tr>
+	<tr><td>Authors:</td><td><a href="http://www.xrce.xerox.com/people/beesley/home.html">Ken Beesley</a> and <b> <a href="http://www2.parc.com/istl/members/karttune/">Lauri Karttunen</a></b></td></tr>
+	<tr><td>Publisher</td><td><a href="http://csli-publications.stanford.edu/site/index.html">CSLI Publications</a></td></tr>
+	<tr><td>ISBN:</td><td>1575864347</td></tr>
+	<tr><td>Publishing date:</td><td>June 2003</td></tr>
+	<tr><td>Reviewer:</td><td><a href="http://cs.haifa.ac.il/%7Eshlomo/">Shlomo Yona</a></td></tr>
+	<tr><td>Review date:</td><td>January 2004</td></tr>
+	<tr><td>Rating:</td><td>5/5 stars</td></tr>
+	<tr><td></td><td></td></tr>
+	</table></td></tr>
+</table>
+<p>
+I was waiting for this book to be published. I've been waiting for its publication since I attended a finite state morphology course at XRCE instructed by Ken Beesley. The ability of Ken to describe complex issues and processes in simple terms and to build a clear path using step by step approach using many useful examples of what you should and should not do (and why!) is exceptional! This attitude is very much reflected in the book. Reading previous academic publications of Beesley and Karttunen will make one realize that these two know their business and that they know to describe it well.
+<p>
+The book is intended for linguists and not for computer scientists. If you are interested to read about the theory of  finite state technology, algorithms, and implementation issues then this is not the book. However, if you are a linguist planning to develop a system using finite state tools and you need an introduction to the subject, a tutorial for the xerox finite state tools and a lot of good and useful advice, this book is for you. Although this book's focus is on the Xerox finite state tools, much of the advice and tips given throughout the book is relevant to any finite state based project.
+<p>
+The book explains why finite state methods in general (regular languages and regular relations) and the xerox  finite state tools in particular are a good choice for describing and actually building lexical transducers (which can be further extended into applications such as a morphological analyzer and generator, spell-checker, part of speech disambiguator, and more based on the same technology). It then teaches you about the syntax and usage of the Xerox  finite state tools and explains a lot about various aspects of development using helpful examples, exercises and wisdom. The book has a CD containing licensed software which enables you to actually build your own systems using the Xerox  finite state tools. 
+<p>
+Although this book is a great text for any linguist using some  finite state engine, it is specifically targeted at the xerox  finite state tools. Note that the Xerox tools are not the only  finite state tools available; Other implementations are available, notably FSA (http://odur.let.rug.nl/~vannoord/Fsa/) by Gertjan van Noord and AT&T's FSM toolset by Mohri, Pereira, Riley (http://www.research.att.com/sw/tools/fsm).  This is a good time to say that the software available on CD with the book is a commercial software and the license is very restrictive and allows you to basically try it for yourself and nothing beyone that. The software itself, on the other hand, is not crippled (so it is stated) in any way. If you are interested in a software for finite state programming which has a more relaxed license than FSA util, whose license is under the GPL, is what you're looking for.
+<p>
+Quoting from the book: "The lesson is this: study the language and do some old-fashined pure linguistic modeling before jumping into the coding. Your programs will never be better than the linguistic model behind them." And indeed, the book does not teach you linguistics. Don't be fooled that just being a native speaker and understanding the text in the book is enough to be able to produce a useful linguistic tool using xfst and lexc. It takes a lot more than that, and the result is usually as good and robust as its foundations.
+<p>
+If you have some programming background note that finite state programming is very different than functional, object oriented or procedural programming. If you are familiar with Perl or unix like regular expressions, you will soon find out that the term 'regular' was severely abused on those systems, so the calculus described in the book is in many ways different: computationally weaker in some ways, more elegant in other ways. Nonetheless, linguists are bound to feel more comfortable with the Xerox tools' syntax as it was desined to suite the needs of linguists describing morphology and phonology.
+<p>
+Years of experience teaching how to use the tools, using the tools for various implementation of morphological analyzers, and quite a few drafts of the text which eventually turned out and materialized as this book. The organization of the text, and the terminology used makes it easy for the reader to understand new concepts. Each term is defined, explained and then examples follow. Difficult concepts are releatedly explained throughout the book. This is a fun read and I enjoyed reading it. While reading the book, whenever I felt I needed a little more explanation or another example, I just had to keep reading as the needed information was just in the next paragraph. 
+<p>
+The first chapter is a gentle introduction to the concepts of  finite state programming. The second chapter is a more systematic introduction. The exercises are useful for understanding the material. The third and fourth chapters explain xfst and lexc languages, respectively. The fifth chapter is a useful discussion about various aspects of a project and what pitfalls are expected along the way and which tools and techniques can be used to avoid or handle such pitfalls. Reading this chapter is just like reading the journal of a guru summarizing great tips. Chapter 6 on testing and debugging is yet another valuable source of information useful in many projects. The tips and lessons in chapters 5 and 6 are important to any software project, but especially using the Xerox tools, you will quickly see that the lack of a development environment and debugging tools and the flat structure of the code (allowing very limited ability to maintain your code as a set of "black box" parts with an easy interface) are a source for many problems. So following the good advice in these chapters is useful. Chapters 7 and 8 describe mechanisms implemented into the calculus which allow you to do some hacking into your code and do some "shortcuts" which allow some more expressiveness and some memory usage optimizations. Not many users will probably go ahead and use these features up front. Some may never use them at all. Chapter 9 describe useful tools and methods for automation and integration of your system as a component in a larger system. 
+<p>
+One thing I didn't like about the book:
+There are many issues mentioned in brief and a footnote tells you to go to the book's web site (http://www.fsmbook.com/) to read more about it. When you actually go to the site you discover that there is no trace or evidence of that information.
+</body></html>

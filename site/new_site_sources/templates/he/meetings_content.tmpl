@@ -1,0 +1,66 @@
+      <h1 id="future_meetings" style="border-top: none; padding-top: 0;">Future Meetings</h1>
+      <ul>
+	  <tmpl_loop name="future_meetings">
+	    <li><a href="<tmpl_var name="filename">"><tmpl_var name="title"></a> - <tmpl_var name="comment"></li>
+	  </tmpl_loop>
+      </ul>
+      <h1 id="about_meetings">About Our Meetings</h1>
+      <p>
+	 Apart from the mailing list, the main avenue for Israel Perl Mongers for
+	 the exchange of information and ideas are the Israel.pm monthly meetings.
+	 <br />
+	 Since June 2002 we have held regular monthly meetings, usually on the first
+	 Thursday of the month. During these meetings we meet, socialize for a while,
+	 then we have around 2 presentations about topics that interest us and finally we
+	 go to a nearby local cafe/pub to talk some more (and drink beer ;-).
+	 <br />
+	 The level of the presentations varies a lot - from
+	 presentations fit for people who have used been using Perl for only 2 months, to
+	 advanced material suitable for experienced programmers.
+	 <br />
+	 The level of the speakers also varies - for some of them this is the first time
+	 they give any kind of presentation, others are experienced trainers. All speakers
+	 are volunteers who have agreed to share their knowledge and passion with their
+	 fellow Perl Mongers.
+	 <br />
+	 Lectures can last from 5 minutes ("lightning talks") to 90 minute long talks,
+	 and can be a simple "lecture style" presentation, or one with lots of interaction
+	 from the audience.
+	 <br />
+	 In addition to the presentations and the ability to meet and talk face to face with
+	 other Perl users, Perl Mongers who attend the meetings may also borrow (and return)
+	 books from the <a href="library.html">Israel.pm library</a>.
+	 <br />
+	 Meetings are announced on our <a href="mailing_lists.html">mailing lists</a>.
+      </p>
+      <p>
+         <strong>Note:</strong> See the
+	 <a href="http://jerusalem.perl.org.il/">Jerusalem.pm site</a>
+	 for information about their meetings.
+      </p>
+      <h1 id="past_meetings">Past Meetings</h1>
+      <p>
+         Following is a list of past meeting archives, from oldest to last. Click each meeting date
+	 to go to that particular meeting's page.
+      </p>
+<!--
+      <h2 id="2002-meetings">2002 Meetings</h2>
+      <ul>
+         <li><a href="meetings/2002/20020318.html">March 18, 2002</a> - we were 6 people there.</li>
+         <li><a href="meetings/2002/20020613.html">June 13, 2002</a> - 11 camels came.</li>
+         <li><a href="meetings/2002/20020712.html">July 11, 2002</a> - I don't remember the numbers.</li>
+         <li><a href="meetings/2002/20020912.html">September 12, 2002</a> - Haifa University, Gabor gave a talk about Array::Unique, Games::NIM and Games::Chomp.</li>
+         <li><a href="meetings/2002/20021010.html">October 10, 2002</a> - Tel Aviv,  Shlomo Yona talked about sort.</li>
+         <li><a href="meetings/2002/20021107.html">November 7, 2002</a> - Tel Aviv, Presentation tools in Perl and other languages.</li>
+         <li><a href="meetings/2002/20021212.html">December 12, 2002</a> - Tel Aviv, Mark Veltzer: Object Oriented Perl.</li>
+      </ul>
+-->
+      <tmpl_loop name="past_meetings">
+	    <h2 id="<tmpl_var name="year">-meetings"><tmpl_var name="year"> Meetings</h2>
+		<ul>
+		  <tmpl_loop name="meetings">
+	        <li><a href="<tmpl_var name="filename">"><tmpl_var name="title"></a> - <tmpl_var name="comment"></li>
+		  </tmpl_loop>
+        </ul>
+	  </tmpl_loop>
+

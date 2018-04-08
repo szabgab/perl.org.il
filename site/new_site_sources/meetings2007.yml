@@ -1,0 +1,261 @@
+---
+20070104:
+  agenda_items:
+    - item: '18:30-19:30 -- Shmuel Fomberg will talk about Perl/Tk'
+    - item: '19:30-19:45 -- A break'
+    - item: '19:45-20:45 -- Gabor Szabo will talk about Perl 6'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  items:
+    - description: Shmuel Fomberg about Perl/Tk
+      end: 19:30
+      speaker: Shmuel Fomberg
+      start: 18:30
+      title: Perl/Tk
+    - description: |-
+        Gabor Szabo will talk about Perl 6, the next version of the
+                    Perl Language, currently under design and development.
+      end: 20:45
+      speaker: Gabor Szabo
+      start: 19:45
+      title: Perl 6
+  location: "F5 Networks' offices at Ramat HaXayal in 24 HaBarzel St., Tel Aviv"
+  other_summarizer: This review was written by Shlomi Fish.
+  participants:
+    - name: Shlomi Fish
+    - name: Shmuel Fomberg
+    - name: Uri Bruck
+    - name: Doron Hbram
+    - name: Gabor Szabo
+    - name: Oren Izmirli
+    - name: Ran Eilam
+    - name: Thomas Mayer
+    - name: Micha Nasriachi
+    - name: Yuval Yaari
+    - name: Ron Kass
+    - name: Shlomo Yona
+    - name: Yuval Levy
+  report_text: |
+    <p>
+    I took a cab to the meeting and arrived early. I soon met Ran (who works
+    there) and Shmuel. We talked about work, testing, life and stuff. It turns
+    out Yuval Yaari and other people arrived even sooner, and were at the kitchen.
+    Gabor also arrived carrying a box of T-shirts, and then went out to buy
+    food. Then the meeting was supposed to start.
+    </p>
+
+    <p>
+    "Supposed" is the keyword here. First of all, Gabor needed to give people the
+    T-shirts they ordered. Then we had trouble getting the display right with
+    the projector. Eventually, we borrowed a laptop from Doron from F5 and
+    Shmuel Fomberg was able to start his presentation.
+    </p>
+
+    <p>
+    Shmuel's talk about Perl/Tk was interesting. It didn't renew too much to me,
+    but it was still fun, and sparked some interesting discussions. Then Gabor
+    Szabo gave a talk about Perl 6, which from what I understood was a port of his
+    Perl 5 course to Perl 6. Several things there sparked a lot of discussion,
+    especially the junctions. For example, it turns out that in Perl 6
+    "if ((3|4) == 3) { ... }" will execute the condition, but so will
+    "if ((3|4) != 3) { ... }". That's because the "|" means "any", and so it
+    tests whether any of the operands is equal to 3 or whether any of them
+    is not. Another interesting feature is the chained conditionals:
+    "if (3 &lt; 7 == 7 &lt; 10 &gt; 8)" will evaluate to true in Perl 6.
+    </p>
+
+    <p>
+    I left the meeting prematurely along with my ride (Shmuel), so I may have
+    missed some more interesting stuff.
+    <a href="http://www.szabgab.com/perl6.html">The slides are online</a>,
+    however.
+
+    </p>
+20070206:
+  agenda_items:
+    - item: '18:30-19:45 -- Gabor Szabo - Intro to perl 6 (Part 2)'
+    - item: '19:45-21:00 -- Shlomo Yona on XML Processor Targeted Attacks'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  items:
+    - description: Gabor Szabo will continue his introduction to Perl 6
+      end: 19:45
+      speaker: Gabor Szabo
+      start: 18:30
+      title: Introduction to Perl 6 (Part 2)
+    - description: Shlomo Yona will talk about "XML Processor Targeted Attacks"
+      end: 21:00
+      speaker: Shlomo Yona
+      start: 19:45
+      title: Undetermined Yet
+  location: "F5 Networks' offices at Ramat HaXayal in 24 HaBarzel St., Tel Aviv"
+  participants: []
+  report_text: ''
+20070412:
+  agenda_items:
+    - item: '18:30-19:30 -- Shmuel Fomberg - Embedding Perl in C'
+    - item: '19:45-20:45 -- Yuval Yaari - Regular Expressions'
+  items:
+    - description: Shmuel Fomberg about embedding Perl in C
+      speaker: Shmuel Fomberg
+      title: Embedding Perl in C
+    - description: Yuval Yaari about Regular Expressions
+      speaker: Yuval Yaari
+      title: Regular Expressions
+  location: "F5 Networks' offices at Ramat HaXayal in 24 HaBarzel St., Tel Aviv"
+  other_summarizer: This review was written by Gabor Szabo and Shlomi Fish.
+  participants:
+    - name: Shlomi Fish
+    - name: Shmuel Fomberg
+    - name: Uri Bruck
+    - name: Gabor Szabo
+    - name: Ran Eilam
+    - name: Thomas Mayer
+    - name: Yuval Yaari
+    - name: Shlomo Yona
+  report_text: |
+    <p>
+    There is no report yet, we are arguing with Yuval what will /foo|foobar/ match.
+    In the meanwhile, you are free to download <a href="/presentations/shmuel-fomberg-embedding-perl/perlembed.ppt">the slides from
+    Shmuel Fomberg's presentation about Embedding Perl in C</a>.
+
+    </p>
+20070814:
+  agenda_items:
+    - item: '18:30-19:30 -- Gabor Szabo - How Test Automation is Done in Various Open-Source Projects'
+    - item: '19:30-20:30 -- Yuval Yaari - Regular Expressions "Internals" (2nd Part)'
+  items:
+    - description: How Test Automation is Done in Various Open-Source Projects
+      speaker: Gabor Szabo
+      title: Test Automation in FOSS Projects
+    - description: Yuval Yaari about Regular Expressions Internals
+      speaker: Yuval Yaari
+      title: Regular Expressions
+  location: "F5 Networks' offices at Ramat HaXayal in 24 HaBarzel St., Tel Aviv"
+  other_summarizer: This review was written by Shlomi Fish.
+  participants:
+    - name: Ran Eilam
+    - name: Liror Rein
+    - name: Galel Mekori
+    - name: Eden Unicorn
+    - name: Michael Railburd
+    - name: Shlomi Fish
+    - name: Micha Nasriachi
+    - name: Gabor Szabo
+    - name: Zohar Snir
+    - name: Sagiv Barhoom
+    - name: Kfir Lavi
+    - name: Uri Bruck
+    - name: Shmuel Fomberg
+    - name: Pinkhas Nisanov
+    - name: Thomas Maier
+  report_text: |
+    <p>
+    Sagiv gave me a lift to the meeting. He invited his cousin who came with
+    his friend, and we met them outside. Uri Bruck also came there later on.
+    We talked about the fact Actcom (an Israeli ISP) was bought by Bezeq
+    Bein-leumi and what it would mean for the Linux support.
+    </p>
+
+    <p>
+    We then entered F5, reserved our seats in the presentations' room, and
+    went to the kitchen to drink and munch on the cookies. More people came,
+    and we had some nice socialising.
+    </p>
+
+    <p>
+    We waited for Gabor to arrive, and he eventually did, he set up his laptop,
+    connected it to the video output (worked so-so), and started presenting.
+    Gabor prepared the slides as yet-unpublished pages on his blog, and used
+    them as a reference. He said he is going to give the presentation on
+    the upcoming YAPC::EU in Vienna, but that he doesn't expect a large
+    audience, because he was scheduled simulatenously to
+    <a href="http://perl.plover.com/">Mark Jason Dominus</a>.
+    </p>
+
+    <p>
+    In any case, Gabor talked about how various open source projects deal with
+    running automated test periodically and with Quality Assurance. He covered
+    perl 5, Parrot, pugs, PostgreSQL, the Linux kernel and (briefly) Mozilla and
+    Subversion. It was interesting, but felt a bit unfocused to me, and
+    the ad-hoc-ish slides he prepared did not help much. Someone then suggested
+    he'll cover the various philosophies instead of going over what
+    each project does, but I prefer Gabor's original method.
+    </p>
+
+    <p>
+    Then Yuval Ya'ari gave the second part of his presentation about regular
+    expressions in Perl. He went over the various nodes of the regex engine,
+    and covered the <a href="http://en.wikipedia.org/wiki/Trie">"trie"</a>
+    (pronounced "tree") data structure used to optimise some alternation
+    expressions. He then demonstrated the "re" module with its flags, that
+    can be used to debug regular expressions and understand how Perl compiled
+    them. It was very interesting and engaging.
+    </p>
+
+    <p>
+    Then, many of us (nine, in fact) went to the Irish Pub after a long time
+    where we were too lazy to do so. It was already quite late and we stayed
+    in the pub until 23:00. There we discussed whether programmers who are
+    good in one technology will write good code in other technologies, on
+    version control, on whether it is OK to write quick and dirty code for
+    an urgent task, and then to either throw it away, or refactor or rewrite
+    it later on.
+
+    </p>
+20070911:
+  agenda_items:
+    - item: '18:30-20:00 - Yuval Kogman - Object Meta Programming'
+  items:
+    - description: 'Object Meta Programming (Moose, Perl 6, etc.)'
+      speaker: Yuval Kogman
+      title: Object Meta Programming
+  location: "F5 Networks' offices at Ramat HaXayal in 24 HaBarzel St., Tel Aviv"
+  other_summarizer: This review was written by Shlomi Fish.
+  participants:
+    - name: Eden Unicorn
+    - name: Pinkhas Nisanov
+    - name: Thomas Maier
+    - name: Pavel Dolinin
+    - name: Zohar Kelrich
+    - name: Ran Eilam
+    - name: Uri Bruck
+    - name: Zohar Snir
+    - name: Boris Sukhalitko
+    - name: Shlomi Fish
+    - name: Yuval Yaari
+    - name: Yuval Kogman
+    - name: Micha Nasriachi
+    - name: Shmuel Fomberg
+  report_text: |
+    <p>
+    This time I arrived to the location by using a taxi-cab, because my
+    usual ride had a short Milu'im that fell on the meeting date. I met
+    other people there, and we spent some time waiting for Yuval Kogman (who
+    gave the presentations) to come as he was sick and had to take a cab. But
+    he did arrive at the end.
+    </p>
+
+    <p>
+    Then the logisitics started: Yuval forgot a DVI-to-VGA adaptor so he could
+    not connect his Mac laptop to the screen. And Zohar (Kelrich) did not have
+    one either. We also could not find a laptop, so we brought a desktop
+    computer, connected it to the power, the screen and the Internet, and used
+    it to browse the presentations from the Internet. This worked.
+    </p>
+
+    <p>
+    Yuval gave two presentations:
+    <a href="http://www.iinteractive.com/moose/yapc_eu_2007_slides/start.html">one
+    about Moose</a>, and
+    <a href="http://www.iinteractive.com/moose/object_meta_programming_slides/slides/start.html">one
+    about Object Meta-Programming</a>. The Moose one was interesting and we
+    also understood part of the Object Meta-Programming one. However, then
+    Yuval started talking about "MO" and most of us only vaguely understood
+    what he said.
+    </p>
+
+    <p>
+    We then went to the Irish pub (along with Yuval), and there discussed
+    JavaScript, and many other things. I had to leave early, because of
+    my ride.
+
+    </p>

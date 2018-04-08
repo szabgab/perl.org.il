@@ -1,0 +1,683 @@
+---
+20030116:
+  agenda_items:
+    - item: '18:00 -- Assembly and light refreshments'
+    - item: '18:50 -- Book review by Mikhael'
+    - item: '19:00 -- Shlomi Fish talks about <a href="http://www.shlomifish.org/lecture/WebMetaLecture/">Web Meta Language</a>'
+  comment: 'Location - <a href="http://www.interbit.co.il/">Interbit</a>, Ramat Gan, Shlomi Fish: Web Meta Language.'
+  other_summarizer: This meeting summary was written by Gabor Szabo.
+  participants:
+    - name: Gabor Szabo
+    - name: Guy Malachi
+    - name: Hanan Harush
+    - name: Hezi Golan
+    - name: Ido Trivizki
+    - name: Liliya Tridensky
+    - name: Mikhael Goikman
+    - name: Oleg Sverdlov
+    - name: Pinkhas Nisanov
+    - name: Shlomi Fish
+    - name: Thomas Maier
+  report_text: |
+    <p>
+
+             The meeting report can be found here:<br />
+             <a href="http://mail.perl.org.il/pipermail/perl/2003-January/000903.html">
+             http://mail.perl.org.il/pipermail/perl/2003-January/000903.html</a>
+
+    </p>
+20030213:
+  agenda_items:
+    - item: We are going to have lightening talks (see <a href="http://mail.perl.org.il/pipermail/perl/2003-January/000918.html">this thread</a> for more details)
+    - item: 'Ido Trivizky: Sexegers'
+    - item: 'Shlomi Fish: All kinds of things'
+    - item: 'Oleg Sverdlov: PerlScript on Windows'
+    - item: 'Mikhael Goikhman: Perl + X11/Gtk/Tk/FVWM'
+    - item: 'Pinkhas Nisanov: network tunel'
+    - item: 'Shlomo Yona: Automating the process of building Stemmers'
+    - item: 'Offer Kaye: SuffixTree'
+  comment: 'Location - <a href="http://www.interbit.co.il/">Interbit</a>, Ramat Gan, Lightning talks by various people.'
+  other_summarizer: This meeting summary was written by Gabor Szabo.
+  participants: []
+  report_text: "<p>\n\n      \n</p>\n"
+20030313:
+  agenda_items:
+    - item: Thomas Maier from Radware will talk about how he is using Perl in the QA department for testing the devices Radware produces.
+    - item: Itzik Lerner
+    - item: Gabor Szabo
+  comment: 'Location - <a href="http://www.sela.co.il/">Sela</a>, Ramat Gan - Expect (!) that Thomas Maier will talk about using Perl for QA.'
+  other_summarizer: This meeting summary was written by Gabor Szabo.
+  participants: []
+  report_text: |
+    <p>
+
+             The meeting report can be found here:<br />
+             <a href="http://mail.perl.org.il/pipermail/perl/2003-March/001299.html">
+             http://mail.perl.org.il/pipermail/perl/2003-March/001299.html</a>
+
+    </p>
+20030410:
+  agenda_items:
+    - item: 'The meeting will start immediately after <a href="http://www.pc.co.il/go-linux">GO-Linux</a> ends, probably at 4-5pm.'
+    - item: '<em>Pinkhas Nisanov</em>: "MailTools on CPAN" (~30 min)'
+    - item: '<em>Offer Kaye</em>: "Integrating C code with Perl" (~10 min)'
+    - item: '<em>Mikhael Goikhman</em>: "<a href="http://migo.sixbit.org/papers/Geo_Location_of_Inet/">Geo Location of Internet Users</a>" (<a href="http://migo.sixbit.org/papers/Geo_Location_of_Inet.tar.gz">download link</a>) (~15 min)'
+    - item: '<em>Gabor Szabo</em>: "<a href="http://pti.co.il/talks/Israel_pm_2003/">Israel.pm, YAPC, and MJD</a>" (<a href="http://pti.co.il/talks/Israel_pm_2003/Israel_pm_2003.tar.gz">download link</a>) (~30 min)'
+    - item: '<em>Gabor Szabo</em>: "Web development on Linux" (~20 min), given in the developers track of the GO-Linux conference'
+  comment: '<a href="http://www.pc.co.il/go-linux">GO-Linux</a> Hotel Hilton, Tel Aviv - Short Talks by Various People: (Pinkhas Nisanov, Offer Kaye, Mikhael Goikhman, Gabor Szabo).'
+  other_summarizer: This meeting summary was written by Gabor Szabo.
+  participants: []
+  report_text: |
+    <p>
+
+             The meeting report can be found here:<br />
+             <a href="http://mail.perl.org.il/pipermail/perl/2003-April/001563.html">
+             http://mail.perl.org.il/pipermail/perl/2003-April/001563.html</a>
+
+    </p>
+20030612:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-19:40 -- <em>Roey Almog</em>: "Search engine that indexes MS-Word documents"'
+    - item: '19:40-20:00 -- Break and refreshments'
+    - item: '20:00-20:40 -- <em>Ran Eilam</em>: "OO persistence using <a href="http://www.soundobjectlogic.com/tangram/">Tangram</a>"'
+    - item: '20:40-21:00 -- <em>Gabor Szabo</em>: "Debugging in Perl"'
+  comment: 'Ramat Gan (Roey Almog - "Search engine that indexes MS-Word documents"; Ran Eilam - "OO persistence using <a href="http://www.soundobjectlogic.com/tangram/">Tangram</a>"; Gabor Szabo - "Debugging in Perl")'
+  other_summarizer: This meeting summary was written by Gabor Szabo.
+  participants:
+    - name: Gabor Szabo
+    - name: Itzik Lerner
+    - name: Mikhael Goikhman
+    - name: Oded Resnik
+    - name: Pinkhas Nissanov
+    - name: Ran Eilam
+    - name: Roey Almog
+    - name: Ron Gidron
+    - name: Sefy Twito
+    - name: Semuel Vomberg
+    - name: Shlomi Fish
+    - name: Shlomo Yona
+    - name: Thomas Maier
+    - name: Uri Itscowits
+  report_text: |
+    <p>
+
+             One month after the conference I was expecting some 20-30 people to
+             come and indeed about 20 wrote to me but in the end we were only 14.
+             The rest, what can I say, you missed a very good meeting !<br />
+             Several people who attended told me they think this was one of
+             the best meetings so far and I was glad to hear that.<br />
+             We had a fair mixture of simple and complicated things.<br />
+             This time <a href="http://www.d.co.il/">Dapey Zahav</a> provided us with
+             their presentation room, which is actually their bomb shelter.
+             <br />
+             <strong>use safe;</strong><br />
+             <br />
+             They have the tables arranged in U shape which makes communication
+             between the people much better. Indeed we had interesting discussion
+             about the subjects.
+             <br />
+             We have also received refreshment from Dapey Zahav, so we filled
+             ourself with all kinds of cookies. Shlomi brought sugar-free
+             things for himself.<br />
+             We touched Configuration Management issues (even before Shlomi got
+             there !) and I showed how I am trying to use VMware to run Windows
+             on my Linux machine with NAT. It will be really cool once I can
+             configure it.<br />
+             <br />
+             <strong>Roey Almog</strong> started his presentation at 19:00. It was very interesting to see
+             how an otherwise C++ programmer picked up Perl and used it to process
+             30.000 word files. It was really nice to see how he did not want to
+             solve all the problems around the issue but looked for a workaround
+             wherever needed (e.g. the memory leaking issue). If you missed it you
+             can read his slides here:
+             <a href="/presentations/roey_almog_search_engine.pdf">Roey Almog: Search engine that indexes MS-Word documents</a><br />
+             <br />
+             After a short break <strong>Ran Eilam</strong> took over the projector and gave us a
+             very clever presentation about data persistence.<br />
+             First he introduced us to the problems in large scale Business
+             projects, the fact that some 40% of your perl code will actually end
+             up being SQL queries. How various modules on CPAN try to solve the
+             problem of data persistence and why they don't really do a good job.
+             Finally and for most of his presentation he showed us how to write a
+             very simple Object Oriented application using
+             <a href="http://www.soundobjectlogic.com/tangram/">Tangram</a><br />
+             I enjoyed his presentation style very much and you can see he
+             has lots of things to say on the subject. Ran was wondering why in
+             Perl there is only one such implementation while in Java - where it
+             is much more difficult to implement such things there are dozens of
+             similar environments.<br /> We are not sure if the lack of OO persistence
+             systems in Perl is the cause or the result of the relatively low
+             number of business systems written in Perl. Nag him for the slides.<br />
+             <br />
+             After another short break I (<strong>Gabor Szabo</strong>) took the virtual microphone
+             and started to give my half written presentation about debugging in
+             Perl. It turns out that only 3 or 4 of the 14 people present use a
+             debugger (if you can guess the names correctly you'll get a present)
+             the rest use print statements. This is in a group where most of the
+             people consider them self experts. (I don't want to tell you what we
+             really are :-). So I think teaching people all kinds of debugging
+             techniques was a good choice to propose on <a
+             href="http://yapc.mongueurs.net/">YAPC::EU::2003</a> and my talks were indeed accepted.<br />
+             <br />
+             Anyway, while I was presenting I think most of the talking was done by
+             the audience and I personally learned quite a lot from this
+             presentation. We talked about why adding print statements is a bad
+             thing on the long run and Ran mentioned that he thinks if you need
+             some complicated part of the debugger it means you actually should
+             have written mini-tests for your code. I don't fully agree with the above
+             but you do have to write tests for your code. (remind me that I should
+             also :-)<br />
+             <br />
+             I briefly even showed the built in debugger itself and ptkdb and the
+             ppl. could take a look at the set of pictures I am preparing for the
+             pure people in Paris. There are not many slides as a large part of the
+             presentation is actually live demo (of bugs). Whatever I have will be
+             published some time close to YAPC::EU.<br />
+             <br />
+             All in all I think this was a good meeting.
+
+    </p>
+20030717:
+  agenda_items:
+    - item: |-2
+
+        <a href="http://stason.org/">Stas Bekman</a> - is one of the leading personalities in
+        the Apache/Perl/mod_perl world.<br />
+        Stas was the original creator of the mod_perl 1.0 guide. He is the author of
+        <a href="http://www.modperlbook.com/">Practical mod_perl</a> that was published by
+        O'Reilly and Associates.<br />
+        Stas is going to give us a 3.5 hour long tutorial about mod_perl that he is also giving
+        on the O'Reilly Open Source Convention (OSCON) in Portland Oregon and on YAPC::EU::2003 in Paris.<br />
+        Stas has an EE B.Sc. degree from the Technion in Haifa.<br />
+        <a href="http://stason.org/talks/index.html">Slides and handouts</a> are available.
+
+  comment: 'Ramat Gan (<a href="http://stason.org/">Stas Bekman</a> - "<a href="http://stason.org/talks/index.html">mod_perl tutorial</a>")'
+  other_summarizer: This meeting summary was written by Gabor Szabo.
+  participants:
+    - name: Asaf Bartov
+    - name: Dror Bereznitsky
+    - name: Eli Marmor
+    - name: Gaal Yahas
+    - name: Gabor Szabo
+    - name: Guy Malachi
+    - name: Ido Trivizki
+    - name: Issac Goldstand
+    - name: Kfir Lavi
+    - name: Mikhael Goikhman
+    - name: Oded S. Resnik
+    - name: Offer Kaye
+    - name: Oleg Sverdlov
+    - name: Oron Peled
+    - name: Rami Addady
+    - name: Ran Eilam
+    - name: Ronen Kfir
+    - name: Scott Weisman
+    - name: Shay Berez
+    - name: Shemuel Vomberg
+    - name: Shlomi Fish
+    - name: Shlomo Yona
+    - name: Stas Bekman
+    - name: Yuli ...
+  report_text: |
+    <p>
+
+             Stas brought us a copy of his book and the printout that participants in his
+             OSCON mod_perl 2.0 tutorial received. They are both very big.<br />
+             In return we gave him a T-shirt and the proceedings of our conference. They were
+             both rather thin.<br />
+             <br />
+             While we were still waiting for more people to arrive we asked him about Australia
+             where he lives now and I asked him how does he make a living from Perl. As it turns
+             out for <a href="http://www.ticketmaster.com/">Ticketmaster</a> mod_perl
+             is such a critical tool that they are ready to finance him and let him develop
+             mod_perl 2.0 so it will be ready faster and be better without putting any constraints
+             on him, not even his location. That's very clever of them. I wish Israeli
+             companies would also recognize that supporting open source development pays off
+             for them as well as they will get more reliable tools faster. Even small
+             things like supporting our conference helps a lot.
+             (<a href="/YAPC/2003/sponsors.html">see which Israeli companies are clever</a>)<br />
+             <br />
+             Stas started slowly with showing installations and basic mod_perl handlers
+             including Registry modules. Then he went through the stages of an HTTP request
+             that arrives at an Apache server and goes through it and showed us examples for each
+             step. Once he finished this he went into building filters and protocol handlers.<br />
+             <br />
+             More you can get from his slides or by buying his book (see below).<br />
+             <br />
+             As next month I won't be in Israel, Shlomo has taken it upon himself to organize
+             <a href="20030814.html">the next meeting</a>. <br />
+             As he is also organizing the place for the next meeting, it will
+             be in the University of Haifa in CRI, the same place where we had the conference
+             in May.
+
+    </p>
+20030814:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: 'Shlomi Fish: "Finding the Graham Function"'
+    - item: 'Ran Eilam: "A Project I did for Dapey Zahav"'
+    - item: 'Itzik Lerner: "<a href="http://yapc.mongueurs.net/">YAPC::EU::2003</a> Experiences"'
+  comment: 'Ramat Gan (Shlomi Fish - "Finding the Graham Function"; Ran Eilam - "A Project I did for Dapey Zahav"; Itzik Lerner - "<a href="http://yapc.mongueurs.net/">YAPC::EU::2003</a> Experiences" )'
+  other_summarizer: This meeting summary was written by Shlomi Fish.
+  participants:
+    - name: Itzik Lerner
+    - name: Kfir Lavy
+    - name: Mikhael Goikhman
+    - name: Oded Reznik
+    - name: Pinhas Nisanov
+    - name: Ran Eilam
+    - name: Ronen Kfir
+    - name: Shlomi Fish
+    - name: Thomas Maier
+  report_text: |
+    <p>
+
+             We met at Dapey Zahav at around 18:00. At the beginning there was
+             only Ran Eilam, Mikhael Goikhman and I. After a while Ronen Kfir
+             came and afterwards other people. We talked outside on various
+             subjects including holding a persistent connection on HTTP/1.1,
+             Subversion and Freecell.<br />
+             <br />
+             There were some problems in getting the laptop to do demonstrations.
+             While the web worked fine, we could not get SSH and Telnet to work
+             (apparently, the ports were blocked by the firewall). Eventually,
+             Itzik Lerner brought a laptop of his own, which had perl installed
+             on it, which solved our problems.<br />
+             <br />
+             I started with a lecture about finding the Graham Function. It involved
+             some concepts from Number Theory and Linear Algebra, so I don't know
+             how much people understood. But I think it went pretty well. Some interesting
+             issues were left to be investigated, like what is the length of the maimal
+             Graham series.<br />
+             <br />
+             Then, Ran Eilam came and gave us a longish lecture about a project he
+             did for Dapey Zahav to analyze the results that were retrieved by the
+             searches. It covered several distinct aspects of the project, and he
+             talked about testing and good coding style extensively. We saw an
+             instance of a relatively funky code (a chained data structure access
+             with some ||=), which I'll let him paste here.<br />
+             <br />
+             Afterwards, Itzik Lerner took the stage, and talked about his experiences
+             in YAPC::EU::2003. It was a fun talk, and he brought many interesting
+             and funny anecdotes.
+
+    </p>
+20030911:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-20:00 -- <em>Mikhael Goikhman</em>: "<a href="http://migo.sixbit.org/papers/Perl_Threads/">Perl Threads</a>" (<a href="http://migo.sixbit.org/papers/Perl_Threads.tar.gz">download link</a>)'
+    - item: '20:00-20:30 -- Break and refreshments'
+    - item: '20:30-21:30 -- <em>Gabor Szabo</em>: "Tcl for Perl programmers"'
+  comment: 'Ramat Gan (Mikhael Goikhman - "<a href="http://migo.sixbit.org/papers/Perl_Threads/">Perl Threads</a>" (<a href="http://migo.sixbit.org/papers/Perl_Threads.tar.gz">download link</a>); Gabor Szabo - "Tcl for Perl programmers")'
+  other_summarizer: This meeting summary was written by Gabor Szabo.
+  participants:
+    - name: Amos Shapira
+    - name: Avraham Bernstein
+    - name: Gabor Szabo
+    - name: Herve Guez
+    - name: Itzik Lerner
+    - name: Kfir Lavi
+    - name: Mikhael Goikhman
+    - name: Oded Resnik
+    - name: Offer Kaye
+    - name: Pinchas Nissanov
+    - name: Ran Eilam
+    - name: Ran Teno
+    - name: Shaul Karl
+    - name: Shlomi Fish
+    - name: Thomas Mayer
+    - name: Uri Itzkowits
+    - name: Zachary Kessin
+  report_text: |
+    <p>
+
+             Around 18:50 I suggested that everyone would introduce himself which wasn't
+             a brilliant idea at this time, although we learned how we'll be able to break in the
+             Government offices and other similar important tasks. The problem was only that
+             it took 40 minutes to go over all the people. At that time it did not seem to be a
+             problem as we knew that we only have presentation for 20+40 minutes so we'll have
+             plenty of time left for Avraham to talk about Tcl.<br />
+             <br />
+             Then came Mikhael and started to talk about threads. This was very interesting. Most
+             of the people did not know anything about threads or would not admit it if they knew.
+             After some 2 slides Mikhael established the ultimate message: thread are just like processes.
+             You can do everything with processes that you would with threads and vice versa, they
+             are nearly the same, except that they are totally different.<br />
+             Though because of his presentation I think I'll be able to use threads
+             but I think Mikhael should have done a shorter introduction now and then give a longer, deeper
+             presentation some times later.<br />
+             In the end Mikhael talked more than an hour.<br />
+             <br />
+             After a short break I took the stage and talked about Tcl. In general it seems to be a
+             language with a very simple syntax with some very strange relation to spaces that can be
+             hard to get used to for a Perl programmer. I hope I made it also clear that while we think
+             Perl is the best language in the world (tm) there are areas where Tcl fits better.
+             It seems that I also talked too much, unfortunately I did not look at the clock and
+             by the time I finished my presentation it was already 21:45 when we had to leave the place.<br />
+             <br />
+             I am really sorry that I did not organize the meeting better and did not give enough stage
+             for Avraham to show us how an expert Tcl programmer sees the world. I hope we'll be able to
+             arrange another meeting where we'll start with Avraham.
+
+    </p>
+20031009:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-19:15 -- <em>Yehuda Berlinger</em>: "<a href="http://podindex.pti.co.il/">podindex</a>" (English)'
+    - item: '19:15-19:30 -- <em>Gabor Szabo</em>: "podindex with WxPerl"'
+    - item: '19:30-21:45 -- <em>Mikhael Goikhman</em>: "<a href="http://migo.sixbit.org/papers/Introduction_to_Ruby/">Ruby for Perl Programmers</a>" (<a href="http://migo.sixbit.org/papers/Introduction_to_Ruby.tar.gz">download link</a>)'
+    - item: "20:40-21:00 -- Break and refreshments (in the middle of Mikhael's lecture"
+  comment: 'Ramat Gan (Yehuda Berlinger - "<a href="http://podindex.pti.co.il/">podindex</a>"; Gabor Szabo - podindex with WxPerl"; Mikhael Goikhman - "<a href="http://migo.sixbit.org/papers/Introduction_to_Ruby/">Ruby for Perl Programmers</a>" (<a href="http://migo.sixbit.org/papers/Introduction_to_Ruby.tar.gz">download link</a>))'
+  participants:
+    - name: Damian Monafo
+    - name: Gabor Szabo
+    - name: Hezi Golan
+    - name: Itzik Lerner
+    - name: Kobi Susson
+    - name: Mikhael Goikhman
+    - name: Oded Resnik
+    - name: Offer Kaye
+    - name: Pinkhas Nisanov
+    - name: Ran Eilam
+    - name: Ran Tene
+    - name: Ronen Kfir
+    - name: Shaul Karl
+    - name: Shlomi Fish
+    - name: Thomas Maier
+    - name: Yehuda Berlinger
+    - name: Yoni Monafo
+  report_text: |
+    <p>
+
+             The first lecture, about the POD::Index project, started at 19:00 sharp. The lecturer
+             was Yehuda Berlinger. Yehuda talked about the project's goal, target audience,
+             existing tools and what was done and what was still left to be done (i.e. "todo").
+             At the end, some people asked questions and there was some discussion regarding the
+             way the search was implemented, but I at least got the feeling that everyone agreed
+             this was a worthwhile project.<br />
+             <br />
+             After Yehuda was done Gabor got up and gave some more background on the project and the wx GUI
+             and answered some more questions about it. Personally I thought it was very
+             interesting and I'm looking forward to seeing the finished product on CPAN...<br />
+             <br />
+             The next lecture was given by Mikhael Goikhman, and was titled "Ruby for Perl
+             Programmers". Mikhael started out by introducing this fascinating new
+             language, giving its highlights and some features, then continued by showing a
+             simple Ruby program. From there the lecture dived into more details, and if you are
+             interested the entire lecture notes can be found online so you can read them for
+             yourselves (see below for the link).<br />
+             <br />
+             I guess the most interesting thing for me was that Mikhael showed clearly how Ruby
+             was derived mainly from Perl, this later led to an observation by Gabor that Perl 6
+             was meant mainly as Perl's response to Ruby. It seems that just as Ruby borrowed many
+             of its features from Perl, Perl 6 will borrow back some good ideas from Ruby. This to
+             my mind shows one of the best features of open source projects, the ability to
+             cross-pollinate with other projects and enhance both in the process. It will be very
+             interesting to see in the future which language comes out a favourite of programmers,
+             but in any case both programmers and users will I'm sure come out winners from this
+             healthy competition between the two languages.<br />
+             <br />
+             Anyway, getting back to the meeting review, because the lecture was pretty long we stopped
+             in the middle for a 10 minute break and continued at 20:45.
+             Some people left both during the first part of the lecture and more left during
+             the break, so that after the break we remained 10 people- still a respectful number. Mikhael managed to barely wrap
+             up the last slides at 21:45, when we had to close up the meeting and clear the building.
+             Ran Eilam brought up the idea of going to a pub, but because this was unplanned we
+             decided to postpone the pub to the next meeting, with the understanding that it would
+             be announced in the mailing list in advance that this was the plan, so that people could
+             plan accordingly.
+
+    </p>
+20031106:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-19:40 -- <em>Avraham Bernstein</em>: "<a href="http://www.tcl.tk/">Tcl</a> for Perl Programmers"'
+    - item: '19:40-20:00 -- Break and refreshments'
+    - item: '20:00-20:15 -- <em>Gabor Szabo</em>: "The <a href="http://occamstoothbrush.com/perl/talks/phalanx_talk/slides/">Phalanx Project</a>"'
+    - item: '20:15-21:15 -- <em>Ran Eilam</em>: "Introduction to Extreme Programming"'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  comment: 'Ramat Gan (Avraham Bernstein - "Tcl for Perl Programmers"; Gabor Szabo - The <a href="http://occamstoothbrush.com/perl/talks/phalanx_talk/slides/">Phalanx Project</a> ;Ran Eilam - "Introduction to Extreme Programming")'
+  participants:
+    - name: Avraham Bernstein
+    - name: Eli Marmor
+    - name: Gabor Szabo
+    - name: Itzik Lerner
+    - name: Jason Friedman
+    - name: Kfir Lavi
+    - name: Mikhael Goikhman
+    - name: Oded Resnik
+    - name: Offer Kaye
+    - name: Pinkhas Nisanov
+    - name: Ran Eilam
+    - name: Ronen Kfir
+    - name: Semuel Fomberg
+    - name: Shaul Karl
+    - name: Shlomi Fish
+    - name: Thomas Maier
+  report_text: |
+    <p>
+
+             The meeting got off to a fine start at around 18:00 when people started showing up.
+             We talked for an hour and also ate and drank from the refreshments Gabor brought - Thanks Gabor! :-)<br />
+             Then at 19:00 it was time for the first lecture.<br />
+             The first lecture was given by Avraham Bernstein and was an introduction to
+             <a href="http://www.tcl.tk/">Tcl, the Tool Command Language</a>.
+             Avraham actually started in the middle of his slides, first introducing the strengths of Tcl (such as full Unicode
+             support and the ability to easily create compilers, interpreters and Domain Specific Languages). This generated
+             some discussion with it being pointed out that thanks to <a href="http://www.swig.org/">SWIG</a> and
+             <a href="https://metacpan.org/search?q=Inline%3A%3AC">Inline::C</a> Perl had, during the last couple of years,
+             gotten closer to Tcl in terms of how easy it is to expand the language.<br />
+             There were a lot more slides with Avraham telling us about Tcl's history, language structure and lots more. I thought
+             it was fascinating that almost everything in Tcl is a string and that there are only 11 core operators and delimiters in Tcl.
+             Amazing!<br />
+             At the end of his lecture Avraham opened the floor for questions, and got mostly compiler related questions from Kfir Lavi.
+             At 20:05 we all cheered Avraham for a great presentation and took a 15 minute break.<br />
+             <br />
+             Gabor Szabo was the next speaker, his 20 minute lecture was about the
+             <a href="http://qa.perl.org/phalanx/">Phalanx project</a>, using
+             <a href="http://occamstoothbrush.com/perl/talks/phalanx_talk/slides/">existing slides</a>.<br />
+             <br />
+             The final lecture was an Introduction to
+             <a href="http://en2.wikipedia.org/wiki/Extreme_Programming">Extreme Programming</a> (XP), given by
+             <a href="http://www.cortext.co.il/">Ran Eilam</a>.
+             While the lecture didn't have anything to do with Perl, Ran kept us riveted to our chairs for more than an hour
+             with an entertaining yet thoughtful lecture. At the beginning of the lecture I didn't know anything about XP except
+             that it exists as a buzzword, so I didn't know what to expect. Ran, a gifted speaker, managed to hook us right from the start with
+             personal tales of woe from the software industry and a review of some of the worst practices in software programming
+             such as the <a href="http://en.wikipedia.org/wiki/Big+Ball+Of+Mud">Big Ball of Mud</a>, which are alas
+             all too prevalent. At times we laughed, other times we nodded our heads in
+             agreement when a particular point made us remember exactly the same thing happening to us...<br />
+             XP, Ran explained to us, is all about improving software engineering by taking the good practices
+             in programming and "pumping them up to the extreme" - hence the name "Extreme Programming". <br />
+             I was only sorry that Ran didn't get to finish his entire lecture (we ran out of time) and hope that we'll get to hear
+             the rest of the lecture some other time. <br />
+             <br />
+             At 21:45 we wrapped up the technical meeting and as previously agreed went to a pub together.
+             Actually, since we hadn't decided in advance on a place to go to and wanted a nearby place, we ended up crossing the street
+             to a nearby cafe-pub. The social part of the meeting was as fun, I think, as the technical part, and the only negative points were
+             the high prices and the fact that nobody brought a camera. Hmm, I wonder if any of the Israeli Perl Mongers has a digital
+             camera and would be willing to bring it to the next meeting?
+
+    </p>
+20031211:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-19:40 -- <em>Shlomo Yona</em>: "The garbage collector of Perl"'
+    - item: '19:40-20:00 -- Break and refreshments'
+    - item: '20:00-20:15 -- <em>Ran Eilam</em>: "Test Driven Development with Java and Eclipse"'
+    - item: '20:15-21:00 -- <em>Shlomi Fish</em>: "<a href="http://www.shlomifish.org/lecture/Perl/Haskell/slides/">Haskell for Perl Programmers</a>"'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  comment: 'Ramat Gan (Shlomo Yona - "The garbage collector of Perl"; Ran Eilam - "Test Driven Development with Java and Eclipse" ;Shlomi Fish - "<a href="http://www.shlomifish.org/lecture/Perl/Haskell/slides/">Haskell for Perl Programmers</a>")'
+  other_summarizer: These meeting summaries were written by Offer Kaye and Ran Eilam.
+  participants:
+    - name: Hezi Golan
+    - name: Kfir Lavi
+    - name: Martha Greenberg
+    - name: Mikhael Goikhman
+    - name: Offer Kaye
+    - name: Pinkhas Nisanov
+    - name: Ran Eilam
+    - name: Ronen Shemesh
+    - name: Semuel Fomberg
+    - name: Shaul Karl
+    - name: Shlomi Fish
+    - name: Shlomo Yona
+    - name: Thomas Maier
+  report_text: |
+    <p>
+
+             <span class="summary_subheading"> Meeting Summary by Offer Kaye</span>
+             </p>
+
+             <p> When I got to the meeting around 18:05 there were already a
+             group of people who had come early, and fairly quickly most of the
+             rest of the people came. Gabor could not come to meeting, so
+             around 18:30 Ran collected some money from everyone and went
+             together with Shlomi to get some food and drink.  </p>
+
+             <p>
+             Then at 19:00 it was time for the first lecture, which was titled
+             <a href="/presentations/garbage_collection_in_Perl.ppt">Garbage Collection in Perl</a> and was given by
+             Shlomo Yona. From the very first slides the lecture generated a lot of discussion- garbage collection (GC) must
+             be a subject close to the heart of many programmers &#x263A;<br />
+             A local copy of the lecture is linked to above- if you wish to read more about GC start there, or go to the sources
+             mentioned at the end of the lecture.
+             Wikipedia's <a href="http://en2.wikipedia.org/wiki/Automatic_garbage_collection/">
+             Automatic Garbage Collection</a> page is also a good starting point. In addition, if you're curious about
+             Perl 6's garbage collection, you can read
+             <a href="http://dev.perl.org/perl6/pdd/pdd09_gc.html">PDD 9</a> and the
+             <a href="http://www.parrotcode.org/docs/dev/dod.dev.html">Dead Object Detection</a>
+             page on parrotecode.org.
+             </p>
+
+             <p>
+             Shlomo finished his lecture at 20:15, at which time we all cheered him for a very interesting presentation and
+             took a 15 minute break.
+             </p>
+
+             <p>
+             At 20:30 Ran Eilam gave a short 15 minute lecture about
+             <a href="http://www.objectmentor.com/writeUps/TestDrivenDevelopment/">Test Driven Development</a>
+             with <a href="http://java.sun.com/">Java</a> and <a href="http://www.eclipse.org/">Eclipse</a>.
+             Actually, Ran didn't settle for a dry lecture, he actually gave the lecture while at the same time developing in front
+             of our eyes a basic "checkbook" application written in Java, thus demonstrating at every step of the way the
+             concepts he was talking about such as "test first" and <a href="http://en2.wikipedia.org/wiki/Refactoring/">
+             refactoring</a>.
+             The lecture was a truely impressive example of both Ran's virtuosity as a lecturer and rapid code
+             developer and the ability of Eclipse to automatically refactor Java code. We were all sorry to hear that Perl cannot
+             be automatically refactored in a similar manner, due to its complex syntax. Oh well, at least there is always the option
+             of <a href="http://www.perl.com/pub/a/2003/10/09/refactoring.html">manual refactoring</a>.
+             </p>
+
+             <p>
+             The final lecture was an <a href="http://www.shlomifis.org/lecture/Perl/Haskell/slides/">Introduction
+             to Haskell</a> by Shlomi Fish. <a href="http://en2.wikipedia.org/wiki/Haskell">Haskell</a> is a
+             functional programming language with support for such interesting features such as recursive functions. Like all functional
+             languages its syntax is very different from Perl's, a fact which made it difficult for Shlomi to explain the examples he gave
+             in the lecture. However the example code he ran was very nice, I especially liked the infinite lists code examples.
+             </p>
+
+             <p>
+             Due to lack of time (as always we had to wrap up at 21:45) Shlomi did not give the entire lecture but for the interested
+             the slides are linked above. More info on Haskell can also be found on the
+             <a href="http://www.haskell.org/">haskell.org website</a>.
+             </p>
+
+             <p> After the technical meeting wrapped up five of us decided to
+             continue the evening in a local pub together. This was a lot of
+             fun, just as it was the last time, and I hope these pub evenings
+             will become a tradition of the Israeli Perl Mongers.  </p>
+
+             <p>
+             <span class="summary_subheading"> Meeting Summary by Ran Eilam</span>
+             </p>
+
+             <p>
+             We were sad when we realized that our fearless leader could not make the meeting. It meant we had to buy our own cakes.
+             Donations were provided and indeed many cakes were eaten. Unfortunately, most people did not like the
+             new <em>halva</em> flavor.
+             </p>
+
+             <p>
+             Shlomo took over the formal introductions. Everyone knew everyone. It was shorter than usual,
+             as it did not include Gabor's customary motivational speech, which always works for me.
+             </p>
+
+             <p>
+             <strong>Garbage Collection</strong>
+             </p>
+
+             <p>
+             Shlomo kicked off the meeting with a highly focused talk about garbage collection. He started with the general
+             computer science problem, and ended with the Perl situation.
+             One interesting point he made is that sometimes it just does not matter. Another is that it is a very old,
+             well understood problem. He talked a little about computer science history and biographies.
+             I would have liked to see more practical examples where GC is an issue, but perhaps there was no time.
+             There were many questions during the talk, and at least 3 arguments.
+             Another reference to the subject, which shows the weaken solution Shlomo talked about, and a technique using
+             proxies (for when you cannot use weak refs), is at http://www.perl.com/pub/a/2002/08/07/proxyobject.html.
+             (note - here's <a href="http://developers.slashdot.org/article.pl?sid=04/01/07/1535206">a slashdot thread about memory allocation with some interesting and relevent posts</a> - Offer Kaye)
+             </p>
+             <p>
+             <strong>TDD with Eclipse</strong><br />
+             </p>
+
+             <p> Next Ran Eilam gave a 7 minute talk about test driven
+             development with Eclipse, focusing on how to get eclipse to write
+             code for you, according to the only thing you actually do write
+             (almost): the unit test.  Mikhael Goikhman was not impressed. His
+             position is that people who use this will become code monkeys, and
+             will not understand the code they write. Kfir wanted the Eclipse
+             quick-fix feature for a Perl IDE (who doesn't?), but thought maybe
+             it can be done. After we convinced him out of it, Offer voiced a
+             hope that maybe a non-optimal solution, a <em>good-enough</em>
+             solution, could be found. After discussion, we decided that
+             probably not.  </p>
+
+             <p>
+             <strong>Haskell</strong><br />
+             </p>
+
+             <p>
+             Shlomi Fish gave a computer-science-style introduction to Haskell. Now we know where the verb <em>to curry</em>
+             comes from. He chose good examples, and explained the easy ones very well. We had some problems
+             with the more complex. It seems functional programming is incompatible with how most of the il
+             mongers think. This makes it hard to learn, as you must change the way you think..
+             The run-length encoding example was particularly succinct, and I wait with anticipation to see its Perl
+             twin. Generally, if you give a foreign language talk to the mongers, try to connect it as much as
+             possible to Perl.
+             </p>
+
+             <p> <em>Update</em>: Shlomi Fish and Mikhael Goikhman have
+             provided Perl <a
+             href="http://mail.perl.org.il/pipermail/perl/2003-December/003635.html">imperative</a>
+             and <a
+             href="http://mail.perl.org.il/pipermail/perl/2003-December/003636.html">functional</a>
+             solutions respectively.  Thus we are able to see that this is a
+             problem that lends itself better to a functional solution.  Which
+             opens questions like: <em>what kinds of problems are best solved
+             in a functional way?</em> and others, that will be answered if
+             someone does the <strong>Functional Programming in Perl</strong>
+             talk that Shlomo requested.  </p>
+
+             <p> As always, my critique of Shlomi is that for some reason,
+             despite overwhelming evidence, he thinks we are way smarter than
+             we really are.  </p>
+
+             <p><strong>Godfather</strong></p>
+
+             <p> Some of us headed for the bar. The owners were very nice to
+             us, and Offer had some bizzare smoked sardine mezzet.  It was
+             strange talking Perl with this funky fish staring at me. The
+             problem went away when Offer disposed of the head.  Because Migo
+             requested, we agreed to sit outside, as he had obviously not been
+             outside for many months.<br /> Turns out the pub is a
+             reincarnation of a super-sleazy 25 year old Haifa pub in the
+             harbor, usually visited by sailors and the women who love them. In
+             my youth I had some great fun there.<br /> There was an argument
+             about pair programming, talk about verilog text editors, and many
+             other subjects I cannot possibly remember. They are washed forever
+             by the sands of time, as is this review.
+
+             </p>

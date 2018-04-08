@@ -1,0 +1,139 @@
+
+YAPC::Israel::2006 - Call for Papers and Participation
+--------------------------------------------------------
+
+After three Perl conferences in Israel ( http://www.perl.org.il/YAPC/ ) 
+it seems it is time to enlarge the conference and include other, related 
+Open Source technologies as well.
+
+In February 2006, we are going to have a 3 day long conference in 3 parallel
+tracks covering various Open Source fields:
+- Programming languages: Perl, Python, PHP, Tcl, Ruby, Haskell, ...
+- Databases: MySQL, PostgreSQL, SQLite, ...
+- Version Control: Subversion, SVK, Arch, Darcs, ...
+
+Other suggestions are welcome!
+
+
+Keynote Speaker
+-----------------
+Larry Wall, inventor of Perl
+
+
+
+Special Guest
+--------------
+Autrijus Tang, Chief Pugs Hacker
+
+
+
+Date and Location
+-------------------
+The conference will be held in February 2006 in Israel.
+Exact dates and location will be announced soon.
+
+
+Announcements
+-------------
+The best way to be up to date on the conference is to join our low volume
+news mailing list at   http://www.perl.org.il/mailman/listinfo/news
+
+
+Participation fee
+------------------
+                              Company          Individual
+Full fee                      200 USD+VAT      450 NIS
+Early bird discounted fee:    100 USD+VAT      290 NIS
+
+- VAT is only relevant to Israeli companies
+- Early bird dead-line will be announced along with the dates
+  of the conference and will be approximately 30 days before 
+  the conference.
+- Speakers of talks 20 minutes or longer are invited to help cover
+  the conference expenses by paying the participation fee but are 
+  not required to so.
+
+
+Tracks or Workshops
+-------------------
+This year we are planning to have several well defined tracks or workshops. 
+Each track will contain tutorial-like presentations on both introductory and
+advanced level. In addition we are planning to have "use cases", that is
+people showing us case studies on how they use the given technology in
+that field.
+
+The major tracks we are interested are the following:
+
+- Using P for web application development
+- GUI development with P and Tk (or other Toolkit)
+- Using P for testing
+- How to write and maintain large applications in P?
+- Embedding P (Featuring sample application that uses P in itself)
+- Windows System Administration using P
+- mod_perl
+- P and databases
+- OOP
+
+- In addition we would like to see talks about new and intersting
+  technologies such as Ruby on Rails or PyPy and fun with P
+
+Replace P in the above sentences with your favorite programming language.
+
+Other suggestions for tracks are welcome!
+
+Beginners track
+---------------
+Last year the beginners track was a surprisingly successful one. 
+This year we would like to repeat it. We would welcome the same
+speakers with the same or improved version of their talks. In 
+addition we would like to see new faces and new talks in the
+beginners track.
+
+
+
+Length
+-------
+20, 40, 60 min presentations
+90, 180 min tutorials
+5 min lightning talks
+
+Language
+----------
+Hebrew or English
+
+
+
+Hackaton 
+---------
+As Autrijus is going to stay in Israel a few weeks we are planning to 
+provide him with a platform to hack on. For this after the conference
+we are planning to go out to the wilderness for a few days with 
+notebooks and an uplink to the world and do some Pugs hacking.
+
+That is, the more adventures types can join this additional event.
+We are goint to rent rooms in a "Zimmer" (B&B for the British) and move 
+there for a long weekend.
+
+This is a very good opportunity to get started with Perl6 or Haskell 
+or both.
+
+Exact details will be announced later. 
+Expected cost for the hackathon is ~ 40 USD/night/person + food.
+
+
+So what TODO now?
+------------------
+Start thinking now about your presentation, ask us questions
+if something is not clear so we can have a full size conference
+by February.
+
+
+
+Contact
+--------
+You can reach the organizers at:     yapc-organizers@perl.org.il 
+
+Gabor Szabo
+Perl Monger
+
+

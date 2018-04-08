@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>12. Session ending</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="CLI Automatic Test with Perl"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="11. Log files"
+HREF="c177.html"><LINK
+REL="NEXT"
+TITLE="13. CLI Automatic Test"
+HREF="c201.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>CLI Automatic Test with Perl</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c177.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="c201.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="AEN185">12. Session ending</H1
+><P
+>   Debugging disconnect process is no straight forward. Expects debugger
+   does not work after disconnecting from the program, because debugger
+   read from standard input which is closed after disconnecting from the
+   process.
+  </P
+><P
+></P
+><UL
+><LI
+><P
+>     <TT
+CLASS="GUILABEL"
+><B
+>$obj-&#62;send("quit|exit|bye|\cC")</B
+></TT
+>
+    </P
+><P
+>&#8212; Quiting from within the process.</P
+></LI
+><LI
+><P
+>     <TT
+CLASS="GUILABEL"
+><B
+>$obj-&#62;soft_close()</B
+></TT
+>
+    </P
+><P
+>&#8212; Waiting 15s for process to send EOF.</P
+></LI
+><LI
+><P
+>     <TT
+CLASS="GUILABEL"
+><B
+>$obj-&#62;hard_close()</B
+></TT
+>
+    </P
+><P
+>&#8212; Brute quiting, kill the spawned process.</P
+></LI
+></UL
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c177.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="c201.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>11. Log files</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>13. CLI Automatic Test</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

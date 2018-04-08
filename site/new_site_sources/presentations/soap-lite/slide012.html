@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Sometimes You Need To Construct Data Structures</TITLE>
+<META NAME="generator" CONTENT="txt2html v1.25">
+<LINK REL='start' HREF='slide002a.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='first' HREF='slide002a.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='last' HREF='slide014.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='next' HREF='slide013.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='previous' HREF='slide009.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='contents' HREF='TABLE_OF_CONTENTS.html' TYPE='text/html; charset=utf-8'>
+</HEAD>
+<BODY BGCOLOR="#ffffff" BACKGROUND="background.jpg"><FONT SIZE=4>
+
+<table width=100% bgcolor=black cellspacing=0 border=0>
+<tr><td width=33%><a href="slide013.html"><font color="white">Next</font></a></td>
+    <td align=center width=33% ><font color="white">SOAP::Lite Client Experiences</font></td>
+    <td align=right width=33%><font size="+1" color="white"><b>12</b></font></td>
+</tr>
+</table>
+
+
+
+<H1><A NAME="section-1">Sometimes You Need To Construct Data Structures</A></H1>
+
+<UL>
+  <LI><p> When you need to construct data structures to pass to the SOAP service, then simplify your code with:<!-- list end--></p>
+
+</UL>
+<PRE><B>
+     import SOAP::Data qw/name value/;
+</B></PRE>
+
+<UL>
+  <LI><p> And use <FONT COLOR="#000088"><B><TT>name()</TT></B></FONT> and <FONT COLOR="#000088"><B><TT>value()</TT></B></FONT> when constructing the data structures.<!-- list end--></p>
+
+</UL>
+<PRE><B>
+        my $reported = name(
+            reportedbylist =&gt; [
+              name( item =&gt; \value(
+                name( comments  =&gt; $comments ),
+                name( showorder =&gt; 0         )-&gt;type('xsd:short')
+              ))-&gt;type('ttns:CReportedByRecord')
+            ]
+        );
+
+        my $defect = name('pDefect' =&gt; \value(
+            name( summary   =&gt; $summary         ),
+            name( enteredby =&gt; $currentUserName ),
+            name( priority  =&gt; $priority        ),
+            name( reference =&gt; $reference       ),
+            $reported
+        ))-&gt;type('ttns:CDefect');
+</B></PRE>
+
+<UL>
+  <LI><p> Note that the array reference with a special type will translate to an XML array.<!-- list end--></p>
+
+  <LI><p> Where do you find the type definitions? In the WSDL.<!-- list end--></p>
+
+  <LI><p> I think that SOAP::Lite should look at the WSDL for building data structures, but it doesn't.<!-- list end--></p>
+
+</UL>
+
+
+<br clear=all>
+
+<table width=100% bgcolor=black cellspacing=0 border=0>
+<tr>
+    <td align=right width=33%><font color="white">Copyright &copy; 2004 David Baird</font></td>
+</tr>
+</table>
+
+
+
+</FONT></BODY>
+</HTML>

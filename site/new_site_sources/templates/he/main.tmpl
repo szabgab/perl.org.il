@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
+<head>
+   <tmpl_include name="header.tmpl">
+
+   <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+   <meta name="author" content="Offer Kaye" />
+   <meta name="generator" content="HTML::Template" />
+   <meta name="keywords" content="<tmpl_var meta_keywords>" />
+   <link rel="stylesheet" type="text/css" href="/css/main-screen.css" media="screen" title="Main CSS (screen)" />
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+   <script src="javascripts/sorttable.js" type="text/javascript"></script>
+</head>
+
+<body>
+   <!-- For non-visual user agents: -->
+   <div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
+
+   <!-- ##### Header ##### -->
+   <div id="header">
+      <h1 class="headerTitle">
+	 <a href="index.html" title="Browse to homepage">Israel.pm - <span>The Israeli Perl Mongers</span></a>
+      </h1>
+      <div class="subHeader">
+	 <span class="doNotDisplay">Navigation: </span>
+	 <tmpl_include name="navigation.tmpl">
+      </div>
+   </div>
+
+   <div id="side-bar">
+      <!-- ##### Left Sidebar ##### -->
+      <div class="leftSideBar">
+	 <tmpl_include name="left_sidebar.tmpl">
+
+	 <tmpl_if name="homepage">
+	    <tmpl_include name="related_sites_list.tmpl">
+	 </tmpl_if>
+      </div>
+      <!-- ##### Right Sidebar ##### -->
+      <div class="rightSideBar">
+         <tmpl_include name="right_sidebar.tmpl">
+      </div>
+   </div>
+
+   <!-- ##### Main Copy ##### -->
+   <div id="main-copy">
+      <tmpl_if name="homepage">
+	 <tmpl_include name="index_content.tmpl">
+      </tmpl_if>
+      <tmpl_if name="about">
+	 <tmpl_include name="about_content.tmpl">
+      </tmpl_if>
+      <tmpl_if name="mailing">
+	 <tmpl_include name="mailing_lists_content.tmpl">
+      </tmpl_if>
+      <tmpl_if name="meetings">
+	 <tmpl_include name="meetings_content.tmpl">
+      </tmpl_if>
+      <tmpl_if name="yapc">
+	 <tmpl_include name="yapc_content.tmpl">
+      </tmpl_if>
+      <tmpl_if name="library">
+	 <tmpl_include name="library_content.tmpl">
+      </tmpl_if>
+      <tmpl_if name="misc">
+	 <tmpl_include name="misc_content.tmpl">
+      </tmpl_if>
+      <tmpl_if name="business">
+	 <tmpl_include name="business_content.tmpl">
+      </tmpl_if>
+      <tmpl_if name="error">
+	 <tmpl_include name="error_content.tmpl">
+      </tmpl_if>
+   </div>
+
+   <!-- ##### Footer ##### -->
+   <tmpl_include name="footer.tmpl">
+</body>
+</html>

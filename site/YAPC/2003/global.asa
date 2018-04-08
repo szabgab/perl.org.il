@@ -1,0 +1,190 @@
+
+use File::Basename; 
+use XML::Simple;
+use Fcntl ':flock';
+#use Data::Dumper;
+
+sub myheader {
+  my $txt = "YAPC::Israel::2003";
+
+  $Response->{Charset} = qq(iso-8859-1);
+
+  my $title = shift;
+print <<HTML;
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>$txt - $title</title>
+<link rel="stylesheet" type="text/css" href="/style.css"> 
+<meta name="ICBM" content="31.8953, 35.0115">
+<meta name="DC.title" content="Perl Conference in 2003 in Haifa University">
+</head>
+
+<body>
+<center><h1>$title</h1></center>
+<table width="90%">
+HTML
+}
+
+sub myfooter {
+print <<HTML;
+</table>
+</body>
+</html>
+HTML
+}
+
+sub mysidebar {
+my $links = <<LINK;
+<td width=100 valign=top>
+<a href=index.html><img border=0 src="/img/yapsi.gif"
+alt="YAPC::Israel::2003 logo"></a>
+<a href=index.html>Home</a><br>
+<a href=news.html>News</a><br>
+<a href=milestones.html>Milestones</a><br>
+<a href=registration.html>Registration</a><br>
+<a href=speakers.html>Speakers</a><br>
+<a href=dinner.html>Dinner</a><br>
+<a href=presentations.html>Presentations</a><br>
+<a href=slides.html>Slides</a><br>
+<a href=pictures/>Pictures</a><br>
+<a href=retrospective.html>Retrospective</a><br>
+<a href=schedule.html>Schedule</a><br>
+<a href=training.html>Training</a><br>
+<a href=organizers.html>Organizers</a><br>
+<a href=sponsors.html>Sponsors</a><br>
+<a href=location.html>Location</a><br>
+<a href=other_yapc.html>Other YAPCs</a><br>
+<hr align=left width="80%">
+<a href="/">perl.org.il</a><br>
+
+</td>
+LINK
+my $uri = $Request->ServerVariables('REQUEST_URI');
+if ($uri eq "/index.html") { $uri = "/";}
+$links =~ s{<a href=$uri>(.*?)</a>} {<b>$1</b>};
+
+print $links;
+
+}
+
+
+sub update_xml {
+    my $email = shift;     # the key
+    my $action = shift;    # add/update      # delete ?
+    my $this = shift;         # receive a piece in the XML file
+    
+    my @actions = qw(add update);
+    return 1 unless grep {$action eq $_} @actions; # check if valid action was passed
+
+
+    open F, "+<reg.xml" or return 2;
+    flock F, LOCK_EX;
+    my $data;
+    {
+	local $/=undef;
+	$data = <F>;
+    }
+
+    my $all = XMLin($data, keyattr => 'email', keeproot=>1);
+
+    if ($action eq 'update') {
+       if (defined $all->{yapc}->{person}->{$email}) {
+	  $all->{yapc}->{person}->{$email} = $this;
+       } else {
+          close F;
+	  return 3;
+       }
+    }
+
+    if ($action eq 'add') {
+       if (defined $all->{yapc}->{person}->{$email}) {
+          close F;
+	  return 4;
+       } else {
+	  $all->{yapc}->{person}->{$email} = $this;
+       }
+    }
+
+    my $out = XMLout($all, keyattr =>'email', noattr => 1, keeproot=>1);
+
+
+    seek F,0,0;
+    truncate F,0;
+    print F $out;
+    close F;
+    return 0;
+}
+
+
+sub generate_pw {
+    my $str='qwertyuiopasdfghjklzxcvbnm';
+
+    my $pw = '';
+    foreach (1..6) {
+	$pw .= substr ($str, int (rand(length $str)),1);
+    }
+    return $pw;
+}
+
+sub fetch_data {
+    my $email = shift;
+
+    open F, "<reg.xml" or return 0;
+    flock F, LOCK_EX;
+    my $data;
+    {
+	local $/=undef;
+	$data = <F>;
+    }
+    close F;
+
+    my $all = XMLin($data, keyattr => 'email', keeproot=>1);
+    if (defined $all->{yapc}->{person}->{$email}) {
+       return $all->{yapc}->{person}->{$email};
+    } else {
+       return 0;
+    }
+}
+
+
+sub check_login {
+    my ($email, $password) = @_;
+
+    my $h = fetch_data($email);
+    if (defined $h and  $h->{password} eq $password) {
+       return $h;
+    } else {
+       return undef;
+    }
+}
+
+use XML::Simple;
+my %presentations;
+unless (%presentations) {
+    my $ref = XMLin('presentations.xml', keyattr => 'id');
+    %presentations = %{$ref->{entry}};
+    foreach my $id (keys %presentations) {
+        delete $presentations{$id} if $presentations{$id}{status} eq 'canceled'
+    }
+}
+
+sub read_presentations {
+    return %presentations;
+}
+
+sub entry {
+    my $id = shift;
+
+    if (defined $presentations{$id}{title}) {
+       print qq(<a href="presentations.html?#$id">$presentations{$id}{title}</a>);
+       print "<br>";
+       print "(" . $presentations{$id}{name} . ")";
+       print "(" . $presentations{$id}{length} . " min)";
+       print "(" . $presentations{$id}{language} . ")" if
+       $presentations{$id}{language} eq "English";
+
+    } else {
+       print "na";
+    }
+}

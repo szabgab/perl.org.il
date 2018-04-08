@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>TEMPLATE_TITLE</TITLE>
+<BODY bgColor=white>
+<TABLE align=center width="70%">
+  <TBODY>
+  <TR>
+    <TD>
+      <H1>TEMPLATE_TITLE</H1>
+      <P>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD width=150><A href="TEMPLATE_URL"><IMG border=0 alt=""
+            src="/img/TEMPLATE_PICTURE"></A> </TD>
+          <TD>
+            <TABLE>
+              <TBODY>
+              <TR>
+                <TD>Title:</TD>
+                <TD>TEMPLATE_TITLE</TD></TR>
+              <TR>
+                <TD>Author:</TD>
+                <TD>TEMPLATE_AUTHORS</TD></TR>
+              <TR>
+                <TD>Publisher</TD>
+                <TD>TEMPLATE_PUbLISHER_WITH_LINK</TD></TR>
+              <TR>
+                <TD>ISBN:</TD>
+                <TD>TEMPLATE_ISBN</TD></TR>
+              <TR>
+                <TD>Publishing date:</TD>
+                <TD>TEMPLATE_YEAR_MONTH</TD></TR>
+              <TR>
+                <TD>Pages:</TD>
+                <TD>TEMPLATE_PAGES</TD></TR>
+              <TR>
+                <TD>Reviewer:</TD>
+                <TD>TEMPLATE_REVIEWER_NAME_LINK</TD></TR>
+              <TR>
+                <TD>Review date:</TD>
+                <TD>TEMPLATE_YEAR_MONTH</TD></TR>
+              <TR>
+                <TD>Rating:</TD>
+                <TD>TEMPLATE_RATING</TD></TR>
+              <TR>
+                <TD></TD>
+                <TD></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<p>
+TEMPLATE_THEREVIEW
+      <P></P></TD></TR></TBODY></TABLE>
+<!--#include virtual="../footer.html" -->
+</BODY></HTML>

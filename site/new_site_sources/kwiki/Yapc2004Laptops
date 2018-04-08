@@ -1,0 +1,130 @@
+This page is meant to help presenters organize laptops at YapcIsrael2004
+
+For now, we'll make just the list of presentations and a list of available laptops.  Once the schedule is posted, we'll reorganize availability of laptops for specific timeslots.
+
+If you /need/ a laptop, add which formats you'd like to have (in order of preference) on the laptop.
+
+If you /have/ a laptop, add a * by your name and say which programs and which OS you have on-board.
+
+== Desktops
+Sorry no laptops here but we found out that in every lecure room in IDC there is a Windows PC. Most likely you'll have Internet connection and they seem to have a CD in each one. There is IE6.0 on them. My suggestions is to
+0 send your slides to gabor@perl.org.il so he can put them on the web site
+0 bring the slides on a floppy
+0 bring the slides on a CD
+so you have 3 options to retrieve your data
+
+(What about USB for DiskOnKey ?)
+
+Laptops can be connected to the projector but mine did not work
+-- GaborSzabo
+
+== Presentations with uncertain laptop requirements or availability ==
+If your presentation doens't /need/ a laptop (eg, lightning talk), please remove it from this list
+
+Why Inline is so Cool
+by: David Baird
+
+Writing crossplatform GUI's with Gtk2
+by: Dov Grobgeld
+
+Managing Versions of Perl Software
+by: Elliot Jaffe
+
+Solutions to Cross Platform Scripting
+by: David Baird
+
+write in perl on a Linux Cluster
+by: Itzik Lerner
+
+How to build a Perl Linux Cluster - setp by step
+by: Itzik Lerner
+
+What Ruby can't do that Perl can
+by: MikhaelGoikhman
+(HTML)
+
+Artificial Intelligence and Perl
+by: Mikhael Goikhman
+(Working Perl, preferably Linux, HTML)
+
+use threads;
+by: Ido Trivizki
+
+Shavin' another bit
+by: Ido Trivizki
+
+System Monitoring with Perl
+by: Martha Greenberg
+(HTML)
+
+== Presentations that need laptops ==
+
+LM-Solve - A Logic Mazes Solver
+by: Shlomi Fish
+- I'll need a laptop with a decent modern web-browser (that supports XHTML 1.0 and CSS well) and either an Internet connection, a CD-ROM drive or a floppy disk drive.
+
+Introduction to the Template Toolkit
+by: Shlomi Fish
+- I'll need a laptop with either MS PowerPoint (XP is preferable but I think 97/2000 should do as well), or Open Office (1.1.x is preferable, but I think 1.0.x should do as well)
+
+Making your objects smell funny
+by: Yuval Kogman
+(PDF or DVI viewer)
+(I will be bringing a laptop, but it has no VGA output - old iBook, MacOSX 10.3. If people huddle, I don't mind anyone using it. It's got RJ45, USB and CD-ROM (no ext2 and derivs))
+
+Harnessing the Power of the Web with Libwww-perl
+by: Nadav Har'El - I don't have a laptop, and I'll need somehow to make a presentation. I'll probably want my presentation to be in OpenOffice format, most likely in English.
+
+== Presentations with laptops ==
+
+Writing web applications with Perl and...
+by: IssacGoldstand
+(PowerPoint2000 - I went and borrowed a laptop from someone, but they asked that it not be re-lent :-( Sorry, folks.)
+
+Bye Bye EEK - Improving design with the Aspect module
+by: Ran Eilam
+
+== Laptop slots ==
+These slots will be filled with the specific laptops in a given room at a given time.
+
+Non-presenters who already know which presentations they plan on being at should fill this in to give presenters who need a laptop a good idea of what will be available in that room.  Do *NOT* assume that just because a laptop is in your room means you can use it - that should be worked out with the laptop owner, and marked above if final.  Information here is meant to be a reference only (or to help arrange a backup if something happens to your arranged laptop)
+
+* Lightning Talks
+** I think we can assume that we'll have one or two laptops here for people who need one for their talk, but just to be safe...
+***  Gaal is bringing a laptop (see http://perl.org.il/pipermail/perl/2004-February/004317.html )
+
+* Timeslot 1 (11:10 - 12:10)
+** Room 1 - Solutions to Cross Platform Scripting
+*** /No laptops/
+** Room 2 - Bye Bye EEK - Improving design with the Aspect module
+*** /No problems/
+** Room 3 - How to build a Perl Linux Cluster - step by step
+*** /No laptops/
+
+* Timeslot 2 (12:15-12:45)
+** Room 1 - System Monitoring with Perl
+*** /No laptops/
+** Room 2 - use threads;
+*** /No laptops/
+
+* Timeslot 3 (14:00 - 14:30)
+** Room 1 - Harnessing the Power of the Web with Libwww-perl
+*** /No laptops/
+** Room 2 - Making your objects smell funny
+*** /No laptops/
+
+* Timeslot 4 (14:35 - 15:35)
+** Room 1 - Writing web applications with Perl and...
+*** /No laptops/
+** Room 2 - LM-Solve - A Logic Mazes Solver
+*** /No problems/
+** Room 3 - Managing Versions of Perl Software
+*** /No laptops/
+
+* Timeslot 5 (16:00 - 17:00)
+** Room 1 - Writing crossplatform GUI's with Gtk2
+*** /No laptops/
+** Room 2 - Artificial Intelligence and Perl
+*** /No laptops/
+** Room 3 - Write in perl on a Linux Cluster
+*** /No laptops/

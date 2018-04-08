@@ -1,0 +1,36 @@
+---
+20080316:
+  agenda_items:
+    - item: 'Ran Eilam - "Config::* - the Alenby St. of CPAN". (30 minutes)'
+    - item: '(Fallback) Shlomi Fish - "There are Too Many Ways to do it"'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  items:
+    - description: 'Ran Eilam - "Config::* - The Alenby St. of CPAN"'
+      end: 19:15
+      speaker: Ran Eilam
+      start: 18:30
+      title: Config::*
+    - description: 'Shlomi Fish - "There are Too Many Ways to do it"'
+      end: 20:00
+      speaker: Shlomi Fish
+      start: 19:30
+      title: There are Too Many Ways to do it.
+  location: Schreiber 008 in Tel Aviv University
+  participants:
+    - name: Unknown
+  report_text: "<p>\nHello\n</p>\n"
+20080723:
+  agenda_items:
+    - item: 'Ido Kanner - "puts Ruby - Cool Stuff and What to be Aware" (100 minutes)'
+  items:
+    - description: |-
+        Ido Kanner will talk about Ruby - cool stuff there, and what one
+        should be aware of when first trying to program in it.
+      end: 20:30
+      speaker: Ido Kanner
+      start: 18:30
+      title: puts Ruby
+  location: Schreiber 008 (Maths and CS) in Tel Aviv University
+  participants:
+    - name: Unknown
+  report_text: "<p>\nHello\n</p>\n"

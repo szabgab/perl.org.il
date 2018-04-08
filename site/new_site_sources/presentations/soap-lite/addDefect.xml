@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+   <SOAP-ENV:Body>
+       <namesp9:addDefect xmlns:namesp9="urn:testtrack-interface">
+           <cookie xsi:type="ns:long" xmlns:ns="http://www.w3.org/2001/XMLSchema">459015</cookie>
+           <pDefect xsi:type="ttns:CDefect">
+               <summary xsi:type="xsd:string">fjsdklf djsl fdjsklfjsdklfjs</summary>
+               <enteredby xsi:type="xsd:string">Baird, David</enteredby>
+               <reportedbylist xsi:type="SOAP-ENC:Array" SOAP-ENC:arrayType="ttns:CReportedByRecord[1]">
+                   <item xsi:type="ttns:CReportedByRecord">
+                       <comments xsi:type="xsd:string">fjksdlf jsdkl fjsdkl fjsdkl fjsdl</comments>
+                   </item>
+               </reportedbylist>
+               <eventlist xsi:type="ttns:CDefectEvent" SOAP-ENC:arrayType="xsd:anyType[2]">
+                   <item xsi:type="ttns:CAssignDefectEvent">
+                       <user xsi:type="xsd:string">Baird, David</user>
+                   </item>
+                   <item xsi:type="ttns:CEstimateDefectEvent">
+                       <assignedby xsi:type="xsd:string">Baird, David</assignedby>
+                       <estimateddate xsi:type="xsd:date">2004-05-30</estimateddate>
+                   </item>
+               </eventlist>
+           </pDefect>
+       </namesp9:addDefect>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

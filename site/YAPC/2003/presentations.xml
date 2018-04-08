@@ -1,0 +1,754 @@
+<conference>
+  <entry>
+    <id>0</id>
+    <type>Presentation</type>
+    <title>Programming Perl in the .NET Environment</title>
+    <name>Yevgeny Menaker</name>
+    <email>genmen@post.tau.ac.il</email>
+    <material>received</material>
+    <description>
+I would like to propose a 30 minute talk about PerlNET based on the
+knowledge I acquired during writing of the "Programming Perl in the .NET
+Environment" book and close work with ActiveState.
+
+I would like to include the following topics in my talk:
+1. A very short intro to .NET - a few sentences
+2. What is PerlNET and where to get it?
+3. Overview of main features of the product
+4. Samples of usage and advantages of PerlNET
+    - Wrapping Existing Modules (e.g. from CPAN)
+    - Creating Object Oriented Components
+    - Wide possibilities for usage of .NET classes (ADO.NET, WinForms)
+5. PerlNET and ASP.NET platform - PerlASPX product.
+6. Sources of additional information and references.
+</description>
+    <bio>
+Yevgeny Menaker is a developer, author and Linux consultant . Yevgeny has
+been a Manager of Internet Applications focusing on new and advanced
+Internet technologies for the past 3 years. His team developed
+Internet/COM/ATL applications and with time migrated to .NET technology.
+During the army service he also worked in the bioinformatics group of
+Tel-Aviv University. He developed C++(Linux) and Web (Apache/JSP/Perl)
+applications for analyzing proteins 3-D structure.He is a lead-author of
+Programming Perl in the .NET Environment, Prentice-Hall PTR,
+0130652067.Additionally, he worked with Object Innovations as a Linux
+consultant. He graduated with distinction with a B.Sc. in Computer Sciences.
+Currently, Yevgeny works for Vidius Israel Ltd. developing security-oriented
+products.
+</bio>
+    <language>Hebrew</language>
+    <length>30</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>1</id>
+    <type>Presentation</type>
+    <title>Developing and distributing Perl applications for Microsoft platforms</title>
+    <name>Jouke Visser</name>
+    <email>jouke@pvoice.org</email>
+    <material>canceled</material>
+    <description>
+0. Which Perl Interpreter
+- ActiveState Perl
+- IndigoPerl
+- Cygwin
+- Rolling your own
+1. Integrated Development Environments
+- Perl Builder
+- Komodo
+- HWXperl
+- Open Perl IDE
+- visiPerl+
+- PerlEdit
+- Perl Oasis/UltraEdit
+2. Special Considerations
+- Implementation Differences
+- Installing Modules
+   CPAN
+   CPANPLUS
+   PPM
+IndigoStar Package Manager
+3. Choosing your GUI toolkit
+- Tk
+- Win32::GUI
+- Wx
+4. Not doing everything by hand
+- Guido (for Tk)
+- The GUI Loft (for Win32::GUI)
+- wxDesigner (for Wx)
+5. Using Components
+- Win32::OLE
+   ActiveX components
+   OLE Browser
+- Win32::API
+   external DLL's
+- Win32::Registry
+- Win32::ODBC
+6. Debugging
+- Perl Tk Debugger
+- ActiveState Visual Debugger
+7. How do we distribute it?
+- Plain Perl?
+   Does the end-user have Perl?
+   Does he know how to install modules?
+- 'Compiling' Perl
+   PerlApp
+   Perl2Exe
+   PerlBin
+- Problems after compilation
+8. Wrapping it up
+- Zip it
+- Making a nice installer
+   Inno Setup
+   PerlMSI
+</description>
+    <bio>
+</bio>
+    <language>English</language>
+    <length>90</length>
+    <status>canceled</status>
+  </entry>
+  <entry>
+    <id>2</id>
+    <type>Presentation</type>
+    <title>Rui - Remote User Interface: A Perl GUI Framework</title>
+    <name>Ran Eilam</name>
+    <email>eilara@cortext.co.il</email>
+    <material>received</material>
+    <description>
+On one hand you need a rich UI, because you need the usability of
+desktop applications. On the other, you need a thin browser-based UI,
+because that is what users want. It seems as if the only solution is to
+develop 2 distinct user interfaces.
+
+Rui is a UI framework that allows you to develop rich desktop
+applications, and deploy them as "pure" web applications. It works by
+partitioning the user interface between client and server. Unlike
+X-Windows and similar technologies, the UI is partitioned at the widget
+level, so it can work under very low bandwidth.
+
+The users get applications that behave exactly like rich desktop
+applications, while the system administrators get applications that
+behave exactly like web applications- no downloads, installations, or
+security privileges required. Developers can throw away clunky web
+application framework, and get back to programming MVC user interfaces
+in the Smalltalk style.
+
+The talk will introduce people to Rui and share our experiences in
+developing PerlRui:
+
+1) The problem
+
+2) Rui demos
+
+3) We will write a small Rui application
+
+4) How Rui widgets work
+
+5) Rui MVC, application models, and value-nets
+
+6) Rui design choices, like why we did not implement the Tk API
+
+7) Perl and software engineering report: OO, AOP (using the Aspect
+module for distributed objects), unit testing (Test::Unit), mock
+objects, patterns, and other types of PerlRui laziness
+
+8) We developed Rui in Perl and in Java. How do they compare?
+
+9) There are several options for Perl user interfaces. How does Rui compare?
+
+10) Where did Perl help us? Where did it fail us?
+
+People will enjoy the talk because many Perl developers are disappointed
+with web application frameworks, and because of the experience report on
+developing in OO Perl.
+</description>
+    <bio>http://www.cortext.co.il/</bio>
+    <language>English</language>
+    <length>30</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>3</id>
+    <type>Presentation</type>
+    <title>CLI Testing</title>
+    <name>Thomas Maier</name>
+    <email>hayzer@012.net.il</email>
+    <material>received</material>
+    <description>I would like to propose a short lesson about using Perl in creating
+automatic test on remote network devices. The follow topics will include:
+ 
+    1. Expect is easy - short intro to expect (general idea).
+    2. Short intro to Expect.pm.
+    3. Standard output and error in Expect.
+    4. Why it's good to create your own module for DUT (device under test).
+    5. How XML can help in regression tests.
+ 
+ 
+Skills level : beginner-intermediate
+</description>
+    <bio>
+My name is Thomas Maier. For last 3 years I work in Radware, QA Department.
+I'm testing kind of proxy server (SSL Accelerator) called CertainT 100. Since few month
+I'm studying and trying to involve Perl in the test loop. I discover that Perl is an
+excellent tool to write automatic tests on any (almost,I think) network device.
+And automatic tests are QAer best friend when it comes to regression tests. Not
+only that it can avoid tester brain death it also can save huge among of time. In
+complex devices it's impossible to make full regression test loop every
+incoming build without some automatic process. A base of all test is Expect module,
+which make possible to execute any command on remote device and that way
+creating an running regression tests on its CLI.
+</bio>
+    <language>Hebrew</language>
+    <length>30</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>4</id>
+    <type>Presentation</type>
+    <title>Designing database-bound objects for use in web applications</title>
+    <name>Issac Goldstand</name>
+    <email>margol@beamartyr.net</email>
+    <material>received</material>
+    <description>
+Many perl applications use database back-ends.  In this talk, we will
+discuss different ways of designing intelligent objects which communicate
+between your application and the back-end database.  Additionally, we will
+spend some time discussing on how to optimize these objects for use in web
+applications, in general, and mod_perl applications in specific.  We will
+cover optimizing communications between the objects and the back-end
+database as well as optimizing the design of the objects themselves.  If we
+have time at the end, we'll also discuss a new framework which is being
+designed to ease the creation of these objects.
+</description>
+    <bio></bio>
+    <language>English</language>
+    <length>60</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>5</id>
+    <type>Presentation</type>
+    <title>Hspell, a free Hebrew spell-checker written in Perl</title>
+    <name>Nadav Har'El</name>
+    <email>nyh@math.technion.ac.il</email>
+    <material>received</material>
+    <description>
+Free-software users in Israel that write in Hebrew have sorely missed a
+free Hebrew spell-checker. The Hspell project, by Dan Kenigsberg and Nadav
+Har'El, aims to fill that gap.
+The talk will give a very short introduction to the problem of Hebrew
+spell-checking, shortly highlight our approach, and then discuss and show
+examples of why Perl was chosen from day 1 as the language used by this
+project: The Hspell project includes two parts, both in Perl: the word-list
+builder (automatically inflecting nouns and verbs) and the front-end spell-
+checker.
+Perl allowed us very quick prototyping, and its built-in and powerful
+string-handling capabilities allowed us to easily transfer our linguistic
+ideas into code.
+
+See also http://ivrix.org.il/projects/spell-checker/ and
+http://www.cs.technion.ac.il/~danken/hspell/lecture.html
+</description>
+    <bio></bio>
+    <language>Hebrew</language>
+    <length>30</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>6</id>
+    <type>Presentation</type>
+    <title>Graphical User Interfaces with Tk</title>
+    <name>Ido Trivizki</name>
+    <email>trivizki@bigfoot.com</email>
+    <material>received partial</material>
+    <description>The talk will be a tutorial about creating GUI applications using the popular Tk lib. It will start with an introduction to Tk and an overview of the basic widgets and geometry managers, and continue with an example of an application as a step-by-step by-example tutorial. I hope to touch briefly other GUIs available for Perl (wxPerl, Win32::GUI), if time will allow.
+ </description>
+    <bio></bio>
+    <language>Hebrew</language>
+    <length>90</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>7</id>
+    <type>Presentation</type>
+    <title>X11 Window Managers and Perl</title>
+    <name>Mikhael Goikhman</name>
+    <email>migo@homemail.com</email>
+    <material>received link</material>
+    <description>
+In the Unix world with all its variety, the question of choosing a window
+manager is as acute as choosing a text editor, a mailer or a unix shell,
+and there are endless wars about which one is better. As usual, "better"
+means different things for different people considering lightness,
+manageability, configurability, functionality, scriptability, convenience,
+beauty and so on.
+
+I will give a short introduction to the world of X Window System and all
+Window Managers, used in the well known desktops and apart of those, such
+as Sawfish (GNOME), KWin (KDE), Enlightenment, Window Maker, FVWM.
+Their common parts (ICCCM/EWMH standards) and their differences.
+
+I will demonstrate a Perl applicability in window manager's scripting and
+writing window manager extensions.
+
+Several links on the topic:
+
+  http://www.perldoc.com/perl5.8.0/bin.html   # Scripts starting with fvwm-
+  http://fvwm.org/generated/perllib/          # Perl library for FVWM
+  http://fvwm-themes.sf.net/                  # Fully written in Perl
+  http://freshmeat.net/projects/wmheadlines/  # Menus of headlines for WMs
+  http://perlwm.sf.net/                       # And finally WM in Perl! :-)
+
+The first part of the presentation (30 minutes) will be an introduction
+to X11 (including Perl bindings) to give a minimal background for those
+not familar with Unix or X.
+</description>
+    <bio>
+29 years old geek, uses perl as the primary language and unix as the
+primary OS for 7 years. Actively participates in 3 open source projects.
+An FVWM developer for 3 years. Tall, black haired, wears spectacles.
+Impulsive, knowledge greedy, lazy.
+</bio>
+    <language>Hebrew</language>
+    <length>60</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>8</id>
+    <type>Presentation</type>
+    <title>The Phrasebook pattern and the Class::Phrasebook module</title>
+    <name>Rani Pinchuk</name>
+    <email>rani@cpan.org</email>
+    <material>canceled</material>
+    <description>The talk will start with a description of the PhraseBook
+   design pattern. The two classes Class::PhraseBook and
+   Class::PhraseBook::SQL which implement the pattern will be
+   explained in detail. Examples of usage, and study cases will be
+   followed (like how the Class::PhraseBook::SQL classes helped us in
+   porting from one database to others, or how it helped us to find a
+   bug in Postgres). Finally, the small classes Log::LogLite and
+   Log::NullLogLite will be introduced, and the Null Object pattern
+   will be discussed. 
+
+   The audience should know at least perltoot.
+
+References:
+- PLOP2K publications - the Phrasebook pattern and the Skin pattern:
+  http://jerry.cs.uiuc.edu/~plop/plop2k/proceedings/proceedings.html
+
+- Article on www.perl.com - The Phrasebook Design Pattern:
+  http://www.perl.com/pub/a/2002/10/22/phrasebook.html
+</description>
+    <bio>http://search.cpan.org/author/RANI/</bio>
+    <language>Hebrew</language>
+    <length>60</length>
+    <status>canceled</status>
+  </entry>
+  <entry>
+    <id>9</id>
+    <type>Presentation</type>
+    <title>Scripting Gimp through perl</title>
+    <name>Dov Grobgeld</name>
+    <email>dov@imagic.weizmann.ac.il</email>
+    <material>received link</material>
+    <description>
+Gimp is an interactive image editing program and is one of the flag
+ships of free software applications. In this talk I will describe how
+to write scripts for Gimp in perl. The talk will be based around my
+online tutorial available at
+http://imagic.weizmann.ac.il/~dov/gimp/perl-tut.html 
+</description>
+    <bio>http://imagic.weizmann.ac.il/~dov/</bio>
+    <language>Hebrew</language>
+    <length>60</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>10</id>
+    <type>Presentation</type>
+    <title>Schema and Perl</title>
+    <name>Mark Veltzer</name>
+    <email>mark@veltzer.org</email>
+    <material>canceled</material>
+    <description>
+I have worked with a company called Schema which did
+cellular optimization and 
+which need to import data from a variety of sources.
+The formats of the input 
+were a great many and not well standardized. This
+resulted in me writing the 
+code in Perl which, when viewed over a period of 5
+years, is the reason that 
+the company is still alive and doing well.
+
+The talk would center around benefits of perl in terms
+of:
+1. Speed of delivery.
+2. Working with the source at the client location.
+3. Avoiding low level bugs altogether.
+4. Using perl to integrate systems and set standard
+where there are no 
+standards.
+5. Giving flexibility to the supplier AND to the
+customer of a tailored software 
+package.
+
+This talk is intended to make business people look at
+perl more seriously.
+</description>
+    <bio>http://www.veltzer.org/</bio>
+    <language>Hebrew</language>
+    <length>60</length>
+    <status>canceled</status>
+  </entry>
+  <entry>
+    <id>11</id>
+    <type>Presentation</type>
+    <title>Perl works for business systems</title>
+    <name>Elliot Jaffe</name>
+    <email>jaffe@cs.huji.ac.il</email>
+    <material></material>
+    <description>
+A presentation on PictureVision, a company from 1995 to 2001 that built a
+large scale distributed system in perl and apache.  The system supported
+over 400 terabyte of storage and thousands of simultaneous users.  During
+that time a second system was developed using modperl that handled over a
+million users using a server farm approach.  Come here how Perl was the
+language of choice for fast, robust implementations that didn't miss the
+market.
+</description>
+    <bio>http://www.cs.huji.ac.il/~jaffe/bio.html</bio>
+    <language>English</language>
+    <length>30</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>12</id>
+    <type>Presentation</type>
+    <title>Data Mining and Data Integration</title>
+    <name>Jaime Prilusky</name>
+    <email>jaime.prilusky@weizmann.ac.il</email>
+    <material>received</material>
+    <description>
+A 60 minute talk on data mining and data integration, with
+orientation to biological and medical databases, but the ideas could be
+applied to other areas as well.
+
+It's a presentation with practical working examples, including
+application of todays' recognized protocols, languages and client-server
+services.
+</description>
+    <bio>http://bioinformatics.weizmann.ac.il/jaime_prilusky.html</bio>
+    <language>Hebrew</language>
+    <length>60</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>13</id>
+    <type>Presentation</type>
+    <title>Automating the process of building Stemmers</title>
+    <name>Shlomo Yona</name>
+    <email>shlomo@cs.haifa.ac.il</email>
+    <material>canceled</material>
+    <description>
+Many Information Retrieval and Natural Language Processing systems
+need to be able to tell that groups of words are actually inflections
+of one word (e.g. happy/happiness/unhappiest...). Traditionally this
+usually tackled by manually writing Stemmers that can automatically 
+reduce words to their most probable base form. The process of producing
+such Stemmers demands (in many cases) assistance from a linguist or a 
+native speaker of the language, and in addition a skilled programmer that
+can implement the linguistic rules as a computer program which should be
+easily update. I'll present an algorithm that automates a great deal of this
+process by accepting pairs of words (base form, inflected form), analyzing 
+them while inducing linguistically plausible inflection/derivation rules
+and automatically producing a computer program (e.g. a Perl program) that
+implements a Stemmer. 
+</description>
+    <bio>http://cs.haifa.ac.il/~shlomo/</bio>
+    <language>Hebrew</language>
+    <length>60</length>
+    <status>canceled</status>
+  </entry>
+  <entry>
+    <id>14</id>
+    <type>Presentation</type>
+    <title>Five things every Perl programmer should know</title>
+    <name>Reuven Lerner</name>
+    <email>reuven@lerner.co.il</email>
+    <material></material>
+    <description>
+I've been teaching Perl for a good number of years, and have been
+helping Perl programmers to debug and improve their code for even
+longer than that.  Over time, I've discovered that there are five
+basic issues that consistently confuse Perl programmers:
+
+(1) Compilation vs. runtime
+(2) Undef vs. true vs. false
+(3) Lexicals vs. globals
+(4) Scalar vs. list context
+(5) References
+
+If you understand -- and I mean *really* understand -- all five of
+these items, then you're probably an excellent Perl hacker.  If you
+sorta, kinda, mostly understand them, but cannot articulate just what
+they're about, then you need this talk.
+
+My talk will cover (briefly, I'll admit) each of these issues, in the
+hopes of helping beginning and intermediate Perl programmers closer to
+Perl mastery and true understanding.
+</description>
+    <bio>http://www.lerner.co.il/</bio>
+    <language>Hebrew</language>
+    <length>90</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>15</id>
+    <type>Lightning talk</type>
+    <title>'There and Back Again', or How I Started With C Code and Finished
+With a Perl Module</title>
+    <name>Offer Kaye</name>
+    <email>oferk@oren.co.il</email>
+    <material>received</material>
+    <description>In this lightning talk I'll briefly demonstrate how one can take some
+(portable) ANSI-C library and using SWIG quickly and easily build a Perl
+wrapper for it, and finally how to package the results into a CPAN module.
+</description>
+    <bio></bio>
+    <language>Hebrew</language>
+    <length>5</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>16</id>
+    <type>Lightning talk</type>
+    <title>Sexeger</title>
+    <name>Ido Trivizki</name>
+    <email>trivizki@bigfoot.com</email>
+    <material>received partial</material>
+    <description>Sexeger is the reversed anagram of regexes. A sexeger is a method of building a reversed Regular Expression and matching it against a reversed string in order to improve speed, and sometimes make things much simpler.</description>
+    <bio></bio>
+    <language>Hebrew</language>
+    <length>10</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>17</id>
+    <type>Lightning talk</type>
+    <title>Perl isn't always good</title>
+    <name>Reuven Lerner</name>
+    <email>reuven@lerner.co.il</email>
+    <material></material>
+    <description>
+The Perl community -- and similar open-source language communities --
+seems to think that Perl is the One True Language, and is appropriate
+for just about everything you can imagine.
+
+In this lightning talk, I want to point to some of the places where
+Perl is a bad choice.  In particular, I'll draw upon my experience in
+Web/database development over the last few years, where I've been
+working in Python, Tcl, and Java as well as Perl.
+</description>
+    <bio>http://www.lerner.co.il/</bio>
+    <language>Hebrew</language>
+    <length>5</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>18</id>
+    <type>Lightning talk</type>
+    <title>Using PerlScript</title>
+    <name>Oleg Sverdlov</name>
+    <email>ols@ols.co.il</email>
+    <material></material>
+    <description>
+I'd like to reserve the 5 minutes talk on "Using PerlScript".
+Perlscript is scripting engine for Windows Scripting Host. It
+allows to write Active Server Pages in Perl and access ASP
+objects from Perl scripts. I have been using PerlScript in
+several projects.
+
+PerlScript is a part of ActiveState's Windows' Perl suite,
+distributed free of charge.
+</description>
+    <bio>
+OLS Software
+Website: http://www.ols.co.il</bio>
+    <language>Hebrew</language>
+    <length>5</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>19</id>
+    <type>Lightning talk</type>
+    <title>Meta-Data Database Access</title>
+    <name>Shlomi Fish</name>
+    <email>shlomif@vipe.technion.ac.il</email>
+    <material>received</material>
+    <description>
+In Meta-Data Database Access (my own invented name) one keeps a list of
+a database table fields, their types and parameters in an array, and
+constructs queries, and processes the data based on it. Thus, when a field
+is added, deleted or modified, the modification needs to occur only in one
+place in the code.
+</description>
+    <bio>http://t2.technion.ac.il/~shlomif/</bio>
+    <language>Hebrew</language>
+    <length>5</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>20</id>
+    <type>Poster</type>
+    <title>Can you solve Rubik's Cube? Perl can.</title>
+    <name>Ido Trivizki</name>
+    <email>trivizki@bigfoot.com</email>
+    <material>received partial</material>
+    <description>Describing how I implemented Rubik's Cube using Perl
+    and using that implementation created a program that solves the
+    cube and instructs the user how to solve a cube.
+</description>
+    <bio></bio>
+    <language>Hebrew</language>
+    <length>0</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>21</id>
+    <type>Presentation</type>
+    <title>Twelve Lightning talks</title>
+    <name>Mark Jason Dominus</name>
+    <email>mjd@plover.com</email>
+    <material>received (there is no material)</material>
+    <description>
+    I'll speak on twelve topics for five minutes each.  Come and be surprised.
+    </description>
+    <bio>http://perl.plover.com/</bio>
+    <language>English</language>
+    <length>60</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>22</id>
+    <type>Presentation</type>
+    <title>Perl Quiz-of-the-Week Retrospective</title>
+    <name>Mark Jason Dominus</name>
+    <email>mjd@plover.com</email>
+    <material>received</material>
+    <description>
+    </description>
+    <bio>http://perl.plover.com/</bio>
+    <language>English</language>
+    <length>30</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>23</id>
+    <type>Presentation</type>
+    <title>Rapid development of a web-based user interface with XML, CGI and Perl</title>
+    <name>Shlomo Yona</name>
+    <email>shlomo@cs.haifa.ac.il</email>
+    <material>canceled</material>
+    <description>
+I was in need to build a user interface tool to aid linguists annotate
+natural language text. The tools was required to have minimum fingerprint
+(i.e. minimum stuff to install on the user's side), have a GUI, process
+extramely large files efficiently, work under (almost) every PC/workstation.
+Also, the input and output of this system (the file formats, not the stuff
+the linguist does) have not yet been stable and properly defined, so they
+were bound to change. I turned to a CGI/XML/Perl solution where the code
+lies on the server side and the user accesses the tool using a web browser.
+In this talk I will explain the motivation of using these technologies,
+and walk through the design (and some of the implementation) of this system,
+and how they were influenced by the requirements.
+</description>
+    <bio>http://cs.haifa.ac.il/~shlomo/</bio>
+    <language>Hebrew</language>
+    <length>60</length>
+    <status>canceled</status>
+  </entry>
+  <entry>
+    <id>24</id>
+    <type>Lightning talk</type>
+    <title>Implementing an HTTP Upload Progress Meter</title>
+    <name>Issac Goldstand</name>
+    <email>margol@beamartyr.net</email>
+    <material></material>
+    <description>
+Ever build an application which implements a file upload through an HTTP
+form and say to yourself, 'Gee, I wish browsers had one of those nifty
+download progress meters, just for file *uploads*'?  In these 5 minutes we
+will discuss the Apache::UploadMeter mod_perl module which does just
+that!
+</description>
+    <bio></bio>
+    <language>English</language>
+    <length>5</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>25</id>
+    <type>Presentation</type>
+    <title>The Eobj environment -- Easy Object oriented programming in Perl</title>
+    <name>Eli Billauer</name>
+    <email>eli@billauer.co.il</email>
+    <material></material>
+    <description>
+Eobj is object oriented programming in Perl for the masses. It's is a wrapper for Perl's native handling of objects, and thus it reliefs the programmer from mastering some rather advanced issues in Perl programming.
+
+Unlike native Perl OO programming, using Eobj is based on plain Perl syntax, and the use of some special functions. Methods are defined very much like subroutines, with no need to know how to wrap them in modules. Eobj comes with one predefined root class, which consists of basic methods, including methods for accessing properties easily.
+
+This talk will present the environment's concepts as well as show some quick examples of how it works.
+</description>
+    <bio>
+Electrical Engineer since 1993, with digital communication, signal processing (theory and implementation), MATLAB simulations and VLSI (writes in Verilog) as main interests.
+
+Using Perl and Linux since about 1998. Eli is the author of Eobj.
+
+Freelancer since 2000, carrying out projects in any field where I can be useful. 
+</bio>
+    <language>Hebrew</language>
+    <length>60</length>
+    <status>confirmed</status>
+  </entry>
+  <entry>
+    <id>26</id>
+    <type>Presentation</type>
+    <title>Thokbook: So Many Books, So Little Time</title>
+    <name>Martha Greenberg</name>
+    <email>marthag@mit.edu</email>
+    <material></material>
+    <description>
+http://thokbook.sourceforge.net/
+
+Do you have too many books to keep track of?  If so, you may want to
+learn about Thokbook.
+
+Thokbook is a personal library system, written in perl. It is intended
+for medium to large individual collections (several thousand books).
+With thokbook, you don't need to enter large amounts of information
+for each of your books.  Just scan its barcode or type in the ISBN or
+EAN and thokbook will get the rest of the information from Amazon.
+You can then create web pages so you can list all your books or search
+them. You can also check books in and out and record who checked them
+out.
+
+This talk will be about Thokbook, and about some of the interesting
+problems and solutions I encountered in writing it.  Among the topics I
+will discuss are working with multiple database types, the strange world
+of library terminology, and about how to use Amazon Web Services in perl,
+without having to learn XML or SOAP.
+</description>
+    <bio>
+http://web.mit.edu/marthag/www/
+</bio>
+    <language>English</language>
+    <length>15</length>
+    <status>confirmed</status>
+  </entry>
+
+
+</conference>
+

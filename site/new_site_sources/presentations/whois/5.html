@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <title>WHOIS This?</title>
+</head>
+<body>
+<table cellpadding="2" cellspacing="2" border="1"
+ style="text-align: left; width: 767px; height: 437px;">
+  <tbody>
+    <tr>
+      <td style="text-align: center; vertical-align: middle;">
+      <h1>WHOIS This?</h1>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;">
+      <pre><code><font size="+1">  </font></code>  <font size="+1">This is a simple module to extract the descriptive whois<br>information about various IPs as they are stored in the four<br>regional whois registries of IANA - RIPE (Europe, Middle East,<br>North Africa), APNIC (Asia/Pacific), ARIN (North America and<br>Africa) and LACNIC (Latin American &amp; Caribbean).<br></font><br><code><font
+ size="+1">  use Net::Whois::IANA;<br>  my $ip = '132.66.16.2';<br>  my $iana = new Net::Whois::IANA;<br>  $iana-&gt;whois_query(-ip=&gt;$ip);<br>  print "Country: " . $iana-&gt;country() . "\n";<br>  print "Netname: " . $iana-&gt;netname() . "\n";<br><br><br></font></code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; height: 10%;">
+      <table cellpadding="2" cellspacing="2" border="1"
+ style="text-align: left; width: 754px; height: 31px;">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><a href="4.html">Previous<br>
+            </a> </td>
+            <td style="vertical-align: top; text-align: right;"><a
+ href="6.html">Next<br>
+            </a> </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+</body>
+</html>

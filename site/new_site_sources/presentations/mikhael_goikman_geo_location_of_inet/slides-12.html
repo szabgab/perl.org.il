@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Geo location of internet users - Geo::IP</title>
+  <link rel=stylesheet href="style.css" type="text/css">
+</head>
+<body bgcolor="#c8f0e0">
+
+<table width=100% class=status>
+<tr>
+  <td width=33%><a href="slides-20.html">Next</a></td>
+  <td align=center width=34%><b>1.2</b> Geo::IP</td>
+  <td align=right width=33%><a href="slides-11.html">Prev</a></td>
+</tr>
+</table>
+<!-- header -->
+
+<h1>Geo::IP</h1>
+
+<p>This is an open source part of the commercial package by
+<a href="http://maxmind.com">MaxMind</a>.
+
+<p>Includes database that maps ip blocks to countries. The database is more
+correct and accurate than reverse DNS lookups.
+
+<p>The commercial versions include databases for ISP and town detections.
+
+<pre><div class=code>use Geo::IP;
+
+my $gi = Geo::IP->new;
+print $gi->country_code_by_addr('62.219.78.149'), "\n";  # 'IL'</div></pre>
+
+
+<!-- footer -->
+<p>
+<table width="100%" class=status>
+<tr>
+  <td width=33%><a href="slides-20.html">Next</a></td>
+  <td align=center width=34%><a href="slides-00.html">Geo location of internet users</a></td>
+  <td align=right width=33%><a href="slides-11.html">Prev</a></td>
+</tr>
+</table>
+
+</body>
+</html>

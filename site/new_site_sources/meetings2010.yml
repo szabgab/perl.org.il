@@ -1,0 +1,59 @@
+---
+20100308:
+  agenda_items:
+    - item: 'Erez Schatz - How to Talk to Newbies'
+    - item: 'Sawyer X - Moose - the post-modern metaclass-based object system for Perl 5'
+  items:
+    - description: 'Erez Schatz - How to Talk to Newbies'
+      end: 19:15
+      speaker: Erez Schatz
+      start: 18:30
+      title: How to Talk to Newbies
+    - description: 'Sawyer X - Moose - the post-modern metaclass-based object system for Perl 5'
+      end: 20:00
+      speaker: Sawyer X
+      start: 19:15
+      title: 'Moose - the post-modern metaclass-based object system for Perl 5'
+  location: Qualcomm Offices in Matam, Haifa
+  participants:
+    - name: Unknown
+  report_text: |-2
+         <p>
+         Here are the reports on the meeting:
+         </p>
+         <ul>
+         <li>
+         <a href="http://blogs.perl.org/users/sawyer_x/2010/03/two-perl-mongers-meetings-three-talks-two-reviews.html">By Sawyer X</a>.
+         </li>
+         <li>
+         <a href="http://blogs.perl.org/users/erez_schatz/2010/03/post-haifapm.html">By Erez Schatz</a>
+         </li>
+         <li>
+         <a href="http://community.livejournal.com/shlomif_tech/46881.html">By Shlomi Fish</a>
+         </li>
+         </ul>
+20100929:
+  agenda_items:
+    - item: 'Sawyer X: Why Perl?'
+    - item: "Gabor Szabo: What's new in Perl 5.10 and 5.12"
+    - item: "Yuval Kogman: Read only state for fun and profit"
+  items:
+    - description: 'Sawyer X: Why Perl?'
+      end: 19:30
+      speaker: Sawyer X
+      start: 19:00
+      title: Why Perl?
+    - description: "Gabor Szabo: What's new in Perl 5.10 and 5.12"
+      end: 20:30
+      speaker: Gabor Szabo
+      start: 19:30
+      title:  "Gabor Szabo: What's new in Perl 5.10 and 5.12"
+    - description: "Yuval Kogman: Read only state for fun and profit"
+      end: 20:30
+      speaker: Yuval Kogman
+      start: 21:00
+      title:   "Yuval Kogman: Read only state for fun and profit"
+  location: Shenkar College, Anna Frank 12, Ramat Gan, Room 323.
+  participants:
+    - name: Unknown
+  report_text: ''

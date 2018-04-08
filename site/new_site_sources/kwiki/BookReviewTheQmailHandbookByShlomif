@@ -1,0 +1,36 @@
+= Review: The qmail Handbook
+
+[Book's Homepage http://www.apress.com/book/bookDisplay.html?bID=8]
+
+http://www.apress.com/ApressCorporate/supplement/1/8/bcm.gif
+
+*Author*: Dave Sill
+
+*Publisher*: [Apress http://www.apress.com/]
+
+*ISBN*: 1-893115-40-2
+
+*Publishing Date*: September 2003
+
+*Pages*: 492
+
+*Reviewer*: ShlomiFish
+
+*Review Date*: April 2004
+
+*Rating*: 9
+
+This is a very good book about installing, managing and using
+[qmail http://www.qmail.org/] and various software that accompanies
+it and interoperates with it. It covers everything there is to know
+in a very detailed way, and is even moderately captivating.
+
+I found a few typos in the book, but I was able to easily
+correct them for myself and they did not detract from an
+otherwise good book on the subject. This seems to be a general
+trend in recently published books I've seen, especially from
+Apress.
+
+In any case, this book can be a hands-on guide and a good
+reference. It is highly recommended for anyone who needs to
+maintain a qmail installation.

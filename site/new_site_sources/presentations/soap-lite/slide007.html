@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>How I was told to write a script</TITLE>
+<META NAME="generator" CONTENT="txt2html v1.25">
+<LINK REL='start' HREF='slide001.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='first' HREF='slide001.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='last' HREF='slide017.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='next' HREF='slide008.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='previous' HREF='slide006.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='contents' HREF='TABLE_OF_CONTENTS.html' TYPE='text/html; charset=utf-8'>
+</HEAD>
+<BODY BGCOLOR="#ffffff" BACKGROUND="background.jpg"><FONT SIZE=4>
+
+<table width=100% bgcolor=black cellspacing=0 border=0>
+<tr><td width=33%><a href="slide008.html"><font color="white">Next</font></a></td>
+    <td align=center width=33% ><font color="white">SOAP::Lite Client Experiences</font></td>
+    <td align=right width=33%><font size="+1" color="white"><b>7</b></font></td>
+</tr>
+</table>
+
+
+
+<H1><A NAME="section-1">How I was told to write a script</A></H1>
+
+<UL>
+  <LI><p> The TestTrack SOAP documentation has an example of how to write a SOAP client:<!-- list end--></p>
+
+</UL>
+<PRE><B>
+     use SOAP::Lite;
+
+     $HOST = "http://localhost/cgi-bin/ttsoapcgi.exe";
+     $NS = "urn:testtrack-interface";
+
+     my $soap = SOAP::Lite
+         -&gt;uri($NS)
+         -&gt;on_action(sub { return $NS })
+         -&gt;proxy($HOST);
+</B></PRE>
+
+<UL>
+  <LI><p> You need a SOAP object, and you then call a number of methods to declare the URI and the proxy service (the CGI program on the host of your database).<!-- list end--></p>
+
+  <LI><p> I never understood the need for the <FONT COLOR="#000088"><B><TT>on_action()</TT></B></FONT> call.<!-- list end--></p>
+
+</UL>
+
+
+<br clear=all>
+
+<table width=100% bgcolor=black cellspacing=0 border=0>
+<tr>
+    <td align=right width=33%><font color="white">Copyright &copy; 2004 David Baird</font></td>
+</tr>
+</table>
+
+
+
+</FONT></BODY>
+</HTML>

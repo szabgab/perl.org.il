@@ -1,0 +1,33 @@
+<style type="text/css">
+body {
+	color: rgb(200,20,20);
+	background: rgb(210,245,230);
+}
+a:link    { color: #800000; }
+a:visited { color: #800000; }
+a:active  { color: #c00000; }
+
+div.code {
+	border: solid; border-width: thin;
+	background: rgb(204,204,255); padding: 0.5em;
+}
+table.diagram {
+	border: solid; border-width: thin;
+	background: rgb(204,204,204); padding: 0.4em; text-align: center;
+}
+td.diagitem {
+	border: solid; border-width: thin;
+	background: rgb(255,204,204); padding: 0.4em;
+}
+td.diagvoid {
+	padding: 0.3em;
+}
+table.list {
+	border: solid; border-width: thin;
+	background: rgb(255,255,204); padding: 0.4em; text-align: left;
+}
+table.status {
+	border: solid; border-width: thin;
+	background: rgb(190,240,190); padding: 0.2em;
+}
+</style>

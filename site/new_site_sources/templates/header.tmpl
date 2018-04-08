@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
+<head>
+   <title><tmpl_var name="title" escape=html></title>
+   <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+   <meta name="author" content="Offer Kaye" />
+   <meta name="generator" content="HTML::Template" />
+   <meta name="keywords" content="<tmpl_var meta_keywords>" />
+   <meta name="description" content="<tmpl_var meta_description>" />
+   <tmpl_if name="homepage"><link rel="alternate" title="Perl.org.il RSS" href="rss2.rdf" type="application/rss+xml" /></tmpl_if>
+   <link rel="stylesheet" type="text/css" href="/css/main-screen.css" media="screen" title="Main CSS (screen)" />
+   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+   <tmpl_if name="main"><script src="javascripts/sorttable.js" type="text/javascript"></script></tmpl_if>
+
+   <!-- Place this tag in the <head> of your document -->
+  <link href="https://plus.google.com/105209189901369984525" rel="publisher" />
+</head>
+
+
+<body>
+
+
+<!-- For non-visual user agents: -->
+<div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
+
+   <!-- ##### Header ##### -->
+<div id="header">
+ <h1 class="headerTitle">
+   <a href="/" title="Browse to homepage">Israel.pm - <span>The Israeli Perl Mongers</span></a>
+ </h1>
+ <tmpl_var banner>
+</div>
+
+<div id="side-bar">
+  <!-- ##### Left Sidebar ##### -->
+  <div class="leftSideBar">
+   <a href="/" style="text-decoration:none;"><img src="/images/pii-round-small.gif" alt=""
+      style="border:0;width:150px;height:150px;"/></a>
+    <p class="sideBarTitle"><tmpl_var name="left_bar_title"></p>
+    <span class="doNotDisplay">Navigation: </span>
+    <ul>
+      <tmpl_loop name="nav_bar">
+        <li>
+	      <a href="<tmpl_if name="abs_path"><tmpl_var nav_page><tmpl_else>/<tmpl_var nav_page></tmpl_if>"><tmpl_var nav_name></a>
+        </li>
+	  </tmpl_loop>
+    </ul>
+  </div>
+
+  <!-- ##### Right Sidebar ##### -->
+  <div class="rightSideBar">
+  <tmpl_include name="right_sidebar.tmpl">
+
+<!--
+  <tmpl_if name="left_bar">
+    <ul>
+     <tmpl_loop name="left_bar">
+      <li><a href="#<tmpl_var ref>" title="<tmpl_var title>"><tmpl_var text></a></li>
+     </tmpl_loop>
+    </ul>
+  </tmpl_if>
+-->
+
+  <tmpl_if name="homepage">
+   <tmpl_include name="related_sites_list.tmpl">
+  </tmpl_if>
+
+     <tmpl_if name="books">
+	 <p class="sideBarTitle">Related Sites</p>
+	 <ul>
+	    <li><a href="<tmpl_var pub_book_page escape=html>">Publisher's book page</a></li>
+	    <li><a href="<tmpl_var amazon_book_page escape=html>">Amazon book page</a></li>
+	 </ul>
+     </tmpl_if>
+
+      </div>
+   </div>

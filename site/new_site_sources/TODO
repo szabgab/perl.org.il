@@ -1,0 +1,83 @@
+------------------------------------------------------------------------------------------------------
+Tasks by Subject:
+------------------------------------------------------------------------------------------------------
+
+Meeting Pages
+-------------
+* On the new meeting pages maybe we could add on the side bar a list of all the meeting so I won't
+  have to keep pressing back to get to the next or previous meeting. In addition
+  you can expand the list at the current date to show the Agenda and Report links....
+
+* Add a list of presentations with links to the meeting page when the presentation was given
+
+
+Library and Book Pages
+----------------------
+* Get cover images for all books, add image name to books hash and place the image in the books/images dir.
+
+* Add some text about each book from the publisher site or Amazon site
+  to the individual book pages.
+
+* Maybe register with Amazon to get credits and then buy more books with those credits ?
+
+* Update scripts so that books.pl runs only if data sources for individual book pages change
+  (most likely BooksData.pm and books.pl itself, perhaps images also?).
+  Looks like we need 'make' or something similiar?
+  Reason- this part of the process is getting heavy, so it would be better if it were not run
+  every time.
+
+
+YAPC
+----
+* What about YAPC pages?
+
+* Go over stuff from old site and make sure all important info/material/files etc. have
+  been integrated/copied into the new site.
+
+* add back the link to YAPC/2004 as Gabor left it out when united the meetings data
+
+MISC page
+---------
+* Maybe create a script to fetch the list of modules for a list of PAUSEDs + some added manually
+  so we don't need to constantly update the module list, we can  add single modules of other
+  people (Hebrew, Passover etc.) + we don't remove modules of SCHOP even though they are already
+  maintained by someone else.
+
+* for the who uses perl part add categories (see the PTA site for example)
+  sortable table ?
+  maybe add some further text for each company with some details and some short story of what are
+  they using Perl for
+
+
+Others
+------
+* RSS feed of our future events - for this we need to put at least the future event is some
+  structure. (share with IGLU and the rest of the sites)
+
+* improve README to include howto items
+  and once we have them make sure every information exists only once
+  (e.g. right now when adding a new meeting we have to update in 3 files and
+  each file in more than one location (dates).
+  I know it was like this in my system as well but it is time we fix it and generate the
+  rest of the pieces.
+
+
+Hebrew
+-------
+* Enable the Hebrew pages
+
+
+
+Meeting
+--------
+- check the response values of the system calls
+- use internal calls instead of system calls
+- check what happens if one of the scripts fails (e.g. dies)
+- BooksData arrays (details) should be hash
+- move data from Perl hash to plain text file
+  (maybe remove HTML from the data)
+- change the "database" so the isbn will be the main key of the hash
+
+
+
+

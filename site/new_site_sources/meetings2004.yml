@@ -1,0 +1,924 @@
+---
+20040108:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-20:00 -- <em>Shlomo Yona</em> will lecture about "String Matching Algorithms: Edit Distance".'
+    - item: '20:00-20:30 -- Break and refreshments'
+    - item: '20:30-21:40 -- <em>Ran Eilam</em> will give the second of 2 lectures about <a href="http://www.extremeprogramming.org/">Extreme programming</a>. Part 1 of was given on the <a href="../2003/20031106.html">November 6, 2003</a> meeting.'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  comment: 'Ramat Gan (Shlomo Yona - Edit Distance; Ran Eilam - Extreme Programming (2))'
+  other_summarizer: This meeting summary was written by Kfir Lavi.
+  participants:
+    - name: Jason Friedman
+    - name: Kfir Lavi
+    - name: Mikhael Goikhman
+    - name: Oded Reznik
+    - name: Offer Kaye
+    - name: Pinchas Nisanov
+    - name: Ran Eilam
+    - name: Ronen Kfir
+    - name: Semuel Vomberg
+    - name: Shlomi Fish
+    - name: Shlomo Yona
+    - name: Thomas Meir
+    - name: Yuval Yaari
+  report_text: |
+    <p>
+
+             Today's meeting was special, I brought a digital camera, and we have photos that can be found here:
+             (will update as soon that I will set up a place)<br />
+             I have arrived at 18:00 and we were just 5 people, so I thought that the photo shoot will not take place
+             as expected, but after a while a full KADER of people came so we could all chip in, so Ran and Shlomi
+             could go buy some cookies.  Well, we ate like crazy, and then Ran came with two nice looking women,
+             so I thought that we will break the record of women in one meeting ;) but sadly they just came to enjoy
+             the Gviniyot (cookies), and then gone. <br /><br />
+             At 19:00 we went in to the shelter ;) to the first lecture of Shlomo Yona - String matching algorithms: "edit distance".<br />
+             In this lecture Shlomo introduced us with the basics of string matching. He then explained us the
+             algorithm in its very basic form. <br />
+             As Shlomo is known for his sensitivity for students that can't see Mathematical expression, he explained
+             and repeatedly assured us that this isn't tough, so i took a big breath and... Got it ( well, sort of ;).
+             Then Shlomo explained how to write the algorithm using recursion, and showed that this method make some
+             extra calculations that otherwise can be avoided, so he introduced us to another method called Dynamic Programming
+             (and in the people's words: caching). <br />
+             Afterwards, he showed us the cache table that the program built, and the arrow that he drew were very funny.
+             He said that Gimp in his computer can't draw straight lines :P So we got an arrow that looks like
+             going west and pointing south ;) Shlomo concluded with a bunch of perl modules for string matching,
+             and then we went to the break.<br /><br />
+             After the break Ran Eilam continued his <a href="http://www.extremeprogramming.org/">Extreme Programming</a>
+             <strong>saga</strong>.<br />
+             Ran reviewed his first talk, and then went to the new stuff. Ran started talking about a <strong>game</strong>
+             with the Dukes and the Engineers. This game is for learning the XP process. The game in short: the dukes want
+             to build a city and they use the engineers for doing that. The actual build of the city is done by drawing it.
+             Every duke defines the tasks for building the city to his engineers, and then the engineers have to decide
+             for each task its time assessment. Then the engineers are given 4min and have to complete a few tasks that
+             they choose with the duke to perform. Doing this process a few times, teaches the engineer time estimation,
+             and review of their work.<br />
+             Afterwards he showed the <a href="http://www.extremeprogramming.org/map/project.html">diagram</a> of the
+             XP process, and explained it. Then went to the time intervals of XP. Yuval asked Ran for explanation how to
+             make the customer agree to participate in the XP development, and not take the date for finishing the project
+             for granted. Of course there is no one answer to this. <br />
+             Ran's answer was: Make your customer think of his last development project, and introduce some questions
+             to him about his satisfaction from it. Probably after digging a while, he will not be satisfied, so he
+             will go with every thing that will make him look good (this time) to his board and bosses ;) Oded told us
+             that most of the 10 million dollars project in israel are decided by the CEO, so the rational of a programming
+             method can not be a *big* factor here. <br /><br />
+             <strong>And for the most fun part ;) PARTY</strong>.<br />
+             After ran has finished his talk, we went to the local pub. We took some photos there too. <br />
+             Looking forward to the next meeting.
+
+    </p>
+20040205:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-20:00 -- <em>Gabor Szabo</em> will lecture about "Web Application Developement".'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  comment: 'Ramat Gan (Gabor - Web Application Development).'
+  participants: []
+  report_text: "<p>\n\n      \n</p>\n"
+20040311:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-20:00 -- <em>David Baird</em> will lecture about "SOAP::Lite and a client application for a web service".'
+    - item: '20:00-20:30 -- Break and refreshments'
+    - item: '20:30-20:45 -- <em>Roman M. Parparov</em> will lecture about "WHOIS this? - IP Analyzing and the Net::Whois::IANA Module".'
+    - item: '20:45-21:15 -- <em>Yuval Kogman</em> will lecture about "What changed on CPAN".'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  comment: 'Ramat Gan (David Baird - SOAP::Lite; Roman Parparov - The WHOIS Protocol; Yuval Kogman - What changed on CPAN).'
+  other_summarizer: These meeting summaries were written by David Baird and Shlomi Fish.
+  participants:
+    - name: David Baird
+    - name: Eitan Schuler
+    - name: Gaal Yahas
+    - name: Gabor Szabo
+    - name: Herve Guez
+    - name: Hezi Golan
+    - name: Mikhael Goikhman
+    - name: Oded Resnik
+    - name: Ran Eilam
+    - name: Ran Tene
+    - name: Roman Parparov
+    - name: Shaul Karl
+    - name: Shlomi Fish
+    - name: Thomas Maier
+    - name: Uri Itscowits
+    - name: Yehuda Tzadik
+    - name: Yuval Kogman
+    - name: Yuval Yaari
+  report_text: |
+    <p>
+
+             <span class="summary_subheading"> Meeting Summary by David Baird</span><br />
+             I've just recovered from one of the most dangerous assignments in my
+             career as a software engineer. It started when months ago, in the
+             trenches of an email war with a certain support department which will
+             remain unnamed. I sent a report of my battle advances to one Gabor
+             Szabo, who then promptly handed me an assignment to report to Israel.pm
+             headquarters.<br />
+             <br />
+             The mission: Teach a group of aggressive Perl experts the intricacies of
+             SOAP::Lite in one hour or less.<br />
+             The time: March 11th, 2004 at 18:00<br />
+             The place: Dapay Zehav in Ramat Gan<br />
+             <br />
+             I was negligent in planning my approach to the meeting site, and so
+             called Gabor en route only to get a set of cryptic directions. I quickly
+             found my way to within 500 meters of the site, and was then overcome by
+             confusion and found myself several kilometers in the wrong direction on
+             the wrong side of the Ayalon. After making my way back, I decided to
+             park in the nearest underground lot to the tune of 10 shekels. I
+             wandered the streets, made a phone call, and eventually found the
+             mongers in front of Dapay Zehav and free parking to boot. I commented
+             that a map might be a better choice for a link on the Perl in Israel web
+             pages to finding Dapay Zehav, rather than a link to their Internet web
+             site.<br />
+             <br />
+             Gabor quickly ushered me to the depths of the building, not even the
+             security guard had a chance to ask if I had my weapon on me. I did. A
+             3.5 inch disk with a set of HTML files which would be the battleground
+             of my discourse. I was invited to partake in various pastries and cola.
+             I was later informed that I should cough up dough to cover the costs, or
+             cough up the pastry and return it. I decided on the later.<br />
+             <br />
+             Many books were arranged on a group of tables shaped like the Hebrew
+             letter Het. I found one which had something to do with my lecture, but
+             already knew had no intellectual value. I needed to warn them that this
+             book was misleading and dangerous. Everyone, including Larry Wall
+             himself, signed a sheet to acknowledge their presence.<br />
+             <br />
+             We then sat down to a five minute presentation on a module written by
+             Roman Parparov (WHOIS this?). Twenty minutes later, we all understood
+             how simple it is to find the latitude and longitude of any web surfer
+             through IP analyzing, or at least their country of origin, or the
+             country of origin of their ISP, or the location of something related to
+             computers.<br />
+             <br />
+             Then it was my turn to face the wolves. It was not easy. Somehow, I
+             succeeded in convincing 17 experts that I knew something about what I
+             was talking about. I dazzled them with my Perl golf code, and they all
+             sat mesmerized (memoized?) No one raised an objection. Everyone decided
+             that SOAP and XML are the worse mistakes in computer science, we should
+             all go back to basic TCP protocols like X.25, and we should switch to
+             writing code in C#.<br />
+             <br />
+             We had a break, there wasn't anything to do, so we went back to the
+             meeting. Yuval told us what was new about CPAN. It is called CPAN++,
+             because that "plus plus" metaphor still isn't dead, and no respectable
+             open sorcerer would call something "sharp!" I complained that with all
+             the improvements, no one pays attentions to my ratings or bug reports.
+             We also learned that smoke testing means checking under the hood of a
+             car for pearls.<br />
+             <br />
+             Shlomi, world famous CVS hater, told us about a fantastic book I chose
+             to read about building a web service. He had used it to build a server
+             to hunt down and hide all BitKeeper open source projects.<br />
+             <br />
+             We then made our way across a dangerous ten lanes of high speed racing
+             cars to the home of the Godfather. They didn't have horse head on the
+             menu, so we ordered coniac and vodka, and planned a take over of the
+             local Linux user group. We would give them a merge they couldn't refuse.<br />
+             <br />
+             I somehow made my way home, and just woke up to write this report.
+             <br />
+             <br />
+             <span class="summary_subheading">Meeting Summary by Shlomi Fish</span><br />
+             I was among the first to arrive at the meeting. After I arrived
+             and before Ran Eilam arrived to help us arrange everything, I encountered Yuval Kogman who was set to write a LaTeX Prosper
+             document, and someone else whom I forgot his name. Then, Pinkhas Nisanov arrived and we talked about the fact that
+             GNOME's Evolution on his computer started consuming a lot of memory after a while, and he switched to KMail and
+             Kroupware which were better in this regard, but a bit buggy. He hoped these bugs would be fixed in KDE 3.2.1, but it did
+             not ship with his distribution.<br />
+             Afterwards, came our esteemed leader Gabor Szabo, who called Ran Eilam on the phone and we could enter the room.
+             Ran and I collected money from everyone to buy refreshments. Everyone gave 20 NIS or so, and we were able to collect quite
+             a lot of money this way. Then, Ran, Gaal Yahas and I went to buy the refreshments, and on the way Ran and Gaal talked
+             about Aspect Oriented Programming, isa, can, and other monsters. We had enough money even to buy drinks, and we even had
+             some left (which we gave to Gabor).<br />
+             Either before that or after that, Gabor instructed us to go and carry some boxes from his car. They were filled with
+             books, that were passed to the custody of our librarian. In between, Ran kept nagging people about contributing
+             money to buy refreshments, even though all the money was already collected. (I did not understand this).
+             He also set his eyes on a certain managament book and then we were frantically looking for it. (until we found out
+             Pinkhas Nisanov had borrowed it and left early).<br />
+             Before the presentations, we talked between ourselves about many things. (hopefully, I or others will recall some of them).
+             We had a very large attendance, and almost all the seats were taken.<br /><br />
+             Then the the presentations came. Roman Parparov gave a nice talk about utilizing the WHOIS protocol from Perl to analyze log files.<br /> Using it one can get a good approximation of the geogrpahical location of an Internet address. It was supposed to be a lightning talk but got longer to about 30 minutes. People asked him why he did not use other modules on CPAN for this.<br />
+             Afterwards, came the main course, with a longish presentation by David Baird about the SOAP::Lite module. He explained various problems he faced with it, and the kludges he did to resolve them. <br />
+             Afterwards, we had a break. During it, we helped set up Gabor's laptop to read the USB disk-on-key that Yuval Kogman brought.<br />
+             We previously had voted on whether to have a book report. Very few voted for it, but I was up to give a book report anyway. (we decided it would be a good idea so more people will write book reviews). So I gave one about "Programming Web Services with Perl". <br />
+             Then came the last presentation of Yuval Kogman about what's new in CPAN. He talked about Module::Build, the new incarnation of !ExtUtils::!MakeMaker, CPAN++, various new CPAN services, etc.<br />
+             The presentation was OK, but Yuval should work on captivating his audience.<br />
+             Then everyone helped place the books into the boxes, and carry them to the car of Thomas Maier (who is our librarian).
+             Many people went to a pub, but I took a ride with Thomas back home.<br />
+
+    </p>
+20040401:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-19:40 -- <em>Roman M. Parparov</em> will lecture about "Using Perl for Geophysical data".'
+    - item: '19:40-20:00 -- Break and refreshments'
+    - item: '20:00-21:00 -- <em>Ran Eilam</em> will lecture about "A natural flow for web apps"'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  comment: 'Ramat Gan (Roman Parparov - Perl for Geophysical Data; Ran Eilam - Natural Flow for Web Apps).'
+  other_summarizer: This meeting summary was written by Shlomi Fish.
+  participants:
+    - name: Eitan Schuler
+    - name: Gaal Yahas
+    - name: Gabor Szabo
+    - name: Herve Guez
+    - name: Hezi Golan
+    - name: Issac Goldstand
+    - name: Itzik Lerner
+    - name: Mikhael Goikhman
+    - name: Oded S. Resnik
+    - name: Oren Maurer
+    - name: Pinkhas Nisanov
+    - name: Ran Eilam
+    - name: Roman Parparov
+    - name: Ron Tene
+    - name: Shlomi Fish
+    - name: Thomas Maier
+    - name: Tzafrir Cohen
+    - name: Yehuda Zadik
+    - name: Yuval Yaari
+    - name: Zohar Kelrich
+  report_text: |
+    <p>
+
+             I'm sorry if this report is a bit lacking or inaccurate. It's been 9 days
+             since the meeting, and my memory is a bit fuzzy on it.<br />
+             <br />
+             After I arrived people went to buy burekas. I did not go with them, but
+             instead guarded the computers. After they returned we went in and entered the
+             building and set up the refreshments. I noticed that there were no cheese
+             burekas', and so decided to go to the bakery and buy some. I payed 16 NIS
+             for them and the gave the other 4 NIS from my 20 NIS bill to Gabor. (thus
+             giving 20 NIS for the refreshments in total).<br />
+             <br />
+             We had the usual amoung of mingling and talking. In one chat I attended,
+             Yuval Yaari told us about how he was using Emacs, while from him impression
+             the rest of the Israel mongers were vi users. We had a friendly discussion
+             on which one was better. I told them, I was using gvim in Windows-emulation
+             mode and could not live without the Alt+F+S shortcut. For console stuff I
+             use joe. Yuval said that when using Emacs his code was formatted perfectly,
+             while his vi-using co-worker's code diverges a lot from the ideal.<br />
+             <br />
+             I also encountered a conversation about Perl vs. Java. Someone claimed some
+             elements in his company wished to use Java instead of Perl because they claimed
+             it had better internationalization. This is despite the fact that they all knew
+             Perl very well, and had little experience with Java. There was also something
+             about the Extreme Programming books demonstrating everything with Java, which
+             made them wish to use it.<br /><br />
+             The first presentation was a book review by Ran Eilam about the "Writing Perl
+             Modules for CPAN" book. Ran said the book was very bad. He claimed that it
+             had a lot of material that was not relevant to such a book, and was heavily
+             lacking in other places.<br />
+             <br />
+             Afterwards, Roman Parparov gave a presentation about using Perl for
+             processing Geo-physical data (like Weather information). In his presentation,
+             he said that he had to use a system created by NASA that could only run on
+             an old version of Oracle, which the Perl DBI module could not talk with. He
+             said that in his office he has an IRIX machine, and a Solaris machine to run
+             the infrastructure on them, and then various Linux Boxes which he does most
+             of the work with. There were a lot of other war stories there. He then briefly
+             gave the things he uses Perl for. The presentation was very interesting.<br />
+             <br />
+             Then we had a break (quite long actually) and afterwards Ran Eilam took the
+             stage again, and talked about converting a simple interactive command line
+             program like:
+             </p>
+    <pre>
+    <span class="synIdentifier">    </span><span class="synStatement">sub</span><span class="synIdentifier"> app</span>
+    <span class="synIdentifier">    </span>{
+            <span class="synStatement">my</span> <span class="synIdentifier">$i</span> = prompt(<span class="synConstant">&quot;Enter a number.&quot;</span>);
+            <span class="synStatement">my</span> <span class="synIdentifier">$j</span> = prompt(<span class="synConstant">&quot;Enter another number&quot;</span>);
+            show(<span class="synConstant">&quot;The sum is &quot;</span>. (<span class="synIdentifier">$i</span>+<span class="synIdentifier">$j</span>));
+        }
+    </pre>
+             <p>
+             To a web application without changing such code. This was done using a
+             continuations module that can be found on CPAN, that requires tweaking the
+             server to make sure it preserves the same process for every client session.
+             Many people did not like this solution and claimed it was very hackish and not
+             appropriate to the HTTP way of doing things. Ran also demonstrated how it
+             breaks when pushing the back button, and stuff like that, which made me even
+             more skeptic about it. Ran claimed that there were better frameworks for
+             Smalltalk and LISP that could handle such things better, but to me it seems
+             that I'd rather store the session information on the server, for the time
+             being.<br />
+             In any case, the presentation was very good.<br />
+             <br />
+             One thing we missed was the presence of Uri Bruck who was supposed to give
+             a presentation about SOAP. Bruck explained the reasons of his absence
+             in <a href="http://www.perl.org.il/pipermail/perl/2004-April/004707.html">this E-mail</a>.
+             Since Ran Eilam's presentation was longer than usual, I think we could not
+             have fitted Bruck's presentation there anyhow. I was also disappointed that
+             Yuval Kogman did not arrive and so could not borrow a book out of my personal
+             library. (which I remembered to bring there).<br />
+             <br />
+             Afterwards, people either went home or to a pub. I drove back
+             home with Thomas Maier.
+
+    </p>
+20040506:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-20:30 -- <em>Pinkhas Nisanov</em> will lecture about <a href="http://www.nisanov.com/presentation/triz/">TRIZ - Theory of Inventive Problem Solving</a>.'
+    - item: '20:30-20:45 -- Break and refreshments'
+    - item: '20:45-21:30 -- <em>Gaal Yahas</em> will lecture about "Perl as an integration language in a Java environment"'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  comment: 'Ramat Gan (Pinkhas Nisanov - <a href="http://www.nisanov.com/presentation/triz/">TRIZ</a>; Gaal Yahas - Perl in a Java environment).'
+  participants: []
+  report_text: "<p>\n\n      \n</p>\n"
+20040603:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-20:00 -- <em>Roman Parparov</em> will lecture about <a href="http://www.wolfpackempire.com/"> Empire - the oldest internet wargame</a>.'
+    - item: '20:00-20:30 -- Break and refreshments'
+    - item: '20:30-21:30 -- <em>Uri Bruck</em> will lecture about "A SOAP Server Implemented in Perl"'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  comment: 'Ramat Gan (Roman Parparov - Empire - the Oldest Internet Strategy Game; Uri Bruck - SOAP Server in Perl).'
+  other_summarizer: These meeting summaries were written by Offer Kaye and Shlomi Fish.
+  participants:
+    - name: Almog Friedman
+    - name: Avi Friedman
+    - name: Gabor Szabo
+    - name: Mikhael Goikhman
+    - name: Oded Resnik
+    - name: Offer Kaye
+    - name: Oren Ze'ev-Ben-Mordehai
+    - name: Roman Parparov
+    - name: Shlomi Fish
+    - name: Thomas Maier
+    - name: Uri Bruck
+    - name: Yoram Friedman
+  report_text: |
+    <p>
+
+             <span class="summary_subheading">Meeting Summary by Offer Kaye</span><br />
+             As usual, people started showing up around 18:00. Gabor showed up carrying 2 full boxes of books
+             belonging to the Israel.pm library, which he had brought so that our librarian, Thomas, could
+             take home with him. After resting from the effort of carrying all those books Gabor and I went to
+             buy food and drink and soon came back with lots of yummi burekas.<br />
+             <br />
+             The first lecture, which started at 19:05, was about
+             <a href="http://www.wolfpackempire.com/">Empire - the oldest internet wargame</a>. It was given by
+             Roman Parparov. At first Roman went over the game's background in general, he then devoted
+             some time to describing the game specifics, and finally he closed with a description of how the
+             game server works. I like any computer game, so of course I enjoyed the lecture &#x263A;<br />
+             One point mentioned which may be of particular interest to Perl programmers is that there is a
+             Perl based client to Empire, <a href="http://empire.komkon.org/proj.html">pei3</a>, which is based
+             on an older (and apparently unmaintained) Perl client called
+             <a href="http://www.nol.org/home/tetherow/pei/">pei</a>.<br />
+             Roman finished his lecture right on time (20:00) and after a few brief questions we all took a
+             20 minute break.<br />
+             <br />
+             At 20:30 Uri Bruck started his lecture about "A SOAP server implemented in Perl".
+             Web services is something I personally have little experience in, but the code Uri showed us
+             seemed pretty simple. Either a SOAP server is something very simple or this is just another example
+             of the great and terrible power of Perl &#x263A;<br />
+             Hopefully within a few days the slides for the lectures will be posted online and you can make up
+             your own mind. <br />
+             <br />
+             After the technical meeting wrapped up five of us decided to continue the evening in a local
+             pub together, as per the now well established tradition of Israel.pm. To prove we were there
+             Mikhael took some shots with his digital camera which I hope he'll
+             post online. If he does this page will be updated with a link to the pictures.
+             <br />
+             <br />
+             <span class="summary_subheading">Meeting Summary by Shlomi Fish</span><br />
+             The meeting was quite under-attended. Much fewer people came to it than to
+             the previous meeting, and also many Israel.PM meeting regulars were absent.
+             But we had a good time.<br />
+             <br />
+             I arrived at about 18:00 and found Gabor Szabo and Offer Kaye waiting at the
+             Dapey Zahav lobby. Gabor brought with him a great deal of books to be
+             transferred to the safe keeping of our librarian. Soon afterwards, Uri Bruck
+             arrived and also a guy named Oren with a last name like Ze'ev-Ben-Yisrael.
+             (quite uncommon in Israel). <br />
+             <br />
+             Then, Gabor and Offer decided to go and buy refreshments, so I gave a 20 NIS
+             bill to Gabor for them. Uri Bruck, Oren and I were left to guard the books and
+             the bags.  Uri and I talked about his work (freelance translation, and an IT
+             consultant to <a href="http://www.actcom.co.il/">Actcom</a>, where he was previously
+             employed), the fact he had to postpone giving the lecture on an earlier
+             occassion, and my Technion studies. <br />
+             <br />
+             Then, Mikhael Goikhman arrived and invited us to come down to the basement.
+             We thought we could move everything there, but there were some bags instead
+             of books so Uri and I stayed where we were. After some time, Gabor and Offer
+             arrived back, with Bourekas and drinks. It turned out they walked quite a bit
+             to get drinks (as the shop where we usually bought them had relocated).
+             So Uri, Gabor, Offer and I brought everything to the basement and the rest
+             set the refreshments.<br />
+             <br />
+             Soon afterwards, a father accompanied by his two sons (one 12-years old and
+             another in his teens), arrived and introduced themselves. It turned out that
+             the father started dabbling in Linux, and was looking for a solution to write
+             GUIs to control some RS-232 hardware controller, which even laymen can
+             operate. He had some past experience doing that with Visual Basic on Windows.
+             So I told him about GUI modules for Perl, etc. about SQL databases, and about
+             how he can use the Linux serial port driver to talk to the RS-232 controller. <br />
+             <br />
+             He said he brought his sons along because they are not doing anything in the
+             computer besides playing with it. This turned out to be rather inaccurate. The
+             older son said he knew Pascal and some other language, and the younger son
+             wrote things in HTML. The younger son, asked what things is Perl useful for,
+             and I explained to him about its advantages and things it was commonly used
+             for.<br />
+             <br />
+             Then the first presentation came. Roman Parparov gave a nice presentation
+             about the <a href="http://www.wolfpackempire.com/">Empire game</a>, and about a Perl client he
+             was hacking for it. Most of the presentation was about the game itself and
+             was unrelated to Perl, and towards the end there were a few minutes where
+             he talked about the Perl client. This seems to have been an issue, with
+             Roman's previous presentation as well. Still, the presentation was nice.<br />
+             <br />
+             Empire is a real-time strategy game that is very sophisticated (so much that a computer cannot play it effectively). It is played by a relatively small number of players around the world (about a 100 persistent ones). Roman demonstrated a map for a game that supposedly took place in Tolkien's Middle Earth. He said it took him and another guy two weeks to prepare it. Then
+             he showed the map at the end of the game, that was entirely
+             filled with the colours of the countries that took over all
+             the territories. He said, the game takes place around the clock, and often several people from different timezones team together to co-operate a certain country. (so that when one of them sleeps, the other can play for him). He also said that his
+             girlfriend gave him an ultimatum to stop playing Empire when
+             he played it, and said there were records of other players around the world who ended up with family crises because of the game. (reminds me of MUDs and other games like that to me).
+             <br /><br />
+             During the recess, I spent most of the time talking with Oded Resnik and
+             with Elhanan Maayan. The latter was using Microsoftish
+             technologies on Windows, and was using Perl for test cases and the such. (he
+             was not using it for anything of production yet as he is new to perl) He talks
+             very quickly so I had trouble understanding him. Also, the father who came
+             with his sons asked why there were such meetings for Perl, and not for C++,
+             Python or Java. We tried to explain that to him as best as we could, but
+             here's a more thorough explanation:<br />
+             <br />
+             <strong>Java</strong> - there's similar activity for Java in Israel as
+             there is for Perl. We like Perl, so that's what we like to meet and talk about.<br />
+             <br />
+             <strong>C++</strong> - I think Microsoft has a forum for MSVC users, but don't know
+             if there are such forums for different implementations of the C compiler. In
+             any case, C and C++ are not as exotic as more high-level languages, so
+             they may not warrant their own cultures, especially in a limited environment
+             as Israel.<br />
+             <br />
+             <strong>Python</strong> - I know of quite a few Pythoneers in Israel.
+             However, they
+             are under-oraganized. The <a href="http://www.iglu.org.il/mailing-lists/python-il.html">Israeli Python Mailing List</a>
+             has had less messages in its entire lifetime, than the Perl-IL mailing list
+             commonly has in a month. A
+             <a href="http://www.iglu.org.il/old-zope-articles/1017058080.html">Python meeting</a>
+             took place some time ago, but it amounted to nothing. There are the occasional
+             Python-related presentations in the Linux forums, but nothing that is
+             Pythoneers for and about Python. It is highly possible, that no-one took
+             the initiative to organize an active community for it, as happened for the
+             Perl community.<br />
+             <br />
+             Then came the next presentation by Uri Bruck about writing a Perl SOAP
+             service. The presentation was very interesting and there was a lot of Perl
+             code presented there. Uri explained that it was relatively easy to write
+             SOAP services in Perl, and we also discussed the limitations of the existing
+             functionality in CPAN. This was a good complement to the previous lecture
+             about writing a SOAP::Lite client by David Baird. The presentation sparked a lot of questions and commentary from the listeners, which indicated it was stimulating.
+             <br /><br />
+             As far as book exchange is concerned, I returned the book about Algorithms,
+             which I did not read as it did not seem interesting, and got the "Refactoring"
+             book in its place. I also wanted to take the "Effective Perl Programming" book,
+             but it turned out it was already present in the library, and was intended
+             for give away for later conferences. So I have to wait until next meeting to
+             get it.<br />
+             <br />
+             Afterwards, many people went to the pub. I helped Thomas carry the books to
+             his car, and he gave me a ride home.
+
+    </p>
+20040701:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-20:20 -- <em>Shlomo Yona</em> will lecture about <a href="http://cs.haifa.ac.il/~shlomo/hebrew_and_perl/slides/index.html">Hebrew and Perl</a>.'
+    - item: '20:20-20:45 -- Break and refreshments'
+    - item: '20:45-21:45 -- <em>Gaal Yahas</em> will lecture about <a href="http://maypole.perl.org/">Maypole</a>'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  comment: 'Ramat Gan. (Shlomo Yona - <a href="http://yeda.cs.technion.ac.il/~yona/talks/hebrew_and_perl/slides/index.html">Hebrew and Perl</a> ; Gaal Yahas - <a href="http://maypole.perl.org/">Maypole</a>)'
+  other_summarizer: This meeting summary was written by Ran Eilam.
+  participants:
+    - name: Gaal Yahas
+    - name: Gabor Szabo
+    - name: Hezi Golan
+    - name: Jason Friedman
+    - name: Maoz Etziony
+    - name: Mikhael Goikhman
+    - name: Oded Resnik
+    - name: Offer Kaye
+    - name: Ran Eilam
+    - name: Ronen Shemesh
+    - name: Semuel Fomberg
+    - name: Shlomo Yona
+    - name: Thomas Maier
+    - name: Uri Bruck
+    - name: Uri Itscowits
+    - name: Yair Mahalalel
+    - name: Yuval Yaari
+  report_text: |
+    <p>
+
+             Here we go again. What a nice meeting. The usual gang was there + a couple of new faces, whom unfortunately
+             I did not get to meet.<br />
+             Shlomi Fish was not there, because he had to get some degree. This was strange. Many people were amazed that some
+             degree is more important for him than a monger meeting. So of course there was no book review.<br />
+             I missed last meeting, and almost forgot how much fun this can be. We started by diving straight in to UTF-8.
+             There was no motivational speech by Gabor, but despite this morale was high. How long can it remain so, without
+             his fiery words to enflame our hearts?<br />
+             Shlomo Yona went from "SHALOM OLAM", to the darkest, most hellish corners of the Unicode idea. He showed us
+             the points where Hebrew handling can fail in our code, and explained what is happening. He went over many
+             potential problems, some of which were only barely solvable.<br />
+             He talked about almost all aspects of Hebrew I can think of, from the character encodings and sets, to regular
+             expressions and tokenizing words and sentences with Lingua::HE::Sentence. Apparently, all this is somehow related
+             to his research.<br />
+             There is much knowledge in the group of the technological history of Hebrew on computers, so there were many
+             digressions into IBM vs. Microsoft charsets, Einstein (the word processor), Linux Hebrew history, browser
+             history, and more. This really should be written down somewhere.<br />
+             Then, the customary eating of burekas. Please get some mountain-berries next time. Oh, and nobody likes the
+             poppy seed ones.<br /><br />
+             Then came Maypole. Is it a drinkning-and-dancing holiday in the land of our leader? Yes, but also other things.
+             Gaal showed us what is, without doubt, the simplest way to create a web CRUD UI over relational models.
+             Then he showed us how to customize it, with emails that can be hidden from the public, and extra fields.
+             Eventually we ended up with an almost functional real estate rental web site. And it does seem to take a
+             little less than an hour.<br />
+             There were few interruptions, and I think I understood everything However I was left with a feeling of being
+             shown some black magic. I would like to hear more about how it all works.<br />
+             Both are our top resident speakers, so you can be sure the examples were clear and the drama was intense.
+             The Unicode topic in particular has potential to be a complete bore, unless you come to the right monger meetings.<br />
+             <br />
+             The highlight of the evening, as usual, was the social gathering. Because the Godfather have a new routine
+             (they look in perl.org.il for our meetings dates, then at 10PM they turn off the lights and hide under the
+             tables, so that we will think them closed), we went to a pizza place, which will remain nameless.
+             It is a 80s style Israeli pizza place, long before there was any competition or knowledge of the domain at all.
+             This was the time when the mere act of eating pizza was considered cool, but before the term 'pizza' was
+             precisely defined. The pizza sucked, and I was hearing nothing good from the sandwich people either.
+             The conversation, a usual, was flowing as smooth as Goldstar.<br />
+             Gaal told us about Unicode security implications. I thought I understood at the time, but cannot explain it right now.<br />
+             Shlomo Yona told us of a problem he has. He needs a tool that will allow a linguist with no XML knowledge to
+             annotate his linguistic data, in XML.<br />
+             We talked about this for some time, and could think of no good tool, or even how such a tool would look.
+             Of course the problem was that we did not use Triz. Not that I know too much about it, but I am certain that it has
+             some kind of conflict-resolution rules for Shlomo's engineering conflict:
+             The user must be ignorant of XML, BUT he should be constrained by some XML schema and the data is in XML.<br />
+             We started from generalizing (SOME schema). Once we looked at ONE schema, things became clearer.
+             We started looking at the STATICS of the data: how it looks, is it recursive, etc. Because we are designing a UI task,
+             we should have started looking at the DYNAMICS of the data.
+             We started from thinking about the data: how will it be stored, changed, etc. We should have started from the user.
+             Once we applied these 3 rules, we all agreed we have a solution: write a custom UI (we even designed it)
+             for the specific XML transformation task.<br /><br />
+             Gaal told Mikhael Goikhman and me about Getopt::Declare. Migo was not impressed. Later I looked at it,
+             and thought: woh, this is advanced. Much to my amazement, As I slowly scrolled down the POD, a chapter
+             called 'Advanced Features' popped up. How about setting ranges in one command line option? reading lots of
+             options from a csv file? My head is hurting. Must try to stay on the GUI side of things from now on.<br />
+             Yuval and migo got quite a beating about the editor holy war they started. Migo's defense was 'he started it'.
+             Yuval did buy him a beer though.
+             And these are just the issues that I managed to keep up with.<br />
+             Hope to see you in the next meeting!
+
+    </p>
+20040819:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-20:30 -- <em>Mikhael Goikhman</em> will lecture about "Version Control Systems".'
+    - item: '20:30-20:45 -- Break and refreshments'
+    - item: '20:45-21:45 -- <em>Shlomo Yona</em> will lecture about "Finite-state Based Morphological Analyzer for Hebrew in XFST"'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  comment: 'Ramat Gan. (Mikhael Goikhman - Version Control Systems ; Shlomo Yona - Morphological Analyzer for Hebrew)'
+  participants:
+    - name: Gaal Yahas
+    - name: Kfir Lavi
+    - name: Mikhael Goikhman
+    - name: Offer Kaye
+    - name: Sagiv Barhoom
+    - name: Shaul Karl
+    - name: Shlomi Fish
+    - name: Shlomo Yona
+    - name: Thomas Maier
+    - name: Uri Bruck
+  report_text: |
+    <p>
+
+             The August meeting got off to a fine start as Mikhael and I got to the meeting place and found
+             Shlomi and Gaal already waiting, with Uri arrriving almost at the same moment.
+             We didn't have long to wait for the rest of the mongers to arrive, as there were eventually only
+             10 of us there. Sure cut down on the cost of the Bourekas :-)<br />
+             The first lecture, which started at 19:05 and was given by Mikhael, was about
+             <a href="http://migo.sixbit.org/papers/Revision_Control_Systems/">Revision Control Systems</a>.
+             Actually, is was more than just a lecture, as for 40 minutes Mikhael gave us a very nice
+             demonstration of how two developers can work together on a small project using the
+             <a href="http://www.gnu.org/software/gnu-arch/">Gnu Arch</a> revision control system.<br />
+             It was interesting, and Gnu Arch seems like it is worth investingating. Kfir also asked a lot
+             of questions which slowed Mikhael down a bit, but in the end he managed to show us most of what
+             he wanted, so that worked out allright.<br />
+             <br />
+             Next up was Shlomo Yona with his lecture about his
+             <a href="http://cs.haifa.ac.il/~shlomo/finite_state_morphology/slides/index.html">Morphological
+             Analyzer for Hebrew</a>. Due to a
+             shorter than expected time the lecture was a bit rushed, but it was still interesting and
+             obvious that it was a very important piece of work for the future of Hebrew and computers.<br />
+             <br />
+             After the technical meeting wrapped up 7 of us decided to continue the evening in a local
+             pub together. Except for a silly discussion about using Joe vs. Vi, the discussions were
+             about the lectures' subjects, and we all had a lot of fun.
+
+    </p>
+20040909:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-20:00 -- <em>Uri Bruck</em> will lecture about <a href="http://bruck.israel.net/perl/openoffice-with-perl.html">A Simple Method to Maniplute Open Office forms with Perl</a>.'
+    - item: '20:00-20:20 -- Break and refreshments'
+    - item: '20:20-21:00 -- <em>Gabor Szabo</em> will lecture about "<a href="http://www.perl.org.hu/english/">Perl in Hungary</a> - So how was the Hungarian Perl MicroWorkshop?"'
+    - item: '21:00-21:45 -- <em>Gabor Szabo</em> will lecture about "The Quality of CPAN Modules - <a href="http://testers.cpan.org/">CPAN Testers</a>, <a href="http://rt.cpan.org/">RT</a>, <a href="http://cpants.dev.zsi.at/cpants_paper.html">CPANTS</a>, <a href="http://cpanplus.sourceforge.net/">CPANPLUS</a>, <a href="http://cpanratings.perl.org/">CPANRATINGS</a>,	<a href="http://qa.perl.org/">QA-Perl</a>".'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  comment: 'Ramat Gan. (Uri Bruck - Manipulating <a href="http://www.openoffice.org/">OpenOffice</a> Forms; Gabor Szabo - "<a href="http://www.perl.org.hu/english/">Perl in Hungary</a>" and "The Quality of CPAN Modules")'
+  participants:
+    - name: Amit Sides
+    - name: Gabor Szabo
+    - name: Kfir Lavi
+    - name: Meron Cohen
+    - name: Mikhael Goikhman
+    - name: Oded S. Resnik
+    - name: Offer Kaye
+    - name: Ran Eilam
+    - name: Roman Parparov
+    - name: Sagiv Barhoom
+    - name: Shaul Karl
+    - name: Shlomi Fish
+    - name: Thomas Maier
+    - name: Tomer Resnik
+    - name: Uri Bruck
+    - name: Yuval Yaari
+  report_text: |
+    <p>
+
+             September's meeting started as people started arriving around 18:00, and until 19:00 we stood
+             (or sat) around, talking and eating bourekas.
+             <br />
+             The first lecture started at 19:00 and was given by Uri, its subject was "
+             <a href="http://bruck.israel.net/perl/openoffice-with-perl.html">A Simple Method
+             to Maniplute Open Office forms with Perl</a>".
+             Uri first showed us a form with text fields, then layed out the problem- directly filling
+             the fields with data.<br />
+             Because an Open Office document is simply a group of zipped XML documents, Uri's
+             solution used Zip::Archiev and XML::Simple. There are of course modules that were build
+             specially to handle Open Office documents, but Uri wanted his solution to be simple and
+             with a small learning curve, so he chose to the XML::Simple module.<br />
+             After some explanations about what is XML (there were a few people who didn't know
+             what XML is), Uri got to the good stuff and showed us the code - which turned out to
+             be a lot simpler than I thought it would be.. :-)<br />
+             After he finished showing us how to manipulate the Writer file, Uri got to the second part
+             of his lecture, where he showed us how to manipulate spreadsheet data, e.g. turn the
+             spreadsheet into an HTML table. Neat :-)<br />
+             <br />
+             We stopped for a short break, and then Gabor's turn was up, to talk about
+             "<a href="http://www.perl.org.hu/english/">Perl in Hungary</a> - So how was the
+             Hungarian Perl MicroWorkshop ?"<br />
+             Well, for one thing we learned that Hungarian Perl Mongers also like beer :-)<br />
+             Gabor gave a free-flow talk (sorry- no slides) about the MicroWorkshop, the people and
+             the talks that were there. The discussion that followed centered around a comparison of
+             PHP vs. Perl, and also an explanation of Parrot that Gabor gave.<br />
+             <br />
+             Last but not least, Gabor gave a lecture titled, "The Quality of CPAN Modules", for
+             which you can
+             <a href="http://www.perl.org.il/kwiki/index.cgi?CPANModulesQuality">find the
+             slides online</a>.<br />
+             <br />
+             After the technical meeting wrapped up most of us continued the evening in a local
+             pub together, where we had a lot of fun and talked a lot more about Perl, the Universe
+             and Everything :-)
+
+    </p>
+20041014:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-20:15 -- <em>Uri bruck</em> will lecture about <a href="https://metacpan.org/release/HTML-EP">HTML::EP</a> - a system for embedding Perl into HTML.'
+    - item: '20:15-20:30 -- Break and refreshments'
+    - item: '20:30-21:45 -- <em>Gabor Szabo</em> lectured about <a href="http://www.szabgab.com/talks.html#installing">Installing Perl and CPAN Modules</a>.'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  comment: 'Ramat Gan. (Uri Bruck - <a href="http://bruck.israel.net/perl/html-ep.sxi">HTML::EP, a system for embedding Perl into HTML</a>; Gabor Szabo - Installing Perl and CPAN Modules)'
+  participants:
+    - name: Gabor Szabo
+    - name: Kfir Lavi
+    - name: Meron Cohen
+    - name: Mikhael Goikhman
+    - name: Oded Resnik
+    - name: Offer Kaye
+    - name: Ran Eilam
+    - name: Sagiv Barhoom
+    - name: Shaul Karl
+    - name: Shlomi Fish
+    - name: Thomas Maier
+    - name: Uri Bruck
+    - name: Yishay Weiss
+  report_text: |
+    <p>
+
+             There were 13 people in the October meeting, but enough arguments for 26 people :-)<br />
+             The first lecture was given by Uri Bruck and was about
+             <a href="https://metacpan.org/release/HTML-EP">HTML::EP</a>.
+             Uri started by giving an introduction to HTML::EP, how it helps web developers and how
+             it helped him in a project he once did. Uri showed how HTML::EP code integrates into
+             the website's HTML code and how he used HTML::EP to build a website from the ground
+             up. Some of the people didn't like the similarity between HTML::EP and PHP, or the
+             fact that it is a pretty old module. In any case Uri did a good job introducing
+             us to another Perl based templating system, and certainly showed us a lot of code
+             examples. HTML::EP may not be perfect, but at least now I have a head-start if I ever
+             choose to use it. The slides can be found <a href="http://bruck.israel.net/perl/html-ep.sxi">
+             here</a>.<br /><br />
+             Next up was Gabor, who talked about <a href="http://www.szabgab.com/talks.html#installing">
+             Installing Perl and CPAN Modules</a>. Gabor's lecture was pretty long, because he actually
+             installed a brand new perl 5.8.5 during the lecture, followed by installation of CPANPLUS,
+             the all-dancing/singing wonder module which is supposed to replace CPAN.pm sometime in
+             the future...<br />
+             Due to firewall problems Gabor couldn't show us in real time the process of submitting
+             module installation reports using CPANPLUS to the <a href="http://testers.cpan.org/">
+             CPAN Testers</a> database, but he did explain the process to us, and told us about his
+             brand-new module, CPAN::Nargile.
+             <br />
+             After the technical meeting wrapped most of us continued the evening in a nearby
+             branch of <a href="http://www.wguides.com/city/412/80_226762.cfm">Arcaffe</a>, where
+             we had a great time discussing all kinds of Perl and Open-Source related stuff. Ran
+             Promised me he'd send the list an article about Aspect Oriented Programming, and
+             after a few days <a href="http://www.ccs.neu.edu/home/lorenz/papers/oopsla03b/oopsla03b.pdf">
+             he did</a>.
+
+    </p>
+20041104:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-20:00 -- <em>David Baird</em> will lecture about the <a href="http://staf.sourceforge.net/">STAF</a> test framework - an open source automated test framework from IBM.'
+    - item: '20:00-20:20 -- Break and refreshments'
+    - item: '20:20-21:20 -- <em>Ran Eilam</em> will lecture about "Intro to XUL-Node"'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  comment: 'Ramat Gan (David Baird - "STAF test framework" (<a href="/presentations/software testing automation framework pii.pdf">pdf</a>, <a href="/presentations/software testing automation framework pii.ppt">ppt</a>); Ran Eilam - "Intro to XUL-Node")'
+  other_summarizer: This meeting summary was written by Ran Eilam.
+  participants:
+    - name: David Baird
+    - name: Gabor Szabo
+    - name: Itzik Lerner
+    - name: Jason Friedman
+    - name: Kfir Lavi
+    - name: Mikhael Goikhman
+    - name: Oded S. Resnik
+    - name: Offer Kaye
+    - name: Ran Eilam
+    - name: Ronen Shemesh
+    - name: Shaul Karl
+    - name: Shlomi Fish
+    - name: Thomas Maier
+    - name: Uri Bruck
+    - name: Yuli Stremovsky
+    - name: Yuval Yaari
+  report_text: |
+    <p>
+
+             Welcome the the monthly Israeli Perl Mongers meeting summary. We report.
+             You decide.<br />
+             <br />
+             Quite a few mongers showed up.<br />
+             <br />
+             There were some interesting interactions with our host, The Israeli
+             Yellow Pages Company. The CEO inquired about the rowdy bunch he saw
+             stretched out all over his company lobby sofas, and the projector was
+             offline. Through some amazing ingenuity we got the projector online. The
+             CEO was given our URL, to help him understand who we are.<br />
+             <br />
+             In the burekas domain, I am sorry to say things are not improving. Two
+             mongers, who will remain nameless, went to get us food. Unfortunately the
+             quantities were so small, that I cannot even comment on it's quality.
+             Perhaps someone who got to the table *before* it was emptied can.<br />
+             <br />
+             We started off with the XUL::Node presentation which I had prepared.
+             Actually there was nothing to prepare, as I had barely enough time to run
+             through the demos, and examine at some demo source code. Everything went
+             smoothly, except popups showing in the wrong monitor. Some great points
+             were raised by the audience: Itzik asked questions concerning scalability,
+             and was worried about supporting many concurrent users, Oded suggested an
+             approach more in line with what people are already doing- perhaps make
+             Glade produce XUL, and let you write event handlers in Perl.<br />
+             <br />
+             Then David Baird talked about STAF, an IBM open-source test automation
+             framework. It is a framework in the sense that it is a semi-complete
+             application. All you have to fill in, are configurations, and the actual
+             tests. Once you do that, you get monitoring, remote control, logging, and many
+             other useful testing services for free. Sounds like David does
+             scaffolding work in his company: configuration management, testing, and
+             the like. So he also told us about the bigger picture- how are test labs
+             connected to company networks (they are not), and more.<br />
+             <br />
+             My problem was (as I said) that I did not see the simplest possible
+             complete test cycle- from installation to viewing of results. I did hear
+             enough to make me try STAF. Perhaps some other time David can show us a
+             complete test.<br />
+             <br />
+             Some extra time was available, so Gabor, who is always ready to fill any
+             time slot, talked to us about some monger issues:
+             </p>
+             <ul>
+                <li>turns out anyone can contribute to the perl.org.il site</li>
+                <li>we are having another YAPC! same place, same time as last year. Hurray!</li>
+                <li>perhaps we should have a Perl beginners path, where someone can go
+                   though the entire day, yet understand almost everything</li>
+             </ul>
+             <p>
+             And more.<br />
+             <br />
+             Then Yuri informed us about a security conference, and invited people
+             interested in the field to come.<br />
+             <br />
+             As usual, the highlight was the social event.<br />
+             <br />
+             We went to the Arcafe place. The atmosphere was jolly yet cerebral.
+             We were informed of Migo's birthday. Happy birthday man. Kfir told us of
+             his YAPC ideas, and brought us to thinking: why do we even promote
+             Perl in Israel? Migo and myself thought it was because we want a healthy
+             community, which can support OUR Perl work, and where we can be active
+             and helpful. Yuri and I had a testing talk. Thomas told us more about
+             STAF, which he had used before. Shlomi helped me out with some MediaWiki
+             questions. I expressed the need for something more interactive than just
+             talks in the YAPC. Yuval talked about different quality levels among
+             Tel-Aviv coffee houses, and how he thinks the idea of Heaven is all
+             about smooth asphalt and fast roller blades. He also talked about Class-DBI.
+             Again. And the problems of separation of responsibilities in his code.<br />
+             <br />
+             Of course that is just the tip of the iceberg, where the iceberg is the
+             amount of Perl and non-Perl conversations that floated around. And I can
+             assure you it was all much more coherent than the last paragraph.<br />
+             <br />
+             See you in the next meeting!
+
+    </p>
+20041202:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: "19:00-19:30 -- <em>Offer Kaye</em> will lecture about \"Syntax Highlighting for Fun and Profit\" - How to add colored code to your presentations and live through the ordeal (hint - it's easy :-))"
+    - item: "19:30-20:00 -- <em>Uri Bruck</em> will lecture about \"Speaking in Perl\" - Perl's appeal to a language professional"
+    - item: '20:00-20:15 -- Break and refreshments'
+    - item: '20:15-21:45 -- <em>Shlomo Yona</em> will lecture about "A Gentle Introduction to Automatic Classification"'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  comment: 'Ramat Gan (Offer Kaye - "<a href="http://okaye.esmartweb.com/slides/syntax_highlighting/slide01.html">Syntax Highlighting</a>"; Uri Bruck - "Speaking in Perl"; Shlomo Yona - "<a href="http://yeda.cs.technion.ac.il/~yona/talks/pos_tagging_using_perceptron/slides/slide1.html">A Gentle Introduction to Automatic Classification</a>")'
+  other_summarizer: This meeting summary was written by Ran Eilam.
+  participants:
+    - name: Alon Levi
+    - name: Arik Manor
+    - name: Gabor Szabo
+    - name: Guez Herve'
+    - name: Jason Friedman
+    - name: Kfir Lavi
+    - name: Lilia Kessler
+    - name: Mikhael Goikhman
+    - name: Oded S. Resnik
+    - name: Offer Kaye
+    - name: Ran Eilam
+    - name: Sagiv Barhoom
+    - name: Shaul Karl
+    - name: Shimi Roi
+    - name: Shlomo Yona
+    - name: Thomas Maier
+    - name: Uri Bruck
+    - name: Yuval Yaari
+  report_text: |
+    <p>
+
+             Welcome the the December 2004 Israeli Perl Mongers meeting summary. We
+             report. You decide.<br />
+             <br />
+             Attendance was rather high. Several new people popped up, but some regulars
+             were dearly missed. The new people were warmly welcomed, at least by those of
+             us that realize that we have to welcome new mongers. And that it is fun.<br />
+             <br />
+             Burekas were excellent. The shoppers did a great job! I must join the
+             shopping party more often.<br />
+             <br />
+             The talks, and the combination of talks, were some of the best we have heard
+             in a long time.<br />
+             <br />
+             Offer Kaye started with a delightful little syntax highlighting talk. Going
+             over ALL the options, we learned how to view, and how to save syntax colored
+             Perl. Ease of styling for various HTML solutions was also discussed.
+             Techniques he demonstrated were later used by Shlomo in his talk.<br />
+             <br />
+             I hope in the future we hear about the limits of coloring Perl code. In my
+             VIM there are quite a few.<br />
+             <br />
+             Then Uri Bruck talked about his favorite subjects: Perl and natural language.
+             He showed linguistic ideas in Perl, from context sensitivity to DWIM. We need
+             more talks on the linguistic theme. The pace was great, and there was the
+             right combination of abstract ideas vs. concrete examples. And comparisons of
+             examples between Perl and natural languages. As usual in such talks, there
+             was much confusion about linguistic terminology among the audience.<br />
+             <br />
+             Finally Shlomo Yona talked about Automatic Classification. Despite him
+             talking about only ONE neuron, all billions (I hope) of my neurons were
+             running fast trying to keep up. He went from the general problem, to how he
+             aced a course by applying a very simple Perl solution. He showed code, math,
+             and diagrams. There was a mix of CompSci talk, and hacker experience report.
+             It was fun. At least the parts where my mental running shoes did not fail me.<br />
+             <br />
+             For the social, we went to the coffee house AGAIN. I guess they provide a
+             reasonable environment, if a little pricey. At my table there was talk of
+             prototyping, bringing in new ideas to an organization, and much more. Other
+             tables (there were 3 tables) seemed to exhibit lively conversation as well.
+             The table is the basic social organizational unit of the PM social event.<br />
+             <br />
+             See you next time.
+
+    </p>

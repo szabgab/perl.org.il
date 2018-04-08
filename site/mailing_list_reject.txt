@@ -1,0 +1,23 @@
+
+The most common reasons for rejection are
+1) You are sending a message with a From: field which is not subscribed.
+
+   Solution:
+   Make sure you send the message from the same e-mail account and that
+   your sys-admin does not rewrite your Form field. If you use several e-mail
+   accounts for sending but want to receive only one copy of the messages
+   of the mailing list you can subscribe all of your outgoing e-mail addresses
+   and then set the "Mail delivery" option to "No" on all but one registration.
+
+2) You are sending a message in HTML (or "Rich") format while our mailing list
+   is configured to reject most of the attachments. In particular when you
+   send HTML messages they are actually attachments.
+
+   Solution:
+   Send plain text messages and send your code examples in-line.
+   Even in Outlook (Express)? you have an option to decide on a per-mail
+   basis if you'd like to send plain text or HTML ("Rich text" they call it)
+
+
+If you have further administrative questions, feel free to send them to me.
+

@@ -1,0 +1,537 @@
+---
+20050106:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: TBD
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  items:
+    - description: ''
+      end: ''
+      speaker: ''
+      start: ''
+      title: ''
+    - description: ''
+      end: ''
+      speaker: ''
+      start: ''
+      title: ''
+  location: Ramat Gan
+  participants: []
+  report_text: "<p>\n\n      \n</p>\n"
+20050203:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: '19:00-21:40 -- <em>Liraz Siri</em> will lecture about "Why Python is in Your Future"'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  items:
+    - end: 20:00
+      speaker: Liraz Siri
+      start: 19:00
+      title: '<a href="http://liraz.org/PythonVsPerl">Why Python is in Your Future</a>'
+  location: Ramat Gan
+  participants:
+    - name: Liraz Siri
+    - name: Gabor Szabo
+    - name: Offer Kaye
+    - name: Uri Bruck
+    - name: Shlomi Fish
+    - name: Oded Reznik
+    - name: Mishael Golan
+    - name: Ili Fishman
+    - name: Poldi Kula
+    - name: Yehuda Zadik
+    - name: David Istermann
+    - name: Arik Manor
+    - name: Adam Morrison
+    - name: Yuval Yaari
+    - name: Gaal Yahas
+    - name: Yuly Stremovsky
+    - name: Pinchas Nisanov
+    - name: Ran Eilam
+    - name: Daniel Lamberger
+    - name: Thomas Maier
+    - name: Jason Friedman
+    - name: Yishai Weiss
+    - name: Shlomo Yona
+    - name: Mikhael Goikhman
+  report_text: |
+    <p>
+
+             The Feb. 2005 meeting got off to what I thought was a great start,
+             with several new people showing up - I hope they enjoyed their first
+             Israel.pm meeting and that they'll be back for more :)<br />
+    	 By the time the first lecture was to begin, we had nearly 20 people in the room (several late
+    	 comers showed up after 19:00), however one important person had not yet showed up - Liraz was
+    	 running late due to transportation problems. So Gabor got a chance to show us his brand-new
+    	 module and website,  <a href="http://metacpan.org/module/CPAN::Forum/">CPAN::Forum</a>.
+    	 The site, <a href="http://www.cpanforum.com/">
+    	 http://www.cpanforum.com/</a>, provides a central place to discuss matters relating to
+    	 CPAN modules. each module has its own forum, including links to the search.cpan.org
+    	 page and related pages. In fact, each module page on search.cpan.org now has a link
+    	 directly to its forum page on cpanforum.com, which is very handy. The idea behind
+    	 CPAN::Forum is that instead of having to register to a seperate mailing list for each
+    	 module one is interested in (i.e. wants to discuss), you now need to register to only one
+    	 site. Gabor didn't get a chance to actually show code, since at about 19:15
+    	 Liraz showed up and Gabor relinquished the floor to him.<br />
+    	 <br />
+    	 <a href="http://liraz.org/">Liraz</a> is a long-time Perl programmer who recently
+    	 discovered the joys of Python and has decided to try to convert other Perl programmers to
+    	 the use of Python. Leaving my personal opinion about Python aside, Liraz gave a nice
+    	 review of why he thinks Python is a better language, some features of Python, things
+    	 it has in common with Perl and things that make it special and finally why we should all
+    	 start programming in Python. Right from the start, it was obvious that the members of
+    	 Israel.pm were not about to agree to his arguments without some heavy convincing, as
+    	 Liraz was constantly interrupted with questions and arguments. In spite of this, Liraz
+    	 managed to finish his talk and we even had some time at the end for a short Q&amp;A.<br />
+    	 <br />
+    	 Although it was not planned, Yuli asked to talk for about 10 minutes about a service he
+    	 was promoting called <a href="http://www.bannershift.com/">BannerShift</a>, a text-ad
+    	 banner exchange service. This doesn't really have anything to do with Perl, except for
+    	 the fact that many Perl programmers are also webmasters...<br />
+    	 <br />
+    	 The technical part of the meeting wrapped-up around 21:45, and around 10 of us continued
+    	 to a new place called "The Sil-Bar", across the street from Dapey Zahav.
+    	 The atmosphere was nice, the drinks okay and so was the food, and the conversation
+    	 was interesting. In short, we all had a lot of good time :-)<br />
+    	 <br />
+    	 Thanks and see you next time!
+
+    </p>
+20050303:
+  agenda_items:
+    - item: '18:00-18:45 -- <em>Gabor Szabo</em> will give an introduction to Web development using Perl for Beginners"'
+    - item: '18:45-19:15 -- Light refreshments'
+    - item: |-
+        19:15-21:45 -- <em>Gabor Szabo</em> will lecture about "Code Review - A review of 2 Web based projects"
+        		 <a href="http://www.szabgab.com/talks.html#code-reading">Read more</a>
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  items:
+    - description: ''
+      end: 18:45
+      speaker: Gabor Szabo
+      start: 18:00
+      title: Introduction to Web development using Perl
+    - description: ''
+      end: 21:45
+      speaker: Gabor Szabo
+      start: 19:15
+      title: 'Code Review - A review of 2 Web based projects'
+  location: Ramat Gan
+  participants: []
+  report_text: "<p>\n\n      \n</p>\n"
+20050421:
+  agenda_items:
+    - item: '18:00-19:00 -- Assembly and light refreshments'
+    - item: "19:00-20:00 -- <em>Uri Bruck</em> will lecture about \"Perl to Queen's Level 3\""
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  items:
+    - description: ''
+      end: 20:00
+      speaker: Uri Bruck
+      start: 19:00
+      title: Perl to Queen's Level 3
+  location: Ramat Gan
+  participants: []
+  report_text: "<p>\n\n      \n</p>\n"
+20050519:
+  agenda_items:
+    - item: '19:00-19:30 -- Assembly and light refreshments'
+    - item: '19:30-20:30 -- <em>Gabor Szabo</em> will lecture about "Code Review - A review of 2 Web based projects"'
+    - item: '20:30-20:45 -- Break and light refreshments'
+    - item: "20:45-21:45 -- <em>Uri Bruck</em> will lecture about \"Perl to Queen's Level 3\""
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  items:
+    - description: A review of 2 Web based projects
+      end: 20:30
+      speaker: Gabor Szabo
+      start: 19:30
+      title: Code Review
+    - description: ''
+      end: 21:45
+      speaker: Uri Bruck
+      start: 20:45
+      title: Perl to Queen's Level 3
+  location: Tel-Aviv University
+  participants:
+    - name: Arik Manor
+    - name: Gabor Szabo
+    - name: Ili Fishman
+    - name: Kfir Lavi
+    - name: Mikhael Goikhman
+    - name: Oded Reznik
+    - name: Offer Kaye
+    - name: Roman Parparov
+    - name: Sagiv barhoom
+    - name: Shlomi Fish
+    - name: Thomas Maier
+    - name: Uri Bruck
+    - name: Zohar Kelrich
+  report_text: |
+    <p>
+
+             First of all, I would like to take this opportunity to thank Roman
+             Parparov for the great work he did in arranging a room for Israel.pm
+             to meet in. This meeting could not have taken place without his efforts.<br />
+             <br />
+             The first Israel.pm meeting in several months got off to a fine start, as several
+             people showed up early. There was a little crisis with the plastic cups
+             (the crisis being that I forgot to bring some with me :-)) but Roman rose
+             to the challenge yet again and proved that nothing will stop a determined
+             Perl Monger :) So we had cups in which to drink, tasty bourekas, and all
+             was good.<br />
+             <br />
+             The first lecture, by Gabor Szabo, was actually part lecture about the perl.org.il
+             site and part code review. Gabor began with some motivation about why a
+             code review is a good thing (no need to convince the audience, they were
+             sold) followed by a quick review of the templating system we chose for
+             the site, <a href="https://metacpan.org/release/HTML-Template">HTML::Template</a>.
+             Gabor continued (in spite of frequent interruptions by the audience, including
+             me - I couldn't help it :-)) with a review of the scripts used to build the
+             site. This is where things got interesting, as several people made very good
+             and pertinant suggestions about the code, which Gabot promptly added to the
+             TODO file. Hopefully some of those suggestions will actually get implemented
+             :-). I thought the code review was a great success, in spite of being too
+             short in time - the relative beginners in the crowd got to see working
+             Perl code and hear it reviewed, analyzed and disected; the more experienced
+             mongers got to help advance the site by making suggestions that if implemented
+             will certainly help; and I and Gabor got a lot to do :-)<br />
+             <br />
+             The second lecture was by Uri Bruck, the title was "
+             <a href="http://bruck.israel.net/perl/perl2queen3.sxi">Perl to Queen's
+             Level 3</a>". Something of the code review spirit of the first session
+             must have leaked over to Uri's lecture, because Uri was frequently
+             interrupted with comments and questions about his code. Part of the reason
+             I guess was that Uri used OO code, and OO is always a controversial subject,
+             both in regards to when to use it and how to use it. In any case, I thought
+             the lecture itself was very interesting and especially liked all the pictures
+             Uri showed of chess variant examples - some very nice boards :-).<br />
+             <br />
+             After the technical meeting part, most of us continued to a "Coffee-to-go"
+             place nearby (near gate #2 of TAU I think) and continued to chat and
+             socialize. As usual this was fun and I enjoyed both the company and the
+             beer :-)<br />
+             <br />
+             That's all for now, see you all next time.
+
+    </p>
+20050526:
+  agenda_items:
+    - item: '18:00 - Gathering.'
+    - item: '20:00 - Food'
+  comment: |-
+    This is an informal meeting of the Perl-ILers for talk, food
+          and recreation. We meet at Azrieli Center, Tel Aviv, Next to the cinema. (Phone for coordination: 054-6232377)
+  items:
+    - description: 'We meet up at Azrieli center and chat, and eat'
+      end: 20:00
+      speaker: Perl-ILers
+      start: 18:00
+      title: 'Informal Meeting, Chat, and Food'
+  location: Azrieli Center
+  participants: []
+  report_text: "<p>\n\n      \n</p>\n"
+20050602:
+  agenda_items:
+    - item: '19:00-19:30 -- Assembly and light refreshments'
+    - item: '19:30-20:30 -- <em>Roman Parparov</em> will lecture about "AI &amp; Perl - implementing CSP method for Swiss chess tournament pairing"'
+    - item: '20:30-20:45 -- Break and light refreshments'
+    - item: '20:45-21:45 -- <em>Shlomo Yona</em> will lecture about "A job-interview like sorting riddle"'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  items:
+    - description: Implementing CSP method for Swiss chess tournament pairing
+      end: 20:30
+      speaker: Roman Parparov
+      start: 19:30
+      title: AI & Perl
+    - description: I'll present a sorting riddle I heard in a job interview. We'll discuss it and possible solutions.
+      end: 21:45
+      speaker: Shlomo Yona
+      start: 20:45
+      title: A job-interview like sorting riddle
+  location: Tel-Aviv University
+  other_summarizer: This meeting summary was written by Shlomi Fish.
+  participants:
+    - name: Ido Perelmutter
+    - name: Mikhael Goikhman
+    - name: Offer Kaye
+    - name: Pinkhas Nisanov
+    - name: Roman Parparov
+    - name: Semuel Fomberg
+    - name: Shlomi Fish
+    - name: Shlomo Yona
+    - name: Uri Bruck
+  report_text: |
+    <p>
+
+             We gathered in the second floor. When I arrived only Uri Bruck was there. We
+             started discussing stuff, among it:
+             <br /><br />
+             1. Whether Open Source and the Creative Commons were Socialistic, Communistic,
+             pro-Capitalistic, non-Capitalistic, anti-Capitalistic, etc. Later on, we
+             decided that it did not matter whether it was Socialistic or not, as long as
+             we all agreed that Open Source was "good for the Jews".
+             <br /><br />
+             2. We discussed the eBay's acquisition of shopping.com (formerly dealtime) for
+             several hundred millions dollars (which I surprisingly did not hear about -
+             can anyone give me a URL?).
+             <br /><br />
+             I probably have a lot to say about #1, but I'll leave it to another message.
+             We helped Roman carry the Bourekas and Beverages, and then enjoyed eating
+             them. Then Roman's presentation started.
+             <br /><br />
+             Roman's presentation was about using Perl to construct and manage a Swiss
+             Tournament. He covered a lot of the theory and then went on to cover the Perl
+             implementation (without showing any code).
+             <br /><br />
+             Then we had a break. A new guy (Something Perelmutter) showed up and we talked
+             with him. He now studies Mechanical Engineering in Tel Aviv University, and
+             is a Reserve Student (Atudai). He is heavily involved in the Bney-Yehuda
+             Football group - started as their webmaster and now is involved with the
+             children. We touched a bit about how it was relatively unusual for hackers
+             (even male) to like spectator sports, and Offer asked him if he can get
+             tickets to the game for his co-workers.
+             <br /><br />
+             We also discusses tabs vs. spaces, whether political or philosophical
+             discussions were boring or not, who convinces who in such discussions, etc.
+             There also was an interesting insight about the fact that the Hamakor Bylaws
+             caused many discussions to require the people who conveyed opinions to tell
+             how much exactly did they contributed to open-source.
+             <br /><br />
+             Then came Shlomo's presentation. The slides are available online (URL?) and
+             the problem was very interesting, and there was a lot of involvement from the
+             listeners. I suggested a solution to the problem which was different from
+             Shlomo's solution, and also could be generalized. Shlomo's solution was
+             considerably more complex, and some people wondered how he could think of it
+             At the end of the presentation, we took out the screen, and I wrote the Perl
+             code for my solution. We had 30 minutes to do the same for Shlomo's solution,
+             but we decided against it.
+             <br /><br />
+             Then Offer asked how many people wanted to go to the cafe, but only three or
+             four people wanted to go, so he decided to skip it.
+             <br /><br />
+             The meeting was attended by 8 or 9 people, which was relatively low, and even
+             many regulars did not attend.
+
+    </p>
+20050630:
+  agenda_items:
+    - item: '19:00-19:30 -- Assembly and light refreshments'
+    - item: '19:30-22:00 -- <em>Stas Bekman</em> will lecture about "mod_perl"'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  items:
+    - description: A mod_perl tutorial by mod_perl developer Stas Bekman
+      end: 22:00
+      speaker: Stas Bekman
+      start: 19:30
+      title: mod_perl
+  location: Tel-Aviv University
+  participants:
+    - name: Arik Manor
+    - name: Gabor Szabo
+    - name: Ido Perelmutter
+    - name: Jason Friedman
+    - name: Oded Porat
+    - name: Offer Kaye
+    - name: Pinkhas Nisanov
+    - name: Roman Parparov
+    - name: Shlomi Fish
+    - name: Stas Bekman
+    - name: Thomas Maier
+    - name: Uri Bruck
+    - name: Yishay Weiss
+  report_text: |
+    <p>
+
+             First of all, the
+    	 <a href="/presentations/stas_bekman_mod_perl-2.0-tutorial/mod_perl-2.0-tutorial-slides.pdf.gz">slides</a> and
+    	 <a href="/presentations/stas_bekman_mod_perl-2.0-tutorial/mod_perl-2.0-tutorial-handouts.pdf.gz">handouts</a>
+    	 from the lecture
+    	 are available here. Download and enjoy.
+    	 <br /><br />
+             Stas and I arrived just after the beginning of the assembly, so most people had already
+    	 arrived by the time we got there. Luckily for us there were not too many, so there
+    	 were many bourekas left over... :)
+             <br /><br />
+             Stas began by explaining that he usualy requires 5-6 hours to cover the entire
+    	 tutorial, so since we only had about 2 hours there was only time to skim over the
+    	 top. So we decided to go over the HTTP protocol handler, filters and if time permitted
+    	 some of the other protocol handlers.
+             <br /><br />
+             Stas began with a short overview of installing mod_perl (you need Apache2 installed).
+    	 Pinkhas asked about the benefits of static compilation, Stas said there weren't any.
+    	 I asked about adding a PREFIX argument to the "perl Makefile.pl" stage, Stas said
+    	 there was no problem with that.
+             <br /><br />
+             The lecture continued with a quick overview of some of the new features in mod_perl2
+    	 compared to mod_perl. Basically the real power of mod_perl2 is the access to Apache's
+    	 API - over 400 functions are accessible using mod_perl2.
+             <br /><br />
+             There was a lot more to the lecture, more than I can remember now, but all of
+    	 it was very interesting and informative. Also during a 10 minute break we had
+    	 Stas showed some pictures he took while he was in Honolulu, those were
+    	 simply amazing :)
+             <br /><br />
+             After the technical meeting most of us continued to the nearby coffee-shop
+    	 where we drank beer and talked some more about mod_perl, Perl in general and
+    	 other stuff. It was fun and tasty, and I'm looking forward to the next meeting...
+    	 See you all there! :)
+
+    </p>
+20050811:
+  agenda_items:
+    - item: '19:00-19:30 -- Assembly and light refreshments'
+    - item: '19:30-20:10 -- <em>Roman Parparov</em>: "Perl &amp; MUD - parsing LPC structures with Perl"'
+    - item: '20:10-20:20 -- Break'
+    - item: '20:20-21:20 -- <em>Gabor Szabo</em>: "GUI Development using GTK2"'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  items:
+    - description: ''
+      end: 20:10
+      speaker: Roman Parparov
+      start: 19:30
+      title: 'Perl & MUD - parsing LPC structures with Perl'
+    - description: ''
+      end: 21:20
+      speaker: Gabor Szabo
+      start: 20:20
+      title: GUI Development using GTK2
+  location: Tel-Aviv University
+  participants: []
+  report_text: "<p>\n\n      \n</p>\n"
+20050915:
+  agenda_items:
+    - item: '19:00-19:30 -- Assembly and light refreshments'
+    - item: '19:30-20:30 -- <em>Felix Liberman</em>: "Visual Perl/Tk - GUI development solution for beginners and professionals"'
+    - item: '20:30-20:45 -- Break'
+    - item: "20:45-21:45 -- <em>Gaal Yahas</em>: \"Perl 6 for Perl 5 Programmers: We've Got a Wonderful Language for You\""
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  items:
+    - description: ''
+      end: 20:30
+      speaker: Felix Liberman
+      start: 19:30
+      title: 'Visual Perl/Tk - GUI development solution for beginners and professionals'
+    - description: |-2
+
+        				Perl 5 is a great language. It has a few quirks and unfortunate gotchas,
+        				though; and although it is well-known for its versatility and flexibility,
+        				the Perl 5 community wants something better.
+        				<br /><br />
+        				The good news is that Perl 6 is coming. The Pugs Project has given
+        				language design and implementation a huge push forward.
+        				<br /><br />
+        				In this talk we'll showcase a few language constructs that make the
+        				programmer's life easier, side by side with Perl 5 code.
+
+      end: 21:45
+      speaker: Gaal Yahas
+      start: 20:45
+      title: "Perl 6 for Perl 5 Programmers: We've Got a Wonderful Language for You"
+  location: Tel-Aviv University
+  other_summarizer: This meeting summary was written by Ran Eilam.
+  participants:
+    - name: Ran Eilam
+    - name: Gabor Szabo
+    - name: Oded S. Resnik
+    - name: Kate Delikat
+    - name: Thomas Maier
+    - name: Miki Eden
+    - name: Offer Kaye
+    - name: Shlomi Fish
+    - name: Yuval Yaari
+    - name: Beni Cherniavsky
+    - name: Uri Bruck
+    - name: Pinkhas Nisanov
+    - name: Oren Izmirli
+    - name: Gaal Yahas
+    - name: Ronen Shachar
+  report_text: |
+    <p>
+
+    			Can't beat the university surrounding. It is much more inspiring to talk Perl and eat burekas
+    			when surrounded by live satellite imagery and cases with moon rocks, than when surrounded
+    			with aging yellow-pages books. And there was plenty of fine refreshments for all.
+    			<br /><br />
+    			After a long absence from these meetings, it was easy to remember why I started coming here
+    			in the first place.
+    			<br /><br />
+    			1st talk was about "Visual Perl/Tk". A beginner oriented tool for building Tk GUIs visually.
+    			He built it. A reasonably convincing argument was made about the need for such a tool.
+    			Then we saw a nice demo. The code generated looks excellent. There is limited support for
+    			theming. I especially liked the various types of online help he showed- there is an
+    			internal help area where tips are shown, and you get external POD windows. Great for
+    			learning PerlTk.
+    			<br /><br />
+    			He was thinking of round trip code generation and other stuff, but then we got into a long
+    			session of RTL unicode hacking in Tk. The words "locale", "UTF8", and "BIDI" were thrown
+    			around, and strange characters appeared on the screen. This specific topic seems to be a
+    			major obsession with several mongers. It keeps appearing in every meeting. Or it could be
+    			just coincidence.
+    			<br /><br />
+    			Then came Gaal's talk about Perl6 for Perl5 people. The talk was great and left us with
+    			an appetite for more of the same. Each slide had some Perl5 vs. Perl6 code. The Pugs
+    			interpreter was used for demos and answering the many questions that were asked. He
+    			specifically focused on existing Pelr5 pains and their solution. He could have ranted
+    			about the sexier features of Perl6 (continuations, roles, etc.), but the approach he
+    			took was much better.
+    			<br /><br />
+    			Migo and others asked some difficult questions, which always started with
+    			"but can I do...?". As expected the answer was always yes. Offer focused on questions of
+    			the type "but can I do ... as I did in Perl5?". Again the answers were always yes.
+    			<br /><br />
+    			Secondary sigils, adverbial modifiers, topicalization, hyper operators, the splat operator...
+    			<br /><br />
+    			Some notable quotes:
+    			<br /><br />
+    			"The behavior in this case is well defined, or will be well defined"
+    			"Perl code that has MAGNIVUT (stealing quality)"
+    			"Perl5, when seen in this way, is slightly clunky"
+    			<br /><br />
+    			He promised a talk about the Perl6 project. I can hardly wait.
+    			<br /><br />
+    			Then came the bomb: Larry Wall and Autrijus Tang are coming to the next YAPC in Israel.
+    			<br /><br />
+    			Then we went to the coffee house, and there too talked about Perl.
+    			<br /><br />
+    			See you next time.
+
+    </p>
+20051006:
+  agenda_items:
+    - item: '19:00-19:30 -- Assembly and light refreshments'
+    - item: '19:30-20:45 -- <em>Gaal Yahas</em>: "(Not) Just the FAQs: Development in the pugs Project"'
+    - item: '20:45-21:00 -- Break'
+    - item: '21:00-21:45 -- <em>Shlomi Fish</em>: "SVN::RaWeb::Light"'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  items:
+    - description: |-2
+
+        				So you've heard about Perl 6 and know you might want it. But making a
+        				language sounds like a complex project. When would you get it? How is
+        				it being made, anyway? Who's who, how are things coordinated, and can
+        				anyone join in? (yes!)
+        				In this talk we'll describe the implementation process of Perl 6,
+        				hilighting Pugs, the experimental interpreter that turned into one of
+        				the hottest Open Source projects of the past few years.
+
+      end: 20:45
+      speaker: Gaal Yahas
+      start: 19:30
+      title: '(Not) Just the FAQs: Development in the pugs Project'
+    - description: ''
+      end: 21:45
+      speaker: Shlomi Fish
+      start: 21:00
+      title: SVN::RaWeb::Light
+  location: Tel-Aviv University
+  participants: []
+  report_text: "<p>\n\n      \n</p>\n"
+20051208:
+  agenda_items:
+    - item: '19:00-19:30 -- Assembly and light refreshments'
+    - item: '19:30- -- TBD'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  items: []
+  location: Tel-Aviv University
+  participants: []
+  report_text: "<p>\n\n      \n</p>\n"

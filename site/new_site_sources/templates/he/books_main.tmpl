@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
+<head>
+   <title><tmpl_var name="title"></title>
+   <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+   <meta name="author" content="Offer Kaye" />
+   <meta name="generator" content="HTML::Template" />
+   <meta name="keywords" content="<tmpl_var meta_keywords>" />
+   <meta name="description" content="<tmpl_var meta_description>" />
+   <link rel="stylesheet" type="text/css" href="/css/main-screen.css" media="screen" title="Main CSS (screen)" />
+   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+   <!-- For non-visual user agents: -->
+   <div id="top" <tmpl_var Hebrew>><a href="#main-copy" class="doNotDisplay doNotPrint">דלג לתוכן העיקרי</a></div>
+
+   <!-- ##### Header ##### -->
+   <div id="header" >
+      <h1 class="headerTitle">
+	 <a href="../index.html" title="Browse to homepage">Israel.pm - <span>מועדון שוחרי Perl</span></a>
+      </h1>
+      <div class="subHeader">
+	 <span class="doNotDisplay" <tmpl_var Hebrew> >ניווט: </span>
+	 <tmpl_loop name="nav_bar">
+	    <a href="../<tmpl_var nav_page>"><tmpl_var nav_name></a> <tmpl_unless name="__last__">|</tmpl_unless>
+	 </tmpl_loop>
+      </div>
+   </div>
+
+   <div id="side-bar" >
+      <!-- ##### Left Sidebar ##### -->
+      <div class="leftSideBar">
+	 <p class="sideBarTitle"><tmpl_var name="left_bar_title"></p>
+	 <ul>
+	    <tmpl_loop name="left_bar">
+	       <li><a href="#<tmpl_var ref>" title="<tmpl_var title>"><tmpl_var text></a></li>
+	    </tmpl_loop>
+	 </ul>
+	 <p class="sideBarTitle" <tmpl_var Hebrew> >אתרים הנוגעים לנושא</p>
+	 <ul>
+	    <li<tmpl_var Hebrew>><a href="<tmpl_var pub_book_page>">אתר המוציא לאור</a></li>
+	    <li <tmpl_var Hebrew>><a href="<tmpl_var amazon_book_page>">אתר הספר באמזון</a></li>
+	 </ul>
+      </div>
+      <!-- ##### Right Sidebar ##### -->
+      <div class="rightSideBar">
+         <tmpl_include name="right_sidebar.tmpl">
+      </div>
+   </div>
+
+   <!-- ##### Main Copy ##### -->
+   <div id="main-copy">
+   <h1 id="info" style="border-top: none; padding-top: 0; <tmpl_var Hebrew>">מידע על הספר</h1>
+      <table>
+	 <tr>
+            <td>
+ 	       <ul>
+		  <tmpl_loop name="book_info">
+		     <li><tmpl_var dt>:		<tmpl_var dd></li>
+		  </tmpl_loop>
+               </ul>
+	    </td>
+            <td valign="top">
+	       &nbsp;&nbsp;&nbsp;&nbsp;
+	       <img src="images/<tmpl_var book_cover_image>" alt="עטיפת הספר" width="145" height="190"/>
+	    </td>
+	 </tr>
+      </table>
+   <h1 id="reviews" <tmpl_var Hebrew> >סקירות של ספר</h1>
+   <tmpl_loop name="book_reviews">
+      <h2 <tmpl_var Hebrew>>
+         הסקירה בוצעה על ידי <tmpl_var reviewer_name>, <tmpl_var review_date>
+      </h2>
+      <p>
+         <tmpl_var review_content>
+      </p>
+   </tmpl_loop>
+   <p class="bottom">&nbsp;</p>
+   </div>
+
+   <!-- ##### Footer ##### -->
+   <tmpl_include name="footer.tmpl">
+</body>
+</html>

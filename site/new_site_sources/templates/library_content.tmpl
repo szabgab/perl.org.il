@@ -1,0 +1,104 @@
+      <h1 id="introduction" style="border-top: none; padding-top: 0;">Introduction</h1>
+      <p>
+         The library of the Israeli Perl Mongers includes nearly 80 books, mostly about Perl,
+	 programming, and other computer related subjects. The books are available as a special
+	 service for our members, and can be borrowed, free of any charge, by coming to our
+	 <a href="meetings.html">meetings</a>. Specifically:
+      </p>
+      <ol>
+         <li>To order a book, check its availability in the list below.</li>
+         <li>
+	    Contact our librarian,
+	    <a href="mailto:libraryHATESpaM@perl.org.il" title="Email the librarian">Thomas Maier</a>,
+	    and request the book.
+	 </li>
+         <li>Show up at the next Israel.pm meeting and pickup the book.</li>
+         <li>
+	    Read the book and write a review (you can email the review as simple text, or
+	    intersepted with simple HTML formatting tags, e.g.
+	    &lt;b&gt;<strong>bold text</strong>&lt;/b&gt;, if you want).<br />
+	    While this is not compulsory, it would be highly appriciated, as these reviews are one
+	    of the major motivations for our sponsors to continue donating books to our library.
+	 </li>
+         <li>Return the book by coming to a meeting and returning the book to the librarian.</li>
+         <li>
+	    If you want a book but it is currently held by another user, contact the librarian so
+	    that he can add you to the waiting list for that book.
+	 </li>
+      </ol>
+      <h1 id="sponsors">List of Sponsors</h1>
+      <p>
+         The following have kindly donated books to Israel.pm's library. We would like to extend
+	 our warmest thanks, on behalf of all our members, for their generosity and service to
+	 the community.
+      </p>
+      <ul>
+         <li>
+	    <a href="http://www.aw-bc.com/">Addison-Wesley and Benjamin Cummings</a><br />
+	    AW &amp; BC (a <a href="http://www.pearsoned.com/">Pearson Education</a> brand) is the
+	    premier publisher in computing, economics, finance, mathematics,
+	    science, and statistics.
+	 </li>
+         <li>
+	    <a href="http://www.apress.com/">Apress</a><br />
+	    Apress is a publishing company devoted to meeting the needs of programming professionals.
+	 </li>
+         <li>
+	    <a href="http://www.focus.co.il/">Focus</a><br />
+	    Focus Computers Publishing is the largest and most professional computer books
+	    publishing house in Israel and has the largest selection of computer books about:
+	    Windows, Office, Internet Graphics, Programming, Hardware and more.
+	 </li>
+         <li>
+	    <a href="http://www.manning.com/">Manning Publications Co.</a><br />
+	    Manning publishes computer books for professionals -- programmers, system administrators,
+	    designers, architects, managers and others.
+	 </li>
+         <li>
+	    <a href="http://www.osborne.com/">McGraw-Hill/Osborne Media</a><br />
+	    McGraw-Hill/Osborne Media, a unit of
+	    <a href="http://www.mcgraw-hill.com/">McGraw-Hill Education</a>, is a
+	    leading publisher of self-paced computer training materials, including user
+	    and reference guides, best-selling series on computer certification, titles on
+	    business &amp; technology, and high-level but practical titles on networking, programming,
+	    and Web development tools.
+	 </li>
+         <li>
+	    <a href="http://www.newriders.com/">New Riders</a><br />
+	    New Riders books provide a forum for the leading <strong>Voices That Matter</strong>
+	    in design across the landscape of Web, graphics, print, games, and rich media.
+	    New Riders is part of <a href="http://www.peachpit.com/">Peachpit</a>, itself a part
+	    of <a href="http://www.pearsoned.com/">Pearson Education</a>.
+	 </li>
+         <li>
+	    <a href="http://www.oreilly.com/">O'Reilly Media, Inc.</a><br />
+	    You don't know who O'Reilly are?! <em>Hello</em>, the animal books?
+	    Geez, which rock have you been living under... ;-)
+	 </li>
+         <li>
+	    <a href="http://www.prenhall.com/">Prentice Hall</a><br />
+	    Prentice Hall publishes introductory through advanced-level textbooks, professional
+	    reference publications, and monographs. In 1998 Prentice Hall merged with
+	    the world's leading educational and professional publisher --
+	    <a href="http://www.pearsoned.com/">Pearson Education</a>.
+	 </li>
+      </ul>
+      <h1 id="books">List of books</h1>
+      <p>
+         In the following table, click on a heading to sort the table by that heading. Click on a book's
+	 name to go to that book's page, where you can find additional information and reviews.
+      </p>
+      <table id="t1" class="sortable" border="1">
+	 <tr>
+	   <th>Number</th><th>Name</th><th>ISBN</th><th>Publisher</th><th>Current User</th>
+	 </tr>
+	 <tmpl_loop name="books_table">
+	 <tr>
+	    <td><tmpl_var number></td>
+	    <td><tmpl_var name></td>
+	    <td><tmpl_var isbn></td>
+	    <td><tmpl_var publisher></td>
+	    <td><tmpl_var cuser></td>
+	 </tr>
+	 </tmpl_loop>
+      </table>

@@ -1,0 +1,73 @@
+= Questions and Answers from mailling list
+This page contain small digests for questions that were posted in our mailing list. This page created not to substitute mailing list archive, but organize knowledge shared in our mails for easier searching. This page will be organized like directory, where every report placed under specific topic or subtopic.
+First examples come from mailing list archive, but I hope that everyone who post new question on our mailing list will put here little report that will include:
+* Posted question
+* suggested solutions
+* accepted solution
+* link to thread in mailing list archive
+* links to other references ( if exists )
+Every one who post new report and cannot find suitable topic for his report will created new topic or subtopic. If someone has some different solution for specific question he can add it to "suggested solutions" section.
+
+
+0 ApacheStopRequestLoop - how to finish apache request loop on earlier phases
+=== Question
+how to finish apache request loop on earlier phases
+=== Suggested solutions
+* return "Apache" constant 'DONE' from handler function
+=== Question mail thread
+http://www.perl.org.il/pipermail/perl/2004-April/004842.html
+
+
+
+
+
+
+0 InvisiblePerlCode - how to "blank" perl scripts
+=== Question
+How to "blank" ( make invisible ) code in perl scripts
+=== Suggested solutions
+* use "Acme::Bleach" module
+=== Question mail thread
+http://www.perl.org.il/pipermail/perl/2004-January/003752.html
+=== related links
+http://search.cpan.org/~dconway/Acme-Bleach-1.12/lib/Acme/Bleach.pm
+
+
+
+
+
+
+0 GraphicChart - How to create graphic chart for statistic data
+=== Question
+How to create graphic chart for statistic data
+=== Suggested solutions
+* "gnuplot" application on UNIX/Linux
+* use "GD::Graph" perl module
+* http://people.ee.ethz.ch/~oetiker/webtools/rrdtool/perlbind/index.html is a page describing rrdtool's perl bindings.
+=== Question mail thread
+http://www.perl.org.il/pipermail/perl/2004-January/003752.html
+=== related links
+http://search.cpan.org/~mverb/GDGraph-1.43/Graph.pm
+
+
+
+0 NumberOfCaptures - handle unknown number of captures
+=== Question
+handle unknown number of captures
+=== Suggested solutions
+*
+while ($string =~ /(Ab)/g) {
+    print $1, "\n";
+}
+
+*
+my @found = ($string =~ /(Ab)/g);
+
+
+
+=== Question mail thread
+http://www.perl.org.il/pipermail/perl/2004-January/004017.html
+
+
+
+

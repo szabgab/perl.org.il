@@ -1,0 +1,36 @@
+<% myheader("Presentations - preliminary list") %>
+<tr>
+<% mysidebar() %>
+<td>
+This is a preliminary list of the content of YAPC::Israel::2003<br>
+We have yet to confirm all the talks and presentations.<br>
+Formal schedule indicating what will be presented at each hour will be
+published later, close to the conference.
+<p>
+The presentations are listed in random order.
+<p>
+<%
+my %h = read_presentations();
+my $html='';
+my $index='';
+foreach my $id (sort {$a <=> $b} keys %h) {
+   $h{$id}{description} = '' if 'HASH' eq ref $h{$id}{description};
+   $h{$id}{bio} = '' if 'HASH' eq ref $h{$id}{bio};
+   $index .= qq(<li><a href="#$id">$h{$id}{title}</a>\n);
+   $html .= <<HTML;
+<li><a name="$id"></a><b>$h{$id}{title}</b> by $h{$id}{name}<br>
+    <b>Length:</b> $h{$id}{length}min <b>Language:</b> $h{$id}{language}<br>
+    <b>Content:</b>$h{$id}{description}<br>
+    <b>Bio:</b>$h{$id}{bio}<p>
+HTML
+}
+$html =~ s/\n\n+/<p>/g;
+$html =~ s/\n/<br>\n/g;
+$html =~ s@(http://[^\s#<]*)@<a href="$1">$1</a>@g; # make links
+print "<ol>$index</ol>";
+print "<ol>$html</ol>";
+%>
+
+</td>
+</tr>
+<% myfooter() %>

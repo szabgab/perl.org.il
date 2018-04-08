@@ -1,0 +1,44 @@
+This page aims to be an English and world-editable version of
+[http://www.linux.org.il/sites/projects/ the corresponding page at linux.org.il].
+
+For Perl projects refer to IsraeliProjects.
+
+= Large or Very-large scale Projects
+
+[PHP http://www.php.net/] - a server-side scripting language that is actively developed by [Zend http://www.zend.com/] and many other volunteers. Zend is an Israeli company.
+
+[MOSIX http://www.mosix.org/] - a clustering-solution for the Linux kernel. Actively developed by Amnon Barak and his team at the Hebrew University. (*Note* - there may be some licensing issues)
+
+[openMosix http://openmosix.sourceforge.net/] - a MOSIX-derivative that professes a more open development model than MOSIX. Actively developed by [http://www.qlusters.com Qlusters] and many other contributors.
+
+= Medium Scale Projects
+
+[Web Secretary http://www.nongnu.org/websec/] - a program that
+scans Internet sites and reports when changes are made to them.
+
+[Freecell Solver http://vipe.technion.ac.il/~shlomif/freecell-solver/] - an ANSI C library and a standalone command line program to solve games of Freecell and similar variants of card Solitaire.
+
+[XMMS-Volnorm http://volnorm.sourceforge.net/] - a plug-in for
+XMMS that normalizes the sound volume between the played songs.
+
+[XParam http://xparam.sourceforge.net/] - a data serialization/de-serialization library for C++.
+
+[Hspell http://www.ivrix.org.il/projects/spell-checker/] - a
+spell checking program for Hebrew language documents.
+
+[Database Super Converter http://dbsconv.sourceforge.net/] -
+a cross-database abstraction layer.
+
+[MikMod for Java http://t2.technion.ac.il/~shlomif/jmikmod/] - a player of
+[MOD Files http://www.modarchive.com/] for Java.
+
+[Jin http://www.jinchess.com/] - an open source, cross-platform, graphical client for playing chess with other people around the world.
+
+[Syscalltrack http://syscalltrack.sourceforge.net/] - a Linux kernel module and accompanying user-land software for tracking system calls.
+
+= Linux Distributions
+
+[http://www.linux-kinneret.org/ GNU/Linux Kinneret] - a Knoppix
+based bootable !LiveCD which was translated to Hebrew.
+
+[http://linbrew.sourceforge.net/ Linbrew] - a GNU/Linux distribution that is intended for new Israeli users who are looking for built-in Hebrew support and Israeli localization.

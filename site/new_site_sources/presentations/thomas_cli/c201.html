@@ -1,0 +1,207 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>13. CLI Automatic Test</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="CLI Automatic Test with Perl"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="12. Session ending"
+HREF="c185.html"><LINK
+REL="NEXT"
+TITLE="14. DUT connectivity module/package"
+HREF="c222.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>CLI Automatic Test with Perl</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c185.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="c222.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="AEN201">13. CLI Automatic Test</H1
+><P
+>    The idea was to create testing suite in way that build and run test
+    scenarios will be simple as possible.
+   </P
+><P
+>    This suite include 4 basic stages:
+   </P
+><P
+></P
+><UL
+><LI
+><P
+>      <TT
+CLASS="GUILABEL"
+><B
+>Connectivity package/module</B
+></TT
+>
+     </P
+><P
+>&#8212;
+       This script include functions responsible for all remote
+       activity (Expect) between DUT (Device Under Test) and test.
+     </P
+></LI
+><LI
+><P
+>      <TT
+CLASS="GUILABEL"
+><B
+>Test scenario</B
+></TT
+>
+     </P
+><P
+>&#8212;
+       It is simple XML file that describe the test session.
+       Regression script will parse it and run defined test cases.
+     </P
+></LI
+><LI
+><P
+>      <TT
+CLASS="GUILABEL"
+><B
+>Template file</B
+></TT
+>
+     </P
+><P
+>&#8212;
+       Template files will include all (as much as possible) responses that
+       we would expect from device while running interactive sessions.
+     </P
+></LI
+><LI
+><P
+>      <TT
+CLASS="GUILABEL"
+><B
+>Regression script</B
+></TT
+>
+     </P
+><P
+>&#8212;
+       This one will run interactively all commands on DUT
+       that appears in XML scenario and compare the results
+       to the existing template files.
+     </P
+></LI
+></UL
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c185.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="c222.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>12. Session ending</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>14. DUT connectivity module/package</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

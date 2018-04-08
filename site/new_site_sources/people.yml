@@ -1,0 +1,31 @@
+---
+- name: Gabor Szabo
+  irc: szabgab
+  pause: SZABGAB
+  blog: http://szabgab.com/
+  linkedin: http://www.linkedin.com/in/szabgab
+  github: szabgab
+  twitter: szabgab
+  projects:
+    - title: Padre
+    - title: DWIM Perl
+- name: Pinkhas Nisanov
+  blog: http://nisanov.com/
+- name: Sawyer X
+  blog: http://blogs.perl.org/users/sawyer_x/
+  irc: sawyerx
+- name: Shlomi Fish
+  blog: http://www.shlomifish.org/
+  irc: rindolf
+- name: Mikhael Goikhman
+  blog: http://migo.sixbit.org/
+- name: Yuval Kogman
+  blog: http://blog.woobling.org/
+- name: Dotan Dimet
+  blog: http://corky.net/dotan/
+- name: Shlomo Yona
+  blog: http://shlomoyona.blogspot.com/
+- name: Oded Reznik
+- name: Ran Eilam
+  pause: EILARA
+

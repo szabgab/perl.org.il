@@ -1,0 +1,70 @@
+
+
+    Invitation to the upcoming meetings of the Israeli Perl Mongers
+
+
+                  In the organization of the 
+          Israeli Perl Mongers http://www.perl.org.il/
+                             and 
+          Perl Training Israel http://www.pti.co.il/
+
+we would like to announce the schedule of the coming 3 meetings.
+
+The Israeli Perl Users Group (Israel.pm) was established in April 2001.
+Since March 2002 we organize monthly meetings with technical presentations
+in various aspects of the Perl Programming language and discussion.
+
+In the previous month we started a serious of presentations under the
+title "Foreign Languages". We belive that learning about other programming
+languages will improve our capability to use Perl as well. In addition
+we keep the usual Perl related presentations.
+
+Our meetings take place place once a month on thursday evenings 
+between 18:00-22:00 in the offices of Dapey Zahav http://www.d.co.il/
+in Aba Hilel Str. 23. Ramat Gan. 
+
+Attendance is free of charge but you are requested to inform us 
+if you plan to attend by sending an e-mail to gabor@perl.org.il
+
+
+
+Oct 9   Yehuda Berlinger : podindex (15 minutes, in English)
+        Gabor Szabo:       podindex with WxPerl (5 minutes)
+          Podindex provides searchable access to Perl documentation.
+          It has a CGI/HTML interface for remote access and
+          a command line interface for local access. In addition
+          it has a GUI interface built using WxPerl a multi-platform
+          GUI development system.
+          http://podindex.pti.co.il/
+        Mikhael Goikhman : Foreign languages: Ruby (90 minutes)
+          Ruby is an emerging Object Oriented Scripting language
+          with very strong features.
+          http://www.ruby-lang.org/
+
+
+
+Nov 6   Avraham Bernstein: Foreign Languages: Native in Tcl (40 minutes)
+          Tcl is an easily extendable and embedable scripting language.
+          http://www.tcl.tk/
+        Ran Eilam: Introduction to Extreme Programming (40 min)
+          Extreme programming is deliberate and disciplined approach to
+          software development that if applied correctly might reduce
+          development time and improve software quality. It actually
+          stresses customer satisfaction.
+          http://www.extremeprogramming.org/
+
+
+Dec 11  Shlomo Yona: The garbage collector of Perl (40 minutes)
+          When a (large) piece of data is no longer in use in a
+          Perl program, the memory used by that data should be
+          freed. The subsystem that is responsible for that is
+          called the Garbage collector.
+        Ran Eilam: Test Driven Development with Java and Eclipse
+                   (or: what Perl cannot do, and why it cannot do it)?
+                    (5 minutes)
+        Shlomi Fish: Foreign Languages: Haskell (40 minutes)
+           Haskell is a purely functional programming language. 
+           http://vipe.technion.ac.il/~shlomif/lecture/Perl/Haskell/slides/
+           http://www.haskell.org/
+
+

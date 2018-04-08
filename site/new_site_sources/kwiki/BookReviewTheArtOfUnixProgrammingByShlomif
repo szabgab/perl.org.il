@@ -1,0 +1,94 @@
+= Review: The Art of Unix Programming
+
+[Book's Homepage http://www.catb.org/~esr/writings/taoup/]
+
+http://www.catb.org/~esr/writings/taoup/cover-small.png
+
+*Author*: [Eric S. Raymond http://www.catb.org/~esr/]
+
+*Publisher*: [Addison Wesley http://www.awprofessional.com/]
+
+*ISBN*: 0131429019
+
+*Publishing Date*: September 2003
+
+*Pages*: 560
+
+*Reviewer*: ShlomiFish
+
+*Review Date*: December 2003
+
+*Rating*: 9
+
+First of all I should note that I only read the book online and
+did not buy the paperback copy. This book is a great read as most of the other things by Eric S. Raymond are. Raymond covers the culture and conventions surrounding UNIX programming, with a lot of focus, case studies and examples to illustrate the point. This book taught me a few new things or otherwise strengthened some insights I had. Thus, I would highly recommend it to people with even less insights on UNIX programming, or programming in general, than I came with.
+
+This book gives a good introduction to the history of UNIX and its philosophy, covers the major issues in the design of UNIX software, goes on to Implementation, and then covers the Community context of the UNIX culture (releasing a software as open source, etc.) The book is very enjoyable and comprehensive.
+
+This book is something that I would recommend every software shop owner to buy for his employees to read at their workplaces, in a similar fashion that "Programming Perl" (the Camel Book) is such a must. I hope this book will sell well despite the fact that it's available online for free, and will justify the effort that Raymond and other contributors placed into it. Still, I appreciate the fact that it was placed online, because it can prove as a good online resource for referring to or linking to.
+
+I would like to take the rest of this page to address some impressions (positive as well as negative) to the book's content.
+
+== Impressions from the Book
+
+=== Perl
+
+The [Book's section about Perl http://www.catb.org/~esr/writings/taoup/html/ch14s04.html#perl]
+heavily misrepresents it. Raymond claims that somehow Perl code becomes more and more unmaintainable for large programs. This belief is not uncommon and I've heard it from several other sources up to now. However, it has no basis in reality.
+
+The rich Perl syntax and "There's more than one way to do it" philosophy may indeed make it more difficult to understand Perl code written by others, especially for inexperienced programmers. However, it still does not make the code unmaintainable. As far as programming abstractions and methodologies are concerned, Perl offers so much more than ANSI C, and ANSI C has proven to be maintainable for extremely large codebases as well.
+
+Part of the reason for this superstition is that Perl is mostly used for in-house code, that is not exposed to the world. Plus, CPAN, with its large number of small and self-contained modules, may make many programs seem incredibly short, while their total dependent codebase is much larger.
+
+This is an uncalculated mistake on Raymond's part where he seems to have incorporated a myth into an otherwise excellent book.
+
+=== CPAN vs. the Python Distribution
+
+Somewhere in the book (I cannot find where) the author compares the Perl philosophy of keeping the core distribution relatively minimalistic while keeping all the other modules on CPAN, to the Python philosophy of incorporating a lot of modules of various functionality into the core distribution. He concludes that Python's way is superior.
+
+One thing is that there's no clear case here. First of all, CPAN makes it much easier to install a great deal of modules than Python does for all the modules that are not incorporated inside it. (as there isn't a Python equivalent for the CPAN.pm
+or CPANPLUS.pm modules). On the other hand, I heard from several people on the IRC, who had to write a script that
+would run on a great deal of Perl installations inside an organization, where they could not afford to install the modules from CPAN everywhere.
+
+More comprehensive Perl distributions have been created. (ake ActivePerl for instance). And an organization can always mandate installing Perl with all the modules that are relevant for it. The "bloat" of the Python distribution is, thus, probably a function of the fact it has no decent alternative to CPAN. A Python installation across a great deal of organization computers may become unusable if it requires functionality not present in the core Python distribution as well. (albeit with a smaller chance than the core Perl distribution)
+
+So I don't think it's a clear case decision.
+
+=== The UNIX Koans of Master Foo
+
+[ The UNIX Koans of Master Foo http://www.catb.org/~esr/writings/taoup/html/unix_koans.html ]
+is one of the more amusing sections of the book, which does not require one to read the entire book. Raymond gives a set of Zen-like stories to illustrate some points on UNIX. I could not say I fully understood the point behind all the stories, but they are amusing nonetheless.
+
+=== The Tale of J. Random Newbie
+
+[The Tale of J. Random Newbie http://www.catb.org/~esr/writings/taoup/html/ch16s01.html]
+is also an amusing and instructive story about an imaginary
+programmer who has to work in a proprietary environment. I can easily relate to this story, as something similar happened to me once with an MFC (= Microsoft Foundation Classes) program I wrote for my workplace. The switch to hacking on UNIX and Perl where things "just work" and problems are almost always my fault was very instructive.
+
+Joel Splosky has [a testimonial http://www.joelonsoftware.com/articles/fog0000000250.html] taken from his real-world experience that illustrates Raymond's point, and you can probably find many other things like that on the Net. (or just ask any experienced programmer).
+
+=== Threads
+
+Raymond heavily depracates threads in [the Threads - Threat or Menace http://www.catb.org/~esr/writings/taoup/html/ch07s03.html#id2923889 ] section. Threadphobia is common among hard-core UNIX hackers, who believe that multi-tasking can only effectively be done in multi-processing. I agree that working with threads poses several problems that are not existent in processes.
+
+However, threads are still a good multi-tasking mechanism, which cannot always be replaced with mutli-processing without losing performance, modularity or both. In games AI for example, paralleling several scans that opeaate on the same states collection, is probably best done using threads. (unless someone can prove I am wrong). The other alternative (a collection-controller server process) would mean a much more complex architecture with caching and a designated protocol, and one task as the bottleneck, and lots of unwanted complexity.
+
+Some tasks give way to threads better while other gives to processes. Of course, when working with threads one should always note that "Here be Dragons". Still, they are far from being a "methoda non-grata".
+
+Recently, some UNIX applications emerged which made a good use of threads for parallelization. MySQL is one notable example. Another is Apache 2.0 in which the conversion to threads actually increased its performance. While the Apache's charter stresses modularity and flexibility over speed, its developers still don't take direct measures to decrease its speed.
+
+=== Automated Tests
+
+One thing that I found dearly missing from the book was a mentioning of automated tests as a way to better secure the software's quality. I admit that even I started to employ this strategy only recently, but it's still very important. It has also been put to good use in a great deal of open source projects.
+
+=== Object-Oriented Programming
+
+I think Raymond hits the nail right on the spot in his
+[analysis of Object-Oriented Programming http://www.catb.org/~esr/writings/taoup/html/unix_and_oo.html]
+. I also came to a conclusion that Object Oriented Programming was not a panacea and, while appropriate in some cases, does not really map to all problems.
+
+I recall a time when at a Technion lab I was doing a project in, a student getting paid to administer the systems, was doing a project there that aimed to have a better way to organize projects at the lab. He was a C++ lover, and had some reluctance to Perl, PHP and Python, so he decided to write it in C++. He kept telling me about the wonderful abstractions he created in C++, (all of which were much more easier to do in Perl), and how "beautiful" it was. It took him over a year and he was hardly getting started. In my approximation, doing it in Perl, while using CPAN modules, would have resulted in one month of concentrated work max. Even, assuming you would want to write it in C++, it should take only 3 months or so, if you don't mind writing code that actually does something (regardless of how un-OO it is), instead of heaps and heaps of useless Object Oriented abstractions.
+
+In Perl's CPAN, most modules implement an object. This is to make sure they are instantizable and also to have a unified way of using them. However, whether inheritance and other OO paradigms can be brought to good use there, is a different question which cannot be easily resolved. I recently encountered a module, in which inheritance could not help me adapt it to my specific needs and I had to modify the original code. This is despite the fact its author believed it was extensible.
+
+I suppose that if you wish to write code that is re-usable and extensible to other programms, then you need to make sure it is re-usable and extensible, and object-oriented programming won't necessarily make it so.

@@ -1,0 +1,48 @@
+<% myheader("Speakers") %>
+<tr>
+
+<% mysidebar() %>
+
+<td>
+   As traditional to YAPC we asked people to send proposal(s) to give 
+   presentation(s) and to show poster(s) at the conference.<p>
+   We provided a <a href=cfp.txt>Call for Proposals</a>
+   and asked the people to submit their proposals to 
+   <a href=mailto:proposals@perl.org.il>proposals@perl.org.il</a>
+   <br>We gave some additional infromation about <a
+   href=poster.txt>posters</a>.
+   <p>
+   Gabor Szabo wrote an e-mail explaining 
+   <a href=http://www.perl.org.il/pipermail/perl/2002-December/000786.html>What
+   is YAPC anyway ?</a>
+   <hr>
+   We have received a lot of proposals, about 3 times more than time
+   we have. Now that we have selected those that will be presented you
+   can also take a look at our planned program. (just remember, this
+   is not final yet, some people might cancel their presentations and
+   we might add others.)<p>
+   <h1><a href=presentations.html>Check out the full list of presentations</a></h1>
+   <h1>List of speakers</h1>
+
+<ol>
+<%
+my %h = read_presentations();
+my %seen;
+foreach my $id (sort {$h{$a}{name} cmp $h{$b}{name}} keys %h) {
+   #$h{$id}{description} = '' if 'HASH' eq ref $h{$id}{description};
+   $h{$id}{bio} = '' if 'HASH' eq ref $h{$id}{bio};
+   unless ($seen{$h{$id}{name}}++) {
+       print qq(<li>$h{$id}{name}<br>\n);
+       my $bio = $h{$id}{bio};
+       $bio =~ s/\n\n+/<p>/g;
+       $bio =~ s/\n/<br>\n/g;
+       $bio =~ s@(http://[^\s#<]*)@<a href="$1">$1</a>@g; # make links
+       #print qq($bio\n);
+   }
+   print qq(<a href="presentations.html#$id">$h{$id}{title}</a><br>\n);
+}
+%>
+</ol>
+</td>
+</tr>
+<% myfooter() %>

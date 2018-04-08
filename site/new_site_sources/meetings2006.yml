@@ -1,0 +1,416 @@
+---
+20060105:
+  agenda_items:
+    - item: '19:00-19:30 -- Assembly and light refreshments'
+    - item: '19:30-21:45 -- Lightning Talks'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  items:
+    - description: |-
+        Lightning Talks by various people. They serve as a rehearsal for
+                    OSDC::Israel::2006, in order to get some feedback.
+      end: 21:45
+      speaker: Perl Mongers
+      start: 19:30
+      title: Lightning Talks
+  location: Tel-Aviv University
+  participants: []
+  report_text: "<p>\n\n      \n</p>\n"
+20060508:
+  agenda_items:
+    - item: '18:00-18:30 -- Assembly and very light refreshments'
+    - item: '18:30-19:20 -- Shlomo Yona: an Introduction to Combinatorical Algorithms'
+    - item: '19:30-20:20 -- Gabor Szabo: Test::Live - live testing of a CPAN module'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+  items:
+    - description: 'Continuing with the Comp Sci theme popularized by Shlomo, a basic introduction to algorithms about combaintorics.'
+      end: 29:20
+      speaker: Shlomo Yona
+      start: 18:30
+      title: an Introduction to Combinatorical Algorithms
+    - description: 'Continuing with the testing theme, we wil take a CPAN module and test it. Live.'
+      end: 20:20
+      speaker: Gabor Szabo
+      start: 19:30
+      title: 'Test::Live - testing a CPAN module'
+  location: 'F5, Habarzel 24, Ramat Hachayal, Tel-Aviv'
+  participants: []
+  report_text: "<p>\n\n      \n</p>\n"
+20060605:
+  agenda_items:
+    - item: '18:00-18:30 -- Assembly and very light refreshments'
+    - item: '18:30-19:30 -- Gabor Szabo: Test::Live - live testing of a CPAN module'
+    - item: '19:40-20:10 -- Doron Abraham: Stupid things your boss will always say and how to completely misunderstand them'
+    - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
+    - item: 'The meeting takes place in the offices of <a href="http://www.f5.com/">F5</a> located in Habarzel 24 B, Ramat Hachayal, Tel Aviv.'
+  items:
+    - description: 'Continuing with the testing theme, we wil take a CPAN module and test it. Live.'
+      end: 19:30
+      speaker: Gabor Szabo
+      start: 18:30
+      title: 'Test::Live - testing a CPAN module'
+    - description: 'Have you heard: do not do it generic. Or: this is not interesting. Or: Do it quick and dirty. We will discuss these gems and others.'
+      end: 20:10
+      speaker: Doron Abraham
+      start: 19:40
+      title: 'Stupid things your boss will always say, and how to completely misunderstand them'
+  location: 'F5, Habarzel 24, Ramat Hachayal, Tel-Aviv'
+  other_summarizer: This review was written by Ran Eilam
+  participants: []
+  report_text: |
+    <p>
+    If we were doing meeting ratings, this one would be off the charts. We
+    laughed, we cried, and even learned a thing or two. It had all the right
+    ingredients, except maybe the (now historical) <a href="http://en.wikipedia.org/wiki/Bourekas">Burekas</a> bit.
+    </p>
+
+    <p>
+    The 1st talk was under the "Testing" theme. That is, if you are foolish
+    enough to categorize Gabor.
+    </p>
+
+    <p>
+    Gabor started with the usual: "I have no presentation".
+    </p>
+
+    <p>
+    However, he did have an idea (surprise!): get everyone to pool their
+    brains and add value to a CPAN module.
+    </p>
+
+    <p>
+    In the follwing 40 minutes, we chose a CPAN module from
+    <a href="http://ali.as/">Adam Kennedy</a>'s
+    list (it was perfect for us: high quality, lots of choice, open repository),
+    went through the docs and tests in depth, added a couple of tests, ran
+    coverage before and after, analyzed specific branch coverage issues,
+    solved them, committed, and finally solved a subversion conflict in the
+    Changes file.
+    </p>
+
+    <p>
+    In short, we pooled our brains and added value to a CPAN module. QED.
+    </p>
+
+    <p>
+    Testing something like File::HomeDir poses unique problems, and
+    excellent solutions were offered to those problems. Thomas Maier suggested
+    mocking linux, and the rest of the known UNIVERSE, to get multiplatform tests
+    that can be run on a uniform platform. There goes another excuse for that
+    red square in Devel::Cover's report.
+    </p>
+
+    <p>
+    The biggest thing I learned, was how incredibly easy it can be to add
+    Kwalitee, perhaps even Quality, to a random CPAN module. People keep asking
+    me: how do I get to be a good developer? How do I prove to prospective
+    employers that I can write automated tests? Documenation? Just pick a CPAN
+    module. If you want to start REAL easy, take a look at one of Adam Kennedy's
+    modules. From what Gabor showed us, it is a great place to start.
+    </p>
+
+    <p>
+    Due to time constraints, all we got to do was add a couple of tests.
+    They passed, and we moved on to the next talk:
+    </p>
+
+    <p>
+    Doron Abraham chose the "Humans Building Software" theme, and lead a
+    sometimes funny, sometimes sad, discussion focusing on
+    manager &harr; developer communications in a software team. Apparently, as
+    someone who has done both, he claims that this "communications" thing, can
+    actually go wrong. Terribly, terribly, wrong.
+    </p>
+
+    <p>
+    It was wise of him to focus on the thorns and not the roses, for this is
+    how you get a good response from the il mongers. We love the dark side. And
+    it is educational, so we need not feel guilty.
+    </p>
+
+    <p>
+    The talk was structured into several iterations. Each iteration
+    revolved around a real event, recounted from not only the memory of Doron,
+    but from the collective hive mind of everyone there, since everybody had these
+    memories.
+    </p>
+
+    <p>
+    A good one which everybody present experienced was (manager &rarr;
+    developer):
+    </p>
+
+    <p>
+    "Hey You! Stop what you're doing, switch context, and fix this urgent
+    bug for client X. Do it quick and dirty, cause I need it yesterday. Don't
+    worry, for THIS FEATURE WILL NEVER CHANGE. Just hard code everything."
+    </p>
+
+    <p>
+    When you return from lunch, all geared up to implement that perfect solution
+    you just found to this surprise problem, Manager is waiting with a new context
+    switch, to a new patch, even more urgent, for a feature that will NEVER CHANGE.
+    The solution required by the new patch requires a change to the earlier patch,
+    which was supposed to NEVER CHANGE.
+    </p>
+
+    <p>
+    And there were many others just as delightful.
+    </p>
+
+    <p>
+    Then Doron pointed everyone to the issues raised by this unpleasent experience,
+    and everyone countered by shouting ideas, memories, theories, debunkings,
+    quotes, convictions, and everything else they could think of. We went way
+    overtime, yet did not go through all his slides.
+    </p>
+
+    <p>
+    This went on for several iterations, all with the same basic structure, and
+    there was much laughter. Perhaps even some genuine sadness at our sorry state,
+    and our continuing dysfunctionality in trying to change it.
+    </p>
+
+    <p>
+    As always, the "Humans and Software" themed talks are a hit with the Israeli
+    mongers, even if they are only (very) indirectly about Perl.
+    </p>
+
+    <p>
+    Perl6 was mentioned approximately 10 times. The anticipation is part of
+    the fun.
+    </p>
+
+    <p>
+    See you next time, and thanks to Uri Bruck for helping out with the
+    English.
+    </p>
+20060703:
+  agenda_items:
+    - item: '18:00-18:30 -- Assembly and very light refreshments'
+    - item: '18:30-20:00 -- Orit Hazaan: Game Theory and Software Development'
+    - item: '20:00- -- We will go to a nearby coffee shop/pub for a post-meeting food and talk'
+  items:
+    - description: |-
+        The talk explores how agile software
+                    development overcomes some of the inherited problems of software
+                    development processes. For this purpose specific software
+                    development situations are analyzed within a game theory framework
+                    that will be explained in the meeting.
+      end: 20:00
+      speaker: Orit Hazaan
+      start: 18:30
+      title: A Game Theoery Perspective on the Software Development Processes
+  location: 'F5, Habarzel 24, Ramat Hachayal, Tel-Aviv'
+  participants: []
+  report_text: ''
+20060810:
+  agenda_items:
+    - item: '18:00-22:00 -- Meeting at the Café'
+  items:
+    - description: |
+        <p>
+        The agenda for the meeting is:
+        </p>
+
+        <ol>
+        <li>
+        Boot a notebook.
+        </li>
+        <li>
+        Connect to the place's wireless network.
+        </li>
+        <li>
+        Start typing into wiki.perl.org.il a complete schedule for 1 year.
+        of all meetings and talks
+        </li>
+        <li>
+        Stop when we have a schedule.
+        </li>
+        </ol>
+
+        <p>
+        This will be creative and fun, and we can drink an alcoholic coffee
+        beverage at the same time.
+        </p>
+      end: 22:00
+      speaker: Everyone
+      start: 18:00
+      title: Social Meeting
+  location: 'Aroma (a café), Habarzel 25, Ramat Hachayal, Tel-Aviv'
+  participants: []
+  report_text: ''
+20060904:
+  agenda_items:
+    - item: '18:30-20:00 -- Ori Peleg about Software Testing'
+    - item: '20:00-22:00 -- Meeting at a café or pub'
+  items:
+    - description: |-
+        The talk will present several thoughts about
+                    testing software, and automated software tests. Ori has previously
+                    given the talk at OSDC::Israel::2006
+      end: 20:00
+      speaker: Ori Peleg
+      start: 18:30
+      title: Thoughts about Software Testing
+    - description: "Food and talk.\n"
+      end: 22:00
+      speaker: Everyone
+      start: 20:00
+      title: Social Meeting
+  location: 'F5, Habarzel 24, Ramat Hachayal, Tel-Aviv'
+  participants: []
+  report_text: ''
+20061009:
+  agenda_items:
+    - item: '18:30-20:00 -- Uri Bruck about Perl and MIDI'
+    - item: '20:00-22:00 -- Meeting at a café or pub'
+  items:
+    - description: |-
+        Putting some order into the piles of MIDI files,
+                    finding what you need and making sense of it all. While I do not
+                    promise to sing during the lecture I also do not promise not to.
+      end: 20:00
+      speaker: Uri Bruck
+      start: 18:30
+      title: 'Play it again, Perl'
+    - description: "Food and talk.\n"
+      end: 22:00
+      speaker: Everyone
+      start: 20:00
+      title: Social Meeting
+  location: 'F5, Habarzel 24, Ramat Hachayal, Tel-Aviv'
+  participants: []
+  report_text: ''
+20061102:
+  agenda_items:
+    - item: '18:30-19:30 -- Banking Software by Yorma Shitrit'
+    - item: '19:30-20:30 -- Meetings and your Stupid Boss by Doron Abram'
+    - item: '20:30-22:00 -- Social Meeting'
+  items:
+    - description: ''
+      end: 19:30
+      speaker: Mr. Yoram Shitrit from ABC (Yoram Shitrit)
+      start: 18:30
+      title: Banking software
+    - description: ''
+      end: 20:30
+      speaker: Doron Abram from F5
+      start: 19:30
+      title: Meetings and your Stupid Boss
+    - description: "Food and talk.\n"
+      end: 22:00
+      speaker: Everyone
+      start: 20:30
+      title: Social Meeting
+  location: 'F5, Habarzel 24, Ramat Hachayal, Tel-Aviv'
+  other_summarizer: This review was written by Shlomi Fish.
+  participants:
+    - name: Ran Eilam
+    - name: Yuval Levy
+    - name: Yaron Golan
+    - name: Shlomo Yona
+    - name: Dmitry Rovniagin
+    - name: Shlomi Fish
+    - name: Micha Nasriachi
+    - name: Yuval Yaari
+    - name: Eugene Ureinin
+    - name: Yoram Shitrit
+    - name: Uri Bruck
+    - name: Erez Schatz
+    - name: Pinkhas Nisanov
+  report_text: |
+    <p>
+    When we gathered, some of us discussed
+    <a href="http://metacpan.org/module/Moose">Moose</a>, which is the
+    Perl 6-like OOP system for Perl 5. We discussed how as opposed to Spiffy,
+    it still required extracting the $self object instance, and then how to cancel
+    this behaviour on a one-function-basis in Spiffy.
+    </p>
+    <p>
+    Yoram Shitrit gave an engaging presentation about how he makes use of Perl in
+    his banking consulting company. He said Perl was very suitable for these kind
+    of things, and its open source nature was a big advantage because he could
+    fix things himself if there was a bug. He further claimed that his company
+    knew how to give very good estimates for the projects they performed and that
+    their performance fullfilled these estimates precisely.
+    </p>
+
+    <p>
+    The highlight of his presentation was
+    a program they wrote in Perl to analyse the TTY conversations of brokers,
+    and try to deduce what was the financial outcome of this conversation. He said
+    they were able to do that in a high percentage of the cases.
+    </p>
+
+    <p>
+    Next on the agenda was Doron Abram's presentation about "Meeting and Your
+    Stupid Boss". This presentation which started an active discussion and ended
+    up a long time after the schedule, covered the issue of meetings (or
+    "Yeshivoth") in a software company. Many things were covered, among them:
+    </p>
+    <ul>
+    <li>
+    Off-topic discussions (ski, politics etc.), and how involving they are
+    </li>
+    <li>
+    Someone said that if he sees that the meeting goes nowhere he simply leaves,
+    which started an active discussion.
+    </li>
+    <li>
+    There was a discussion about hallway meetings, and how effective they were.
+    </li>
+    <li>
+    There were a story about a meeting where everyone came happy with, and made
+    a lot of good decisions, only to be later completely reverted by decisions from
+    the parent office in the U.S.
+    </li>
+    <li>
+    After another such "successful" meeting, the people who've been there realised
+    they discussed something completely different.
+    </li>
+    <li>
+    And so on.
+    </li>
+    </ul>
+    <p>
+    Here is some other fallout from the meeting: <a href="http://perl.org.il/pipermail/perl/2006-November/008291.html">"Optimizing Meetings for Fun"</a>,
+    and
+    <a href="http://perl.org.il/pipermail/perl/2006-November/008297.html">"Implicit
+    $self variable without Source Filters"</a>.
+    </p>
+    <p>
+    To sum up - we had a lot of fun and laughed a lot. We didn't go to a café
+    afterwards and instead each got a ride back home.
+    </p>
+20061205:
+  agenda_items:
+    - item: '18:45-19:45 -- The IO Language by Ran Eilam'
+    - item: '20:00-21:00 -- Aspect Oriented Programming by Shlomo Yona'
+    - item: '21:00-22:00 -- Social Meeting'
+  items:
+    - description: |-2
+
+                        Ran Eilam will take about IOLanguage.com, a lightweight
+                        high-level programming language.
+
+      end: 19:45
+      speaker: Ran Eilam
+      start: 18:45
+      title: The IO Language
+    - description: |-2
+
+                        Shlomo Yona will talk about the Aspect Oriented Programming
+                        paradigm for software development.
+
+      end: 21:00
+      speaker: Shlomo Yona
+      start: 20:00
+      title: Aspect Oriented Programming
+    - description: "Food and talk.\n"
+      end: 22:00
+      speaker: Everyone
+      start: 21:00
+      title: Social Meeting
+  location: 'F5, Habarzel 24, Ramat Hachayal, Tel-Aviv'
+  participants: []
+  report_text: ''

@@ -1,0 +1,57 @@
+The site sources are under the directory "new_site_sources", and the site
+itself is (by default) under "new_site_sources/site".  If this changed and we
+forgot to update this README, please let us know :-)
+
+The sources use HTML::Template to build the site, so to build the site you
+should first have it installed.
+
+The main command to run is:
+	perl update_site.pl
+
+This script simply calls the seperate Perl scripts that do the actual work.
+There are currently 3 such scripts: books.pl, meetings.pl and
+main.pl.
+
+* books.pl - Creates the individual book pages under the books directory.
+  We don't have the library any more so this is a bit irrelevant now.
+
+* meetings.pl - Creates the individual meeting pages under the meetings
+  directory.
+
+* main.pl - Builds the rest of the site's HTML pages.
+
+
+
+HOWTO:
+
+1) Add a new meeting or move it from future to past meetings:
+   - Add entry to the %meetingsXXXX hash in MeetingsDataXXXX.pm
+   (where XXXX = 4 digit year) or update the relevant entry there.
+
+2) Add a book review:
+
+
+3) Add a new page called xyz.html:
+   - Create the template for the page in the templates directory
+     (a copy of misc_content.tmpl can be a good start)
+	 "xyz_content.tmpl" would be a good name.
+
+   - In templats/main.tmpl add an entry for conditionally including the newly
+     created template. The condition will be set in the main.pl script.
+   - In main.pl add the name of the page to the list that generates the
+     @outfiles at the top of the files (add xyz.html ) in the
+     get_unique_params subroutine add a new block like:
+
+<<<
+     elsif ($file =~ /xyz.html$/) {
+        block
+     }
+>>>
+
+	 And within that block set the various values to what fits your
+     new page. Copy-paste another section to get started.
+
+   - Add an entry in the nav_bar variable in the "nav_bar" template
+     parameter (in "meetings.pl") if this page should show up in the upper
+     navigation bar.
+

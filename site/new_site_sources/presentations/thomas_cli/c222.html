@@ -1,0 +1,247 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>14. DUT connectivity module/package</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="CLI Automatic Test with Perl"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="13. CLI Automatic Test"
+HREF="c201.html"><LINK
+REL="NEXT"
+TITLE="15. Templates"
+HREF="c255.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>CLI Automatic Test with Perl</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c201.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="c255.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="AEN222">14. DUT connectivity module/package</H1
+><P
+>    Each function in this module will treat different command flows. As example;
+    in part of commands we need to send to process only one string to get the
+    main prompt back. In other commands we need to send more then one and sometimes
+    very different one from each other.
+  </P
+><P
+>    The idea behind creating this module was to concentrate all Expect activity
+    in one place. All future changes in the CLI will be easy to implement and
+    will not impact on other part of test suite.
+  </P
+><P
+>Example 1. Simple flow.</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>    <TT
+CLASS="PROMPT"
+>[main@prompt]$</TT
+> command
+    <TT
+CLASS="PROMPT"
+>[main@prompt]$</TT
+>
+   </PRE
+></TD
+></TR
+></TABLE
+><P
+>Call for function treating this flow can look like this:</P
+><P
+><B
+CLASS="COMMAND"
+>$test-&#62;send_command("command");</B
+>
+   img. which code will look more or less like this:</P
+><DIV
+CLASS="FIGURE"
+><A
+NAME="SIMPLE_FLOW"><P
+><IMG
+SRC="img/simple_flow.png"></P
+><P
+><B
+>Figure 1. EOF, Timeout expect should be add to this code to make your test more reliable.</B
+></P
+></DIV
+><P
+>Example 2. More complex flow.</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>    <TT
+CLASS="PROMPT"
+>[main@prompt]$</TT
+> command
+    <TT
+CLASS="PROMPT"
+></TT
+>
+    <TT
+CLASS="PROMPT"
+>  Enter the parameter:</TT
+> parameter
+    <TT
+CLASS="PROMPT"
+>  Are you sure (y/n)?</TT
+> y
+    <TT
+CLASS="PROMPT"
+>  Command succeed.</TT
+>
+    <TT
+CLASS="PROMPT"
+></TT
+>
+    <TT
+CLASS="PROMPT"
+>[main@prompt]$</TT
+>
+   </PRE
+></TD
+></TR
+></TABLE
+><P
+>Here the call will be a little different:</P
+><P
+><B
+CLASS="COMMAND"
+>$test-&#62;send_command2("command:parameter:y");</B
+></P
+><DIV
+CLASS="FIGURE"
+><A
+NAME="COMPLEX_FLOW"><P
+><IMG
+SRC="img/complex_flow.png"></P
+><P
+><B
+>Figure 2.  Same as above.</B
+></P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c201.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="c255.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>13. CLI Automatic Test</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>15. Templates</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

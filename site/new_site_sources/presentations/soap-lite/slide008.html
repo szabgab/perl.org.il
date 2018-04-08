@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Connecting to the Server</TITLE>
+<META NAME="generator" CONTENT="txt2html v1.25">
+<LINK REL='start' HREF='slide001.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='first' HREF='slide001.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='last' HREF='slide017.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='next' HREF='slide009.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='previous' HREF='slide007.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='contents' HREF='TABLE_OF_CONTENTS.html' TYPE='text/html; charset=utf-8'>
+</HEAD>
+<BODY BGCOLOR="#ffffff" BACKGROUND="background.jpg"><FONT SIZE=4>
+
+<table width=100% bgcolor=black cellspacing=0 border=0>
+<tr><td width=33%><a href="slide009.html"><font color="white">Next</font></a></td>
+    <td align=center width=33% ><font color="white">SOAP::Lite Client Experiences</font></td>
+    <td align=right width=33%><font size="+1" color="white"><b>8</b></font></td>
+</tr>
+</table>
+
+
+
+<H1><A NAME="section-1">Connecting to the Server</A></H1>
+
+<UL>
+  <LI><p> Now I need to get a connection to the server, and in return I get a cookie (oh joy!) which I need for all future calls to the server.<!-- list end--></p>
+
+</UL>
+<PRE><B>
+     my $logonSom = $soap-&gt;DatabaseLogon(
+          SOAP::Data-&gt;name("dbname" =&gt; 'Sample Database'),
+          SOAP::Data-&gt;name("username" =&gt; $username),
+          SOAP::Data-&gt;name("password" =&gt; $password));
+     my $cookie = $logonSom-&gt;valueof('//Envelope/Body/DatabaseLogonResponse/Cookie');
+</B></PRE>
+
+<UL>
+  <LI><p> Boy, that's a mouthful. And this is supposed to be a "Lite" module?<!-- list end--></p>
+
+  <LI><p> Every call to a SOAP method requires a list of data values to be properly formatted in XML. The SOAP::Data package, part of SOAP::Lite, does this for you.<!-- list end--></p>
+
+  <LI><p> Don't you love passing passwords in clear text over the network?<!-- list end--></p>
+
+  <LI><p> You get a SOM object back from the server, which is an XML structure. The SOAP::SOM package decodes values for you, but you need to understand the structure, first.<!-- list end--></p>
+
+</UL>
+
+
+<br clear=all>
+
+<table width=100% bgcolor=black cellspacing=0 border=0>
+<tr>
+    <td align=right width=33%><font color="white">Copyright &copy; 2004 David Baird</font></td>
+</tr>
+</table>
+
+
+
+</FONT></BODY>
+</HTML>

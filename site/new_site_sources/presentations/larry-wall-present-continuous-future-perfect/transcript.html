@@ -1,0 +1,1052 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" lang="en" xml:lang="en" xmlns=
+"http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 1st December 2004), see www.w3.org" />
+<meta content="text/html; charset=us-ascii" http-equiv=
+"Content-Type" />
+<meta content="Larry Wall - Present Continuous, Future Perfect"
+name="KEYWORDS" />
+<meta content="index,follow" name="robots" />
+<link href="/favicon.ico" rel="shortcut icon" />
+<title>Larry Wall - Present Continuous, Future Perfect -
+OSDC::Israel Wiki</title>
+</head>
+<body class="ns-0">
+<div id="content">
+<h1 class="firstHeading">Larry Wall - Present Continuous, Future
+Perfect</h1>
+<div style=
+"text-align: center; margin: 0 2cm 1cm 2cm; background-color: rgb(255, 247, 203); border: 1px solid rgb(255, 173, 128)">
+<p>This is a transcription of Larry Wall's talk
+"Present Continuous, Future Perfect". </p>
+<p>Thanks to all the volunteer transcribers and editors.</p>
+<p>The recorded talk can be downloaded from here: <a class=
+"external" href=
+"http://www.osdc.org.il/2006/html/larry-wall-2006-02-26.mp3"
+>http://www.osdc.org.il/2006/html/larry-wall-2006-02-26.mp3</a>
+(52 Mb)</p>
+<p><a class="external" href=
+"http://www.shlomifish.org/Files/files/text/lectures/larry-wall/present-continue/StumpIL.ppt.gz"
+title=
+"http://www.shlomifish.org/Files/files/text/lectures/larry-wall/present-continue/StumpIL.ppt.gz">The slides for the lecture</a>
+are also available online courtesy of Mr. Wall. It is advisable to
+follow them when listening to the audio or going over the
+transcript.</p>
+<p>
+<strong>Update: (2006-06-03)</strong> <a href="http://www.chrisdolan.net/">Chris Dolan</a> has prepared
+<a href="http://www.chrisdolan.net/talk/index.php/2006/04/18/improving-online-presentationslarry-wall-at-osdc/">a video representation (slides along with
+    audio) of the lecture</a>.
+</p>
+</div>
+<table border="0" id="toc">
+<tr id="toctitle">
+<td align="center"><b>Table of contents</b></td>
+</tr>
+<tr id="tocinside">
+<td>
+<div class="tocline"><a href=
+"#Introduction_-_Where_Perl_Draws_Ideas_From">1 Introduction -
+Where Perl Draws Ideas From</a><br /></div>
+<div class="tocline"><a href=
+"#How_Perl_Entered_the_Unix_Universe_.282:06.29">2 How Perl Entered
+the Unix Universe (2:06)</a><br /></div>
+<div class="tocline"><a href=
+"#Why_Perl_Evolved_As_It_Did_.283:54.29">3 Why Perl Evolved As It
+Did (3:54)</a><br /></div>
+<div class="tocline"><a href=
+"#Irrationalities_in_Other_Languages_.285:54.29">4 Irrationalities
+in Other Languages (5:54)</a><br /></div>
+<div class="tocline"><a href="#Linguistics_.288:22.29">5
+Linguistics (8:22)</a><br /></div>
+<div class="tocline"><a href="#Anthropology_.2811:10.29">6
+Anthropology (11:10)</a><br /></div>
+<div class="tocline"><a href="#Other_Sciences_.2812:14.29">7 Other
+Sciences (12:14)</a><br /></div>
+<div class="tocline"><a href="#Fan_Mail_.2814:42.29">8 Fan Mail
+(14:42)</a><br /></div>
+<div class="tocline"><a href="#Future_Perfect_.2817:25.29">9 Future
+Perfect (17:25)</a><br /></div>
+<div class="tocline"><a href="#Goals_and_Meta-Goals_.2820:33.29">10
+Goals and Meta-Goals (20:33)</a><br /></div>
+<div class="tocline"><a href="#Simplifications_.2824:00.29">11
+Simplifications (24:00)</a><br /></div>
+<div class="tocline"><a href="#Regularizations_.2827:49.29">12
+Regularizations (27:49)</a><br /></div>
+<div class="tocline"><a href="#Object_Orientation">13 Object
+Orientation</a><br /></div>
+<div class="tocline"><a href="#Functional_Programming">14
+Functional Programming</a><br /></div>
+<div class="tocline"><a href="#Regular_Expressions">15 Regular
+Expressions</a><br /></div>
+</td>
+</tr>
+</table>
+<h2 id="Introduction_-_Where_Perl_Draws_Ideas_From">Introduction -
+Where Perl Draws Ideas From</h2>
+<p>Good morning.</p>
+<p>Many time I have shown this picture in many of my talks. Perl
+derives from many sources, these are probably the four biggest
+ones. You should not take this picture to mean that Linguistics is
+the opposite of common sense. (<i>laughter</i>) But there are many
+computer scientists who have complained that it should more like
+engineering and less like an art and I disagree, but that's OK.</p>
+<p>But Perl also draws ideas from many other sciences - Ecology,
+Math, Sociology, etc., etc., etc. I have given talks about those
+too, but I'm not gonna do that today. Also Joel's ideas from the
+science of Golf. The Biology of Perl ... there's lots of different
+aspects of that, that Perl has borrowed metaphors from, which we
+could also talk about. You can feel free to ask me about any of
+these things later.</p>
+<p>And you know what the Harvard Law is. That says that under
+controlled conditions of water, temperature, light, food - the
+organism will do as it damn well pleases (<i>laughter</i>).</p>
+<h2 id="How_Perl_Entered_the_Unix_Universe_.282:06.29">How Perl
+Entered the Unix Universe (2:06)</h2>
+<p>Anyway, speaking of paleontology, I dug up this fossil. It's
+kind of a dinosaur egg. And when Perl was first starting out this
+was how people saw the universe. If you were a Unix programmer you
+either programmed in C or shell. And there really wasn't much in
+between. There were these little languages that we used on top of
+shell, but that was the big divide. The big revelation that hatched
+Perl, as it were, was that this opened up into a two-dimensional
+space. And C was good at something I like to call
+<i>manipulexity</i>, that is the manipulation of complex things.
+While shell was good at something else which I call
+<i>whipuptitude</i>, the aptitude for whipping things up.</p>
+<p>So Perl was hatched. As a small egg. That was Perl 1. And it was
+designed from the very beginning to evolve. The fact that we put
+sigils in front of the variables meant that the namespaces were
+protected from new keywords. And that was intentional, so we could
+evolve the language fairly rapidly without impacting.</p>
+<p>And it evolved... And it evolved... And finally we got to Perl
+5. And... So... Perhaps the Perl 6 slogan should be "All Your
+Paradigms Are Belong To Us". We'll get to that.</p>
+<h2 id="Why_Perl_Evolved_As_It_Did_.283:54.29">Why Perl Evolved As
+It Did (3:54)</h2>
+<p>So we had these five successful organisms. If you look at the
+Perl culture right now, it is very healthy, very vibrant... Lots of
+stuff going on. Nobody can keep track of it all. Why? Well, there
+are evolutionary reasons, psychological reasons, linguistic
+reasons, anthropological reasons, and, of course, sometimes there
+is just no good reason. So I'd like to start off with my own
+irrationalities.</p>
+<p>I don't think syntax should dangle in the wind. I'm with
+Aristotle. I think things should have a beginning, a middle, and an
+end. Which means I like K&amp;R bracketing. I do not like the way
+that Python hangs stuff out there, with no end.</p>
+<p>I think that ordinary people dislike abstraction. That's because
+I dislike abstraction and I think I'm ordinary. (<i>laughter</i>) I
+might be wrong about that, but I don't know.</p>
+<p>I simultaneously believe that languages are wonderful and awful.
+You have to hold both of those. Ugly things can be beautiful. And
+beautiful can get ugly very fast. You know, take Lisp. You know,
+it's the most beautiful language in the world. At least up until
+Haskell came along. (<i>laughter</i>) But, you know, every program
+in Lisp is just ugly. I don't figure how that works.</p>
+<p>I think visual metaphors are very important. How it looks.
+Different things should look different. Similar things should look
+similar. A language designer simultaneously has to care what other
+people think, and has to not care what other people think.
+Otherwise you go crazy. Well, crazier. (<i>laughter</i>)</p>
+<p>And finally, I think God has free will. And therefore he created
+programmers with free will and that they ought to be given
+choices.</p>
+<h2 id="Irrationalities_in_Other_Languages_.285:54.29">
+Irrationalities in Other Languages (5:54)</h2>
+<p>Now, I'm not the only language designer with irrationalities.
+You can think of some languages to go with some of these
+things.</p>
+<p>"We've got to start over from scratch" - Well, that's almost any
+academic language you find.</p>
+<p>"English phrases" - We'll that's Cobol. You know, cargo cult
+English. (<i>laughter</i>)</p>
+<p>"Text processing doesn't matter much" - Fortran.</p>
+<p>"Simple languages produce simple solutions" - C.</p>
+<p>"If I wanted it fast, I'd write it in C" - That's almost a
+direct quote from the original awk page.</p>
+<p>"I thought of a way to do it so it must be right" - That's
+obviously PHP. (<i>laughter and applause</i>)</p>
+<p>"You can build anything with NAND gates" - Any language designed
+by an electrical engineer. (<i>laughter</i>)</p>
+<p>"This is a very high level language, who cares about bits?" -
+The entire scope of fourth generation languages fell into this...
+problem.</p>
+<p>"Users care about elegance" - A lot of languages from Europe
+tend to fall into this. You know, Eiffel.</p>
+<p>"The specification is good enough" - Ada.</p>
+<p>"Abstraction equals usability" - Scheme. Things like that.</p>
+<p>"The common kernel should be as small as possible" - Forth.</p>
+<p>"Let's make this easy for the computer" - Lisp.
+(<i>laughter</i>)</p>
+<p>"Most programs are designed top-down" - Pascal.
+(<i>laughter</i>)</p>
+<p>"Everything is a vector" - APL.</p>
+<p>"Everything is an object" - Smalltalk and its children.
+(whispered:) Ruby. (<i>laughter</i>)</p>
+<p>"Everything is a hypothesis" - Prolog. (<i>laughter</i>)</p>
+<p>"Everything is a function" - Haskell. (<i>laughter</i>)</p>
+<p>"Programmers should never have been given free will" -
+Obviously, Python. (<i>laughter</i>)</p>
+<p>So my psychological conjecture is that normal people, if they
+perceive that a computer language is forcing them to learn theory,
+they won't like it. In other words, hide the fancy stuff. It can be
+there, just hide it.</p>
+<h2 id="Linguistics_.288:22.29">Linguistics (8:22)</h2>
+<p>Going from psychology to linguistics, I think that Perl succeeds
+primarily because it does behave like a natural language. Some of
+the things that underlying deep principles rather than cargo
+culting in phrases like Cobol did, we try to aim for deep
+principles of linguistics. With a natural language you learn as you
+go. You know, you learn it once and use it many times. So, you
+should optimize for expressiveness and not for ease of
+learnability. Learnability is OK, but expressiveness is more
+important.</p>
+<p>Competence: We do not expect a fifty year old to speak with the
+same level of confidence as a five year old. And that's OK. You can
+talk baby talk.</p>
+<p>There are multiple ways to say the same thing.</p>
+<p>There is no shame in borrowing words. Unless you're French.
+(<i>laughter</i>)</p>
+<p>Back to dimensionality. When you are saying something
+linguistically, it's like taking a trip. You know, when you take a
+trip from California to Netanya, you don't go straight south and
+then straight west and then straight north. It's not orthogonal.
+There are little bits at the beginning. Then you take bigger hops
+on the planes and then you take littler hops at the end. Language
+works the same way, it's fractal. There is little orthogonality. At
+least apparently; you can have orthogonal views of it, there are
+orthogonal subsets. But there are multiple orthogonal subsets. At
+first glance it just looks like a network, and you have to navigate
+the geography.</p>
+<p>More natural language things, which we'll probably skip over
+most of them, but they have corresponding things in Perl.</p>
+<p>Natural language develops, without an overriding theory. Your
+peers enforce your style. The language does not enforce your
+style.</p>
+<p>Design is distributed.</p>
+<p>Dialects will diverge, so you should plan for it.</p>
+<p>It's useful to take things from multiple languages and jam them
+all into one language. You may have noticed some of that in
+Perl.</p>
+<p>And finally, a language without a culture is dead. It's not just
+an intellectual exercise to design a language. You have to have the
+culture to go with it. Which leads us to my anthropology ideas,
+which is that Perl culture is just as important as the language
+itself because the culture can fix the language but not vice
+versa.</p>
+<h2 id="Anthropology_.2811:10.29">Anthropology (11:10)</h2>
+<p>Now in terms of the anthropology we try to welcome people into
+the tribe. We allow people to have their own little fiefdoms, where
+they are the ruler and can beat up on their followers.</p>
+<p>We try to let people share with each other. We try to capture
+knowledge. Both of those things are why we have the CPAN,
+Comprehensive Perl Archive Network, which is arguably one of the
+greatest repositories of reusable crappy software in the world.
+(<i>laughter</i>).</p>
+<p>And we have a culture of cooperating with other cultures too. We
+try to make Parrot so that other languages can ran on top of that.
+We've always tried to hook up Perl with everything. In kind of a
+humble sort of way. And finally it's culture of fun. At least we
+try to make it that way. And that's why I give weird talks.</p>
+<h2 id="Other_Sciences_.2812:14.29">Other Sciences (12:14)</h2>
+<p>What about the hard sciences? You know there is physics,
+especially quantum physics. That's pretty hard. (<i>laughter</i>)
+Chemistry might be a hard science if you think of it as physics.
+And we are not so sure. Golf is pretty hard though.</p>
+<p>Now, I've often shown this waterfall chart, and many of you have
+probably seen it. If you turn it into a fractal feedback loop and
+if you run it the other direction, then you have extreme
+programming. But the point is, you're racing around like this, in a
+strange attractor of some sort or other. But how do you know you're
+done? You know, other than the tests tell you you're done. But are
+the tests right? Who knows?</p>
+<p>Well, we all who have studied sciences have seen these potential
+energy curves. Now, if you're an economist you turn this upside
+down and you have hill-climbing algorithms. But it's just the same
+thing.</p>
+<p>The ball wants to roll downhill. Are we optimal? No. Is it
+optimal now? Maybe. Maybe not. We could be in a false minimum. Now,
+we're happy where we are, but we don't yet know that we might be
+happier over there. It takes a certain amount of energy to climb
+over the hill and take a peek. You can do it that way <i>(go over
+the peak)</i>, or you can find sneaky ways to get through
+<i>(tunnel through)</i>. Arguably, this is the Parrot approach. And
+this is the Pugs approach. But however you get there, it's the
+Promised Land. I think you guys know something about the Promised
+Land. (<i>laughter</i>). You know, if you go back here, here is
+Jacob and Caleb wanting to sneak into the land, and here's the
+Children of Israel wanting to spend forty years in the desert.
+(<i>laughter</i>) Hopefully we can get Perl 6 out in less than
+forty years. (<i>laughter</i>) But if that's how long it takes,
+we're still gonna get there.</p>
+<h2 id="Fan_Mail_.2814:42.29">Fan Mail (14:42)</h2>
+<dl>
+<dd>Q: "Dear Larry, I love Perl. It has saved my company, my crew,
+my sanity and my marriage. After Perl I can't imagine going back to
+any other language. I dream in Perl, I tell everyone else about
+Perl. How can you improve on perfection? Signed, Happy in
+Haifa."</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>A: "Dear Happy,</dd>
+<dd>You need to recognize that Perl can be good in some dimensions
+and not so good in other dimensions. You also need to recognize
+that there will be some pain in climbing over or tunneling through
+the barrier to the true minimum."</dd>
+</dl>
+</dd>
+</dl>
+<p>Now Perl 5 has a few false minima. Syntax, semantics,
+pragmatics, (<i>laughter</i>), discourse structure, implementation,
+documentation, culture... Other than that Perl 5 is not too
+bad.</p>
+<dl>
+<dd>Q: "Dear Larry,</dd>
+<dd>You have often talked about the waterbed theory of linguistic
+complexity, and beauty times brains equals a constant. Isn't it
+true that improving Perl in some areas will automatically make it
+worse in other areas? Signed, Terrified in Tel-Aviv."</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>A: "Dear Terrified,</dd>
+<dd>...</dd>
+<dd>No." (<i>laughter</i>)</dd>
+</dl>
+</dd>
+</dl>
+<p>You see, you can make some things so they aren't any worse. For
+instance, we changed all the sigils to be more consistent, and
+they're just the same length, they're just different. And you can
+make some things much better. Instead of having to write all this
+gobbledygook to dereference references in Perl 5 you can just do it
+straight left to right in Perl 6. Or there's even more shortcuts,
+so multidimensional arrays and constant hash subscripts get their
+own notation, so it's even clearer, at least once you've learned
+it. Again, we're optimizing for expressiveness, not necessarily
+learnability.</p>
+<dl>
+<dd>Q: "Dear Larry,</dd>
+<dd>I've heard a disturbing rumor that Perl 6 is turning into Java,
+or Python, or (whispered:) Ruby, or something. What's the point of
+using Perl if it's just another object-oriented language? Why are
+we changing the arrow operator to the dot operator? Signed, Nervous
+in Netanya."</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>A: "Dear Nervous,</dd>
+<dd>First of all, we can do object orientation better without
+making other things worse. As I said. Now, we're changing from
+arrow to dot, because ... because ... Well, just 'cuz I said
+so!"</dd>
+</dl>
+</dd>
+</dl>
+<p>You know, actually, we do have some good reasons - it's shorter,
+it's the industry standard, I wanted the arrow for something else,
+and I wanted the dot as a secondary sigil. Now we can have it for
+attributes that have accessors. I also wanted the unary dot for
+topical type calls, with an assumed object on the left and finally,
+because I said so. Darn it.</p>
+<h2 id="Future_Perfect_.2817:25.29">Future Perfect (17:25)</h2>
+<p>So, let's go from the Present Contiunous, imperfect though it
+may be, to the Future Perfect, to at least <i>Perfecter</i>.</p>
+<p>Now, when we started off this Perl 6 adventure, we announced -
+"The community is going to rewrite Perl 6. It's gonna rewrite the
+language, the culture, the development, everything." So we opened
+it up, and I expected maybe twenty RFC's for changes. We got three
+hundred and sixty one. And they were all over the map. They
+contradicted each other, they had some really bogus solutions, and
+they all suffered from the same problem, which is: each of them
+assumed that this was the only change you are going to make to Perl
+5. And otherwise everything else will be the same.</p>
+<p>Well, that's not how you do a redesign. If you do a redesign
+that way, you end up with a mishmash. So, one of the things I
+discovered, for instance, is that the First Law of Language Design
+is that "Everyone wants the colon" for their particular syntax. And
+they can't all have it because it's contradictory. So the Second
+Law of Language Redesign is "Larry gets the colon for whatever he
+wants". (<i>laughter</i>)</p>
+<p>I have to take a Winnie the Pooh approach. This was just way too
+much information for one person. You know, even somebody as smart
+as Audrey could not comprehend all of this at once. And I'm
+stupider than Audrey, at least in some ways. So I took the ways in
+which I am stupid as a sort of a model of what Perl programmers
+like. So I figured if I couldn't understand something very easily
+it probably wouldn't be very understandable to anybody else, so I
+would be very careful about introducing that sort of a feature. You
+know, we call it the "Bear of Very Little Brain approach". It works
+for me because that's the only thing I can do.</p>
+<p>Right at the beginning we said, "There is never time to do it
+right, but there is always time to do it over". So we're just gonna
+take the time to do it right. You've heard this saying "Good, Fast,
+Cheap. Pick two.". Well, this is Open Source. We have to do it
+cheap. Therefore, it reduces to a problem of "Good or Fast. Pick
+one." We chose Good. We did not choose Fast. You may have noticed
+this. (<i>laughter</i>) Considering we announced Perl 6 five and
+half years ago. We're still going to do it right. As long as it's a
+converging process, we'll get there. It is really simple. Just keep
+everything good and throw out everything bad... that's easier said
+than done.</p>
+<h2 id="Goals_and_Meta-Goals_.2820:33.29">Goals and Meta-Goals
+(20:33)</h2>
+<p>So our goals, which we'll cover in the rest of our time
+here:</p>
+<ul>
+<li>Simplification</li>
+<li>Power</li>
+<li>Object orientation</li>
+<li>Functional programming</li>
+<li>Pattern matching</li>
+<li>Declarative programming</li>
+<li>Lots of buzzword compatibility</li>
+</ul>
+<p>But behind those are some meta-goals.</p>
+<p><b>Pick defaults that allow for evolution</b>: We found out the
+problem for Perl 5. It allowed for evolution. It put object
+orientation completely orthogonal ... orthogonally - I'm an English
+speaker and I can't even say the word - into the language. It's
+wonderfully orthogonal but it's too orthogonal because it doesn't
+set up any good defaults, and everyone does it differently and
+nothing can interoperate. So in Perl 6 we'll pick good a default
+object orientated way to do things, but allow for evolution.</p>
+<p><b>Declarative multiculturalism</b>: Multiculturalism is a very
+sort of postmodern idea. Multiculturalism is great as long as you
+know that you are in a multicultural situation. Perl 6 is not going
+to be a single language. You start off with standard Perl 6 at the
+top, and every time you say "use" or declare a macro or something
+you are changing into a different language, a different culture. As
+long as you declare it, all is fair if you predeclare.</p>
+<p><b>Context dependency</b>: I don't really have time to explain
+that.</p>
+<p><b>Better encapsulation</b>: But also ex-capsulation. You
+shouldn't have to worry about the innards of a module, but there
+are ways in which the innards of a module shouldn't have to worry
+about the outside world. Unless it wants to. Not just modules, but
+any kind of scoping mechanism. Any kind of lexical scope, package
+scope... There are lots of different scopes. Different ways to
+isolate things dimensionally.</p>
+<p><b>DWIMmery</b>: That's "Do What I Mean"-ery. When we design a
+dwimming feature in Perl 6, we try to put it in one spot and then
+reuse it everywhere, so you know which table to look up to find out
+for instance how a smart match operator works.</p>
+<p><b>No arbitrary limits round two</b>: Perl started off with the
+idea that strings should grow infinitely, if you have memory. Just
+let's get rid of those arbitrary limits that plagued Unix utilities
+in the early years. Perl 6 is taking this in a number of different
+dimensions than just how long your strings are. No arbitrary limits
+- you ought to be able to program very abstractly, you ought to be
+able to program very concretely - that's just one dimension.</p>
+<p>Behind that is another yet more-meta-goal, and that is we want
+to manage complexity in the future so that you people who are
+interested in changing Perl to do what you want can do that.</p>
+<p>And there's a meta-meta, a meta-meta-meta goal, which is, of
+course, to enjoy life. Now when you're young, "enjoy life" means,
+"I enjoy life". When you start getting a little older like me, the
+way you enjoy life is by helping other people enjoy life. And
+there's a balance in there.</p>
+<h2 id="Simplifications_.2824:00.29">Simplifications (24:00)</h2>
+<p>So let's un-meta-meta-meta. Which of course means we're back to
+bikeshed painting here so all of you people who are not interested
+in Perl at all can go to sleep now.</p>
+<p>I don't hear anyone snoring.</p>
+<p>(I caught a cold before I came so this is an American cold not
+an Israeli cold. Don't worry about that.)</p>
+<p>We made many simplifications, which we will go through here.</p>
+<p>In Perl 5 it started off without nested data structures, because
+it was just a scripting language, so we sort of waved our hands and
+rationalized how these weird sigils were, but they were
+inconsistent. We've made them consistent: if it's an array it
+always has an at on the front, if it's a hash it always has a
+percent, regardless of how you use it. And this gives us
+referential transparency.</p>
+<p>I've mentioned the constant subscripts, we've stolen angle
+brackets for constant subscripts so they're very visually distinct.
+Rather than having a weird rule that if you have a bareword inside
+curlies, we now give it a separate construct, and there's just lots
+of ways in which this clarifies your intent. So, inside curlies is
+now always an expression, no special rules. We're trying to get rid
+of all these special rules.</p>
+<p>A my variable in Perl 5 extends to the end of its closing block
+- except that if a my variable is declared, blah blah, blah, ...it
+only extends, blah, blah, blah... and only for some times.... My
+eyes glaze over. If I were Damian I would put gibberish in
+there.</p>
+<p>In Perl 6 the rules are going to be a little bit simpler: it
+extends to the end of the enclosing block and no further. Rule 2:
+There is no Rule 2.</p>
+<p>There's no more double parsing. Perl 5 was always looking for
+the end of the string, and then trying to figure out what was in
+the string, which is a mistake. There's no problem with having an
+expression containing quotes inside a double-quote string, even
+though it's the same type of quote. It knows what it's looking for
+at that particular time.</p>
+<p>Now, Perl 5, Perl 5 would blow up on this pattern, and the
+reason it would blow up on it, actually it should probably have a
+/x on the end. But leave that aside. How many can see the problem
+there?</p>
+<p>See, the slash - well, maybe you can't see it. Now you really
+can't see it! The slash in the comment there matches the beginning
+slash. So Perl 5 thinks that's the end of the regular expression,
+and gets very confused. That's fixed in Perl 6, because of this
+one-pass parsing. When you're in a comment, it knows it's in a
+comment.</p>
+<p>Simpler precedence. We reduced the number of precedence levels a
+little bit - by one or two. It went from 24 to 22 or something.</p>
+<h2 id="Regularizations_.2827:49.29">Regularizations (27:49)</h2>
+<p>There are fewer gotchas. You know, you had to put parens some
+places you didn't expect to. We had to unify the relational and
+equality precedence levels so that we could do chained equality
+operators the way mathematicians like to do.</p>
+<p>Perl 5 is just all full of these strange gobbledygooky variables
+which we all know and love - and hate. So the error variables are
+now unified into a single error variable. These variables have been
+deprecated forever, they're gone! These weird things that just
+drive syntax highlighters nuts (<i>laughter</i>) now actually have
+more regular names. The star there, $*GID, that's what we call a
+secondary sigil, what that just says is this is in the global
+namespace. So we know that that's a global variable for the entire
+process. Similarly for uids.</p>
+<p>A lot of these things ought to have been object properties of
+some object or other such as a file handle, and that has a global
+name. In Perl 5 there was this list of names that just magically
+was the same variable in every package, and you had to memorize
+that. You don't have to memorize that anymore because we have this
+star notation which says which things are globals. You can leave
+the star out and it will find the global one anyway, but you don't
+have to keep track of it. Likewise, STDIN and its friends were
+these mysterious everywhere-variables, and we even managed to
+shorten them while we were making them more regular.</p>
+<p>Now, people are always saying, you know I program in C and I
+like to be able to leave the curlies off of my expression. Why
+can't we make the curlies optional? And that's always gone back to
+my irrationality of not liking dangling syntax. But I'm kind of
+glad now that I never made those optional, because it turns out
+that if you keep the curlies mandatory you can make the parentheses
+optional on the expressions. And it removes a lot of the visual
+clutter. Makes it less like Lisp. (<i>laughter</i>)</p>
+<p>And those blocks, because the curlies are mandatory around a
+block, those blocks are all now logically closures. Especially if
+they use lexical variables outside, as this closure does. That's
+how you write in Perl 5, but in Perl 6 you don't have to say the
+"sub". Any block that's like this is just automatically a closure.
+(Unless it's a hash constructor.)</p>
+<p>Now, another regularization was, in C and Perl and many
+C-derived languages you don't know which blocks require a semicolon
+on the end and which ones don't require a semicolon on the end, you
+just have to memorize it. Or just put semicolons everywhere and
+people think you're stupid. (<i>laughter</i>) In Perl 6 we've
+regularized that: any line-ending curly has an implicit semicolon
+on the end, so you just don't have to worry about it.</p>
+<p>Things which were special cases in Perl 5 now just naturally
+fall out of these rules. (<i>Aside:</i> Gaal likes these.) Now this
+is just a little bit different; the comma there is now required
+after the curly or it would think it was the end of the list. But
+that's a small price to pay for the regularization that we now
+have.</p>
+<p>Likewise, <b>map</b> was a special case in Perl 5; it is not a
+special case. <b>sort</b> was a special syntactic case. And instead
+of $a and $b being magical variables that you should avoid, we now
+have a placeholder syntax that works just the same only it's
+generalized. And it just says we have two parameters to this
+closure, they happen to be named a and b, and they will be passed
+in that order. And we always get the question saying, well, what if
+gets too complicated, how will I keep track of the alphabetical
+order? That's not what it's for! If it gets that complicated you
+should use a regular parameter list.</p>
+<p>So, when you see something like a <b>for</b> loop, which is like
+<b>foreach</b> in Perl, that actually is logically a closure, a
+subroutine on the end there. It has an implicit parameter, $_, so
+it still works just the same way you think of it in Perl 5. But you
+could pass, using one of these explicit placeholder variables -
+that means exactly the same thing: I have one parameter. Print
+it.</p>
+<p>33:28</p>
+<p>Or we have another notation, which we call the pointy sub, which
+is another way of declaring a block with parameters. Now, if you
+know Ruby - it puts the parameter names inside vertical bars - I
+didn't like that. I like the way this reads, because you say "for"
+list and then bind it to this formal parameter for that block and
+print it. It's a lambda. It's just sort of unsigned or something.
+(<i>laughter</i>)</p>
+<p>34:00</p>
+<p>So, because we're just binding to a formal parameter list, it's
+just like you passed a sub as the last argument, only it reads a
+lot nicer. And because it's a formal parameter list you can have
+more than one parameter. We can have two parameters, so it takes
+the list two at a time. Or three at a time! No, the next slide's
+not four at a time.</p>
+<p>You can take two arrays in parallel, and this <b>each</b> and
+the semicolon there is a way of piping two arrays in a single
+construct, and they're piping constructs, which I don't have time
+to talk about, but that's essentially a multi-dimensional list. It
+knows to take that, in parallel, so this allows you to read two
+arrays in parallel.</p>
+<p>But on the other hand that looks a little bit, with the
+semicolons in there, like C's for loop, if you ignore the each,
+there's a little confusion there, so instead of using "for" which
+is a leftover from C, we've changed that keyword to "loop". But the
+three arguments still work the same way as they do in C, so you
+still have the generalized loop.</p>
+<p>But having a different keyword is great there, because... we
+have this funny idiom for an infinite loop in Perl 5; we got it
+from C ["for(;;)"]. In Perl 6 you just say "loop" navigate. Now
+this would be like the control loop for a cruise missile, and when
+we speak of bombing out of the loop we mean it literally.
+[Laugh]</p>
+<p>35:48</p>
+<p>Perl 5 had this problem with "do" loops because they weren't
+real loops - they were a "do" block followed by a statement
+modifier, and people kept wanting to use loop control it them.
+Well, we can fix that. "loop" now is a real loop. And it allows a
+modifier on it but still behaves as a real loop. And so, do goes
+off to have other duties, and you can write a loop that tests at
+the end and it is a real loop. And this is just one of many many
+many things that confused new Perl 5 programmers.</p>
+<p>And if you go and visit Perl Monks, and read through all the
+questions that people ask, you know, in about 9 out of 10 of them,
+you could, we could - we don't, because people get very tired of
+it, people already get tired of our hyping Perl 6. You could go
+through about 9 out of 10 of them, and say "This is going to be
+fixed in Perl 6", "This situation won't arise in Perl 6", "We've
+regularized that". And yet it's still Perl, it's Perl underneath,
+it's got a different syntactic sugar on the top.</p>
+<p>Got rid of typeglobs. Instead of using typeglobs for aliasing,
+we have a new mystery operator, which I'll get to later, and there
+it is on the second line (wow! that was quick!). We'll talk about,
+not only about the simplifications, but these new powerful things
+and we can only cover a few of them.</p>
+<p>We've got full type signatures now, on variables, in parameter
+lists, and they behave just as you would expect them to. Presuming
+you know what to expect.</p>
+<p>37:53</p>
+<p>There are also some lowercase ones, which are native types,
+rather than object types which are uppercase. Just by convention
+uppercase types are object-oriented types, whereas if I say <b>my
+int Array</b>, I mean a packed array of ints, or a packed bit
+array. So we can now talk about, optionally, very compact storage,
+and the VM is free to optimize this greatly. So we have the
+capacity of doing some things and using a lot less memory than Perl
+5 does.</p>
+<p>So these types are very useful, particularly with arrays - they
+can be packed.</p>
+<p>Perl 5, another place where it was too orthogonal - we defined
+parameter passing to just come in as an array. You know arrays,
+subroutines - they're just orthogonal. You just happen to have one
+called @_, which your parameters come in, and it was wonderfully
+orthogonal, and people built all sorts of stuff on top of it, and
+it's another place where we are changing.</p>
+<p>So instead of having these weird prototype pills, in Perl 6 you
+can just say "I'm expecting an array as the first argument" and
+then put the rest of the arguments into what we call this slurpy
+array, because slurps the rest of the arguments. So 1, 2 and 3 end
+up in args because we don't enclose them up there.</p>
+<p>That's all well and good, but we'd like to unify these things. I
+said these RFCs proposed many different solutions. The hard design
+goal was to find the unifying concepts underneath all these RFCs
+and to treat the underline diseases rather than the symptoms.
+[40:00] So, we unified our argument passing which is a form of
+binding, with an operator which is used for binding -&nbsp;:=. That
+does exactly the same thing as passing this list into the argument
+list. There's no copying involved it just changes the names, so you
+can swap two names. We left equals (=) completely untouched because
+we think Perl 5 programmers will rise up and revolt if we change
+that.</p>
+<p>Another powerful thing is the thing called hyper-operators. You
+know if you add two arrays together in Perl 5 - what do you get?
+Well, you end up with the length of the two arrays added. Well,
+guess what? It does that in Perl 6, by default, because it still
+makes the scalar/list context distinction, so it's a little bit
+smart about that. However, you can explicitly say: "I don't want to
+do it as in Perl, what I really mean by that plus (+) is add each
+element of @a to the corresponding element of @b and producing a
+list."</p>
+<p>And for those explicit parallel operations we have what we call
+the hyper-operator - it's a meta operator, like assignment
+operators and some more things which modifies this operator to do a
+different operation. So, not only can you do that, but you can also
+have a scalar on one side - it's a little bit smart. So it just
+adds one to each element of @a and return that. Or you can do it in
+place, just increment each element of @a.</p>
+<p>[Question from the audience: "How do you type it?"] How do you
+type it? With your keyboard? Do you use vi or Emacs? In vi it's
+Ctrl+K &gt;&gt;. You can also write it with two regular
+greater-than's ("&gt;&gt;"). We're getting to the age of Unicode,
+and we want to make Unicode programming possible, so we're trying
+to shove people a little bit in that direction. So the actual
+operators we're encouraging people to use are all in the Latin-1
+range, so this is in the Latin-1 range. But everything has an ASCII
+workaround to the Unicode, so it's not a big problem.</p>
+<p>42:48.</p>
+<p>Likewise, if you turn them inside out - the french quotes - you
+can use the regular angle brackets, and yes, we did change
+here-docs so it does not conflict, then that's the equivalent of
+"qw". This qw interpolates, with single-angles it does not
+interpolate - that is the exact "qw".</p>
+<p>We have properties which you can put on variables and onto
+values. These are generalizations of things that were special code
+in Perl 5, but now we have general mechanisms to do the same
+things, they're actually done using a mix-in mechanism like
+Ruby.</p>
+<p>Smart match operators is, like Damian say, equal-tilda ("=~") on
+steroids. Instead of just allowing a regular expression on the
+right side it allows basically anything, and it figures out that
+this wants to do a numeric comparison, this wants to do a string
+comparison, this wants to compare two arrays, this wants to do a
+lookup in the hash; this wants to call the closure on the right
+passing in the left argument, and it will tell if you if $x can
+quack. Now that looks a little strange because you can just say
+"$x.can('quack')". Why would you do it this way? Well, you'll
+see.</p>
+<p>You can get match classes which will tell you whether this is a
+mammal, or whether it does the mammal interface. And another thing
+is against junctions. If any of you has seen Damian's quantum
+superpositions, this is just his any of 1, 2, 3. But we stole the
+short bit operator operations, because we think in Perl people
+don't actually use 2-bit operations that often - they now have
+something that is regularized differently. But now you can write
+this, and just means that it matches as 1 or 2, or 3. Junctions are
+used for smart operations, but they can be used anywhere.</p>
+<p>Another thing we've done is - people always wanted the switch
+statement - so we now have a switch statement. But instead of
+saying "switch" and "case" which is talking about the constructs,
+we do it more like a natural language, where we have words that
+sound like it's in English. "given" one of these, when I have one
+or two or three, then argle, when B then bargle.</p>
+<p>[Question from the audience: does it break by default?] Yes it
+breaks by default. If you want to fall into the next test, you
+would say "continue", and if you want to go into the body of the
+next test, as is the default in C, you'll need to use "goto"... we
+try to discourage that. But you don't have to say case, case, case,
+and all those fall through all these things, because we have these
+junctional things.</p>
+<p>And these are what we call topicalizers, and that's another
+natural linguistic thing, but this is unified with the ~~ operator.
+The smart match is the same semantics under here, that's why we
+said we try to unify things. So a topicalizer is anything that says
+$_, and so when you're looping through an array, each element is
+set to $_ and when is just doing the smart match against that.</p>
+<p>And, by the way, $_ is a lexical variable in Perl 6.</p>
+<p>47:08</p>
+<p>any block that sets $_, and that includes exception handlers.
+This catch - it's just a funny way to set $_ - from this block. And
+then there's a regular switch inside - we don't have special catch
+syntax like many other languages. It just naturally falls out with
+a little tweak.</p>
+<p>Which is, other languages tend to put the "catch" outside of the
+block, and then you lose visibility to any of the lexical variables
+that were in the block. I don't refer to $x or $y here, but if I
+did, I could see it from inside the "catch" block there, which is
+inside the try. But the fact is, another advantage of putting it
+inside, is that it can turn its outer block into a try block. So we
+don't actually need that "try", it's redundant. We just write it
+like that - close it up. That is still a try-block, the sub is
+behaving as a try block, because it has a "catch" block in it.</p>
+<p>48:27</p>
+<p>There are many kinds of "catch"-like blocks that will capture
+control at various locations: when you're entering or leaving a
+block, when you're doing the next, the first time through this
+block; there's a keep and an undo block which is like a "leave"
+block except that it's transactional - it knows when the block is
+exiting successfully or unsuccessfully, so you can do transactional
+processing with it. "pre" and "post" blocks are for design by
+contract. But they're all the same thing - they're all just "begin"
+blocks. And "begin" blocks are all just properties on the blocks
+that they are.</p>
+<h2 id="Object_Orientation">Object Orientation</h2>
+<p>Moving on to object orientation... [49:15] We'll talk about some
+of these things. The syntax rather than setting run-time variable
+like "@ISA", is probably still doing things like that underneath,
+running bits of codes, but it looks declarative. And that's
+important, and the default declarations just map naturally to your
+typical object-oriented vocabulary.</p>
+<p>So if you say the "dog is a mammal", that's how you write it.
+And you say "it has a tail" - "has"! We still use methods. Now this
+dot there allows us to auto-write our accessors for the attrs [=
+attributes] that have accessors. So you don't have to write
+those.</p>
+<p>Here's a complete class, you can write it either this way if
+it's an entire file. Or you can write a class as a block with the
+block notation which is the more standard notation. And those are
+supposed to be the same thing. If it's an inner class, it will be
+installed on a different place.</p>
+<p>50:30</p>
+<p>So, as I mentioned, it auto-generates not only the accessors but
+also the constructor method, or defaults to a generic one that it
+can use. So I can say "Give me a new dog with a tail and legs", and
+you don't have to write those methods. Or the corresponding INIT
+methods which we call "build methods", which you can write if you
+want to, but you don't have to, if you just want the default.</p>
+<p>Private variables, simply don't have the dot as a secondary
+sigil. We got tired of saying "secondary sigil", because we have a
+lot of them and they're very useful for indicating weird
+namespaces. It's "Weird things should look weird" is one of the
+principles in Perl 6, and the attributes are a little bit weird so
+they look a little bit weird.</p>
+<p>The dot means that I'm autogenerating an accessor. If you leave
+that out, there isn't an accessor, and it's a private variable.
+It's lexically scoped to the class, and it can't be seen outside.
+And you have to use the accessors outside. And we have a way to
+specifying, finalizing, or not, on an application-wide basis, that
+we'll hopefully make that efficient without closing or finalizing
+classes prematurely.</p>
+<p>Multi-methods are another important aspect which I really don't
+have time to get in to, but the entire Perl 6 run-time system is
+built on methods, so you can overload any of the built-in operators
+with more specific types and it will just find your version.</p>
+<p>52:25</p>
+<p>Delegation is supported, the natural syntax. Inner classes - you
+know about those, we talked about those. Roles are our idea of
+interfaces, but it's more than just interfaces. If any of you read
+the Smalltalks trait paper - it's more than just traits, but it's
+closely modelled on it. The idea is that it's an interface with a
+default implementation that you can pull in at compile-time and it
+will figure out if there are any method collisions.</p>
+<p>We can also do run-time mixins. The problems with mixins is they
+overlay the previous definitions and you can hide things and not
+realize it. Whereas with roles - at compile time, if you pulled
+them in, and say what roles this objects fullfills, it can figure
+out if there's a conflict and warn you. Which is a good.</p>
+<p>53:23</p>
+<p>We support not only types, but constrained sub-types with subset
+notation, so we can say $x is an Int between 0 to 15, define odd
+numbers, define Japanese strings, define what a paddit is? If
+that's not on your list I'm sorry.</p>
+<p>You can redefine subsets using a role, and these are assertions
+that the values of these types have to fullfill, the where clauses.
+And again, that's just a smart match operation on the right.</p>
+<h2 id="Functional_Programming">Functional Programming</h2>
+<p>Moving away from Object orientation, we have put a lot of
+thought into also supporting Functional programming. We're
+supporting many different paradigms to the extent that it's not
+exclusive to the other paradigms. So we can do continuations, and
+currying and lazy lists, etc. Pugs is written in Haskell currently,
+though we'll re-host the compiler in Perl 6 really soon. And Parrot
+already supports continuations - that's the low-level VM.</p>
+<p>Continuations - if you know what they are - I don't need to
+explain them. If you don't know what they are - you don't want to
+know. But basically they are like backtracking points in a regular
+expression, only without the regular expression. It's like the cat
+without the cat.</p>
+<p>And they will be hidden from mere mortals, you'd have to use a
+big uppercase thing to get it, so you'd know you're doing something
+weird.</p>
+<p>55:14</p>
+<p>Currying is idea from Haskell and other languages, only we make
+it explicit, rather than doing it implicitly. And we say, take a
+function, and assume that the $x argument is 1, or assume that the
+$y argument is 2, and that gives us functions with more limited
+functionality, and hopefully gives the optimizer a chance to
+optimize some of that.</p>
+<p>Lazy lists - in Perl 6, scalars are not lazy, but lists are
+lazy, by default - you can tweak that. This means that the list in
+the for loop can be an infinite list, it doesn't have to generate
+all those integers, it just runs until the loop exits. 0, 1, 2,
+3.</p>
+<p>You can do fancier thing if you're into PDL-type programming -
+mapping one thing to another.</p>
+<p>Argument lists - because we have argument lists and we have
+multiple dispatch, we can do a trick... this is pretty much a
+transcription of something you'll probably see in Audrey's Haskell
+talk later. This is quick sort, and basically it says: if you pass
+a null list, return a null list. And if it doesn't mathc that, it
+matches a list which has a head and a tail. Partition them into a
+list that's greater than the head and a list that's less than the
+head, and return the sorted sublist, with the pivot in the middle.
+And that's all it is.</p>
+<p>It's very powerful to be able to do that signature matching. And
+we are also planning to do this signature matching embedded in our
+regular expression rule engine, matching against things that are
+not strings, but look more like argument lists.</p>
+<p>57:20</p>
+<h2 id="Regular_Expressions">Regular Expressions</h2>
+<p>Now, the thing I really wanted to get to, which we think will
+influence the world outside of Perl is we saw how everyone borrowed
+Perl 5 compatible regular expressions, and we figured - well, you
+know, they're a really big mess, and we're sorry, but we're
+changing them now, now that you've just borrowed them.</p>
+<p>So everyone is gonna go from PCRE to P6RE or something like
+that.</p>
+<p>There's a lot of cruft that we inherited from the UNIX culture
+and we added more cruft, and we're cleaning it up. So in Perl 5 we
+made the mistake of interpreting regular expressions as strings,
+which means we had to do weird things like back-references are \1
+on the left, but they're $1 on the right, even though it means the
+same thing. In Perl 6, because it's just a language, (an embedded
+language) $1 is the back-reference. It does not automatically
+interpolate this $1 from what it was before. You can also get it
+translated to Euros I guess.</p>
+<p>In Perl 5, if you wanted to interpolate a string, but did not
+want it to be treated as a regular expression, you had to do this
+weird quotemeta thing. In Perl 6, that is the default, if you
+interpolate a string it matches it literally, which is why you can
+match the back-reference $1 literally.</p>
+<p>The same is true of arrays. This is an array of literal strings
+that just match an alternation, or you can look up, by the longest
+token rule, the longest key in this hash that just matches this bit
+of string. And that is used heavily in the Perl 6 parser - or will
+be.</p>
+<p>In Perl 5 if you put a bare variable, it treated it as a regular
+expression. Well that's literal now, so we changed the default
+around. If you want something treated as a regular expression, as
+an embedded regular expression, interpolated, then we have this new
+notation, which can interpolate a single rule or an alternation of
+rules, or again, look up a token key and then call up to another
+rule, and this allows us to build recursive grammars.</p>
+<p>60:11</p>
+<p>In Perl 5, the problem is that it was completely irrational how
+the meta-characters worked. Parens might or might not capture: that
+does grouping without capture, that calls a closure, that calls an
+indirect rule. The square brackets are under utilized. So are the
+curlies. And the angle brackets were unused so I stole them. They
+are now meta-characters. We just don't have enough bracketing
+characters in ASCII. Which is why we stole the French brackets.</p>
+<p>In Perl 6 it's very consistent. Parens capture, brackets group,
+braces call a closure; meta-syntactics always with angle brackets.
+Use of whitespace is encouraged - in fact, there is no /x modifier
+anymore. That is now the default, the mandatory default.</p>
+<p>61:13</p>
+<p>Postfix bottom-up (?) modifiers are bad, because you have to go
+all the way to the end, and it changes the meaning of what's
+before, so we pulled them out front. And we have a consistent, what
+we call an adverbial notation, the colon on the front. It's
+basically a named argument, that colon (FILL IN) a named argument
+to the substitution function. These trailing switches are gone.</p>
+<p>Things which are modal and change the meaning of ".", "^" and
+"$" - now they have separate tokens, so if you want to match
+interior newlines within a string, you double the "^" or the "$".
+"." now always matches any character, and if you want the old
+default meaning, you actually say, I want to match "not a newline".
+"\n" matches a newline so "\N", following the pattern we've already
+established, matches a character which is not a newline.</p>
+<p>62:15</p>
+<p>Whitespace is the default. We no longer need a switch that says
+interpolate the right hand side as an expression, because we can
+interpolate expressions. As I said, everywhere, curlies mean a
+closure, even in a string. And we have the new modifiers - some of
+which are familiar and some of which are not: look for overlapping
+or exhaust all the possiblities - pretend you're prolog, I guess.
+Find third match, do the first three matches, do auto-whitespace
+matching, or don't do auto-whitespace matching. And of course the
+most important one is: "I don't understand all of this new stuff,
+just give me a Perl 5 regular expression here." And it will do that
+too.</p>
+<p>The meta-syntax - instead of trying to guess what horizontal
+whitespace is, you just say "\h" that's horizontal whitespace,
+including Unicode whitespace. And we have vertical whitespace,
+which I suppose include vertical tab, whatever that is.</p>
+<p>Alpha - if you say "A-Z" and want to match Alphas it's probably
+wrong, for most of Europe and anywhere that is not the U.S.. Now we
+tend to use named rules to match character classes, and this tends
+to free up the square brackets for other uses. So if you actually
+want to match a character class, you put it in the this angle
+brackets padded notation, so we sort have de-Huffmanized it. Or you
+can make it readable.</p>
+<p>The negation is doing set addition and subtraction, so this just
+says the set of all characters with those subtracted out. Or you
+can say like this - it's a lot more readable. In Perl 5, we had
+this gobbleygock, you can just see that it's a lot clearer. And
+again, we got rid of those switches and now you can read the
+expression left to right and know what it means.</p>
+<p>Simplified a lot of the really crufty meta-syntactic things.</p>
+<p>The null match is now illegal. That prevents a class of errors
+where you say "a|b|c" and forgot to put the next thing, and
+suddenly it matches the null string and you don't know why. Or even
+worse if the null is on the front. Also there's the situation where
+you say "//", you don't know in Perl 5 whether it means match the
+null string, or match the previous match. You have to be explicit
+about that, and it's readable and prevents a class of errors.</p>
+<p>Newline is logical newline, so if you mounted a Windows
+partition on your UNIX box and say "match a newline" - it figures
+out the right thing.</p>
+<p>65:48</p>
+<p>Assertions are now more readable, either positive or negative
+assertions. Slightly de-Huffmanized, the back-tracking control now
+can be applied to any preceding token - the same way a quantifier
+can. The conditional syntax looks a lot less like LISP. Here's how
+you match a conditional now in Perl 6: basically if it's this then
+do that, if it's this then do that - that's how you read this. The
+colons are being a back-tracking control. Only the double one says
+if you back-track over this back-track out of the entire
+alternative set.</p>
+<p>Now if you wrote that in Perl 5, it would have to look like
+this, which as you can see is a lot worse. Especially all the
+trailing parens there. Of course, if you didn't use the /x modifier
+there to use whitespace, you'd have to write it like this. I'm sure
+you all agree that's a slight improvement.</p>
+<p>Buy you don't even have to keep track of your captures here -
+you just say: "Give me the previous one". So it's a pattern-action
+pattern-action and each of them stands independently.</p>
+<p>Now, that's not all - we have full grammars. So you want to
+match a floating point number - here's the grammar for it. Now it
+looks much more like YaCC or BNF that it does like regular
+expressions, doesn't it? We don't even call them regular
+expressions anymore, we call them rules. And they just build a
+parse tree for you, and using the names of these things you can
+parse a number. And then you say "give me the sign", "give me the
+mantissa", "give me the exponent", "give me the sign of the
+exponent", and it's all nested nicely just as a data structure.</p>
+<p>You can even use the constant subscript notation, like that, and
+because you get tired of seeing those slashes, you can even get rid
+of them. But we got another problem here which is you might use
+digits in more than one place, and how you differentiate them. Well
+you can bind them to different names. And then after you did that,
+you can just say - well return the integer part of the mantissa and
+the fractional part of the mantissa.</p>
+<p>69:00</p>
+<p>Now, if you say evaluate something, that's really going to do
+something underneath like take the Perl 6 grammar as the top rule,
+and then parse this thing, and compile that, and run it.</p>
+<p>And a grammar is just a strange kind of class, and these rules
+are just funny kind of methods, and since if you can overwrite
+methods, why not overwrite rules. So let's take the Perl grammar,
+and derive a grammar from it, and we'll call it "Rubbish"... I mean
+"Rubyish". I will redefine identifiers to allow an optional "?" or
+"!" on the end. And off we go. And install it as your current
+grammar using a "use" statement or something, and suddenly you're
+programming in Rubyish.</p>
+<p>And this is how natural languages evolve, they just make little
+changes to the grammar and the dictionary all the time. It's also
+how people learn language. You learn the simple thing and then you
+learn other things in terms of those things.</p>
+<p>It's also how Audrey is defining Pugs. He takes this syntactic
+sugar, and de-sugars it into this is defined in terms of that, and
+this is defined in terms of that, until at the low level there's
+just a small number of primitives.</p>
+<p>Now, we had some of this "an A is just a B" in Perl 5, we could
+say, "an object is just a blessed reference", "a class is just a
+package", "a method is just a subroutine". Sometimes we got
+confused because we used the same keywords for all of these
+things.</p>
+<p>The same things carries over to Perl 6. Though in some cases, we
+changed the keyword, but it's still the same thing semantically
+underneath. So we can still do a lot of this define one thing in
+terms of another.</p>
+<p>An object attribute is just a weirdly scoped variable. A class
+attribute - well maybe that's not true anymore. A grammar is kinda
+like a class, a grammar rule is like a method... types are
+properties that are interpreted as contracts, attributes just bind
+a list, hyper-operators - you can define all of these things just
+in terms of lower level things.</p>
+<p>A control structure is just a subroutine that can call closures
+- that's an important one.</p>
+<p>All control flow to exit a block is just a strange kind of
+exception, and you know Perl 6 is just a new version of Perl.</p>
+<p>And that's the talk.</p>
+<p>I guess I have gone into your break time by 5 minutes so I don't
+have time for questions, but I'll be here all the rest of the time
+and feel free to ask me anything. [Applause]</p>
+<p>END</p>
+<p>&nbsp;:</p>
+<p>72:39</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+unknown {
+	font-size: 14px; color: #000000; font-family: arial; background-color: floralwhite; text-decoration: none
+}
+td {
+	font-size: 14px; color: #4a4d4a; font-family: arial; text-decoration: none
+}
+a:link {
+	font-size: 14px; color: #0033cc; font-family: arial
+}
+a:visited {
+	font-size: 14px; color: #cc0000; font-family: arial
+}
+a:hover {
+	font-size: 14px; color: #cc3333; font-family: arial
+}
+a:active {
+	font-size: 14px; color: #000033; font-family: arial
+}
+a img {
+	background: none transparent scroll repeat 0% 0%;
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 0px;
+	color: white
+}
+ul {
+	line-height: 19px
+}
+.center {
+	text-align: center
+}
+hr.partruler {
+   text-align: left;
+   width: 100px
+}
+hr {
+	height: 2pt
+}
+.bottomtext {
+	font-size: smaller
+}

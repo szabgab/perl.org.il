@@ -1,0 +1,167 @@
+<% myheader("Registration Form") %>
+<tr>
+<% mysidebar() %>
+<td>
+<% 
+   use warnings; 
+   use strict;
+   use MIME::Lite;
+   use Fcntl qw(:flock);
+   #print map {"$_=$ENV{$_}<br>"} keys %ENV;
+   my $result=0;
+%>
+
+<% if (
+	defined $Request->{Form}{name} and
+	defined $Request->{Form}{email} and
+	length($Request->{Form}{name}) > 3 and
+	$Request->{Form}{email} =~ /^[\w@.+-]*$/ 
+	) {
+
+	my $email = lc $Request->{Form}{email};
+	my $name = $Request->{Form}{name};
+	my $t = localtime;
+	my $password = generate_pw();
+	my %h = (
+	   registration_date => $t,
+	   email => $email,
+	   name  => $name,
+	   password => $password
+	   );
+	
+
+	$result = update_xml($email, 'add', \%h);
+
+	if ($result == 0) {
+		my $text = "Name:  $name\n";
+		$text   .= "Email: $email\n";
+		$text   .= "Date:  $t\n";
+
+		my $body = <<BODY;
+Dear $name,
+
+we have received your registration to YAPC::Israel::2003
+
+In order to finish the registration you have to
+1) fill out the following form
+
+   http://www.perl.org.il/YAPC/2003/regedit.html
+   Email:    $email
+   Password: $password
+
+2) Pay the registration fee
+
+regards
+    Gabor Szabo
+    YAPC::Israel::2003
+    http://www.perl.org.il/YAPC/2003/
+
+BODY
+
+
+         # Send e-mail to ourself about the new registration
+	 	 my $msg = MIME::Lite->new(
+		    From    => 'registration@perl.org.il',
+		    To      => 'gabor@perl.org.il',
+		    Subject => "YAPC Registration of $name",
+		    Data    => $text
+		 );
+		 if (not defined $msg) {
+		    warn("Error creating MIME::Lite object\n");
+		 } else {
+	            $msg->send;
+                 }
+
+
+	 	 my $mail = MIME::Lite->new(
+		    From    => 'registration@perl.org.il',
+		    To      => $email,
+		    Subject => "YAPC::Israel::2003 registration",
+		    Data    => $body
+		 );
+		 if (not defined $mail) {
+		    warn("Error creating MIME::Lite object to send to registrant\n");
+		 } else {
+	            $mail->send;
+                 }
+%>
+Thank you for the registration.<p>
+In a few minutes you'll receive an e-mail with a password to the
+following address: <b><%=$email%></b><br>
+Please follow the provided link, fill out the detailed registration
+form and arrange the payment in order to ensure your place in
+YAPC::Israel::2003
+
+<p>
+If you are not a member yet, please consider <a
+href="http://mail.perl.org.il/mailman/listinfo/perl/">
+registering to the mailing list</a> of the Israeli Perl Mongers group as well. 
+<p>
+If you have not heard about it yet, you might be interested to read
+about the training classes of <a
+href="http://mail.pti.co.il/mjd.html">Mark Jason Dominus</a> that will
+take place after the conference.
+<p>
+<% } %>
+<% if ($result == 1 or $result == 2) { %>
+   Technical problem.<p>
+   Please contact <a href="mailto:registration@perl.org.il">registration@perl.org.il</a>
+<% } %>
+<% if ($result == 3) { %>
+   Technical problem.<p>
+   The given entry does not exist in the database<p>
+   Please contact <a href="mailto:registration@perl.org.il">registration@perl.org.il</a>
+<% } %>
+
+<% if ($result == 4) { %>
+   There is already one registration with the same e-mail address.<p>
+   You can <a href="regedit.html">edit the information</a> of your
+   registration.
+<% } %>
+
+       
+<% } else { # paramters not supplied in the form %>
+YAPC::Israel::2003 will take place on 11th May 2003, in Haifa,
+Israel.<br>
+Thanks to our <a href="sponsors.html">sponsors</a> we could reduce the
+previously announced fee (250 NIS) to a participation fee of <b>180 NIS</b> (incl. VAT)<br>
+Early bird registrations (those who pay till 15th April 2003) can get in for
+as low as <b>90 NIS</b> (incl. VAT)
+<p>
+Speakers also have to register but they won't have to pay the fee.
+<p>
+The registration have 3 steps:
+<ol>
+<li>Give your name and e-mail
+<li>With the password you receive in e-mail, you have to fill in the
+rest of the registration form.
+<li>Pay the fee
+</ol>
+Payments can be made by cash or check and at a later point we might
+be able to accept credit cards at a later point.
+<p>
+
+<% if (lc $ENV{HTTP_REFERER} eq lc
+        "http://$ENV{SERVER_NAME}$ENV{REQUEST_URI}") {
+    # self refered
+%>
+<font color=red>Some fields were missing</font>
+<% } %>
+
+<form method=post>
+<table>
+<tr><td>Name:</td><td><input name=name size=40 
+value="<%=(defined $Request->{Form}{name} ? $Request->{Form}{name} : "") %>"></td></tr>
+<tr><td>E-mail:</td><td><input name=email size=40 
+value="<%=(defined $Request->{Form}{email} ? $Request->{Form}{email} :
+"") %>"></td></tr>
+<tr><td></td><td><input type=submit value='Register'></td>
+</table>
+</form>
+
+<% } %>
+<p>
+If you have questions regarding the registrations, please send it to <a href=mailto:registration@perl.org.il>registration@perl.org.il</a>
+<p>
+</td></tr>
+<% myfooter() %>

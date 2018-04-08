@@ -1,0 +1,28 @@
+#!/usr/bin/perl -w
+
+use Geo::IP;
+
+my $gi = new Geo::IP(GEOIP_MEMORY_CACHE);
+
+my @logs = @ARGV ? @ARGV : "/var/log/httpd/access_log";
+my %country_numbers = ();
+
+foreach my $log (@logs) {
+	open LOG, "<$log" || die "Can't open $log: $!\n";
+	while (<LOG>) {
+		/^([^ ]+)/ || next;
+		my $host = $1;
+		my $country = $gi->country_name_by_name($host) || 'Unknown';
+		$country_numbers{$country}++;
+	}
+	close LOG;
+}
+
+# @country_numbers is %country_numbers pairs sorted by numbers
+my @country_numbers = sort { $b->[1] <=> $a->[1] || $a->[0] cmp $b->[0] }
+	map { [ $_, $country_numbers{$_} ] } keys %country_numbers;
+
+foreach my $country_number (@country_numbers) {
+	my ($country, $number) = @$country_number;
+	printf "%5d  %s\n", $number, $country;
+}

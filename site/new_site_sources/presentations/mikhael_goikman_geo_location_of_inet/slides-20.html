@@ -1,0 +1,61 @@
+<html>
+<head>
+  <title>Geo location of internet users - A script to show countries of web users</title>
+  <link rel=stylesheet href="style.css" type="text/css">
+</head>
+<body bgcolor="#c8f0e0">
+
+<table width=100% class=status>
+<tr>
+  <td width=33%>[End]</td>
+  <td align=center width=34%><b>2.0</b> A script to show countries of web users</td>
+  <td align=right width=33%><a href="slides-12.html">Prev</a></td>
+</tr>
+</table>
+<!-- header -->
+
+<h1>A script to show countries of web users</h1>
+
+<p>A <a href="user_countries.txt">small scripts<a> listing
+visitor countries sorted by numbers, for Apache.
+
+<pre><div class=code>use Geo::IP;
+
+my $gi = new Geo::IP(GEOIP_MEMORY_CACHE);
+
+my @logs = @ARGV ? @ARGV : "/var/log/httpd/access_log";
+my %country_numbers = ();
+
+foreach my $log (@logs) {
+        open LOG, "&lt;$log" || die "Can't open $log: $!\n";
+        while (&lt;LOG&gt;) {
+                /^([^ ]+)/ || next;
+                my $host = $1;
+                my $country = $gi-&gt;country_name_by_name($host) || 'Unknown';
+                $country_numbers{$country}++;
+        }
+        close LOG;
+}
+
+# @country_numbers is %country_numbers pairs sorted by numbers
+my @country_numbers = sort { $b-&gt;[1] &lt;=&gt; $a-&gt;[1] || $a-&gt;[0] cmp $b-&gt;[0] }
+        map { [ $_, $country_numbers{$_} ] } keys %country_numbers;
+
+foreach my $country_number (@country_numbers) {
+        my ($country, $number) = @$country_number;
+        printf "%5d  %s\n", $number, $country;
+}</div></pre>
+
+
+<!-- footer -->
+<p>
+<table width="100%" class=status>
+<tr>
+  <td width=33%>[End]</td>
+  <td align=center width=34%><a href="slides-00.html">Geo location of internet users</a></td>
+  <td align=right width=33%><a href="slides-12.html">Prev</a></td>
+</tr>
+</table>
+
+</body>
+</html>

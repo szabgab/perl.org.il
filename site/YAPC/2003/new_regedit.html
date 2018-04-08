@@ -1,0 +1,365 @@
+<% myheader("Registration Information") %>
+<tr>
+<% mysidebar() %>
+<td>
+<% 
+   use warnings; 
+   use strict;
+   use MIME::Lite;
+   use Data::Dumper;
+
+   my $display = 'login';
+   #print STDERR Dumper $Session;
+   my %data;
+   #$Session->{data} = {};
+    
+   if ($Session->{data}{email}) {               # we are loged in
+      if ($Request->{Form}{logout}) {    # logout request
+         $Session->{data} = {};
+         $display = 'logout';
+      } elsif ($Request->{Form}{hidden}) {      # data was sent in
+         $display = "check_data";
+         # check and save data
+      } else {
+         $display = 'editor';  # when someone loged in, left the site
+                               # and came back later. Maybe we should
+                               # autologout here ?
+         #$display = 'error';  # when are we reaching this point ?
+
+         #$Session->{data} = {}; # autologout
+         #$display = 'login';
+      }
+   } else {                                     # not loged in
+      if (                                    
+        defined $Request->{Form}{email} and
+        defined $Request->{Form}{password} and
+        $Request->{Form}{email} and
+        $Request->{Form}{password}
+        ) {                                       # login request
+        # print "in login process";
+        # Check if email/password pair is ok set e-mail
+        if (my $h = check_login(
+	                $Request->{Form}{email},
+                        $Request->{Form}{password})) {
+      
+             #$Session->{data} = {email => $Request->{Form}{email}};
+	     $h->{email} = $Request->{Form}{email};
+	     #print STDERR "------\n";
+	     $Session->{data} = $h;
+	     #print STDERR Dumper $Session;
+             $display = 'editor';
+        } else {
+           $display = 'failed_login';
+        }
+     } else {
+        $display = 'login';
+  }
+
+}
+%>
+
+<% if ($display eq 'failed_login' or $display eq 'login' or $display eq 'logout') { %>
+   <% if ($display eq 'failed_login') { %>
+     <font color=red>Login Failed</font><p>
+   <% } %>
+
+   <% if ($display eq 'logout') { %>
+     You were successfully loged out<p><hr>
+   <% } %>
+
+Please type in your e-mail address and password in order to login
+<form method=post>
+<table>
+<tr><td>E-mail:</td><td><input name=email size=40 
+value='<%=(defined $Request->{Form}{email} ? $Request->{Form}{email} : "") %>'></td>
+<tr><td>Password</td><td><input name=password type=password size=40></td>
+<tr><td></td><td><input type=submit value='Login'></td>
+</table>
+</form>
+
+<% } %>
+
+
+<% if ($display eq 'error') { %>
+Error, please contact <a href=mailto:gabor@perl.org.il>Gabor Szabo</a>
+and report the error.
+<% } %>
+
+
+<%  %data = %{$Session->{data}}; 
+
+# empty values genrate a reference when reading by XMLin
+# replace those references by empty string
+foreach my $k (keys %data) {
+   if (ref $data{$k}) {
+       $data{$k} = '';  
+   }
+}
+
+%>
+
+
+<% if ($display eq 'check_data') { 
+      #warn "checking";
+
+      foreach (keys %{$Request->{Form}}) {
+	    next if $_ eq 'password';  # cannot update these
+	    next if $_ eq 'email';
+	    next if $_ =~ /\W/;  # skip fields that are not legal XML
+	                         # names (maybe someone trying to break
+	                         # us) would be better maybe to give
+			         # exact list of valid fields ?
+
+	    next if $_ eq 'presentations';  # deal with this later
+            $data{$_} = $Request->{Form}{$_}  
+      }
+      if (defined $Request->{Form}{presentations} and
+	 ref $Request->{Form}{presentations} eq 'ARRAY' ) {
+	 $data{presentations} = join ' ',
+            @{$Request->{Form}{presentations}};
+      }
+
+      unless (
+	   defined $data{name} and
+	   defined $data{company} and
+	   defined $data{phone} and 
+	   defined $data{country} and 
+	   defined $data{payment} and 
+	   length $data{name} > 3 and
+	   length $data{company} >= 2 and
+	   length $data{country} > 2 and
+	   length $data{payment} > 1 and
+	   defined $Request->{Form}{presentations} and
+	   ref $Request->{Form}{presentations} eq 'ARRAY' and
+           @{$Request->{Form}{presentations}} >=5
+	   ) {
+
+           print "<font color=red>\n";
+           unless (length $data{name} > 3) {
+              print "Name should be longer<br>\n";
+           }
+           unless (length $data{company} >= 2) {
+              print "Company name should be longer<br>\n";
+           }
+           unless (length $data{country} > 2) {
+              print "Country name should be longer<br>\n";
+           }
+           unless (length $data{payment} > 1) {
+              print "Payment form should be selected<br>\n";
+           }
+
+	   unless (
+		  defined $Request->{Form}{presentations} and
+		  ref $Request->{Form}{presentations} eq 'ARRAY' and
+		  @{$Request->{Form}{presentations}} >=5) {
+		  print "Select at least 5 presentations you would like to hear";
+	   }
+
+
+           print "</font>\n";
+           $display = 'editor';
+       } else { 
+
+	   # clean up the data a bit
+	   $data{last_update} = localtime;
+	   $data{comment} =~ s/\r\n/\n/g;
+	   $data{comment} =~ s/\n+/ /g;
+
+	   my $text;
+	   foreach my $k (sort keys %data) {
+	      next if $k eq 'password';
+	      next if $k eq 'hidden';
+	      $text .= sprintf "%-20s  %s\n", $k, $data{$k};
+           }
+	
+	   my $subject = "YAPC (2nd) Registration of $data{name}";
+
+           # Send e-mail to ourself about the new registration
+	   my $msg = MIME::Lite->new(
+        	From    => 'register@perl.org.il',
+	        To      => 'gabor@perl.org.il',
+	        Subject => $subject,
+        	Data    => $text
+	       );
+           if (not defined $msg) {
+              warn("Error creating MIME::Lite object in sending to ourself\n");
+           } else {
+	      $msg->send;
+           }
+
+	   $subject = "YAPC registration confirmation";
+	   $text = <<TEXT;
+Dear $data{name},
+
+thank you for confirming your e-mail address and
+filling out the registration form.
+
+In order to finish your registration to YAPC::Israel::2003
+you should send the registration fee to Gabor Szabo.
+The registration fee is 90 NIS till 15th of April and
+150 NIS after that. People not living in Israel should contact 
+me directly about the payment options.
+
+If you are sending check please make the check out to 
+"HostLocal Ltd"
+
+and send it to
+
+Gabor Szabo
+Migdal HaLevanon str. 23 app. 18.
+Modiin
+
+---------------------------------------
+Now that you have finished this part of the
+registration, have you heard about the training
+classes Mark Jason Dominus will give after
+the conference ?
+
+Check it out at http://www.pti.co.il/mjd.html
+
+If you are interested contact me directly.
+
+regards
+   Gabor Szabo
+   http://www.perl.org.il/
+   http://www.pti.co.il/
+
+TEXT
+
+	   $msg = MIME::Lite->new(
+        	From    => 'register@perl.org.il',
+#	        To      => 'gabor@perl.org.il',
+	        To      => $data{email},
+	        Subject => $subject,
+        	Data    => $text
+	       );
+           if (not defined $msg) {
+              warn("Error creating MIME::Lite object while sending to user\n");
+           } else {
+	      $msg->send;
+           }
+
+  	   $Session->{data} = \%data;
+	   my $result = update_xml($data{email}, 'update', \%data);
+	   if ($result==1 or $result==2) {
+	      print "<font color=red>Technical problem occurred, could not save data</font>";
+	   } elsif ($result == 3) {
+	      print "<font color=red>Email '$data{email}' does not exist</font>";
+           } elsif ($result ==4) {
+              print "Internal error. Error #4 Please contact the webmaster";
+           }
+	   #print qq(<a href="$ENV{HTTP_REFERER}">--&gt; continue editing</a><p>);
+     }
+} %>
+
+
+
+<% if ($display eq 'editor') { %>
+
+<hr>
+Please fill in all the fields.
+
+<% 
+#   if (defined $Request->{Form}{hidden}) {
+#       print "<font color=red>Some fields were missing</font>";
+#   } 
+%>
+
+<form method=post>
+<input name=hidden type=hidden value=1>
+<table>
+<tr><td>Name:</td><td><input name=name size=40 
+value="<%=(defined $data{name} ? $data{name} : "") %>"></td>
+<tr><td>E-mail:</td><td><%=(defined $data{email} ? $data{email} : "") %></td>
+<tr><td>Company:</td><td><input name=company size=40 
+value="<%=(defined $data{company} ? $data{company} : "") %>"></td>
+<tr><td>Phone:</td><td><input name=phone size=40 
+value="<%=(defined $data{phone} ? $data{phone} : "") %>"></td>
+<tr><td>Country:</td><td><input name=country size=40 
+value="<%=(defined $data{country} ? $data{country} : "") %>"></td>
+
+<tr><td>Payment mode?</td><td><select name=payment>
+<option value='cash' <%=defined $data{payment} and
+$data{payment} eq 'cash' ? "SELECTED" : "" %>>Cash
+<option value='check' <%=defined $data{payment} and
+$data{payment} eq 'check' ? "SELECTED" : "" %>>Check
+<option value='cc' <%=defined $data{payment} and
+$data{payment} eq 'cc' ? "SELECTED" : "" %>>Credit Card
+</select>
+</td>
+
+
+
+
+<tr><td>In which language would<br>
+you prefer to hear<br>
+the presentations ?</td><td><select name=language>
+<option value='english' <%=defined $data{language} and
+$data{language} eq 'english' ? "SELECTED" : "" %>>English
+<option value='hebrew' <%=defined $data{language} and
+$data{language} eq 'hebrew' ? "SELECTED" : "" %>>Hebrew
+<option value='nomatter' <%=defined $data{language} and
+$data{language} eq 'nomatter' ? "SELECTED" : "" %>>Does not matter
+</select>
+</td>
+
+</td></tr>
+<tr><td valign=top>Display tag (badge)<br>(probably your name and<br>company)</td><td><table>
+
+
+<% 
+   foreach my $i (0..2) {
+      my $b = "badge$i";
+      $data{$b} = '' unless defined $data{$b};
+      print qq(<tr><td><input name=$b size=40 value="$data{$b}"></td></tr>\n);
+   }
+%>
+</table></td>
+</tr>
+
+<tr><td colspan=2>Presentations<br>
+Please select 5-8 presentations that seem to be the most interesting
+for you. We'll use this information when building the tracks of the
+conference</td></tr>
+<tr><td colspan=2>
+
+<% 
+   my $pres = XMLin('presentations.xml', keyattr => 'id');
+   my %p = %{$pres->{entry}};
+   my %presentations;
+   if (defined $data{presentations}) {
+      $presentations{$_}=1 foreach (split / /, $data{presentations});
+   }
+   foreach my $id (sort {$a <=> $b} keys %p) {
+       print qq(<input type=checkbox name=presentations value="$id");
+       print qq( checked ) if defined $presentations{$id};
+       print qq(><b>$p{$id}{title}</b> by $p{$id}{name} ($p{$id}{length} min)<br>\n);
+   }
+%>
+
+
+
+
+<tr><td colspan=2>Comments, if you have something more to say here:<br>
+<textarea name=comment cols=60 rows=6>
+<%=(defined $data{comment} ? $data{comment} : "") %>
+</textarea>
+
+<tr><td></td><td><input type=submit value='Save'></td>
+</table>
+</form>
+
+
+<% } %>
+
+<% if ($display eq 'editor' or $display eq 'check_data') { %>
+  <form method=post><input type=hidden name=logout value=1>
+  <input type=submit value=logout>
+  </form>
+<% } %>
+
+<p>
+If you have questions regarding the registrations, please send it to <a href=mailto:registration@perl.org.il>registration@perl.org.il</a>
+<p>
+</td></tr>
+<% myfooter() %>

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Overriding the Serializer</TITLE>
+<META NAME="generator" CONTENT="txt2html v1.25">
+<LINK REL='start' HREF='slide002a.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='first' HREF='slide002a.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='last' HREF='slide014.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='next' HREF='slide015.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='previous' HREF='slide013.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='contents' HREF='TABLE_OF_CONTENTS.html' TYPE='text/html; charset=utf-8'>
+</HEAD>
+<BODY BGCOLOR="#ffffff" BACKGROUND="background.jpg"><FONT SIZE=4>
+
+<table width=100% bgcolor=black cellspacing=0 border=0>
+<tr><td width=33%><a href="slide015.html"><font color="white">Next</font></a></td>
+    <td align=center width=33% ><font color="white">SOAP::Lite Client Experiences</font></td>
+    <td align=right width=33%><font size="+1" color="white"><b>14</b></font></td>
+</tr>
+</table>
+
+
+
+<H1><A NAME="section-1">Overriding the Serializer</A></H1>
+
+<UL>
+  <LI><p> I had to add some logic to the SOAP::Lite serializer, to correctly assign the data types to the values.<!-- list end--></p>
+
+</UL>
+<PRE><B>
+     sub SOAP::Serializer::as_int {
+         my $self = shift;
+         my($value, $name, $type, $attr) = @_;
+
+         return [$name, {'xsi:type' =&gt; 'xsd:boolean', %$attr}, 'true']
+             if ($name =~ /^(has|affects)/ &amp;&amp; $value == 1);
+         return [$name, {'xsi:type' =&gt; 'xsd:boolean', %$attr}, 'false']
+             if ($name =~ /^(has|affects)/ &amp;&amp; $value == 0);
+
+         for (qw(eventaddorder showorder testconfigtype)) {
+             return [$name, {'xsi:type' =&gt; 'xsd:short', %$attr}, $value] if $name eq $_;
+         }
+
+         for (qw(recordid cookie)) {
+             return [$name, {'xsi:type' =&gt; 'xsd:long', %$attr}, $value] if $name eq $_;
+         }
+
+         return [$name, {'xsi:type' =&gt; 'xsd:int', %$attr}, $value];
+     }
+
+     $soap-&gt;typelookup-&gt;{dateTime} =
+         [15, sub {$_[0] =~ /^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d-\d\d:\d\d$/ }, 'as_dateTime'];
+     sub SOAP::Serializer::as_dateTime {
+         my $self = shift;
+         my($value, $name, $type, $attr) = @_;
+         return [$name, {'xsi:type' =&gt; 'xsd:dateTime', %$attr}, $value];
+     }
+</B></PRE>
+
+<UL>
+  <LI><p> An improvement to SOAP::Lite would be to save the data types, which are part of the XML messages it gets from the server.<!-- list end--></p>
+
+</UL>
+
+
+<br clear=all>
+
+<table width=100% bgcolor=black cellspacing=0 border=0>
+<tr>
+    <td align=right width=33%><font color="white">Copyright &copy; 2004 David Baird</font></td>
+</tr>
+</table>
+
+
+
+</FONT></BODY>
+</HTML>

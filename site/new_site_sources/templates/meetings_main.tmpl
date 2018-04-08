@@ -1,0 +1,44 @@
+<tmpl_include name="header.tmpl">
+   <!-- ##### Main Copy ##### -->
+   <div id="main-copy">
+      <h1 id="agenda" style="border-top: none; padding-top: 0;">Agenda</h1>
+      <p>
+         On <tmpl_var name="day_and_date">, the <a href="http://www.perl.org.il/">Israeli Perl
+         Mongers</a> <tmpl_if name="past">held<tmpl_else>will hold</tmpl_if> their regular monthly meeting. The program:
+      </p>
+      <ul>
+	 <tmpl_loop name="agenda_items">
+	    <li> <tmpl_var name="item"></li>
+	 </tmpl_loop>
+      </ul>
+      <p>
+      <b>Location:</b> <tmpl_var name="location">
+      </p>
+   <tmpl_if name="past">
+      <h1 id="report">Report</h1>
+      <tmpl_if name="participants">
+      <ol>
+	 <tmpl_loop name="participants">
+	    <li><tmpl_var name="name"></li>
+	 </tmpl_loop>
+      </ol>
+      </tmpl_if>
+      <tmpl_var name="report_text">
+      <tmpl_if name="report_exists">
+	 <p>
+            <tmpl_if name="other_summarizer">
+	       <tmpl_var name="other_summarizer">
+            <tmpl_else>
+               This meeting summary was written by your ever cheerful Israel.pm PR
+               person - <a href="mailto:offer DoT kaye (noATspam) perl DoT org DoT il">Offer Kaye</a>.
+	    </tmpl_if>
+	 </p>
+      </tmpl_if>
+  </tmpl_if>
+   <p class="bottom">&nbsp;</p>
+   </div>
+
+   <!-- ##### Footer ##### -->
+   <tmpl_include name="footer.tmpl">
+</body>
+</html>

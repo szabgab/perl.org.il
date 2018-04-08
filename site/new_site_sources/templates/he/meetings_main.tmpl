@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
+<head>
+   <title><tmpl_var name="title"></title>
+   <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+   <meta name="author" content="Offer Kaye" />
+   <meta name="generator" content="HTML::Template" />
+   <meta name="keywords" content="<tmpl_var meta_keywords>" />
+   <meta name="description" content="<tmpl_var meta_description>" />
+   <link rel="stylesheet" type="text/css" href="/css/main-screen.css" media="screen" title="Main CSS (screen)" />
+   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+   <!-- For non-visual user agents: -->
+   <div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
+
+   <!-- ##### Header ##### -->
+   <div id="header">
+      <h1 class="headerTitle">
+	 <a href="../../index.html" title="Browse to homepage">Israel.pm - <span>The Israeli Perl Mongers</span></a>
+      </h1>
+      <div class="subHeader">
+	 <span class="doNotDisplay">Navigation: </span>
+	 <tmpl_loop name="nav_bar">
+	    <a href="../../<tmpl_var nav_page>"><tmpl_var nav_name></a> <tmpl_unless name="__last__">|</tmpl_unless>
+	 </tmpl_loop>
+      </div>
+   </div>
+
+   <div id="side-bar">
+      <!-- ##### Left Sidebar ##### -->
+      <div class="leftSideBar">
+	 <p class="sideBarTitle"><tmpl_var name="left_bar_title"></p>
+	 <ul>
+	    <tmpl_loop name="left_bar">
+	       <li><a href="#<tmpl_var ref>" title="<tmpl_var title>"><tmpl_var text></a></li>
+	    </tmpl_loop>
+	 </ul>
+      </div>
+      <!-- ##### Right Sidebar ##### -->
+      <div class="rightSideBar">
+         <tmpl_include name="right_sidebar.tmpl">
+      </div>
+   </div>
+
+   <!-- ##### Main Copy ##### -->
+   <div id="main-copy">
+      <h1 id="agenda" style="border-top: none; padding-top: 0;">Agenda</h1>
+      <p>
+         On <tmpl_var name="day_and_date">, the <a href="http://www.perl.org.il/">Israeli Perl
+         Mongers</a> <tmpl_if name="past">held<tmpl_else>will hold</tmpl_if> their regular monthly meeting. The program:
+      </p>
+      <ul>
+	 <tmpl_loop name="agenda_items">
+	    <li> <tmpl_var name="item"></li>
+	 </tmpl_loop>
+      </ul>
+   <tmpl_if name="past">
+      <h1 id="report">Report</h1>
+      <ol>
+	 <tmpl_loop name="participants">
+	    <li><tmpl_var name="name"></li>
+	 </tmpl_loop>
+      </ol>
+      <p>
+         <tmpl_var name="report_text">
+      </p>
+      <tmpl_if name="report_exists">
+	 <p>
+            <tmpl_if name="other_summarizer">
+	       <tmpl_var name="other_summarizer">
+            <tmpl_else>
+               This meeting summary was written by your ever cheerful Israel.pm PR
+               person - <a href="mailto:offer DoT kaye (noATspam) perl DoT org DoT il">Offer Kaye</a>.
+	    </tmpl_if>
+	 </p>
+      </tmpl_if>
+  </tmpl_if>
+   <p class="bottom">&nbsp;</p>
+   </div>
+
+   <!-- ##### Footer ##### -->
+   <tmpl_include name="footer.tmpl">
+</body>
+</html>

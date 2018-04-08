@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Problems with data structures</TITLE>
+<META NAME="generator" CONTENT="txt2html v1.25">
+<LINK REL='start' HREF='slide002a.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='first' HREF='slide002a.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='last' HREF='slide014.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='next' HREF='slide014.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='previous' HREF='slide012.html' TYPE='text/html; charset=utf-8'>
+<LINK REL='contents' HREF='TABLE_OF_CONTENTS.html' TYPE='text/html; charset=utf-8'>
+</HEAD>
+<BODY BGCOLOR="#ffffff" BACKGROUND="background.jpg"><FONT SIZE=4>
+
+<table width=100% bgcolor=black cellspacing=0 border=0>
+<tr><td width=33%><a href="slide014.html"><font color="white">Next</font></a></td>
+    <td align=center width=33% ><font color="white">SOAP::Lite Client Experiences</font></td>
+    <td align=right width=33%><font size="+1" color="white"><b>13</b></font></td>
+</tr>
+</table>
+
+
+
+<H1><A NAME="section-1">Problems with data structures</A></H1>
+
+<UL>
+  <LI><p> I had a script in which I needed to read records, change fields and rewrite them.<!-- list end--></p>
+
+  <LI><p> SOAP::Lite was able to translate the XML message to a referenced hash:<!-- list end--></p>
+
+</UL>
+<PRE><B>
+     my $defect = $soap-&gt;editDefect( $cookie, $this-&gt;{'No.'}, '' );
+     my $newEventNum = scalar(@{$defect-&gt;{eventlist}}) + 1;
+     $defect-&gt;{eventlist} = [
+           name( item =&gt; \value(
+             name( assignedby    =&gt; $this-&gt;{'Fixed By'}   ),
+             name( user          =&gt; $this-&gt;{'Entered by'} ),
+             name( dateTime      =&gt; $this-&gt;{'Date Fixed'} )-&gt;type('xsd:date'),
+             name( eventaddorder =&gt; $newEventNum          )-&gt;type('xsd:short')
+           ))-&gt;type('ttns:CAssignDefectEvent')-&gt;attr({'xmlns:ttns' =&gt; $ns})
+     ];
+</B></PRE>
+
+<UL>
+  <LI><p> But when I saved the record, I got errors from the server about invalid data types.<!-- list end--></p>
+
+</UL>
+<PRE><B>
+     $soap-&gt;saveDefect( $cookie, $defect );
+</B></PRE>
+
+<UL>
+  <LI><p> SOAP::Lite wan't remembering the data types of the values in the hash.<!-- list end--></p>
+
+</UL>
+
+
+<br clear=all>
+
+<table width=100% bgcolor=black cellspacing=0 border=0>
+<tr>
+    <td align=right width=33%><font color="white">Copyright &copy; 2004 David Baird</font></td>
+</tr>
+</table>
+
+
+
+</FONT></BODY>
+</HTML>

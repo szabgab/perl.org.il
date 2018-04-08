@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>Geo location of internet users - Locale::Country</title>
+  <link rel=stylesheet href="style.css" type="text/css">
+</head>
+<body bgcolor="#c8f0e0">
+
+<table width=100% class=status>
+<tr>
+  <td width=33%><a href="slides-12.html">Next</a></td>
+  <td align=center width=34%><b>1.1</b> Locale::Country</td>
+  <td align=right width=33%><a href="slides-10.html">Prev</a></td>
+</tr>
+</table>
+<!-- header -->
+
+<h1>Locale::Country</h1>
+
+<p>The ISO 3166 standard
+<a href="http://www.iso.org/iso/en/CombinedQueryResult.CombinedQueryResult?queryString=3166">
+The ISO 3166 standard</a>
+defines 2-letter and 3-letter codes for country identification.
+There are extension that list international organizations, like UN.
+A <a href="http://www.davros.org/misc/iso3166.html">short summary.
+
+<p>Locale::Country (included in perl-5.8.0) is a Perl API to these standard
+codes.
+
+<pre><div class=code>use Locale::Country;
+
+print code2country('jp'), "\n";   # 'Japan'  # 'jpn'
+print country_code2code('jp', LOCALE_CODE_ALPHA_2, LOCALE_CODE_ALPHA_3);</div></pre>
+
+
+<!-- footer -->
+<p>
+<table width="100%" class=status>
+<tr>
+  <td width=33%><a href="slides-12.html">Next</a></td>
+  <td align=center width=34%><a href="slides-00.html">Geo location of internet users</a></td>
+  <td align=right width=33%><a href="slides-10.html">Prev</a></td>
+</tr>
+</table>
+
+</body>
+</html>

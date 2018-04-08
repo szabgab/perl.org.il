@@ -1,0 +1,1808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="ttsoapcgi"
+ xmlns="http://schemas.xmlsoap.org/wsdl/"
+ xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap/"
+ xmlns:WSDL="http://schemas.xmlsoap.org/wsdl/"
+ targetNamespace="urn:testtrack-interface"
+ xmlns:tns="urn:testtrack-interface"
+ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:ttns="urn:testtrack-interface">
+
+<types>
+ <schema targetNamespace="urn:testtrack-interface"
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:ttns="urn:testtrack-interface"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
+
+  <element name="CDatabase" type="ttns:CDatabase"/>
+  <complexType name="CDatabase">
+   <sequence>
+    <element name="name" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+   </sequence>
+  </complexType>
+
+  <complexType name="ArrayOfCDatabase">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="ttns:CDatabase" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="ttns:CDatabase[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+  <element name="CDatabaseTable" type="ttns:CDatabaseTable"/>
+  <complexType name="CDatabaseTable">
+   <sequence>
+    <element name="name" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+   </sequence>
+  </complexType>
+
+  <complexType name="ArrayOfCDatabaseTable">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="ttns:CDatabaseTable" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="ttns:CDatabaseTable[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+  <element name="CTableField" type="ttns:CTableField"/>
+  <complexType name="CTableField">
+   <sequence>
+    <element name="name" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+   </sequence>
+  </complexType>
+
+  <complexType name="ArrayOfCTableField">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="ttns:CTableField" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="ttns:CTableField[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+  <element name="CFieldValue" type="ttns:CFieldValue"/>
+  <complexType name="CFieldValue">
+   <sequence>
+    <element name="value" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+   </sequence>
+  </complexType>
+
+  <complexType name="ArrayOfCFieldValue">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="ttns:CFieldValue" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="ttns:CFieldValue[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+  <element name="CTableColumn" type="ttns:CTableColumn"/>
+  <complexType name="CTableColumn">
+   <sequence>
+    <element name="name" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+   </sequence>
+  </complexType>
+
+  <complexType name="ArrayOfCTableColumn">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="ttns:CTableColumn" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="ttns:CTableColumn[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+  <element name="CFilter" type="ttns:CFilter"/>
+  <complexType name="CFilter">
+   <sequence>
+    <element name="name" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+   </sequence>
+  </complexType>
+
+  <complexType name="ArrayOfCFilter">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="ttns:CFilter" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="ttns:CFilter[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+  <element name="CRecordData" type="ttns:CRecordData"/>
+  <complexType name="CRecordData">
+   <sequence>
+    <element name="value" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+   </sequence>
+  </complexType>
+
+  <complexType name="ArrayOfCRecordData">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="ttns:CRecordData" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="ttns:CRecordData[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+  <element name="CRecordRowSoap" type="ttns:CRecordRowSoap"/>
+  <complexType name="CRecordRowSoap">
+   <sequence>
+    <element name="row" type="ttns:ArrayOfCRecordData" minOccurs="1" maxOccurs="1" nillable="true"/>
+   </sequence>
+  </complexType>
+
+  <complexType name="ArrayOfCRecordRowSoap">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="ttns:CRecordRowSoap" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="ttns:CRecordRowSoap[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+  <element name="CRecordListSoap" type="ttns:CRecordListSoap"/>
+  <complexType name="CRecordListSoap">
+   <sequence>
+    <element name="columnlist" type="ttns:ArrayOfCTableColumn" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="records" type="ttns:ArrayOfCRecordRowSoap" minOccurs="1" maxOccurs="1" nillable="true"/>
+   </sequence>
+  </complexType>
+
+  <element name="CItemWithDBRecordId" type="ttns:CItemWithDBRecordId"/>
+  <complexType name="CItemWithDBRecordId">
+   <sequence>
+    <element name="recordid" type="xsd:long" minOccurs="1" maxOccurs="1"/>
+   </sequence>
+  </complexType>
+
+  <element name="CItemToTrack" type="ttns:CItemToTrack"/>
+  <complexType name="CItemToTrack">
+   <complexContent>
+    <extension base="ttns:CItemWithDBRecordId">
+     <sequence>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <element name="CSystemBase" type="ttns:CSystemBase"/>
+  <complexType name="CSystemBase">
+   <complexContent>
+    <extension base="ttns:CItemToTrack">
+     <sequence>
+    <element name="systemname" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <element name="CSystem" type="ttns:CSystem"/>
+  <complexType name="CSystem">
+   <complexContent>
+    <extension base="ttns:CSystemBase">
+     <sequence>
+    <element name="location" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="computermodel" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="computerbrand" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="cputype" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="cpuspeed" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="harddisktype" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="harddisksize" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="ramsize" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="romsize" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="osname" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="osversion" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="videoname" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="hascdrom" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="cdrommodel" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="hasscanner" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="scannermodel" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="hasmodem" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="modemmodel" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="hasprinter" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="printermodel" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="otherhardware" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="hasmultiplemonitors" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <element name="CSCCFileRecord" type="ttns:CSCCFileRecord"/>
+  <complexType name="CSCCFileRecord">
+   <complexContent>
+    <extension base="ttns:CItemWithDBRecordId">
+     <sequence>
+    <element name="m-strFileName" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="m-strFixedRevision" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="m-dateFixedTimestamp" type="xsd:dateTime" minOccurs="1" maxOccurs="1" nillable="true"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <complexType name="ArrayOfCSCCFileRecord">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="ttns:CSCCFileRecord" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="ttns:CSCCFileRecord[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+  <element name="CFileAttachment" type="ttns:CFileAttachment"/>
+  <complexType name="CFileAttachment">
+   <sequence>
+    <element name="m-pFileData" type="xsd:base64Binary" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="m-strFileName" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="m-strArchiveName" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+   </sequence>
+  </complexType>
+
+  <complexType name="ArrayOfCFileAttachment">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="ttns:CFileAttachment" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="ttns:CFileAttachment[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+  <element name="CReportedByRecord" type="ttns:CReportedByRecord"/>
+  <complexType name="CReportedByRecord">
+   <complexContent>
+    <extension base="ttns:CItemWithDBRecordId">
+     <sequence>
+    <element name="foundby" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="datefound" type="xsd:date" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="contactinfo" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="foundinversion" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="comments" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="reproduced" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="reproducedsteps" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="standardtestconfig" type="ttns:CSystem" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="otherhardwaresoftware" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="testconfigtype" type="xsd:short" minOccurs="1" maxOccurs="1"/>
+    <element name="attachmentlist" type="ttns:ArrayOfCFileAttachment" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="showorder" type="xsd:short" minOccurs="1" maxOccurs="1"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <complexType name="ArrayOfCReportedByRecord">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="ttns:CReportedByRecord" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="ttns:CReportedByRecord[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+  <element name="CField" type="ttns:CField"/>
+  <complexType name="CField">
+   <complexContent>
+    <extension base="ttns:CItemWithDBRecordId">
+     <sequence>
+    <element name="name" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <element name="CStringField" type="ttns:CStringField"/>
+  <complexType name="CStringField">
+   <complexContent>
+    <extension base="ttns:CField">
+     <sequence>
+    <element name="value" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <element name="CIntegerField" type="ttns:CIntegerField"/>
+  <complexType name="CIntegerField">
+   <complexContent>
+    <extension base="ttns:CField">
+     <sequence>
+    <element name="value" type="xsd:int" minOccurs="1" maxOccurs="1"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <element name="CDecimalField" type="ttns:CDecimalField"/>
+  <complexType name="CDecimalField">
+   <complexContent>
+    <extension base="ttns:CField">
+     <sequence>
+    <element name="value" type="xsd:double" minOccurs="1" maxOccurs="1"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <element name="CBooleanField" type="ttns:CBooleanField"/>
+  <complexType name="CBooleanField">
+   <complexContent>
+    <extension base="ttns:CField">
+     <sequence>
+    <element name="value" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <element name="CDateField" type="ttns:CDateField"/>
+  <complexType name="CDateField">
+   <complexContent>
+    <extension base="ttns:CField">
+     <sequence>
+    <element name="value" type="xsd:date" minOccurs="1" maxOccurs="1" nillable="true"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <element name="CDateTimeField" type="ttns:CDateTimeField"/>
+  <complexType name="CDateTimeField">
+   <complexContent>
+    <extension base="ttns:CField">
+     <sequence>
+    <element name="value" type="xsd:dateTime" minOccurs="1" maxOccurs="1" nillable="true"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <element name="CDropdownField" type="ttns:CDropdownField"/>
+  <complexType name="CDropdownField">
+   <complexContent>
+    <extension base="ttns:CField">
+     <sequence>
+    <element name="value" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="dropdownValues" type="ttns:ArrayOfCFieldValue" minOccurs="1" maxOccurs="1" nillable="true"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <element name="CVersionField" type="ttns:CVersionField"/>
+  <complexType name="CVersionField">
+   <complexContent>
+    <extension base="ttns:CField">
+     <sequence>
+    <element name="value" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <complexType name="ArrayOfCField">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="ttns:CField" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="ttns:CField[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+  <complexType name="ArrayOfstring">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="xsd:string[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+  <element name="CDefectEvent" type="ttns:CDefectEvent"/>
+  <complexType name="CDefectEvent">
+   <complexContent>
+    <extension base="ttns:CItemWithDBRecordId">
+     <sequence>
+    <element name="user" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="date" type="xsd:date" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="notes" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="eventaddorder" type="xsd:short" minOccurs="1" maxOccurs="1"/>
+    <element name="name" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="parenteventid" type="xsd:long" minOccurs="1" maxOccurs="1"/>
+    <element name="attachmentlist" type="ttns:ArrayOfCFileAttachment" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="fieldlist" type="ttns:ArrayOfCField" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="resultingstate" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="hours" type="xsd:double" minOccurs="1" maxOccurs="1"/>
+    <element name="assigntolist" type="ttns:ArrayOfstring" minOccurs="1" maxOccurs="1" nillable="true"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <complexType name="ArrayOfCDefectEvent">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="ttns:CDefectEvent" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="ttns:CDefectEvent[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+  <element name="CDefectEventDefinition" type="ttns:CDefectEventDefinition"/>
+  <complexType name="CDefectEventDefinition">
+   <sequence>
+    <element name="name" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="user" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="datetime" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="notes" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="resultingState" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="resultingStateValues" type="ttns:ArrayOfCFieldValue" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="fileattachments" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="timeTracking" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="timeSumOfAll" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="timeHoursSinceLast" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="newAssignment" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="releaseNotes" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="customFields" type="ttns:ArrayOfCField" minOccurs="1" maxOccurs="1" nillable="true"/>
+   </sequence>
+  </complexType>
+
+  <complexType name="ArrayOfCDefectEventDefinition">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="ttns:CDefectEventDefinition" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="ttns:CDefectEventDefinition[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+  <element name="CDefect" type="ttns:CDefect"/>
+  <complexType name="CDefect">
+   <complexContent>
+    <extension base="ttns:CItemToTrack">
+     <sequence>
+    <element name="defectnumber" type="xsd:long" minOccurs="1" maxOccurs="1"/>
+    <element name="summary" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="state" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="disposition" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="type" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="priority" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="product" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="component" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="reference" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="severity" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="enteredby" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="dateentered" type="xsd:date" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="locationaddedfrom" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="datetimecreated" type="xsd:dateTime" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="datetimemodified" type="xsd:dateTime" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="createdbyuser" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="modifiedbyuser" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="actualhourstofix" type="xsd:double" minOccurs="1" maxOccurs="1"/>
+    <element name="reportedbylist" type="ttns:ArrayOfCReportedByRecord" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="eventlist" type="ttns:ArrayOfCDefectEvent" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="pSCCFileList" type="ttns:ArrayOfCSCCFileRecord" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="customFieldList" type="ttns:ArrayOfCField" minOccurs="1" maxOccurs="1" nillable="true"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <element name="CTask" type="ttns:CTask"/>
+  <complexType name="CTask">
+   <complexContent>
+    <extension base="ttns:CItemToTrack">
+     <sequence>
+    <element name="status" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="priority" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="summary" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="description" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="datedue" type="xsd:date" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="dateassigned" type="xsd:date" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="versiondue" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="assignedto" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="assignedby" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="assigneddefect" type="xsd:long" minOccurs="1" maxOccurs="1"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <element name="PhoneNumber" type="ttns:PhoneNumber"/>
+  <complexType name="PhoneNumber">
+   <sequence>
+    <element name="numbertype" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="phonenumber" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+   </sequence>
+  </complexType>
+
+  <element name="CUser" type="ttns:CUser"/>
+  <complexType name="CUser">
+   <complexContent>
+    <extension base="ttns:CItemToTrack">
+     <sequence>
+    <element name="firstname" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="lastname" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="usergroupname" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="company" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="emailtype" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="emailaddress" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="isactive" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="iscustomer" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="isglobal" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="isactiveglobal" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="userLicense" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="password" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="loginname" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="phoneone" type="ttns:PhoneNumber" minOccurs="1" maxOccurs="1"/>
+    <element name="phonetwo" type="ttns:PhoneNumber" minOccurs="1" maxOccurs="1"/>
+    <element name="notes" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="betasite" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+    <element name="address" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="testconfig" type="ttns:CSystem" minOccurs="1" maxOccurs="1" nillable="true"/>
+     </sequence>
+    </extension>
+   </complexContent>
+  </complexType>
+
+  <element name="CGlobalUser" type="ttns:CGlobalUser"/>
+  <complexType name="CGlobalUser">
+   <sequence>
+    <element name="loginname" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="name" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+   </sequence>
+  </complexType>
+
+  <complexType name="ArrayOfCGlobalUser">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="ttns:CGlobalUser" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="ttns:CGlobalUser[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+  <element name="CUserLicense" type="ttns:CUserLicense"/>
+  <complexType name="CUserLicense">
+   <sequence>
+    <element name="name" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+    <element name="numberUsed" type="xsd:int" minOccurs="1" maxOccurs="1"/>
+    <element name="numberTotal" type="xsd:int" minOccurs="1" maxOccurs="1"/>
+   </sequence>
+  </complexType>
+
+  <complexType name="ArrayOfCUserLicense">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <sequence>
+      <element name="item" type="ttns:CUserLicense" minOccurs="0" maxOccurs="unbounded"/>
+     </sequence>
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="ttns:CUserLicense[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+
+ </schema>
+</types>
+
+<message name="getDatabaseListRequest">
+</message>
+
+<message name="getDatabaseListResponse">
+ <part name="pDBList" type="ttns:ArrayOfCDatabase"/>
+</message>
+
+<message name="DatabaseLogonRequest">
+ <part name="dbname" type="xsd:string"/>
+ <part name="username" type="xsd:string"/>
+ <part name="password" type="xsd:string"/>
+</message>
+
+<message name="DatabaseLogonResponse">
+ <part name="Cookie" type="xsd:long"/>
+</message>
+
+<message name="DatabaseLogoffRequest">
+ <part name="cookie" type="xsd:long"/>
+</message>
+
+<message name="DatabaseLogoffResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="getTableListRequest">
+ <part name="cookie" type="xsd:long"/>
+</message>
+
+<message name="getTableListResponse">
+ <part name="pTableList" type="ttns:ArrayOfCDatabaseTable"/>
+</message>
+
+<message name="getDropdownFieldForTableRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="tablename" type="xsd:string"/>
+</message>
+
+<message name="getDropdownFieldForTableResponse">
+ <part name="pFieldList" type="ttns:ArrayOfCTableField"/>
+</message>
+
+<message name="getDropdownFieldValuesForTableRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="tablename" type="xsd:string"/>
+ <part name="fieldname" type="xsd:string"/>
+</message>
+
+<message name="getDropdownFieldValuesForTableResponse">
+ <part name="pValueList" type="ttns:ArrayOfCFieldValue"/>
+</message>
+
+<message name="addDropdownFieldValuesForTableRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="tablename" type="xsd:string"/>
+ <part name="fieldname" type="xsd:string"/>
+ <part name="pValueList" type="ttns:ArrayOfCFieldValue"/>
+</message>
+
+<message name="addDropdownFieldValuesForTableResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="getColumnsForTableRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="tablename" type="xsd:string"/>
+</message>
+
+<message name="getColumnsForTableResponse">
+ <part name="pColumnList" type="ttns:ArrayOfCTableColumn"/>
+</message>
+
+<message name="getFilterListRequest">
+ <part name="cookie" type="xsd:long"/>
+</message>
+
+<message name="getFilterListResponse">
+ <part name="pFilterList" type="ttns:ArrayOfCFilter"/>
+</message>
+
+<message name="getRecordListForTableRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="tablename" type="xsd:string"/>
+ <part name="filtername" type="xsd:string"/>
+ <part name="columnlist" type="ttns:ArrayOfCTableColumn"/>
+</message>
+
+<message name="getRecordListForTableResponse">
+ <part name="recordlist" type="ttns:CRecordListSoap"/>
+</message>
+
+<message name="getTestConfigRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="name" type="xsd:string"/>
+</message>
+
+<message name="getTestConfigResponse">
+ <part name="pTestConfig" type="ttns:CSystem"/>
+</message>
+
+<message name="addTestConfigRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="pTestConfig" type="ttns:CSystem"/>
+</message>
+
+<message name="addTestConfigResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="editTestConfigRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="name" type="xsd:string"/>
+</message>
+
+<message name="editTestConfigResponse">
+ <part name="pTestConfig" type="ttns:CSystem"/>
+</message>
+
+<message name="saveTestConfigRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="pTestConfig" type="ttns:CSystem"/>
+</message>
+
+<message name="saveTestConfigResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="deleteTestConfigRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="name" type="xsd:string"/>
+</message>
+
+<message name="deleteTestConfigResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="cancelSaveTestConfigRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="recordID" type="xsd:long"/>
+</message>
+
+<message name="cancelSaveTestConfigResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="getDefectEventDefinitionListRequest">
+ <part name="cookie" type="xsd:long"/>
+</message>
+
+<message name="getDefectEventDefinitionListResponse">
+ <part name="EventDefinitionList" type="ttns:ArrayOfCDefectEventDefinition"/>
+</message>
+
+<message name="getDefectCustomFieldsDefinitionListRequest">
+ <part name="cookie" type="xsd:long"/>
+</message>
+
+<message name="getDefectCustomFieldsDefinitionListResponse">
+ <part name="customFields" type="ttns:ArrayOfCField"/>
+</message>
+
+<message name="getDefectRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="defectNumber" type="xsd:long"/>
+ <part name="summary" type="xsd:string"/>
+ <part name="bDownloadAttachments" type="xsd:boolean"/>
+</message>
+
+<message name="getDefectResponse">
+ <part name="pDefect" type="ttns:CDefect"/>
+</message>
+
+<message name="addDefectRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="pDefect" type="ttns:CDefect"/>
+</message>
+
+<message name="addDefectResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="deleteDefectRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="defectNumber" type="xsd:long"/>
+ <part name="summary" type="xsd:string"/>
+</message>
+
+<message name="deleteDefectResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="editDefectRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="defectNumber" type="xsd:long"/>
+ <part name="summary" type="xsd:string"/>
+ <part name="bDownloadAttachments" type="xsd:boolean"/>
+</message>
+
+<message name="editDefectResponse">
+ <part name="pDefect" type="ttns:CDefect"/>
+</message>
+
+<message name="saveDefectRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="pDefect" type="ttns:CDefect"/>
+</message>
+
+<message name="saveDefectResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="cancelSaveDefectRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="recordID" type="xsd:long"/>
+</message>
+
+<message name="cancelSaveDefectResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="getDefectAttachmentRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="pszArchiveName" type="xsd:string"/>
+</message>
+
+<message name="getDefectAttachmentResponse">
+ <part name="pAttachment" type="ttns:CFileAttachment"/>
+</message>
+
+<message name="getTaskRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="summary" type="xsd:string"/>
+</message>
+
+<message name="getTaskResponse">
+ <part name="pTask" type="ttns:CTask"/>
+</message>
+
+<message name="addTaskRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="pTask" type="ttns:CTask"/>
+</message>
+
+<message name="addTaskResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="deleteTaskRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="summary" type="xsd:string"/>
+</message>
+
+<message name="deleteTaskResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="editTaskRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="summary" type="xsd:string"/>
+</message>
+
+<message name="editTaskResponse">
+ <part name="pTask" type="ttns:CTask"/>
+</message>
+
+<message name="saveTaskRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="pTask" type="ttns:CTask"/>
+</message>
+
+<message name="saveTaskResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="cancelSaveTaskRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="recordID" type="xsd:long"/>
+</message>
+
+<message name="cancelSaveTaskResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="getGlobalUserListRequest">
+ <part name="cookie" type="xsd:long"/>
+</message>
+
+<message name="getGlobalUserListResponse">
+ <part name="GlobalUserList" type="ttns:ArrayOfCGlobalUser"/>
+</message>
+
+<message name="getGlobalCustomerListRequest">
+ <part name="cookie" type="xsd:long"/>
+</message>
+
+<message name="getGlobalCustomerListResponse">
+ <part name="GlobalCustomerList" type="ttns:ArrayOfCGlobalUser"/>
+</message>
+
+<message name="getUserLicenseListRequest">
+ <part name="cookie" type="xsd:long"/>
+</message>
+
+<message name="getUserLicenseListResponse">
+ <part name="UserLicenseList" type="ttns:ArrayOfCUserLicense"/>
+</message>
+
+<message name="getUserRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="firstName" type="xsd:string"/>
+ <part name="lastName" type="xsd:string"/>
+</message>
+
+<message name="getUserResponse">
+ <part name="pUser" type="ttns:CUser"/>
+</message>
+
+<message name="addUserRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="pUser" type="ttns:CUser"/>
+</message>
+
+<message name="addUserResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="editUserRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="firstName" type="xsd:string"/>
+ <part name="lastName" type="xsd:string"/>
+</message>
+
+<message name="editUserResponse">
+ <part name="pUser" type="ttns:CUser"/>
+</message>
+
+<message name="saveUserRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="firstName" type="xsd:string"/>
+ <part name="lastName" type="xsd:string"/>
+ <part name="pUser" type="ttns:CUser"/>
+</message>
+
+<message name="saveUserResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="deleteUserRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="firstName" type="xsd:string"/>
+ <part name="lastName" type="xsd:string"/>
+</message>
+
+<message name="deleteUserResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="cancelSaveUserRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="recordID" type="xsd:long"/>
+</message>
+
+<message name="cancelSaveUserResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="promoteUserRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="localUser" type="xsd:string"/>
+ <part name="globalUser" type="xsd:string"/>
+ <part name="loginname" type="xsd:string"/>
+</message>
+
+<message name="promoteUserResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="addGlobalUserRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="pUser" type="ttns:CGlobalUser"/>
+</message>
+
+<message name="addGlobalUserResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="getCustomerRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="firstName" type="xsd:string"/>
+ <part name="lastName" type="xsd:string"/>
+</message>
+
+<message name="getCustomerResponse">
+ <part name="pCustomer" type="ttns:CUser"/>
+</message>
+
+<message name="addCustomerRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="pCustomer" type="ttns:CUser"/>
+</message>
+
+<message name="addCustomerResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="editCustomerRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="firstName" type="xsd:string"/>
+ <part name="lastName" type="xsd:string"/>
+</message>
+
+<message name="editCustomerResponse">
+ <part name="pCustomer" type="ttns:CUser"/>
+</message>
+
+<message name="saveCustomerRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="firstName" type="xsd:string"/>
+ <part name="lastName" type="xsd:string"/>
+ <part name="pCustomer" type="ttns:CUser"/>
+</message>
+
+<message name="saveCustomerResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="deleteCustomerRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="firstName" type="xsd:string"/>
+ <part name="lastName" type="xsd:string"/>
+</message>
+
+<message name="deleteCustomerResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="cancelSaveCustomerRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="recordID" type="xsd:long"/>
+</message>
+
+<message name="cancelSaveCustomerResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="promoteCustomerRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="localCustomer" type="xsd:string"/>
+ <part name="globalUser" type="xsd:string"/>
+ <part name="loginname" type="xsd:string"/>
+</message>
+
+<message name="promoteCustomerResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<message name="addGlobalCustomerRequest">
+ <part name="cookie" type="xsd:long"/>
+ <part name="pUser" type="ttns:CGlobalUser"/>
+</message>
+
+<message name="addGlobalCustomerResponse">
+ <part name="result" type="xsd:int"/>
+</message>
+
+<portType name="ttsoapcgiPortType">
+ <operation name="getDatabaseList">
+  <documentation>Service definition of function ttns__getDatabaseList</documentation>
+  <input message="tns:getDatabaseListRequest"/>
+  <output message="tns:getDatabaseListResponse"/>
+ </operation>
+ <operation name="DatabaseLogon">
+  <documentation>Service definition of function ttns__DatabaseLogon</documentation>
+  <input message="tns:DatabaseLogonRequest"/>
+  <output message="tns:DatabaseLogonResponse"/>
+ </operation>
+ <operation name="DatabaseLogoff">
+  <documentation>Service definition of function ttns__DatabaseLogoff</documentation>
+  <input message="tns:DatabaseLogoffRequest"/>
+  <output message="tns:DatabaseLogoffResponse"/>
+ </operation>
+ <operation name="getTableList">
+  <documentation>Service definition of function ttns__getTableList</documentation>
+  <input message="tns:getTableListRequest"/>
+  <output message="tns:getTableListResponse"/>
+ </operation>
+ <operation name="getDropdownFieldForTable">
+  <documentation>Service definition of function ttns__getDropdownFieldForTable</documentation>
+  <input message="tns:getDropdownFieldForTableRequest"/>
+  <output message="tns:getDropdownFieldForTableResponse"/>
+ </operation>
+ <operation name="getDropdownFieldValuesForTable">
+  <documentation>Service definition of function ttns__getDropdownFieldValuesForTable</documentation>
+  <input message="tns:getDropdownFieldValuesForTableRequest"/>
+  <output message="tns:getDropdownFieldValuesForTableResponse"/>
+ </operation>
+ <operation name="addDropdownFieldValuesForTable">
+  <documentation>Service definition of function ttns__addDropdownFieldValuesForTable</documentation>
+  <input message="tns:addDropdownFieldValuesForTableRequest"/>
+  <output message="tns:addDropdownFieldValuesForTableResponse"/>
+ </operation>
+ <operation name="getColumnsForTable">
+  <documentation>Service definition of function ttns__getColumnsForTable</documentation>
+  <input message="tns:getColumnsForTableRequest"/>
+  <output message="tns:getColumnsForTableResponse"/>
+ </operation>
+ <operation name="getFilterList">
+  <documentation>Service definition of function ttns__getFilterList</documentation>
+  <input message="tns:getFilterListRequest"/>
+  <output message="tns:getFilterListResponse"/>
+ </operation>
+ <operation name="getRecordListForTable">
+  <documentation>Service definition of function ttns__getRecordListForTable</documentation>
+  <input message="tns:getRecordListForTableRequest"/>
+  <output message="tns:getRecordListForTableResponse"/>
+ </operation>
+ <operation name="getTestConfig">
+  <documentation>Service definition of function ttns__getTestConfig</documentation>
+  <input message="tns:getTestConfigRequest"/>
+  <output message="tns:getTestConfigResponse"/>
+ </operation>
+ <operation name="addTestConfig">
+  <documentation>Service definition of function ttns__addTestConfig</documentation>
+  <input message="tns:addTestConfigRequest"/>
+  <output message="tns:addTestConfigResponse"/>
+ </operation>
+ <operation name="editTestConfig">
+  <documentation>Service definition of function ttns__editTestConfig</documentation>
+  <input message="tns:editTestConfigRequest"/>
+  <output message="tns:editTestConfigResponse"/>
+ </operation>
+ <operation name="saveTestConfig">
+  <documentation>Service definition of function ttns__saveTestConfig</documentation>
+  <input message="tns:saveTestConfigRequest"/>
+  <output message="tns:saveTestConfigResponse"/>
+ </operation>
+ <operation name="deleteTestConfig">
+  <documentation>Service definition of function ttns__deleteTestConfig</documentation>
+  <input message="tns:deleteTestConfigRequest"/>
+  <output message="tns:deleteTestConfigResponse"/>
+ </operation>
+ <operation name="cancelSaveTestConfig">
+  <documentation>Service definition of function ttns__cancelSaveTestConfig</documentation>
+  <input message="tns:cancelSaveTestConfigRequest"/>
+  <output message="tns:cancelSaveTestConfigResponse"/>
+ </operation>
+ <operation name="getDefectEventDefinitionList">
+  <documentation>Service definition of function ttns__getDefectEventDefinitionList</documentation>
+  <input message="tns:getDefectEventDefinitionListRequest"/>
+  <output message="tns:getDefectEventDefinitionListResponse"/>
+ </operation>
+ <operation name="getDefectCustomFieldsDefinitionList">
+  <documentation>Service definition of function ttns__getDefectCustomFieldsDefinitionList</documentation>
+  <input message="tns:getDefectCustomFieldsDefinitionListRequest"/>
+  <output message="tns:getDefectCustomFieldsDefinitionListResponse"/>
+ </operation>
+ <operation name="getDefect">
+  <documentation>Service definition of function ttns__getDefect</documentation>
+  <input message="tns:getDefectRequest"/>
+  <output message="tns:getDefectResponse"/>
+ </operation>
+ <operation name="addDefect">
+  <documentation>Service definition of function ttns__addDefect</documentation>
+  <input message="tns:addDefectRequest"/>
+  <output message="tns:addDefectResponse"/>
+ </operation>
+ <operation name="deleteDefect">
+  <documentation>Service definition of function ttns__deleteDefect</documentation>
+  <input message="tns:deleteDefectRequest"/>
+  <output message="tns:deleteDefectResponse"/>
+ </operation>
+ <operation name="editDefect">
+  <documentation>Service definition of function ttns__editDefect</documentation>
+  <input message="tns:editDefectRequest"/>
+  <output message="tns:editDefectResponse"/>
+ </operation>
+ <operation name="saveDefect">
+  <documentation>Service definition of function ttns__saveDefect</documentation>
+  <input message="tns:saveDefectRequest"/>
+  <output message="tns:saveDefectResponse"/>
+ </operation>
+ <operation name="cancelSaveDefect">
+  <documentation>Service definition of function ttns__cancelSaveDefect</documentation>
+  <input message="tns:cancelSaveDefectRequest"/>
+  <output message="tns:cancelSaveDefectResponse"/>
+ </operation>
+ <operation name="getDefectAttachment">
+  <documentation>Service definition of function ttns__getDefectAttachment</documentation>
+  <input message="tns:getDefectAttachmentRequest"/>
+  <output message="tns:getDefectAttachmentResponse"/>
+ </operation>
+ <operation name="getTask">
+  <documentation>Service definition of function ttns__getTask</documentation>
+  <input message="tns:getTaskRequest"/>
+  <output message="tns:getTaskResponse"/>
+ </operation>
+ <operation name="addTask">
+  <documentation>Service definition of function ttns__addTask</documentation>
+  <input message="tns:addTaskRequest"/>
+  <output message="tns:addTaskResponse"/>
+ </operation>
+ <operation name="deleteTask">
+  <documentation>Service definition of function ttns__deleteTask</documentation>
+  <input message="tns:deleteTaskRequest"/>
+  <output message="tns:deleteTaskResponse"/>
+ </operation>
+ <operation name="editTask">
+  <documentation>Service definition of function ttns__editTask</documentation>
+  <input message="tns:editTaskRequest"/>
+  <output message="tns:editTaskResponse"/>
+ </operation>
+ <operation name="saveTask">
+  <documentation>Service definition of function ttns__saveTask</documentation>
+  <input message="tns:saveTaskRequest"/>
+  <output message="tns:saveTaskResponse"/>
+ </operation>
+ <operation name="cancelSaveTask">
+  <documentation>Service definition of function ttns__cancelSaveTask</documentation>
+  <input message="tns:cancelSaveTaskRequest"/>
+  <output message="tns:cancelSaveTaskResponse"/>
+ </operation>
+ <operation name="getGlobalUserList">
+  <documentation>Service definition of function ttns__getGlobalUserList</documentation>
+  <input message="tns:getGlobalUserListRequest"/>
+  <output message="tns:getGlobalUserListResponse"/>
+ </operation>
+ <operation name="getGlobalCustomerList">
+  <documentation>Service definition of function ttns__getGlobalCustomerList</documentation>
+  <input message="tns:getGlobalCustomerListRequest"/>
+  <output message="tns:getGlobalCustomerListResponse"/>
+ </operation>
+ <operation name="getUserLicenseList">
+  <documentation>Service definition of function ttns__getUserLicenseList</documentation>
+  <input message="tns:getUserLicenseListRequest"/>
+  <output message="tns:getUserLicenseListResponse"/>
+ </operation>
+ <operation name="getUser">
+  <documentation>Service definition of function ttns__getUser</documentation>
+  <input message="tns:getUserRequest"/>
+  <output message="tns:getUserResponse"/>
+ </operation>
+ <operation name="addUser">
+  <documentation>Service definition of function ttns__addUser</documentation>
+  <input message="tns:addUserRequest"/>
+  <output message="tns:addUserResponse"/>
+ </operation>
+ <operation name="editUser">
+  <documentation>Service definition of function ttns__editUser</documentation>
+  <input message="tns:editUserRequest"/>
+  <output message="tns:editUserResponse"/>
+ </operation>
+ <operation name="saveUser">
+  <documentation>Service definition of function ttns__saveUser</documentation>
+  <input message="tns:saveUserRequest"/>
+  <output message="tns:saveUserResponse"/>
+ </operation>
+ <operation name="deleteUser">
+  <documentation>Service definition of function ttns__deleteUser</documentation>
+  <input message="tns:deleteUserRequest"/>
+  <output message="tns:deleteUserResponse"/>
+ </operation>
+ <operation name="cancelSaveUser">
+  <documentation>Service definition of function ttns__cancelSaveUser</documentation>
+  <input message="tns:cancelSaveUserRequest"/>
+  <output message="tns:cancelSaveUserResponse"/>
+ </operation>
+ <operation name="promoteUser">
+  <documentation>Service definition of function ttns__promoteUser</documentation>
+  <input message="tns:promoteUserRequest"/>
+  <output message="tns:promoteUserResponse"/>
+ </operation>
+ <operation name="addGlobalUser">
+  <documentation>Service definition of function ttns__addGlobalUser</documentation>
+  <input message="tns:addGlobalUserRequest"/>
+  <output message="tns:addGlobalUserResponse"/>
+ </operation>
+ <operation name="getCustomer">
+  <documentation>Service definition of function ttns__getCustomer</documentation>
+  <input message="tns:getCustomerRequest"/>
+  <output message="tns:getCustomerResponse"/>
+ </operation>
+ <operation name="addCustomer">
+  <documentation>Service definition of function ttns__addCustomer</documentation>
+  <input message="tns:addCustomerRequest"/>
+  <output message="tns:addCustomerResponse"/>
+ </operation>
+ <operation name="editCustomer">
+  <documentation>Service definition of function ttns__editCustomer</documentation>
+  <input message="tns:editCustomerRequest"/>
+  <output message="tns:editCustomerResponse"/>
+ </operation>
+ <operation name="saveCustomer">
+  <documentation>Service definition of function ttns__saveCustomer</documentation>
+  <input message="tns:saveCustomerRequest"/>
+  <output message="tns:saveCustomerResponse"/>
+ </operation>
+ <operation name="deleteCustomer">
+  <documentation>Service definition of function ttns__deleteCustomer</documentation>
+  <input message="tns:deleteCustomerRequest"/>
+  <output message="tns:deleteCustomerResponse"/>
+ </operation>
+ <operation name="cancelSaveCustomer">
+  <documentation>Service definition of function ttns__cancelSaveCustomer</documentation>
+  <input message="tns:cancelSaveCustomerRequest"/>
+  <output message="tns:cancelSaveCustomerResponse"/>
+ </operation>
+ <operation name="promoteCustomer">
+  <documentation>Service definition of function ttns__promoteCustomer</documentation>
+  <input message="tns:promoteCustomerRequest"/>
+  <output message="tns:promoteCustomerResponse"/>
+ </operation>
+ <operation name="addGlobalCustomer">
+  <documentation>Service definition of function ttns__addGlobalCustomer</documentation>
+  <input message="tns:addGlobalCustomerRequest"/>
+  <output message="tns:addGlobalCustomerResponse"/>
+ </operation>
+</portType>
+
+<binding name="ttsoapcgiBinding" type="tns:ttsoapcgiPortType">
+ <SOAP:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+ <operation name="getDatabaseList">
+  <SOAP:operation soapAction="urn:testtrack-interface#getDatabaseList"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="DatabaseLogon">
+  <SOAP:operation soapAction="urn:testtrack-interface#DatabaseLogon"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="DatabaseLogoff">
+  <SOAP:operation soapAction="urn:testtrack-interface#DatabaseLogoff"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getTableList">
+  <SOAP:operation soapAction="urn:testtrack-interface#getTableList"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getDropdownFieldForTable">
+  <SOAP:operation soapAction="urn:testtrack-interface#getDropdownFieldForTable"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getDropdownFieldValuesForTable">
+  <SOAP:operation soapAction="urn:testtrack-interface#getDropdownFieldValuesForTable"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="addDropdownFieldValuesForTable">
+  <SOAP:operation soapAction="urn:testtrack-interface#addDropdownFieldValuesForTable"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getColumnsForTable">
+  <SOAP:operation soapAction="urn:testtrack-interface#getColumnsForTable"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getFilterList">
+  <SOAP:operation soapAction="urn:testtrack-interface#getFilterList"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getRecordListForTable">
+  <SOAP:operation soapAction="urn:testtrack-interface#getRecordListForTable"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getTestConfig">
+  <SOAP:operation soapAction="urn:testtrack-interface#getTestConfig"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="addTestConfig">
+  <SOAP:operation soapAction="urn:testtrack-interface#addTestConfig"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="editTestConfig">
+  <SOAP:operation soapAction="urn:testtrack-interface#editTestConfig"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="saveTestConfig">
+  <SOAP:operation soapAction="urn:testtrack-interface#saveTestConfig"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="deleteTestConfig">
+  <SOAP:operation soapAction="urn:testtrack-interface#deleteTestConfig"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="cancelSaveTestConfig">
+  <SOAP:operation soapAction="urn:testtrack-interface#cancelSaveTestConfig"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getDefectEventDefinitionList">
+  <SOAP:operation soapAction="urn:testtrack-interface#getDefectEventDefinitionList"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getDefectCustomFieldsDefinitionList">
+  <SOAP:operation soapAction="urn:testtrack-interface#getDefectCustomFieldsDefinitionList"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getDefect">
+  <SOAP:operation soapAction="urn:testtrack-interface#getDefect"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="addDefect">
+  <SOAP:operation soapAction="urn:testtrack-interface#addDefect"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="deleteDefect">
+  <SOAP:operation soapAction="urn:testtrack-interface#deleteDefect"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="editDefect">
+  <SOAP:operation soapAction="urn:testtrack-interface#editDefect"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="saveDefect">
+  <SOAP:operation soapAction="urn:testtrack-interface#saveDefect"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="cancelSaveDefect">
+  <SOAP:operation soapAction="urn:testtrack-interface#cancelSaveDefect"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getDefectAttachment">
+  <SOAP:operation soapAction="urn:testtrack-interface#getDefectAttachment"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getTask">
+  <SOAP:operation soapAction="urn:testtrack-interface#getTask"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="addTask">
+  <SOAP:operation soapAction="urn:testtrack-interface#addTask"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="deleteTask">
+  <SOAP:operation soapAction="urn:testtrack-interface#deleteTask"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="editTask">
+  <SOAP:operation soapAction="urn:testtrack-interface#editTask"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="saveTask">
+  <SOAP:operation soapAction="urn:testtrack-interface#saveTask"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="cancelSaveTask">
+  <SOAP:operation soapAction="urn:testtrack-interface#cancelSaveTask"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getGlobalUserList">
+  <SOAP:operation soapAction="urn:testtrack-interface#getGlobalUserList"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getGlobalCustomerList">
+  <SOAP:operation soapAction="urn:testtrack-interface#getGlobalCustomerList"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getUserLicenseList">
+  <SOAP:operation soapAction="urn:testtrack-interface#getUserLicenseList"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getUser">
+  <SOAP:operation soapAction="urn:testtrack-interface#getUser"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="addUser">
+  <SOAP:operation soapAction="urn:testtrack-interface#addUser"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="editUser">
+  <SOAP:operation soapAction="urn:testtrack-interface#editUser"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="saveUser">
+  <SOAP:operation soapAction="urn:testtrack-interface#saveUser"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="deleteUser">
+  <SOAP:operation soapAction="urn:testtrack-interface#deleteUser"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="cancelSaveUser">
+  <SOAP:operation soapAction="urn:testtrack-interface#cancelSaveUser"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="promoteUser">
+  <SOAP:operation soapAction=""/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="addGlobalUser">
+  <SOAP:operation soapAction=""/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getCustomer">
+  <SOAP:operation soapAction="urn:testtrack-interface#getCustomer"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="addCustomer">
+  <SOAP:operation soapAction="urn:testtrack-interface#addCustomer"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="editCustomer">
+  <SOAP:operation soapAction="urn:testtrack-interface#editCustomer"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="saveCustomer">
+  <SOAP:operation soapAction="urn:testtrack-interface#saveCustomer"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="deleteCustomer">
+  <SOAP:operation soapAction="urn:testtrack-interface#deleteCustomer"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="cancelSaveCustomer">
+  <SOAP:operation soapAction="urn:testtrack-interface#cancelSaveCustomer"/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="promoteCustomer">
+  <SOAP:operation soapAction=""/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="addGlobalCustomer">
+  <SOAP:operation soapAction=""/>
+  <input>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+   <SOAP:body use="encoded" namespace="urn:testtrack-interface" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+</binding>
+
+<service name="ttsoapcgi">
+ <documentation>gSOAP 2.3 rev 2 generated service definition</documentation>
+ <port name="ttsoapcgi" binding="tns:ttsoapcgiBinding">
+  <SOAP:address location="%{URL}%/ttsoapcgi.exe"/>
+ </port>
+</service>
+
+</definitions>

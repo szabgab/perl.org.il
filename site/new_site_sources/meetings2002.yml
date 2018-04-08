@@ -1,0 +1,304 @@
+---
+20020318:
+  agenda_items:
+    - item: |-
+        We don't have anything on our agenda yet but I guess I'll bring a few books along so you
+        can have a look and decide if it is worth buying. Reuven Lerner will bring along his own book
+        <a href="http://www.coreperl.com/">Core Perl</a> but we won't sell books.<br />
+        I can also bring my notebook with the CPAN mirror on it :-).<br />
+        Basically we would like to see each other and try to find a way to increase the (positive) awareness
+        of Perl in Israel.<br />
+        If someone has special request of items that s/he would like to hear about let me know asap so
+        we can discuss if we can make it happen this time.
+  comment: 'Location - Tel Aviv, Azrieli center, Kapulsky; we were 6 people there.'
+  other_summarizer: This meeting summary was written by Gabor Szabo.
+  participants: []
+  report_text: |-2
+             <p>
+             Some of the Perl Mongers sites have all kinds of people who can write nice articles about
+             what happened on the meeting, we are not among them.
+             <br /><br />
+             Anyway a total of 6 people showed up on the first Perl Mongers meeting in Azrieli.pm.
+             This a bit less than what I expected and less than the number of people who have confirmed :-(
+             they'll come and even one less than the number of the dwarfs. There was no Snow-white either.
+             <br /><br />
+             So we were sitting at a table and we had peer-to-peer (*) conversation about Perl issues,
+             Linux and Open Source in general. We talked about Richard Stallman, Perl Whirl,
+             what each one of us is doing, how to find duplicates in code using DNA analysis, who
+             can write a compiler that creates Perl script from another language, etc.<br />
+             We talked a bit about Israeli companies that are already using Perl as an "official"
+             programming language and that there seem to be a growing need for Perl in Israel.
+             Now we only need to increase that need and raise awareness of Perl.
+             <br /><br />
+             We agreed (I think :-) that we should meet again and organize some lecture(s) for
+             the next meeting. We need to promote Perl (anyone knows a PR company that would be
+             interested doing it for the fun ?) and we should make a list of companies supporting
+             Perl in Israel (<a href="/misc.html#who_uses_perl">here is the start of it</a>). The next day I noticed
+             that the number of registrations on the <a href="http://mail.perl.org.il/mailman/listinfo/perl/">mailing list</a> has
+             increased more that the number of participants of the meeting. That's good.
+             <br /><br />
+             The food was quite expensive, another reason to find another place where we can have some
+             cheaper solution.
+             <br /><br />
+             Next meeting will take place... see announcements later.
+             <br /><br />
+             (*) One peer was talking and other peer(s) were listening :-)
+             </p>
+
+20020613:
+  agenda_items:
+    - item: |-
+        I could not update the details on the web site so there were e-mail announcements only. <br />
+        One <a href="http://mail.perl.org.il/pipermail/perl/2002-June/000171.html">about
+        the content</a> and <br />
+        one <a href="http://www.perl.org.il/pipermail/perl/2002-June/000178.html">about the location</a>
+  comment: 'Location - Tel Aviv, <a href="http://www.raz.co.il/">Raz Information Systems</a>'
+  other_summarizer: This meeting summary was written by Gabor Szabo.
+  participants: []
+  report_text: |-2
+
+             <p>
+             A total of 11 people came to the meeting nearly twice the number of the
+             previous meeting. This is great.<br /><br />
+             We went together with Reuven and missed the exit from the highway in
+             Tel Aviv twice because we ware talking about Perl.
+             Anyway we got there a bit after 18:00<br />
+             Some people were already waiting there though most of the were local
+             to Raz. As more people joined us we talked about how they use Linux on
+             their printer photo-copier in Raz (I think, though I am not sure I
+             understood that :)<br />
+             <br />
+             We talked about MS and BSA and that some of us have received warnings that
+             they will come to check our systems for Applications without licenses.
+             Sure. Most of use Linux anyway but this triggered us to talk about a
+             few applications like Power Point that has no Open counterpart that
+             works in Hebrew as well. Oded showed us what he is using.<br />
+             <br />
+             Personally I think that all the frightening ads the BSA shows lately is
+             a huge opportunity to anyone selling Linux as the solution.
+             I think the BSA generates the right amount of fear that can be
+             resolved by some Open Source software with its license.<br />
+             <br />
+             We also talked about the difference between an MS programmer whose
+             world is the Visual Studio and the Unix style programmer who can work
+             with any editor and compiler. Personally I think that the fact that
+             VS provides such an easy way to program does not necessarily create
+             bad programmer but sure, it does not force you to have full
+             understanding of a lot of underlying issue. The question remaining is
+             weather it is important ?
+             <br /><br />
+             Then a bit after 19:00 Reuven started his <strong>lecture</strong>
+             <br /><br />
+             Actually this was the first time I heard Reuven give a real lecture
+             and I liked very much his style. He gave us an introduction and
+             history of representing letters in computers then moved on to
+             the various unicode definitions - the 2-byte version of Microsoft
+             and the variable length version of the Unicode consortium.<br />
+             Finally he talked about how the whole thing is implemented in Perl
+             5.8 that should be released in the near future.
+             <br /><br />
+             You can see <a href="http://reuven.lerner.co.il/talks/unicode/start">his slides</a> as well.
+             <br /><br />
+             After the lecture we kept talking a bit and there were two
+             volunteers already to give talk on the coming meetings. We are going
+             to schedule them soon.
+             </p>
+
+20020711:
+  agenda_items:
+    - item: 'Roi, from <a href="http://www.raz.co.il/">Raz Information Systems</a>, will lecture about <a href="http://rmerge.sourceforge.net/">HTML::Merge</a>.'
+  comment: 'Location - Tel Aviv, <a href="http://www.raz.co.il/">Raz Information Systems</a>'
+  other_summarizer: This meeting summary was written by Gabor Szabo.
+  participants: []
+  report_text: |-2
+
+             <p>
+             I am writing this nearly two month after the meeting took place
+             as I
+             was very busy after the meeting and went to a holiday in most of
+             August. Actually during the holiday I was active organizing
+             the first <a href="http://www.perl.org.hu/">Perl meeting in Budapest</a>.
+             </p>
+
+             <p>
+             As you might have read in the mailing list, since the last meeting
+             Ariel Brosh has suddenly passed away. I knew him from the first perl
+             meeting and he also participated in this one on July 11 where he
+             explained things about the HTML::Merge package in what he was very
+             deeply involved. He was one of the most active Perl developers in
+             Israel. See the <a href="/misc.html#projects">projects</a> page for his projects.
+             </p>
+
+             <p>
+             Now back to the meeting as much as I can remember. Actually I'd be
+             glad if other participants also wrote about the meetings and it
+             would not be depending only on my schedule.
+             </p>
+
+             <p>
+             Before the 'official talk' among other things we mentioned fun ways to
+             frighten C programmers with statements like
+             </p>
+
+             <p>
+             <code>$a++ unless $a&gt;3;</code>
+             </p>
+
+             <p>
+             I asked about a possibility to compare solutions in various
+             languages. Shlomi (I think it was him) pointed me to
+             <a href="http://www.bagley.org/~doug/shootout/">The Great Computer
+             Language Shootout</a> where some 30 programming languages are
+             being compared. It is interesting but I am thinking about something
+             different more for educational purposes. I think about a site where
+             you can find programming problems at various levels solved in a number
+             of languages with an explanation about the solution and the
+             language. For certain languages there might be more than one solution
+             but it is not a requirement. Speed would not be important. It would be
+             a sort of multilingual Cookbook. There is another site that is a bit
+             similar to what I am looking for:
+             <a href="http://www.faqts.com/knowledge_base/index.phtml/fid/462">FAQTS</a>
+             </p>
+
+             <p>
+             Roi from <a href="http://www.raz.co.il/">RAZ Information Systems</a>
+             talked about HTML::Merge - the open source scripting tool they have
+             developed.
+             <br /><br />
+             On <a href="http://sourceforge.net/projects/rmerge/">Source forge</a>
+             they give the following description:<br />
+             <q>Merge is a Perl/HTML/SQL embedded scripting tool, user
+             extendable, that works by compiling your pages to pure
+             Perl. (HTML::Merge)</q>
+             </p>
+
+20020912:
+  agenda_items:
+    - item: |-
+        Location - <a href="http://www.rothschild.haifa.ac.il/">The Caesarea Edmond Benjamin de Rothschild Foundation
+        Institute for Interdisciplinary Applications of Computer Science</a>, University of Haifa, "Education Building",<br />
+        5th floor class 3-502.
+    - item: |-
+        Gabor (that's me) will talk about his useless modules:
+        Array::Unique, Games::NIM and Games::Chomp. Yes, finally a Game with chomp !<br />
+        This is a presentation I am preparing for the YAPC::Europe::2002 and I already gave a
+        preliminary version of it on the <a href="http://www.perl.org.hu/">Budapest Perl Mongers meeting</a>
+  comment: 'Location - <a href="http://www.rothschild.haifa.ac.il/">The CRI</a> (Gabor Szabo - Array::Unique, Games::NIM and Games::Chomp)'
+  other_summarizer: This meeting summary was written by Shlomo Yona.
+  participants:
+    - name: Alon Altman
+    - name: Eli Billauer
+    - name: Gabor Szabo
+    - name: Mikhael Goikhman
+    - name: Pinkhas Nisanov
+    - name: Shlomo Yona
+    - name: Tzafrir Cohen
+  report_text: |-2
+
+             <p>
+             The meeting report can be found here:<br />
+             <a href="http://www.perl.org.il/pipermail/perl/2002-September/000344.html">
+             http://www.perl.org.il/pipermail/perl/2002-September/000344.html</a>
+             </p>
+
+20021010:
+  agenda_items:
+    - item: Meeting and socializing
+    - item: Book review by Gabor
+    - item: Shlomo Yona will talk about <code>sort</code> in Perl (see details <a href="http://www.perl.org.il/pipermail/perl/2002-September/000345.html">in this email</a>.
+  comment: 'Location - Tel Aviv, <a href="http://www.raz.co.il/">Raz Information Systems</a> (Gabor Szabo - Book review ; Shlomo Yona - <a href="http://yeda.cs.technion.ac.il/~yona/perl/lecture5/">sort</a>)'
+  other_summarizer: These meeting summaries were written by Gabor Szabo and Shlomo Yona.
+  participants:
+    - name: Aline Resnik
+    - name: Gabor Szabo
+    - name: Mikhael Goikhman
+    - name: Miri Resnik
+    - name: Oded Resnik
+    - name: Pinkhas Nisanov
+    - name: Roi Illouz
+    - name: Semuel Fomberg
+    - name: Shlomi Fish
+    - name: Shlomo Yona
+    - name: Uri Itscowits
+  report_text: |-2
+
+             <p>
+             The meeting reports can be found here:<br />
+             <a href="http://www.perl.org.il/pipermail/perl/2002-October/000420.html">
+             http://www.perl.org.il/pipermail/perl/2002-October/000420.html</a><br />
+             and here:<br />
+             <a href="http://www.perl.org.il/pipermail/perl/2002-October/000435.html">
+             http://www.perl.org.il/pipermail/perl/2002-October/000435.html</a>
+             </p>
+
+20021107:
+  agenda_items:
+    - item: |-2
+
+        In order to celebrate the 85-th anniversary of the great Soviet revolution ...<br /><br />
+        Instead of Yevgeny Menaker who is starting a new job (good luck to you)
+        we are going to talk about Tools for Presentation.<br /><br />
+        So far the following people volunteered but we are looking for more
+        people to show what they have written or what do they use ?
+    - item: '18:00 -- Meeting and <a href="/library.html">library</a> hours'
+    - item: '18:40 -- Book review by Shlomi (?)'
+    - item: '19:00 -- <em>Reuven Lerner</em> will present his tool for creating slides written in mod_perl'
+    - item: '19:45 -- <em>Gabor Szabo</em> will present his slide creator written in simple perl'
+    - item: '20:15 -- <em>Shlomi Fish</em> will present Quad-Pres - his presentation tool in Perl'
+    - item: '21:00 -- Visiting local Pubs to check the non-free beer supply'
+  comment: 'Location - <a href="http://www.interbit.co.il/">Interbit</a>, Ramat Gan (presentation tools)'
+  other_summarizer: This meeting summary was written by Gabor Szabo.
+  participants:
+    - name: Gabor Szabo
+    - name: Jaime Prilusky
+    - name: Mark Veltzer
+    - name: Oded Reznik
+    - name: Offer Kaye
+    - name: Pinkhas Nisanov
+    - name: Reuven Lerner
+    - name: Sagi Mehadave
+    - name: Semuel Vomberg
+    - name: Shlomi Fish
+    - name: Uri Itscowits
+    - name: Yuli Stremovsky
+    - name: Yuval Yaari
+  report_text: |-2
+
+             <p>
+             The meeting report can be found here:<br />
+             <a href="http://www.perl.org.il/pipermail/perl/2002-November/000585.html">
+             http://www.perl.org.il/pipermail/perl/2002-November/000585.html</a>             </p>
+
+20021212:
+  agenda_items:
+    - item: '18:00 -- Meeting'
+    - item: '18:50 -- Book review by ??'
+    - item: '19:00 -- <a href="http://www.veltzer.org/">Mark Veltzer</a> will talk about OOP (Object Oriented Perl)'
+    - item: '20:00 -- Visiting local Pubs to check the non-free beer supply'
+  comment: 'Location - <a href="http://www.interbit.co.il/">Interbit</a>, Ramat Gan (Mark Veltzer - Object Oriented Perl)'
+  other_summarizer: This meeting summary was written by Gabor Szabo.
+  participants:
+    - name: Gabor Szabo
+    - name: Ido Trivizky
+    - name: Jaim Prilusky
+    - name: Kfir Lavi
+    - name: Mark Veltzer
+    - name: Mikhael Goikman
+    - name: Oded S. Resnik
+    - name: Paolo Supino
+    - name: Pinkhas Nisanov
+    - name: Roi Illouz
+    - name: Shlomi Fish
+    - name: Thomas Maier
+    - name: Uri Itchowits
+    - name: Yair Doron
+    - name: Yaron Golan
+    - name: Yuval Yaari
+  report_text: |-2
+
+             <p>
+             The meeting report can be found here:<br />
+             <a href="http://www.perl.org.il/pipermail/perl/2002-December/000747.html">
+             http://www.perl.org.il/pipermail/perl/2002-December/000747.html</a>
+             </p>
+
