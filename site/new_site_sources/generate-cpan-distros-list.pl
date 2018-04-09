@@ -217,8 +217,7 @@ foreach my $auth_in (@authors)
     }
 }
 
-open my $cpan_authors_html, ">", "cpan-distros-list.html";
-binmode($cpan_authors_html, ":utf8");
+open my $cpan_authors_html, ">:utf8", "cpan-distros-list.html";
 print {$cpan_authors_html} <<"EOF";
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE
@@ -244,11 +243,9 @@ close ($cpan_authors_html);
 my $source_fn = "templates/israeli-projects_content.tmpl";
 my $temp_fn = "project-cont.tmpl";
 
-open my $in, "<", $source_fn;
-binmode $in, ":utf8";
+open my $in, "<:utf8", $source_fn;
 
-open my $out, ">", $temp_fn;
-binmode $out, ":utf8";
+open my $out, ">:utf8", $temp_fn;
 
 LINES_LOOP:
 while (my $l = <$in>)
@@ -308,8 +305,7 @@ print {$out} q#is_deeply([sort $authors->id ], #, "\n",
 
 close ($out);
 
-open $out, ">", "Acme-CPANAuthors-Israeli-to-include.pm";
-binmode $out, ":utf8";
+open $out, ">:utf8", "Acme-CPANAuthors-Israeli-to-include.pm";
 print {$out} qq#use Acme::CPANAuthors::Register (\n#;
 print {$out} map {
     ((" " x 4) . uc($_->{id}) . " => " . q{'} . $_->{name} . q{'} . ",\n")
