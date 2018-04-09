@@ -1,0 +1,19 @@
+sudo: false
+language: perl
+perl:
+    - 'blead'
+    - '5.26'
+    - '5.24'
+    - '5.22'
+matrix:
+    allow_failures:
+        - perl: 'blead'
+    fast_finish: true
+before_install:
+    - git config --global user.name "TravisCI"
+    - git config --global user.email $HOSTNAME":not-for-mail@travis-ci.org"
+install:
+    - cpanm --quiet --skip-satisfied Acme::CPANAuthors CGI CPANPLUS::Backend Data::Dumper Exporter Fcntl File::Basename File::Copy::Recursive File::Path File::Spec File::Temp FindBin Geo::IP Getopt::Long HTML::Template HTML::TokeParser List::MoreUtils LWP::Simple Mail::Sendmail Test::More YAML strict utf8 vars warnings
+script:
+    - cd site/
+    - perl new_site_bin/update_site.pl --repo . --outdir ~/perl.org.il/www/
