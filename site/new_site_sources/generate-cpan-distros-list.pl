@@ -152,6 +152,7 @@ my @id_names = ();
 foreach my $auth_in (@authors)
 {
     my $auth_struct = get_author_dists_list(delete($auth_in->{id}));
+    my $id = $auth_struct->{id};
 
     if (exists($auth_in->{'name'}))
     {
@@ -164,8 +165,8 @@ foreach my $auth_in (@authors)
 
     $output .=
           qq#<li>\n#
-        . qq#<a href="http://metacpan.org/author/$auth_struct->{id}">#
-        . qq#$auth_struct->{id}</a>#
+        . qq#<a href="http://metacpan.org/author/$id">#
+        . qq#$id</a>#
         . qq# - $auth_struct->{name}#
         . qq#$auth_comment<br />\n#
         . qq#<ul>\n#
@@ -191,7 +192,7 @@ foreach my $auth_in (@authors)
 
     if (keys(%$mod_comments))
     {
-        die "Leftover Module Comments for Author $auth_struct->{id} :".
+        die "Leftover Module Comments for Author $id :".
             join(",", keys(%$mod_comments));
     }
 
@@ -205,20 +206,18 @@ foreach my $auth_in (@authors)
     {
         push @id_names,
         {
-            id => $auth_struct->{id},
+            id => $id,
             name => $auth_struct->{name}
         };
     }
 
     if (keys(%$auth_in))
     {
-        die "Leftover keys for Author $auth_struct->{id} : " .
-            join(",", keys(%$auth_in));
+        die "Leftover keys for Author $id : " .  join(",", keys(%$auth_in));
     }
 }
 
-open my $cpan_authors_html, ">", "cpan-distros-list.html";
-binmode($cpan_authors_html, ":utf8");
+open my $cpan_authors_html, ">:utf8", "cpan-distros-list.html";
 print {$cpan_authors_html} <<"EOF";
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE
@@ -244,11 +243,9 @@ close ($cpan_authors_html);
 my $source_fn = "templates/israeli-projects_content.tmpl";
 my $temp_fn = "project-cont.tmpl";
 
-open my $in, "<", $source_fn;
-binmode $in, ":utf8";
+open my $in, "<:utf8", $source_fn;
 
-open my $out, ">", $temp_fn;
-binmode $out, ":utf8";
+open my $out, ">:utf8", $temp_fn;
 
 LINES_LOOP:
 while (my $l = <$in>)
@@ -308,8 +305,7 @@ print {$out} q#is_deeply([sort $authors->id ], #, "\n",
 
 close ($out);
 
-open $out, ">", "Acme-CPANAuthors-Israeli-to-include.pm";
-binmode $out, ":utf8";
+open $out, ">:utf8", "Acme-CPANAuthors-Israeli-to-include.pm";
 print {$out} qq#use Acme::CPANAuthors::Register (\n#;
 print {$out} map {
     ((" " x 4) . uc($_->{id}) . " => " . q{'} . $_->{name} . q{'} . ",\n")
