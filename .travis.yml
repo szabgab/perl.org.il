@@ -13,6 +13,8 @@ before_install:
     - git config --global user.name "TravisCI"
     - git config --global user.email $HOSTNAME":not-for-mail@travis-ci.org"
 install:
+    - cpanm Alien::Tidyp
+    - cpanm --notest HTML::Tidy
     - cpanm --quiet --skip-satisfied Acme::CPANAuthors CGI CPANPLUS::Backend Data::Dumper Exporter Fcntl File::Basename File::Copy::Recursive File::Path File::Spec File::Temp FindBin Geo::IP Getopt::Long HTML::Template HTML::TokeParser List::MoreUtils LWP::Simple Mail::Sendmail Test::HTML::Tidy::Recursive::Strict Test::More YAML strict utf8 vars warnings
 script:
     - cd site/
