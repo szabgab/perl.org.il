@@ -109,5 +109,5 @@ Usage: $0
 
            --outdir PATH/TO/OUTPUT/DIRECTORY/www
 END_USAGE
-	exit;
+	exit -1;
 }
