@@ -171,10 +171,13 @@ href="http://www.hamakor.org.il/%D7%A7%D7%94%D7%99%D7%9C%D7%94/%D7%99%D7%95%D7%9
 	 with the look being based on
 	 the <a href="http://www.oswd.org/viewdesign.phtml?id=1192">Gila</a> template, which was
 	 downloaded from the <a href="http://www.oswd.org/">Open Source Web Design</a> site.<br />
-	 The site sources are managed under <a href="http://subversion.tigris.org/">Subversion</a>,
+	 The site sources are managed using <a href="https://github.com/szabgab/perl.org.il">a GitHub repository</a> - see <a href="https://guides.github.com/">their tutorials</a> for how to contribute.
+     </p>
+
+     <tmpl_if removed__subversion>
+      under <a href="http://subversion.tigris.org/">Subversion</a>,
 	 and can be downloaded using the command:<br />
-     <a href="https://github.com/szabgab/perl.org.il">GitHub</a>
-     <br>
+          <br>
 	 <code>svn co http://svn1.hostlocal.com/perl.org.il/</code>
 	 <br />
      If you have commit access to the repository you need to use the other address:<br />
@@ -198,4 +201,4 @@ href="http://www.hamakor.org.il/%D7%A7%D7%94%D7%99%D7%9C%D7%94/%D7%99%D7%95%D7%9
 	 If they accept the patch they will apply it to the repository and then
      to the site.
      </p>
-
+</tmpl_if>
