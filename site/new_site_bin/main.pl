@@ -79,7 +79,7 @@ for my $output_file (@outfiles) {
 	);
 
 	# Print the template output
-	open(OUT,">$output_file") or die "Couldn't open $output_file for writing: $!\n";
+	open(OUT,">:encoding(utf8)", $output_file) or die "Couldn't open $output_file for writing: $!\n";
 	print OUT $template->output;
 	close(OUT) or die "Couldn't close $output_file after writing: $!\n";
 }

@@ -19,25 +19,25 @@
    <!-- ##### Header ##### -->
    <div id="header">
       <h1 class="headerTitle">
-	 <a href="../../index.html" title="Browse to homepage">Israel.pm - <span>The Israeli Perl Mongers</span></a>
+     <a href="../../index.html" title="Browse to homepage">Israel.pm - <span>The Israeli Perl Mongers</span></a>
       </h1>
       <div class="subHeader">
-	 <span class="doNotDisplay">Navigation: </span>
-	 <tmpl_loop name="nav_bar">
-	    <a href="../../<tmpl_var nav_page>"><tmpl_var nav_name></a> <tmpl_unless name="__last__">|</tmpl_unless>
-	 </tmpl_loop>
+     <span class="doNotDisplay">Navigation: </span>
+     <tmpl_loop name="nav_bar">
+        <a href="../../<tmpl_var nav_page>"><tmpl_var nav_name></a> <tmpl_unless name="__last__">|</tmpl_unless>
+     </tmpl_loop>
       </div>
    </div>
 
    <div id="side-bar">
       <!-- ##### Left Sidebar ##### -->
       <div class="leftSideBar">
-	 <p class="sideBarTitle"><tmpl_var name="left_bar_title"></p>
-	 <ul>
-	    <tmpl_loop name="left_bar">
-	       <li><a href="#<tmpl_var ref>" title="<tmpl_var title>"><tmpl_var text></a></li>
-	    </tmpl_loop>
-	 </ul>
+     <p class="sideBarTitle"><tmpl_var name="left_bar_title"></p>
+     <ul>
+        <tmpl_loop name="left_bar">
+           <li><a href="#<tmpl_var ref>" title="<tmpl_var title>"><tmpl_var text></a></li>
+        </tmpl_loop>
+     </ul>
       </div>
       <!-- ##### Right Sidebar ##### -->
       <div class="rightSideBar">
@@ -53,29 +53,29 @@
          Mongers</a> <tmpl_if name="past">held<tmpl_else>will hold</tmpl_if> their regular monthly meeting. The program:
       </p>
       <ul>
-	 <tmpl_loop name="agenda_items">
-	    <li> <tmpl_var name="item"></li>
-	 </tmpl_loop>
+     <tmpl_loop name="agenda_items">
+        <li> <tmpl_var name="item"></li>
+     </tmpl_loop>
       </ul>
    <tmpl_if name="past">
       <h1 id="report">Report</h1>
       <ol>
-	 <tmpl_loop name="participants">
-	    <li><tmpl_var name="name"></li>
-	 </tmpl_loop>
+     <tmpl_loop name="participants">
+        <li><tmpl_var name="name"></li>
+     </tmpl_loop>
       </ol>
       <p>
          <tmpl_var name="report_text">
       </p>
       <tmpl_if name="report_exists">
-	 <p>
+     <p>
             <tmpl_if name="other_summarizer">
-	       <tmpl_var name="other_summarizer">
+           <tmpl_var name="other_summarizer">
             <tmpl_else>
                This meeting summary was written by your ever cheerful Israel.pm PR
-               person - <a href="mailto:offer DoT kaye (noATspam) perl DoT org DoT il">Offer Kaye</a>.
-	    </tmpl_if>
-	 </p>
+               person<a href="mailto:offer-DoT-kaye-noATspam-perl-DoT-org-DoT-il">Offer Kaye</a>.
+        </tmpl_if>
+     </p>
       </tmpl_if>
   </tmpl_if>
    <p class="bottom">&nbsp;</p>

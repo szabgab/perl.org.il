@@ -1,9 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
 <head>
    <title><tmpl_var name="title" escape=html></title>
-   <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
    <meta name="author" content="Offer Kaye" />
    <meta name="generator" content="HTML::Template" />
    <meta name="keywords" content="<tmpl_var meta_keywords>" />
@@ -42,9 +41,9 @@
     <ul>
       <tmpl_loop name="nav_bar">
         <li>
-	      <a href="<tmpl_if name="abs_path"><tmpl_var nav_page><tmpl_else>/<tmpl_var nav_page></tmpl_if>"><tmpl_var nav_name></a>
+          <a href="<tmpl_if name="abs_path"><tmpl_var nav_page><tmpl_else>/<tmpl_var nav_page></tmpl_if>"><tmpl_var nav_name></a>
         </li>
-	  </tmpl_loop>
+      </tmpl_loop>
     </ul>
   </div>
 
@@ -67,11 +66,11 @@
   </tmpl_if>
 
      <tmpl_if name="books">
-	 <p class="sideBarTitle">Related Sites</p>
-	 <ul>
-	    <li><a href="<tmpl_var pub_book_page escape=html>">Publisher's book page</a></li>
-	    <li><a href="<tmpl_var amazon_book_page escape=html>">Amazon book page</a></li>
-	 </ul>
+     <p class="sideBarTitle">Related Sites</p>
+     <ul>
+        <li><a href="<tmpl_var pub_book_page escape=html>">Publisher's book page</a></li>
+        <li><a href="<tmpl_var amazon_book_page escape=html>">Amazon book page</a></li>
+     </ul>
      </tmpl_if>
 
       </div>

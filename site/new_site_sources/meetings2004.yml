@@ -74,7 +74,7 @@
     - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
   comment: 'Ramat Gan (Gabor - Web Application Development).'
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ""
 20040311:
   agenda_items:
     - item: '18:00-19:00 -- Assembly and light refreshments'
@@ -326,7 +326,7 @@
     - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
   comment: 'Ramat Gan (Pinkhas Nisanov - <a href="http://www.nisanov.com/presentation/triz/">TRIZ</a>; Gaal Yahas - Perl in a Java environment).'
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ""
 20040603:
   agenda_items:
     - item: '18:00-19:00 -- Assembly and light refreshments'
@@ -626,7 +626,7 @@
     - item: '19:00-20:00 -- <em>Uri Bruck</em> will lecture about <a href="http://bruck.israel.net/perl/openoffice-with-perl.html">A Simple Method to Maniplute Open Office forms with Perl</a>.'
     - item: '20:00-20:20 -- Break and refreshments'
     - item: '20:20-21:00 -- <em>Gabor Szabo</em> will lecture about "<a href="http://www.perl.org.hu/english/">Perl in Hungary</a> - So how was the Hungarian Perl MicroWorkshop?"'
-    - item: '21:00-21:45 -- <em>Gabor Szabo</em> will lecture about "The Quality of CPAN Modules - <a href="http://testers.cpan.org/">CPAN Testers</a>, <a href="http://rt.cpan.org/">RT</a>, <a href="http://cpants.dev.zsi.at/cpants_paper.html">CPANTS</a>, <a href="http://cpanplus.sourceforge.net/">CPANPLUS</a>, <a href="http://cpanratings.perl.org/">CPANRATINGS</a>,	<a href="http://qa.perl.org/">QA-Perl</a>".'
+    - item: '21:00-21:45 -- <em>Gabor Szabo</em> will lecture about "The Quality of CPAN Modules - <a href="http://testers.cpan.org/">CPAN Testers</a>, <a href="http://rt.cpan.org/">RT</a>, <a href="http://cpants.dev.zsi.at/cpants_paper.html">CPANTS</a>, <a href="http://cpanplus.sourceforge.net/">CPANPLUS</a>, <a href="http://cpanratings.perl.org/">CPANRATINGS</a>, <a href="http://qa.perl.org/">QA-Perl</a>".'
     - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
   comment: 'Ramat Gan. (Uri Bruck - Manipulating <a href="http://www.openoffice.org/">OpenOffice</a> Forms; Gabor Szabo - "<a href="http://www.perl.org.hu/english/">Perl in Hungary</a>" and "The Quality of CPAN Modules")'
   participants:

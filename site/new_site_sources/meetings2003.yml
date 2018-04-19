@@ -39,7 +39,7 @@
   comment: 'Location - <a href="http://www.interbit.co.il/">Interbit</a>, Ramat Gan, Lightning talks by various people.'
   other_summarizer: This meeting summary was written by Gabor Szabo.
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ""
 20030313:
   agenda_items:
     - item: Thomas Maier from Radware will talk about how he is using Perl in the QA department for testing the devices Radware produces.
