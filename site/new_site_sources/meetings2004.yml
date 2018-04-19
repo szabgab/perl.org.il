@@ -74,7 +74,7 @@
     - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
   comment: 'Ramat Gan (Gabor - Web Application Development).'
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ''
 20040311:
   agenda_items:
     - item: '18:00-19:00 -- Assembly and light refreshments'
@@ -326,7 +326,7 @@
     - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
   comment: 'Ramat Gan (Pinkhas Nisanov - <a href="http://www.nisanov.com/presentation/triz/">TRIZ</a>; Gaal Yahas - Perl in a Java environment).'
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ''
 20040603:
   agenda_items:
     - item: '18:00-19:00 -- Assembly and light refreshments'

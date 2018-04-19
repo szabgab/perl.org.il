@@ -17,7 +17,7 @@
       title: ''
   location: Ramat Gan
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ''
 20050203:
   agenda_items:
     - item: '18:00-19:00 -- Assembly and light refreshments'
@@ -118,7 +118,7 @@
       title: 'Code Review - A review of 2 Web based projects'
   location: Ramat Gan
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ''
 20050421:
   agenda_items:
     - item: '18:00-19:00 -- Assembly and light refreshments'
@@ -132,7 +132,7 @@
       title: Perl to Queen's Level 3
   location: Ramat Gan
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ''
 20050519:
   agenda_items:
     - item: '19:00-19:30 -- Assembly and light refreshments'
@@ -229,7 +229,7 @@
       title: 'Informal Meeting, Chat, and Food'
   location: Azrieli Center
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ''
 20050602:
   agenda_items:
     - item: '19:00-19:30 -- Assembly and light refreshments'
@@ -397,7 +397,7 @@
       title: GUI Development using GTK2
   location: Tel-Aviv University
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ''
 20050915:
   agenda_items:
     - item: '19:00-19:30 -- Assembly and light refreshments'
@@ -525,7 +525,7 @@
       title: SVN::RaWeb::Light
   location: Tel-Aviv University
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ''
 20051208:
   agenda_items:
     - item: '19:00-19:30 -- Assembly and light refreshments'
@@ -534,4 +534,4 @@
   items: []
   location: Tel-Aviv University
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ''

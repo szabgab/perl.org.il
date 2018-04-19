@@ -14,7 +14,7 @@
       title: Lightning Talks
   location: Tel-Aviv University
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ''
 20060508:
   agenda_items:
     - item: '18:00-18:30 -- Assembly and very light refreshments'
@@ -34,7 +34,7 @@
       title: 'Test::Live - testing a CPAN module'
   location: 'F5, Habarzel 24, Ramat Hachayal, Tel-Aviv'
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ''
 20060605:
   agenda_items:
     - item: '18:00-18:30 -- Assembly and very light refreshments'
