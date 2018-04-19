@@ -20,22 +20,22 @@
    <!-- ##### Header ##### -->
    <div id="header">
       <h1 class="headerTitle">
-	 <a href="index.html" title="Browse to homepage">Israel.pm - <span>The Israeli Perl Mongers</span></a>
+     <a href="index.html" title="Browse to homepage">Israel.pm - <span>The Israeli Perl Mongers</span></a>
       </h1>
       <div class="subHeader">
-	 <span class="doNotDisplay">Navigation: </span>
-	 <tmpl_include name="navigation.tmpl">
+     <span class="doNotDisplay">Navigation: </span>
+     <tmpl_include name="navigation.tmpl">
       </div>
    </div>
 
    <div id="side-bar">
       <!-- ##### Left Sidebar ##### -->
       <div class="leftSideBar">
-	 <tmpl_include name="left_sidebar.tmpl">
+     <tmpl_include name="left_sidebar.tmpl">
 
-	 <tmpl_if name="homepage">
-	    <tmpl_include name="related_sites_list.tmpl">
-	 </tmpl_if>
+     <tmpl_if name="homepage">
+        <tmpl_include name="related_sites_list.tmpl">
+     </tmpl_if>
       </div>
       <!-- ##### Right Sidebar ##### -->
       <div class="rightSideBar">
@@ -46,31 +46,31 @@
    <!-- ##### Main Copy ##### -->
    <div id="main-copy">
       <tmpl_if name="homepage">
-	 <tmpl_include name="index_content.tmpl">
+     <tmpl_include name="index_content.tmpl">
       </tmpl_if>
       <tmpl_if name="about">
-	 <tmpl_include name="about_content.tmpl">
+     <tmpl_include name="about_content.tmpl">
       </tmpl_if>
       <tmpl_if name="mailing">
-	 <tmpl_include name="mailing_lists_content.tmpl">
+     <tmpl_include name="mailing_lists_content.tmpl">
       </tmpl_if>
       <tmpl_if name="meetings">
-	 <tmpl_include name="meetings_content.tmpl">
+     <tmpl_include name="meetings_content.tmpl">
       </tmpl_if>
       <tmpl_if name="yapc">
-	 <tmpl_include name="yapc_content.tmpl">
+     <tmpl_include name="yapc_content.tmpl">
       </tmpl_if>
       <tmpl_if name="library">
-	 <tmpl_include name="library_content.tmpl">
+     <tmpl_include name="library_content.tmpl">
       </tmpl_if>
       <tmpl_if name="misc">
-	 <tmpl_include name="misc_content.tmpl">
+     <tmpl_include name="misc_content.tmpl">
       </tmpl_if>
       <tmpl_if name="business">
-	 <tmpl_include name="business_content.tmpl">
+     <tmpl_include name="business_content.tmpl">
       </tmpl_if>
       <tmpl_if name="error">
-	 <tmpl_include name="error_content.tmpl">
+     <tmpl_include name="error_content.tmpl">
       </tmpl_if>
    </div>
 

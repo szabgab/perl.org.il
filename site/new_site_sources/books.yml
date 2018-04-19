@@ -132,17 +132,17 @@ CGI Programming with Perl:
     - review_content: |
         <p>
 
-                			  This is an all around nice book, that contains a selcted number of articles from the Perl
-        				  Journal among severall categories. Most of the articles I read made a very nice read.<br />
-                			  The first articles covered beginner concepts. They did not renew too much to me, but I suppose
-        				  they were well written. The next part was about Regular Expressions and they were very nice
-        				  and enlightening. The third part covered various computer science issues, and was also very
-        				  well written and sometimes instructive, or just a good read.<br />
-                			  I was not very consistent in reading the other parts, that covered "Programming Techniques",
-        				  "Software Development", "Networking", "Databases" and "Internals". Most of what I read there
-        				  (from what I was interested in) was usually OK, and could provide a nice introduction to
-        				  the topic or technology it covers.<br />
-                			  All in all, a very good read, and I believe everyone would find something interesting here.
+                                          This is an all around nice book, that contains a selcted number of articles from the Perl
+                                          Journal among severall categories. Most of the articles I read made a very nice read.<br />
+                                          The first articles covered beginner concepts. They did not renew too much to me, but I suppose
+                                          they were well written. The next part was about Regular Expressions and they were very nice
+                                          and enlightening. The third part covered various computer science issues, and was also very
+                                          well written and sometimes instructive, or just a good read.<br />
+                                          I was not very consistent in reading the other parts, that covered "Programming Techniques",
+                                          "Software Development", "Networking", "Databases" and "Internals". Most of what I read there
+                                          (from what I was interested in) was usually OK, and could provide a nice introduction to
+                                          the topic or technology it covers.<br />
+                                          All in all, a very good read, and I believe everyone would find something interesting here.
 
         </p>
       review_date: April 2003
@@ -172,103 +172,103 @@ Data Munging with Perl:
     - review_content: |
         <p>
 
-        				   This is the first Manning book I have read.<br />
-        				   I am not sure why but I was looking forward to it with very high expectations -
-        				   it was either because of the author or because of the nice and serious
-        				   picture on the cover - and it delivered:<br />
-        				   I learned a lot of new things and in areas where I already had some
-        				   knowledge the book made order in the things I knew.
-        				   <br />
-        				   Manning books are a bit more expensive than other computer books and
-        				   they cost me even more as it is not sold via Bookpool the usual place
-        				   I buy books but the publisher was nice enough and sent a copy
-        				   of this book free of charge to be reviewed by the
-        				   <a href="http://perl.org.il/">Israeli Perl Mongers</a>.
-        				   <br />
-        				   <strong>munge</strong> - as also described in the book - means
-        				   <strong>1.</strong> <em>[derogatory] To imperfectly
-        				   transform information</em>
-        				   but the book is about something slightly different: It is about taking
-        				   some kind of input data and transforming it to another
-        				   structure. Maybe it is actually the other meaning mentioned:
-        				   <strong>3.</strong> <em>To modify data in some way the speaker doesn't need to go
-        				   into right now or cannot describe succinctly (compare mumble)</em>
-        				   <br />
-        				   The word is somehow related to 'mangal' which is the word used in Israel
-        				   for barbecue that of course means <strong>To take some raw material and
-        				   make it digestible</strong>.
-        				   <br />
-        				   The book has four parts:<br />
-        				   In the first part Dave gives us the
-        				   <strong>Foundations</strong>: he gives us the basic background of data
-        				   processing, the various sources and forms of data. He then goes
-        				   on giving some guidelines on data structure design and
-        				   best practices in data munging. This part already
-        				   involves some interesting Perl expression. Then chapter 3-4 gives us
-        				   the required Perl knowledge which is about intermediate level.
-        				   It explains various methods for sorting and in 20 pages tries to teach
-        				   pattern matching. This is definitely not enough for the beginners but then
-        				   an intermediate Perl programmer already should know this level of
-        				   pattern matching. I think this chapter about pattern matching is a bit
-        				   misplaced but Dave might know that as he points us to other sources
-        				   where we can get deeply involved with patterns.
-        				   <br />
-        				   The second part called <strong>Data Munging</strong> is the part that gave the
-        				   title of the whole book. Here Dave gets a bit less generic and shows
-        				   us how to can we read, transform and write 4 different data types:
+                                           This is the first Manning book I have read.<br />
+                                           I am not sure why but I was looking forward to it with very high expectations -
+                                           it was either because of the author or because of the nice and serious
+                                           picture on the cover - and it delivered:<br />
+                                           I learned a lot of new things and in areas where I already had some
+                                           knowledge the book made order in the things I knew.
+                                           <br />
+                                           Manning books are a bit more expensive than other computer books and
+                                           they cost me even more as it is not sold via Bookpool the usual place
+                                           I buy books but the publisher was nice enough and sent a copy
+                                           of this book free of charge to be reviewed by the
+                                           <a href="http://perl.org.il/">Israeli Perl Mongers</a>.
+                                           <br />
+                                           <strong>munge</strong> - as also described in the book - means
+                                           <strong>1.</strong> <em>[derogatory] To imperfectly
+                                           transform information</em>
+                                           but the book is about something slightly different: It is about taking
+                                           some kind of input data and transforming it to another
+                                           structure. Maybe it is actually the other meaning mentioned:
+                                           <strong>3.</strong> <em>To modify data in some way the speaker doesn't need to go
+                                           into right now or cannot describe succinctly (compare mumble)</em>
+                                           <br />
+                                           The word is somehow related to 'mangal' which is the word used in Israel
+                                           for barbecue that of course means <strong>To take some raw material and
+                                           make it digestible</strong>.
+                                           <br />
+                                           The book has four parts:<br />
+                                           In the first part Dave gives us the
+                                           <strong>Foundations</strong>: he gives us the basic background of data
+                                           processing, the various sources and forms of data. He then goes
+                                           on giving some guidelines on data structure design and
+                                           best practices in data munging. This part already
+                                           involves some interesting Perl expression. Then chapter 3-4 gives us
+                                           the required Perl knowledge which is about intermediate level.
+                                           It explains various methods for sorting and in 20 pages tries to teach
+                                           pattern matching. This is definitely not enough for the beginners but then
+                                           an intermediate Perl programmer already should know this level of
+                                           pattern matching. I think this chapter about pattern matching is a bit
+                                           misplaced but Dave might know that as he points us to other sources
+                                           where we can get deeply involved with patterns.
+                                           <br />
+                                           The second part called <strong>Data Munging</strong> is the part that gave the
+                                           title of the whole book. Here Dave gets a bit less generic and shows
+                                           us how to can we read, transform and write 4 different data types:
                            </p>
 
-        				   <ul>
-        				   <li>unstructured data</li>
-        				   <li>record-oriented data (variable-width data)</li>
-        				   <li>fixed-width data</li>
-        				   <li>binary-data</li>
-        				   </ul>
+                                           <ul>
+                                           <li>unstructured data</li>
+                                           <li>record-oriented data (variable-width data)</li>
+                                           <li>fixed-width data</li>
+                                           <li>binary-data</li>
+                                           </ul>
 
                            <p>
-        				   There are some nice tricks like keeping the field names in an array,
-        				   using $/ in some unpredictable way and of course manipulating date and
-        				   time. The binary section slightly touched the wealth of
-        				   graphical file formats and gives you some directions to start.
-        				   <br />
-        				   <strong>Simple data parsing</strong> is the third part of the book. It goes into
-        				   more specific data formats mainly HTML and XML and RSS.
-        				   It shows a good example when NOT to use regular expressions for
-        				   parsing data and then shows various tools and ways to parse these
-        				   file formats.
-        				   <br />
-        				   In the last part there is an introduction to Parse::RecDescent a module
-        				   that enables you to defined your own grammar and build your own parser
-        				   for it.
-        				   <br />
-        				   <strong>The Big Picture</strong> is the last part of the book, it gives you an
-        				   overview of the content of the book and mentions further resources
-        				   where to seek help. Among other things Dave mentions the
-        				   <a href="http://www.pm.org/">Perl Mongers</a> too. Did he know something
-        				   ?
-        				   <br />
-        				   So the book provides you with various tools and shows quite a number
-        				   of CPAN modules. Of course you'll still need to read the documentation
-        				   to use the full power of the modules but the book gives you a good head
-        				   start and points you in some of the good directions.
-        				   <br />
-        				   The text is quite readable but Dave will not make it as a
-        				   thriller writer. In the paragraph where the title was
-        				   "Making use of extra data" right from the title I could
-        				   guess what will be the end of the story.
-        				   <br />
-        				   There is one really annoying issue that the book cover started to bend when I
-        				   was about 5 minutes into reading the book. It certainly makes the book
-        				   look as if I use it very often right at the beginning. You don't need
-        				   that trick guys. I'll pick up the book quite often in any case.
-        				   <br />
-        				   Interestingly just as I was reading "Data Munging" I taught a Perl class
-        				   where exactly some of the questions discussed in this book came up.
-        				   <br />
-        				   I warmly recommended this book.
-        				   <br />
-        				   Another review with some discussion can be found on
-        				   <a href="http://books.slashdot.org/article.pl?sid=01/04/26/1229238">slashdot</a>
+                                           There are some nice tricks like keeping the field names in an array,
+                                           using $/ in some unpredictable way and of course manipulating date and
+                                           time. The binary section slightly touched the wealth of
+                                           graphical file formats and gives you some directions to start.
+                                           <br />
+                                           <strong>Simple data parsing</strong> is the third part of the book. It goes into
+                                           more specific data formats mainly HTML and XML and RSS.
+                                           It shows a good example when NOT to use regular expressions for
+                                           parsing data and then shows various tools and ways to parse these
+                                           file formats.
+                                           <br />
+                                           In the last part there is an introduction to Parse::RecDescent a module
+                                           that enables you to defined your own grammar and build your own parser
+                                           for it.
+                                           <br />
+                                           <strong>The Big Picture</strong> is the last part of the book, it gives you an
+                                           overview of the content of the book and mentions further resources
+                                           where to seek help. Among other things Dave mentions the
+                                           <a href="http://www.pm.org/">Perl Mongers</a> too. Did he know something
+                                           ?
+                                           <br />
+                                           So the book provides you with various tools and shows quite a number
+                                           of CPAN modules. Of course you'll still need to read the documentation
+                                           to use the full power of the modules but the book gives you a good head
+                                           start and points you in some of the good directions.
+                                           <br />
+                                           The text is quite readable but Dave will not make it as a
+                                           thriller writer. In the paragraph where the title was
+                                           "Making use of extra data" right from the title I could
+                                           guess what will be the end of the story.
+                                           <br />
+                                           There is one really annoying issue that the book cover started to bend when I
+                                           was about 5 minutes into reading the book. It certainly makes the book
+                                           look as if I use it very often right at the beginning. You don't need
+                                           that trick guys. I'll pick up the book quite often in any case.
+                                           <br />
+                                           Interestingly just as I was reading "Data Munging" I taught a Perl class
+                                           where exactly some of the questions discussed in this book came up.
+                                           <br />
+                                           I warmly recommended this book.
+                                           <br />
+                                           Another review with some discussion can be found on
+                                           <a href="http://books.slashdot.org/article.pl?sid=01/04/26/1229238">slashdot</a>
 
         </p>
       review_date: November 2002
@@ -436,86 +436,86 @@ Extending and Embedding Perl:
     - review_content: |
         <p>
 
-        				   I got a copy of this book in one of the <a href="http://perl.org.il/">
-        				   Israel Perl Mongers</a> meetings, to read and review it.
-        				   <br />
-        				   The topic is useful as this subject was considered as voodoo done by Perl hackers
-        				   and "mappers of the Perl internals". I suppose you can say this claim is not true
-        				   anymore, because this book collects the know-how from the perldocs, the newsgroups,
-        				   the camel book (and other resources) and the personal experience of authors of the book.
-        				   <br />
-        				   Finally, you don't have to pick up small pieces of information about
-        				   this subject in many places as people did prior to this book. What one
-        				   would do, if one wanted to learn how to extend Perl or embed Perl
-        				   before this book was available was doing one or more of the following:
-        				   </p>
+                                           I got a copy of this book in one of the <a href="http://perl.org.il/">
+                                           Israel Perl Mongers</a> meetings, to read and review it.
+                                           <br />
+                                           The topic is useful as this subject was considered as voodoo done by Perl hackers
+                                           and "mappers of the Perl internals". I suppose you can say this claim is not true
+                                           anymore, because this book collects the know-how from the perldocs, the newsgroups,
+                                           the camel book (and other resources) and the personal experience of authors of the book.
+                                           <br />
+                                           Finally, you don't have to pick up small pieces of information about
+                                           this subject in many places as people did prior to this book. What one
+                                           would do, if one wanted to learn how to extend Perl or embed Perl
+                                           before this book was available was doing one or more of the following:
+                                           </p>
 
-        				   <ul>
-        				   <li> Read relevant small parts of the Camel book (preferably the
-        				   recent edition rather than the 1st or 2nd) and "Advanced Perl
-        				   Programming" (which is rather old, and only touches this matters).
-        				   <br />
-        				   This would give you some idea about Perl internals and perhaps some clues about XS,
-        				   but that's about it.</li>
-        				   <li> browse through newsgroups, mail archives and mailing lists to look for clues,
-        				   and ask expert users, which usually, are not polite to answer newbies questions
-        				   about such matters.</li>
-        				   <li> figure out some cryptic (though, personally, I like them) incomplete (examples-wise)
-        				   perldocs such as:<br />
-        						   perlembed, perldebguts, perlxstut, perlxs, <br />
-        						   perlclib, perlguts, perlcall, perlapi, <br />
-        						   perlintern, perliol, perlapio, perlhack</li>
-        				   <li> locate and dig into available CPAN module using this technology.</li>
-        				   </ul>
+                                           <ul>
+                                           <li> Read relevant small parts of the Camel book (preferably the
+                                           recent edition rather than the 1st or 2nd) and "Advanced Perl
+                                           Programming" (which is rather old, and only touches this matters).
+                                           <br />
+                                           This would give you some idea about Perl internals and perhaps some clues about XS,
+                                           but that's about it.</li>
+                                           <li> browse through newsgroups, mail archives and mailing lists to look for clues,
+                                           and ask expert users, which usually, are not polite to answer newbies questions
+                                           about such matters.</li>
+                                           <li> figure out some cryptic (though, personally, I like them) incomplete (examples-wise)
+                                           perldocs such as:<br />
+                                                           perlembed, perldebguts, perlxstut, perlxs, <br />
+                                                           perlclib, perlguts, perlcall, perlapi, <br />
+                                                           perlintern, perliol, perlapio, perlhack</li>
+                                           <li> locate and dig into available CPAN module using this technology.</li>
+                                           </ul>
 
                            <p>
-        				   I think reading one book, with common terminology and many examples, is better than doing
-        				   one or more of the above.
-        				   <br />
-        				   The book starts with an introduction of C for Perl programmers. It is very short and in my
-        				   opinion not so accurate (due to its shortness), but  since this should be a short introduction
-        				   - it lives up to the promise. You can write a lot more than a "hello world" program after
-        				   reading this short chapter, and you get a bonus, how to compile on gcc (gcc is ANSI-C and
-        				   is available for all platforms), which is a wise idea. Perl programmers might be a bit
-        				   disappointed to discover how much code and how complicated code you need to write in C to
-        				   produce something that does the same as any Perl oneliner. The third chapter about Advanced
-        				   C is a very good continuation to this introduction, especially, becuase the authors can assume
-        				   you know some Perl (although I'm not sure they do). As someone giving lectures in "introduction
-        				   to Computer Science, C language", I was tempted to borrow several very nice examples and
-        				   explenations from this chapter. And I might also do that :-)
-        				   <br />
-        				   The next chapter explains how C code can be incorporated into a Perl Module and more generally
-        				   into a CPAN package of a Perl module. This is very useful. Many resources (including books),
-        				   focus on writing C/Perl code, and they say nothing or next to nothing about packaging (what
-        				   you should do in order to make sure others can use your code, what you can and can't assume
-        				   about the target system, etc.)
-        				   <br />
-        				   The fourth chapter is a useful cover of Perl variable types. This is somehting you could
-        				   find in the "camel book", you can also find this in the (rather old) "Advanced Perl Programming",
-        				   and of course in perldocs - but having it in one place, in order with examples and explenations
-        				   is a real joy. Now you can figure it our reading one thing, and if you feel you want more, go
-        				   to the perldocs.
-        				   <br />
-        				   Explaining Perl API, XS and advanced XS, alternatives to XS explain how you can add to your Perl programs some code (or programs or libraries) in C. I, personally wanted to have a module in Perl that gives interface to a data structure. Since the implementation I had is in C and it is tested and verified, I wanted to have a Perl module which exports the functionality, and offers a perl-oriented interface, without needing to reimplement the data structure in Perl. These book chapters made all the difference, and with the knowlede in chapter 2, I can now finish this, and after doing my testing, put it on CPAN. Isn't that great?!
-        				   <br />
-        				   If you are interested in doing the opposite, write Perl in C code, you can learn it in chapter 8.
-        				   And if theory does not meet practice, you can read chapter 9 (and also try it out yourself)
-        				   which presents a case study. Pretty useful stuff.
-        				   <br />
-        				   For people who are taking their first steps, the material so far is more than enough. But once
-        				   you go deeper you want to know more about how to do more complicated stuff, and how stuff
-        				   actually works. Chapter 10 which introduces you to the Perl internals is just what you would
-        				   be looking for. Chapter 11 will be the tour into the depts, teaching you some perl hacking,
-        				   i.e. how to alter Perl's behaviour.
-        				   <br />
-        				   The indices are useful, though can be found (though, not in similar format) elsewhere.
-        				   <br />
-        				   To sum this review, I loved the book. I wish I could take more time to practice what I read
-        				   there thoroughly. I will surely get a copy of this book to have it on my bookshelf, and when
-        				   the need comes, on my desk.
-        				   <br />
-        				   Another review with some discussion can be found on
-        				   <a href="http://books.slashdot.org/article.pl?sid=02/10/15/0125254">Slashdot</a>.
+                                           I think reading one book, with common terminology and many examples, is better than doing
+                                           one or more of the above.
+                                           <br />
+                                           The book starts with an introduction of C for Perl programmers. It is very short and in my
+                                           opinion not so accurate (due to its shortness), but  since this should be a short introduction
+                                           - it lives up to the promise. You can write a lot more than a "hello world" program after
+                                           reading this short chapter, and you get a bonus, how to compile on gcc (gcc is ANSI-C and
+                                           is available for all platforms), which is a wise idea. Perl programmers might be a bit
+                                           disappointed to discover how much code and how complicated code you need to write in C to
+                                           produce something that does the same as any Perl oneliner. The third chapter about Advanced
+                                           C is a very good continuation to this introduction, especially, becuase the authors can assume
+                                           you know some Perl (although I'm not sure they do). As someone giving lectures in "introduction
+                                           to Computer Science, C language", I was tempted to borrow several very nice examples and
+                                           explenations from this chapter. And I might also do that :-)
+                                           <br />
+                                           The next chapter explains how C code can be incorporated into a Perl Module and more generally
+                                           into a CPAN package of a Perl module. This is very useful. Many resources (including books),
+                                           focus on writing C/Perl code, and they say nothing or next to nothing about packaging (what
+                                           you should do in order to make sure others can use your code, what you can and can't assume
+                                           about the target system, etc.)
+                                           <br />
+                                           The fourth chapter is a useful cover of Perl variable types. This is somehting you could
+                                           find in the "camel book", you can also find this in the (rather old) "Advanced Perl Programming",
+                                           and of course in perldocs - but having it in one place, in order with examples and explenations
+                                           is a real joy. Now you can figure it our reading one thing, and if you feel you want more, go
+                                           to the perldocs.
+                                           <br />
+                                           Explaining Perl API, XS and advanced XS, alternatives to XS explain how you can add to your Perl programs some code (or programs or libraries) in C. I, personally wanted to have a module in Perl that gives interface to a data structure. Since the implementation I had is in C and it is tested and verified, I wanted to have a Perl module which exports the functionality, and offers a perl-oriented interface, without needing to reimplement the data structure in Perl. These book chapters made all the difference, and with the knowlede in chapter 2, I can now finish this, and after doing my testing, put it on CPAN. Isn't that great?!
+                                           <br />
+                                           If you are interested in doing the opposite, write Perl in C code, you can learn it in chapter 8.
+                                           And if theory does not meet practice, you can read chapter 9 (and also try it out yourself)
+                                           which presents a case study. Pretty useful stuff.
+                                           <br />
+                                           For people who are taking their first steps, the material so far is more than enough. But once
+                                           you go deeper you want to know more about how to do more complicated stuff, and how stuff
+                                           actually works. Chapter 10 which introduces you to the Perl internals is just what you would
+                                           be looking for. Chapter 11 will be the tour into the depts, teaching you some perl hacking,
+                                           i.e. how to alter Perl's behaviour.
+                                           <br />
+                                           The indices are useful, though can be found (though, not in similar format) elsewhere.
+                                           <br />
+                                           To sum this review, I loved the book. I wish I could take more time to practice what I read
+                                           there thoroughly. I will surely get a copy of this book to have it on my bookshelf, and when
+                                           the need comes, on my desk.
+                                           <br />
+                                           Another review with some discussion can be found on
+                                           <a href="http://books.slashdot.org/article.pl?sid=02/10/15/0125254">Slashdot</a>.
 
         </p>
       review_date: November 2002
@@ -1005,26 +1005,26 @@ Mastering Algorithms with Perl:
     - review_content: |
         <p>
 
-        				   First of all I'd like to note that I took a course about data
-        				   structures and algorithms in the course of my EE studies in the
-        				   Technion. Despite  that fact, I found the book to be quite interesting
-        				   and informative.  It taught me some things which I did not learn in the
-        				   course or before.<br />
-        				   <br />
-        				   The book has its flaws though. For instance, it should cover
-        				   hash-related algorithms. Also, some issues such as Counting Sort or
-        				   BFS, should have received more focus in my opinion.<br />
-        				   <br />
-        				   I think this book is especially useful for people who do not have any
-        				   formal education in Algorithmics and are not familiar with algorithms
-        				   in general. It can also be good for people who are, but who need a
-        				   working perl code or reference to such.<br />
-        				   <br />
-        				   I liked the fact that the book had some funny anecdotes, which made its
-        				   reading even more enjoyable.<br />
-        				   <br />
-        				   So, all in all a good book to read if one would like an introduction to
-        				   algorithms or even highlights from various specialized subjects.
+                                           First of all I'd like to note that I took a course about data
+                                           structures and algorithms in the course of my EE studies in the
+                                           Technion. Despite  that fact, I found the book to be quite interesting
+                                           and informative.  It taught me some things which I did not learn in the
+                                           course or before.<br />
+                                           <br />
+                                           The book has its flaws though. For instance, it should cover
+                                           hash-related algorithms. Also, some issues such as Counting Sort or
+                                           BFS, should have received more focus in my opinion.<br />
+                                           <br />
+                                           I think this book is especially useful for people who do not have any
+                                           formal education in Algorithmics and are not familiar with algorithms
+                                           in general. It can also be good for people who are, but who need a
+                                           working perl code or reference to such.<br />
+                                           <br />
+                                           I liked the fact that the book had some funny anecdotes, which made its
+                                           reading even more enjoyable.<br />
+                                           <br />
+                                           So, all in all a good book to read if one would like an introduction to
+                                           algorithms or even highlights from various specialized subjects.
 
         </p>
       review_date: NA
@@ -1032,35 +1032,35 @@ Mastering Algorithms with Perl:
     - review_content: |
         <p>
 
-        				   This nice book that covers most of the main Computer Science topics is
-        				   definitely a good gift for any Perl lover. The book popularly introduces
-        				   a wide range of algorithms used in practice.
-        				   <br />
-        				   The authors describe different problems and suggest a number of algorithms
-        				   for solving every problem. The weak and strong sides of all algorithms
-        				   are examined together with their Perl implementations and benchmarks.
-        				   It is an interesting mix of theory and practice, the computation theory
-        				   is tested by practical benchmarks.
-        				   <br />
-        				   The book will give you many hours of interesting reading regardless of
-        				   your current theoretical baggage. Those who learned Computer Science in
-        				   a high school, will refresh the knowledge and review the theory again,
-        				   this time from the Perl point of view. Those who are beginners to the
-        				   topics will discover an interesting world of mathematical algorithms.
-        				   Efficient data storage, sorting, numeric analysis, compilation theory,
-        				   probability, cryptography, graphs and much more.
-        				   <br />
-        				   It is nice to confirm once again that Perl not only does not stay on the
-        				   way of theory, but naturally describes it, making algorithm implementation
-        				   clear and intuitive. This is especially noticeable for folks familiar with
-        				   algorithm implementations in other programming languages.
-        				   <br />
-        				   The book uses a large number of convenient CPAN modules. Funny quotes
-        				   make this book even more thrilling. I will definitely acquire this book
-        				   for my home library on a good occasion.
-        				   <br />
-        				   Another review with some discussion can be found on
-        				   <a href="http://books.slashdot.org/article.pl?sid=99/12/08/1041249">Slashdot</a>.
+                                           This nice book that covers most of the main Computer Science topics is
+                                           definitely a good gift for any Perl lover. The book popularly introduces
+                                           a wide range of algorithms used in practice.
+                                           <br />
+                                           The authors describe different problems and suggest a number of algorithms
+                                           for solving every problem. The weak and strong sides of all algorithms
+                                           are examined together with their Perl implementations and benchmarks.
+                                           It is an interesting mix of theory and practice, the computation theory
+                                           is tested by practical benchmarks.
+                                           <br />
+                                           The book will give you many hours of interesting reading regardless of
+                                           your current theoretical baggage. Those who learned Computer Science in
+                                           a high school, will refresh the knowledge and review the theory again,
+                                           this time from the Perl point of view. Those who are beginners to the
+                                           topics will discover an interesting world of mathematical algorithms.
+                                           Efficient data storage, sorting, numeric analysis, compilation theory,
+                                           probability, cryptography, graphs and much more.
+                                           <br />
+                                           It is nice to confirm once again that Perl not only does not stay on the
+                                           way of theory, but naturally describes it, making algorithm implementation
+                                           clear and intuitive. This is especially noticeable for folks familiar with
+                                           algorithm implementations in other programming languages.
+                                           <br />
+                                           The book uses a large number of convenient CPAN modules. Funny quotes
+                                           make this book even more thrilling. I will definitely acquire this book
+                                           for my home library on a good occasion.
+                                           <br />
+                                           Another review with some discussion can be found on
+                                           <a href="http://books.slashdot.org/article.pl?sid=99/12/08/1041249">Slashdot</a>.
 
         </p>
       review_date: January 2003
@@ -1228,38 +1228,38 @@ Oracle SQL*Plus (Pocket Reference):
     - review_content: |
         <p>
 
-        				   When you read a book review it is also important to know the
-        				   background of the reviewer. It is important to know his point
-        				   of view. So here is mine:
-        				   <br />
-        				   I have been working with databases for a couple of years now but I am
-        				   not a DBA and in most of the cases I use Perl to access the database.
-        				   I touch the user interface of the database mainly to try SQL
-        				   statements and to debug my application. I have been using Oracle
-        				   for a couple of monthes now as I am writing a Perl application with
-        				   Oracle back-end.
-        				   <br />
-        				   This booklet is divided into two parts. The first 60 pages cover
-        				   mainly the Oracle SQL and the next 50 pages are the SQL*Plus command
-        				   reference. It covers Oracle 8 and Oracle 9i with clear marking
-        				   which command is available only in the new version of the database.
-        				   <br />
-        				   Going through the book gave me an opportunity to learn about a number
-        				   of SQL statements that are not available in other databases. Of course
-        				   you don't get any deep understanding of commands but you get the idea
-        				   and this helps later. Among lots of other details I read about
-        				   number and date formating which already saved me some time when I
-        				   needed that info a few days later.
-        				   <br />Actually - and this should be another disclaimer - I am not a fan
-        				   of Pocket Reference books. I think their content should be part of the
-        				   help available with the application. But I had to wait in
-        				   a queue for 3 hours somewhere so it was also a life saver that I could
-        				   have this booklet with me.
-        				   <br />
-        				   In general I recommend this book if you are a new or practicing Oracle DBAs
-        				   and if you are not satisfied with the on-line help
-        				   or if you are a database programmer and need a quick overview of the
-        				   Oracle SQL and the command line interface to the database.
+                                           When you read a book review it is also important to know the
+                                           background of the reviewer. It is important to know his point
+                                           of view. So here is mine:
+                                           <br />
+                                           I have been working with databases for a couple of years now but I am
+                                           not a DBA and in most of the cases I use Perl to access the database.
+                                           I touch the user interface of the database mainly to try SQL
+                                           statements and to debug my application. I have been using Oracle
+                                           for a couple of monthes now as I am writing a Perl application with
+                                           Oracle back-end.
+                                           <br />
+                                           This booklet is divided into two parts. The first 60 pages cover
+                                           mainly the Oracle SQL and the next 50 pages are the SQL*Plus command
+                                           reference. It covers Oracle 8 and Oracle 9i with clear marking
+                                           which command is available only in the new version of the database.
+                                           <br />
+                                           Going through the book gave me an opportunity to learn about a number
+                                           of SQL statements that are not available in other databases. Of course
+                                           you don't get any deep understanding of commands but you get the idea
+                                           and this helps later. Among lots of other details I read about
+                                           number and date formating which already saved me some time when I
+                                           needed that info a few days later.
+                                           <br />Actually - and this should be another disclaimer - I am not a fan
+                                           of Pocket Reference books. I think their content should be part of the
+                                           help available with the application. But I had to wait in
+                                           a queue for 3 hours somewhere so it was also a life saver that I could
+                                           have this booklet with me.
+                                           <br />
+                                           In general I recommend this book if you are a new or practicing Oracle DBAs
+                                           and if you are not satisfied with the on-line help
+                                           or if you are a database programmer and need a quick overview of the
+                                           Oracle SQL and the command line interface to the database.
 
         </p>
       review_date: November 2002
@@ -1906,94 +1906,94 @@ User Friendly the comic strip:
     - review_content: |
         <p>
 
-        				   When I received the leadership of the Israel.pm Perl Mongers group I
-        				   also received a couple of books. There was one about Windows NT Logons,
-        				   one abut IMAP, The User Friendly book and even some about Perl.<br />
-        				   The previous group leader received these books from O'Reilly in the hope
-        				   that he and others in his group will write reviews about the books but
-        				   AFAIK no review surfaced yet.<br />
-        				   So now as I'd like to encourage others in our group to write reviews I
-        				   guess I should show some good example. All this was about 10 days
-        				   before one of our meetings so I had to do it quickly.
-        				   <br />
-        				   After going over the titles it was easy to decide which book to pick.
-        				   <br />
-        				   I have looked at <a href="http://www.userfriendy.org/">User Friendly</a>
-        				   comic strips earlier but I did not have the patience to read them
-        				   on-line or to follow them on a daily basis. Having a book is so
-        				   much different.
-        				   <br />
-        				   This way you get a huge dose of it at once. You can read it at once
-        				   though other reviews suggest you should read it slowly. I guess
-        				   it is up to you. (Does TIMTOWTDI apply here ?)
-        				   <br />
-        				   Anyway I wanted to give a 5-minute review of the book and I hope
-        				   that from now on every <a href="../meetings.html">meeting</a> we have
-        				   we'll have one 5-minute review of the book.<br />
-        				   I had no idea what really to talk, I thought saying things about the
-        				   cartoon is silly but I got the impression that most of the people had
-        				   no clue what User Friendly is and were surprised to see a cartoon in
-        				   our library. So a few words about the characters needed.
-        				   <br />
-        				   User Friendly is a commic strip by Illiad that has started some time
-        				   in 1997 and was describing the way of life of ISPs (Internet Service
-        				   Providers), support team, system administrators and the like. It has
-        				   a strong affiliation with the Open Source community and sees
-        				   Microsoft and similar companies as the enemy.<br />
-        				   There is also this techies versus marketing type people in the book.
-        				   Guess about whom are the jokes.<br />
-        				   This book is a thriller at Columbia Internet - the ISP. You have every
-        				   ingreedients. Murder, love, rescue operation, Dust puppy.
-        				   <br />
-        				   Some of the text is written in the jargon of the community and some of
-        				   the English is not that easy to understand for someone who does not
-        				   live in it. Nevertheless you'll probably understand most of it.
-        				   <br />
-        				   You can get a taste of it by looking at <a
-        				   href="http://www.uerfriendly.org/">userfriendly.org</a> or you can even
-        				   see all the earlier parts in the archive there but who wants to sit
-        				   in front of the computer all the time ?<br />
-        				   So I think it is worth to buy the book if only for the relaxation of
-        				   your eyes.
-        				   <br />
-        				   I am not the marketing type but still I though I should write the
-        				   usual hype so think about it this way. The book costs only US $12.95 !!
-        				   <br />
-        				   There are about 120 pages in the book so it is only 10c/page !
-        				   <br />
-        				   Going even further you can see that there is an average of 9.3
-        				   pictures per page. That means you get the book for only 1c/picture !!
-        				   <br />
-        				   That's about the level I can get in marketing. In order to balance it
-        				   here are some scientific methods to compare this book with another one
-        				   in our library:
-        				   <br />
-        				   People say that a picture is worth 1000 words.
-        				   There are 120 pages, about 9.3 pictures per page so they are worth
-        				   9.3*1000*120 = 1_116_000 words in the book.<br />
-        				   Compare that to this other book I have received: "Windows NT Logons".
-        				   It has about 15 words a line, aprox. 40 lines a page and has 210
-        				   pages.
-        				   <br />
-        				   That is 15*40*210 = 126_000 words.
-        				   <br />
-        				   So User Friendly has nearly <strong>10 times more</strong> words in it !
-        				   <br />
-        				   For a fraction of the cost....
-        				   <br />
-        				   <strong>Other books from the same author:</strong><br />
-        				   Evil Geniuses in a Nutshell April 2000<br />
-        				   The Root of All Evil  August 2001<br />
-        				   <br />
-        				   <strong>References</strong><br />
-        				   <a href="http://www.oreilly.com/">O'Reilly</a><br />
-        				   <a href="http://www.userfriendly.org/">User Friendly</a><br />
-        				   <br />
-        				   P.S. - So this should be the minimum level of a book review. It won't be
-        				   difficult for others to write better reviews. :-)
-        				   <br />
-        				   <br />Another review with some discussion can be found on <a
-        				   href="http://books.slashdot.org/article.pl?sid=99/11/02/1115243">Slashdot</a> .
+                                           When I received the leadership of the Israel.pm Perl Mongers group I
+                                           also received a couple of books. There was one about Windows NT Logons,
+                                           one abut IMAP, The User Friendly book and even some about Perl.<br />
+                                           The previous group leader received these books from O'Reilly in the hope
+                                           that he and others in his group will write reviews about the books but
+                                           AFAIK no review surfaced yet.<br />
+                                           So now as I'd like to encourage others in our group to write reviews I
+                                           guess I should show some good example. All this was about 10 days
+                                           before one of our meetings so I had to do it quickly.
+                                           <br />
+                                           After going over the titles it was easy to decide which book to pick.
+                                           <br />
+                                           I have looked at <a href="http://www.userfriendy.org/">User Friendly</a>
+                                           comic strips earlier but I did not have the patience to read them
+                                           on-line or to follow them on a daily basis. Having a book is so
+                                           much different.
+                                           <br />
+                                           This way you get a huge dose of it at once. You can read it at once
+                                           though other reviews suggest you should read it slowly. I guess
+                                           it is up to you. (Does TIMTOWTDI apply here ?)
+                                           <br />
+                                           Anyway I wanted to give a 5-minute review of the book and I hope
+                                           that from now on every <a href="../meetings.html">meeting</a> we have
+                                           we'll have one 5-minute review of the book.<br />
+                                           I had no idea what really to talk, I thought saying things about the
+                                           cartoon is silly but I got the impression that most of the people had
+                                           no clue what User Friendly is and were surprised to see a cartoon in
+                                           our library. So a few words about the characters needed.
+                                           <br />
+                                           User Friendly is a commic strip by Illiad that has started some time
+                                           in 1997 and was describing the way of life of ISPs (Internet Service
+                                           Providers), support team, system administrators and the like. It has
+                                           a strong affiliation with the Open Source community and sees
+                                           Microsoft and similar companies as the enemy.<br />
+                                           There is also this techies versus marketing type people in the book.
+                                           Guess about whom are the jokes.<br />
+                                           This book is a thriller at Columbia Internet - the ISP. You have every
+                                           ingreedients. Murder, love, rescue operation, Dust puppy.
+                                           <br />
+                                           Some of the text is written in the jargon of the community and some of
+                                           the English is not that easy to understand for someone who does not
+                                           live in it. Nevertheless you'll probably understand most of it.
+                                           <br />
+                                           You can get a taste of it by looking at <a
+                                           href="http://www.uerfriendly.org/">userfriendly.org</a> or you can even
+                                           see all the earlier parts in the archive there but who wants to sit
+                                           in front of the computer all the time ?<br />
+                                           So I think it is worth to buy the book if only for the relaxation of
+                                           your eyes.
+                                           <br />
+                                           I am not the marketing type but still I though I should write the
+                                           usual hype so think about it this way. The book costs only US $12.95 !!
+                                           <br />
+                                           There are about 120 pages in the book so it is only 10c/page !
+                                           <br />
+                                           Going even further you can see that there is an average of 9.3
+                                           pictures per page. That means you get the book for only 1c/picture !!
+                                           <br />
+                                           That's about the level I can get in marketing. In order to balance it
+                                           here are some scientific methods to compare this book with another one
+                                           in our library:
+                                           <br />
+                                           People say that a picture is worth 1000 words.
+                                           There are 120 pages, about 9.3 pictures per page so they are worth
+                                           9.3*1000*120 = 1_116_000 words in the book.<br />
+                                           Compare that to this other book I have received: "Windows NT Logons".
+                                           It has about 15 words a line, aprox. 40 lines a page and has 210
+                                           pages.
+                                           <br />
+                                           That is 15*40*210 = 126_000 words.
+                                           <br />
+                                           So User Friendly has nearly <strong>10 times more</strong> words in it !
+                                           <br />
+                                           For a fraction of the cost....
+                                           <br />
+                                           <strong>Other books from the same author:</strong><br />
+                                           Evil Geniuses in a Nutshell April 2000<br />
+                                           The Root of All Evil  August 2001<br />
+                                           <br />
+                                           <strong>References</strong><br />
+                                           <a href="http://www.oreilly.com/">O'Reilly</a><br />
+                                           <a href="http://www.userfriendly.org/">User Friendly</a><br />
+                                           <br />
+                                           P.S. - So this should be the minimum level of a book review. It won't be
+                                           difficult for others to write better reviews. :-)
+                                           <br />
+                                           <br />Another review with some discussion can be found on <a
+                                           href="http://books.slashdot.org/article.pl?sid=99/11/02/1115243">Slashdot</a> .
 
         </p>
       review_date: October 2002
@@ -2001,35 +2001,35 @@ User Friendly the comic strip:
     - review_content: |
         <p>
 
-        				   When I first sat down and opened "User Friendly the comic strip", by Illiad, I
-        				   was skeptical. What could a comic strip aimed mainly (it seemed to me) at ISP
-        				   workers, mean to someone who was not?
-        				   Could I relate or would the jokes be flat and boring?
-        				   <br />
-        				   To my surprise and joy, User Friendly turned out to be even better than I
-        				   had hoped. A single comic strip tells a very short story. Several comic strips
-        				   can expand on that story and make it into something better. But an entire book
-        				   on the same comic strip does something wonderful- it fills out the story, turns
-        				   what might have been a short and indecipherable joke into a cast of characters
-        				   you can relate to, a story you can understand, and an experience to be
-        				   cherished.
-        				   <br />
-        				   I wish I could tell you I had a favorite joke or character (well, okay, the Dust
-        				   Puppy is *way* cool, but I liked The Chief too, so it's a close call). They are
-        				   all pretty good, and I can guarantee that the jokes will have you ROTFLOL after
-        				   a few pages. If, that is, you understood what I just wrote.
-        				   <br />
-        				   You see, there is a little catch- you have to be "in the know", at least a
-        				   little bit, in order to understand what the jokes are all about. This is, after
-        				   all, a comic book aimed mainly at the geek crowd, so someone who does not
-        				   understand the terminology used or has never helped a truly clueless user will
-        				   have trouble understanding or relating to some of the jokes.
-        				   <br />
-        				   That aside, if you are from the field of computers, I promise you hours of fun,
-        				   even if you don't grok Quake :-)
-        				   <br /> In short, I warmly recommended this book.
-        				   <br />Another review with some discussion can be found on <a
-        				   href="http://books.slashdot.org/article.pl?sid=99/11/02/1115243">Slashdot</a>.
+                                           When I first sat down and opened "User Friendly the comic strip", by Illiad, I
+                                           was skeptical. What could a comic strip aimed mainly (it seemed to me) at ISP
+                                           workers, mean to someone who was not?
+                                           Could I relate or would the jokes be flat and boring?
+                                           <br />
+                                           To my surprise and joy, User Friendly turned out to be even better than I
+                                           had hoped. A single comic strip tells a very short story. Several comic strips
+                                           can expand on that story and make it into something better. But an entire book
+                                           on the same comic strip does something wonderful- it fills out the story, turns
+                                           what might have been a short and indecipherable joke into a cast of characters
+                                           you can relate to, a story you can understand, and an experience to be
+                                           cherished.
+                                           <br />
+                                           I wish I could tell you I had a favorite joke or character (well, okay, the Dust
+                                           Puppy is *way* cool, but I liked The Chief too, so it's a close call). They are
+                                           all pretty good, and I can guarantee that the jokes will have you ROTFLOL after
+                                           a few pages. If, that is, you understood what I just wrote.
+                                           <br />
+                                           You see, there is a little catch- you have to be "in the know", at least a
+                                           little bit, in order to understand what the jokes are all about. This is, after
+                                           all, a comic book aimed mainly at the geek crowd, so someone who does not
+                                           understand the terminology used or has never helped a truly clueless user will
+                                           have trouble understanding or relating to some of the jokes.
+                                           <br />
+                                           That aside, if you are from the field of computers, I promise you hours of fun,
+                                           even if you don't grok Quake :-)
+                                           <br /> In short, I warmly recommended this book.
+                                           <br />Another review with some discussion can be found on <a
+                                           href="http://books.slashdot.org/article.pl?sid=99/11/02/1115243">Slashdot</a>.
 
         </p>
       review_date: November 2002
@@ -2060,43 +2060,43 @@ Using Samba:
     - review_content: |
         <p>
 
-        				   "Using Samba" can be seen as THE fundamental book for Samba administrators.
-        				   It covers the download, installation and configuration of the server. You will find
-        				   instructions for Windows 95/98,
-        				   NT and Linux. It goes on a step by step trip over disks shares, users
-        				   securities and printer sharing.
-        				   <br />
-        				   From my point of view, the 40 or so pages dedicated to troubleshooting are
-        				   worth the whole book.
-        				   <br />
-        				   Installing and configuring Samba has become a somehow simple task, specially
-        				   considering high level administrative interfaces like SWAT or Webmin. However,
-        				   when it comes the time for troubleshooting, most of the times, you are alone.
-        				   "Using Samba" gives you the right support for this difficult task, with a simple
-        				   and complete step-by-step guide for finding the source of the problem and ideas
-        				   for solving it.
+                                           "Using Samba" can be seen as THE fundamental book for Samba administrators.
+                                           It covers the download, installation and configuration of the server. You will find
+                                           instructions for Windows 95/98,
+                                           NT and Linux. It goes on a step by step trip over disks shares, users
+                                           securities and printer sharing.
+                                           <br />
+                                           From my point of view, the 40 or so pages dedicated to troubleshooting are
+                                           worth the whole book.
+                                           <br />
+                                           Installing and configuring Samba has become a somehow simple task, specially
+                                           considering high level administrative interfaces like SWAT or Webmin. However,
+                                           when it comes the time for troubleshooting, most of the times, you are alone.
+                                           "Using Samba" gives you the right support for this difficult task, with a simple
+                                           and complete step-by-step guide for finding the source of the problem and ideas
+                                           for solving it.
                            </p>
-        				   <ul>
-        				   <li>Chapter 1 introduces Samba and shows what the software package can do for your network.</li>
-        				   <li>Chapter 2 demonstrates downloading, installing, and testing Samba on a UNIX system. </li>
-        				   <li>Chapter 3 contains instructions for configuring some Windows clients to use Samba. </li>
-        				   <li>Chapter 4 has the basic options for configuring disk shares in Samba are explored. </li>
-        				   <li>Chapter 5 covers browsing, filesystem differences and file permissions on Windows and Unix.</li>
-        				   <li>Chapter 6 examines Samba security features like users, groups, and passwords. </li>
-        				   <li>Chapter 7 documents printing and name resolution with Samba. </li>
-        				   <li>Chapter 8 contains additional Samba information mainly for programmers. </li>
-        				   <li>Chapter 9 presents Samba troubleshooting ideas and resources. </li>
-        				   <li>Appendices describe SSL, performance tuning, commands, and Samba quick reference data.</li>
-        				   </ul>
+                                           <ul>
+                                           <li>Chapter 1 introduces Samba and shows what the software package can do for your network.</li>
+                                           <li>Chapter 2 demonstrates downloading, installing, and testing Samba on a UNIX system. </li>
+                                           <li>Chapter 3 contains instructions for configuring some Windows clients to use Samba. </li>
+                                           <li>Chapter 4 has the basic options for configuring disk shares in Samba are explored. </li>
+                                           <li>Chapter 5 covers browsing, filesystem differences and file permissions on Windows and Unix.</li>
+                                           <li>Chapter 6 examines Samba security features like users, groups, and passwords. </li>
+                                           <li>Chapter 7 documents printing and name resolution with Samba. </li>
+                                           <li>Chapter 8 contains additional Samba information mainly for programmers. </li>
+                                           <li>Chapter 9 presents Samba troubleshooting ideas and resources. </li>
+                                           <li>Appendices describe SSL, performance tuning, commands, and Samba quick reference data.</li>
+                                           </ul>
 
                            <p>
-        				   Though the book is starting to show its age (Windows XP is missing), it remains a
-        				   useful guide for those looking to learn about resource sharing with Samba.
-        				   <br />
-        				   Even when you can download an HTML version of the book from <a href="http://samba.he.net/">
-        				   http://samba.he.net/</a>, it is still worth to buy the book.
-        				   <br />Another review with some discussion can be found on <a
-        				   href="http://books.slashdot.org/article.pl?sid=99/11/10/1414212">Slashdot</a>.
+                                           Though the book is starting to show its age (Windows XP is missing), it remains a
+                                           useful guide for those looking to learn about resource sharing with Samba.
+                                           <br />
+                                           Even when you can download an HTML version of the book from <a href="http://samba.he.net/">
+                                           http://samba.he.net/</a>, it is still worth to buy the book.
+                                           <br />Another review with some discussion can be found on <a
+                                           href="http://books.slashdot.org/article.pl?sid=99/11/10/1414212">Slashdot</a>.
 
         </p>
       review_date: November 2002
@@ -2157,44 +2157,44 @@ Win32 Perl Programming:
     - review_content: |
         <p>
 
-        				   I have bought this book about a year ago but now that our Perl Mongers
-        				   group have received a free copy of it from New Riders I decided I
-        				   write down what I thought about the book. If for nothing else then to
-        				   suggest to my fellow Perl Mongers that they should read it and
-        				   throroughly review it.
-        				   Mine is not going to be thorough review just a few quick notes.
-        				   <br />
-        				   This book can be used both as a reference book and as a tutorial. When I
-        				   received it I went through most of the 720 pages of the book and later
-        				   I kept returning to it to look up various items.
-        				   <br />
-        				   If you are a Windows system administrator or the guy who is supposed
-        				   to do all kind of magic on the local system (like collecting data from
-        				   various computers or looking into various files in all kinds of
-        				   formats) then this is going to be very useful to you as well.
-        				   <br />
-        				   The good thing about this book is that you don't have to read it
-        				   sequentially. After reading the Introduction I started with chapter 4
-        				   about File Management and later returned to the preceeding
-        				   chapters. You can also jump straight to the area you try to explore.
-        				   <br />
-        				   Most of the modules in the Win32::* namespace do not have much
-        				   documentation. This book solves this problem by discussing several
-        				   modules in depth, explaining how they work and what are the parameters
-        				   you can use for the various functions. There are lots of examples
-        				   (also downloadable from the <a href="http://www.roth.net/">author's
-        				   site</a>). Though there are a few mistakes in the examples they can
-        				   be discussed on the various mailing lists of ActiveState where
-        				   sometimes Dave Roth, the author of the book himself answers the
-        				   questions.
-        				   <br />
-        				   There is a good introduction to OLE automation and of course how to
-        				   do it with Perl and an explanation of how to write DLLs along with
-        				   details about Perl internals something I cannot evaluate as I have
-        				   not tried it yet.
-        				   <br />
-        				   I think this book is a must for everyone who wants to write
-        				   something deeper in windows than processing INI files.
+                                           I have bought this book about a year ago but now that our Perl Mongers
+                                           group have received a free copy of it from New Riders I decided I
+                                           write down what I thought about the book. If for nothing else then to
+                                           suggest to my fellow Perl Mongers that they should read it and
+                                           throroughly review it.
+                                           Mine is not going to be thorough review just a few quick notes.
+                                           <br />
+                                           This book can be used both as a reference book and as a tutorial. When I
+                                           received it I went through most of the 720 pages of the book and later
+                                           I kept returning to it to look up various items.
+                                           <br />
+                                           If you are a Windows system administrator or the guy who is supposed
+                                           to do all kind of magic on the local system (like collecting data from
+                                           various computers or looking into various files in all kinds of
+                                           formats) then this is going to be very useful to you as well.
+                                           <br />
+                                           The good thing about this book is that you don't have to read it
+                                           sequentially. After reading the Introduction I started with chapter 4
+                                           about File Management and later returned to the preceeding
+                                           chapters. You can also jump straight to the area you try to explore.
+                                           <br />
+                                           Most of the modules in the Win32::* namespace do not have much
+                                           documentation. This book solves this problem by discussing several
+                                           modules in depth, explaining how they work and what are the parameters
+                                           you can use for the various functions. There are lots of examples
+                                           (also downloadable from the <a href="http://www.roth.net/">author's
+                                           site</a>). Though there are a few mistakes in the examples they can
+                                           be discussed on the various mailing lists of ActiveState where
+                                           sometimes Dave Roth, the author of the book himself answers the
+                                           questions.
+                                           <br />
+                                           There is a good introduction to OLE automation and of course how to
+                                           do it with Perl and an explanation of how to write DLLs along with
+                                           details about Perl internals something I cannot evaluate as I have
+                                           not tried it yet.
+                                           <br />
+                                           I think this book is a must for everyone who wants to write
+                                           something deeper in windows than processing INI files.
 
         </p>
       review_date: November 2002

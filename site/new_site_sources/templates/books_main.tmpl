@@ -2,20 +2,20 @@
    <!-- ##### Main Copy ##### -->
    <div id="main-copy">
    <h1 id="info" style="border-top: none; padding-top: 0;">Book Information</h1>
-      <table>
-	 <tr>
+      <table summary="Left column is the book info; Right is the cover.">
+         <tr>
             <td>
- 	       <ul>
-		  <tmpl_loop name="book_info">
-		     <li><tmpl_var dt>:		<tmpl_var dd escape=html></li>
-		  </tmpl_loop>
+               <ul>
+                  <tmpl_loop name="book_info">
+                     <li><tmpl_var dt>:         <tmpl_var dd escape=html></li>
+                  </tmpl_loop>
                </ul>
-	    </td>
+            </td>
             <td valign="top">
-	       &nbsp;&nbsp;&nbsp;&nbsp;
-	       <img src="images/<tmpl_var book_cover_image>" alt="Cover of the Book" width="145" height="190"/>
-	    </td>
-	 </tr>
+               &nbsp;&nbsp;&nbsp;&nbsp;
+               <img src="images/<tmpl_var book_cover_image>" alt="Cover of the Book" width="145" height="190"/>
+            </td>
+         </tr>
       </table>
    <h1 id="reviews">Book Reviews</h1>
    <tmpl_loop name="book_reviews">

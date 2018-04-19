@@ -6,7 +6,7 @@ The sources use HTML::Template to build the site, so to build the site you
 should first have it installed.
 
 The main command to run is:
-	perl update_site.pl
+        perl update_site.pl
 
 This script simply calls the seperate Perl scripts that do the actual work.
 There are currently 3 such scripts: books.pl, meetings.pl and
@@ -34,7 +34,7 @@ HOWTO:
 3) Add a new page called xyz.html:
    - Create the template for the page in the templates directory
      (a copy of misc_content.tmpl can be a good start)
-	 "xyz_content.tmpl" would be a good name.
+         "xyz_content.tmpl" would be a good name.
 
    - In templats/main.tmpl add an entry for conditionally including the newly
      created template. The condition will be set in the main.pl script.
@@ -48,7 +48,7 @@ HOWTO:
      }
 >>>
 
-	 And within that block set the various values to what fits your
+         And within that block set the various values to what fits your
      new page. Copy-paste another section to get started.
 
    - Add an entry in the nav_bar variable in the "nav_bar" template

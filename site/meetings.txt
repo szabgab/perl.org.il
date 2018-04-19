@@ -9,29 +9,29 @@ Meetings Schedule for Israel.pm
 2004 May 6
   Pinkhas Nisanov: "TRIZ" - Theory of Inventive Problem Solving (60-90 min)
                 "Stop to think! Start to work!" or "It's all about analogy"
-	http://www.perl.org.il/pipermail/perl/2004-March/004496.html
-	http://www.perl.org.il/pipermail/perl/2004-March/004509.html
-	
+        http://www.perl.org.il/pipermail/perl/2004-March/004496.html
+        http://www.perl.org.il/pipermail/perl/2004-March/004509.html
+
   Gaal Yahas: Perl as an integration language in a Java environment (45 min)
         http://perl.org.il/pipermail/perl/2004-March/004684.html
-    
+
 2004 June 3
   Shlomo Yona: The basics of regular expressions and finite-state transducers (90 min)
         http://www.perl.org.il/pipermail/perl/2004-March/004527.html
 
   Uri Bruck: A SOAP server implemented in Perl (45-60 min)
-    
+
 2004 July 1
   Shlomo Yona:  Hebrew and Perl (80 min)
         http://www.perl.org.il/pipermail/perl/2003-October/003237.html
 
   Gaal Yahas: Maypole (60 min)
         http://perl.org.il/pipermail/perl/2004-April/004763.html
-    
+
 2004 August 5
   Mikhael Goikhman: Version Control Systems for your development (60-90 min)
     http://www.perl.org.il/pipermail/perl/2004-March/004532.html
-    
+
   Yuval Yaari: Class::DBI (60 min)
     In this thread: http://perl.org.il/pipermail/perl/2004-April/004763.html
 
@@ -53,7 +53,7 @@ Talk requestes
 ---------------
 * Modern Garbage Collection algorithms and their applicability to Perl
 
-* Creating custom RE engines  
+* Creating custom RE engines
       http://perl.org.il/pipermail/perl/2004-March/004417.html
 
 * How to do XML validation against:

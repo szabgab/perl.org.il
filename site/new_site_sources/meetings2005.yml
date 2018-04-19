@@ -17,7 +17,7 @@
       title: ''
   location: Ramat Gan
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ""
 20050203:
   agenda_items:
     - item: '18:00-19:00 -- Assembly and light refreshments'
@@ -60,41 +60,41 @@
              The Feb. 2005 meeting got off to what I thought was a great start,
              with several new people showing up - I hope they enjoyed their first
              Israel.pm meeting and that they'll be back for more :)<br />
-    	 By the time the first lecture was to begin, we had nearly 20 people in the room (several late
-    	 comers showed up after 19:00), however one important person had not yet showed up - Liraz was
-    	 running late due to transportation problems. So Gabor got a chance to show us his brand-new
-    	 module and website,  <a href="http://metacpan.org/module/CPAN::Forum/">CPAN::Forum</a>.
-    	 The site, <a href="http://www.cpanforum.com/">
-    	 http://www.cpanforum.com/</a>, provides a central place to discuss matters relating to
-    	 CPAN modules. each module has its own forum, including links to the search.cpan.org
-    	 page and related pages. In fact, each module page on search.cpan.org now has a link
-    	 directly to its forum page on cpanforum.com, which is very handy. The idea behind
-    	 CPAN::Forum is that instead of having to register to a seperate mailing list for each
-    	 module one is interested in (i.e. wants to discuss), you now need to register to only one
-    	 site. Gabor didn't get a chance to actually show code, since at about 19:15
-    	 Liraz showed up and Gabor relinquished the floor to him.<br />
-    	 <br />
-    	 <a href="http://liraz.org/">Liraz</a> is a long-time Perl programmer who recently
-    	 discovered the joys of Python and has decided to try to convert other Perl programmers to
-    	 the use of Python. Leaving my personal opinion about Python aside, Liraz gave a nice
-    	 review of why he thinks Python is a better language, some features of Python, things
-    	 it has in common with Perl and things that make it special and finally why we should all
-    	 start programming in Python. Right from the start, it was obvious that the members of
-    	 Israel.pm were not about to agree to his arguments without some heavy convincing, as
-    	 Liraz was constantly interrupted with questions and arguments. In spite of this, Liraz
-    	 managed to finish his talk and we even had some time at the end for a short Q&amp;A.<br />
-    	 <br />
-    	 Although it was not planned, Yuli asked to talk for about 10 minutes about a service he
-    	 was promoting called <a href="http://www.bannershift.com/">BannerShift</a>, a text-ad
-    	 banner exchange service. This doesn't really have anything to do with Perl, except for
-    	 the fact that many Perl programmers are also webmasters...<br />
-    	 <br />
-    	 The technical part of the meeting wrapped-up around 21:45, and around 10 of us continued
-    	 to a new place called "The Sil-Bar", across the street from Dapey Zahav.
-    	 The atmosphere was nice, the drinks okay and so was the food, and the conversation
-    	 was interesting. In short, we all had a lot of good time :-)<br />
-    	 <br />
-    	 Thanks and see you next time!
+         By the time the first lecture was to begin, we had nearly 20 people in the room (several late
+         comers showed up after 19:00), however one important person had not yet showed up - Liraz was
+         running late due to transportation problems. So Gabor got a chance to show us his brand-new
+         module and website,  <a href="http://metacpan.org/module/CPAN::Forum/">CPAN::Forum</a>.
+         The site, <a href="http://www.cpanforum.com/">
+         http://www.cpanforum.com/</a>, provides a central place to discuss matters relating to
+         CPAN modules. each module has its own forum, including links to the search.cpan.org
+         page and related pages. In fact, each module page on search.cpan.org now has a link
+         directly to its forum page on cpanforum.com, which is very handy. The idea behind
+         CPAN::Forum is that instead of having to register to a seperate mailing list for each
+         module one is interested in (i.e. wants to discuss), you now need to register to only one
+         site. Gabor didn't get a chance to actually show code, since at about 19:15
+         Liraz showed up and Gabor relinquished the floor to him.<br />
+         <br />
+         <a href="http://liraz.org/">Liraz</a> is a long-time Perl programmer who recently
+         discovered the joys of Python and has decided to try to convert other Perl programmers to
+         the use of Python. Leaving my personal opinion about Python aside, Liraz gave a nice
+         review of why he thinks Python is a better language, some features of Python, things
+         it has in common with Perl and things that make it special and finally why we should all
+         start programming in Python. Right from the start, it was obvious that the members of
+         Israel.pm were not about to agree to his arguments without some heavy convincing, as
+         Liraz was constantly interrupted with questions and arguments. In spite of this, Liraz
+         managed to finish his talk and we even had some time at the end for a short Q&amp;A.<br />
+         <br />
+         Although it was not planned, Yuli asked to talk for about 10 minutes about a service he
+         was promoting called <a href="http://www.bannershift.com/">BannerShift</a>, a text-ad
+         banner exchange service. This doesn't really have anything to do with Perl, except for
+         the fact that many Perl programmers are also webmasters...<br />
+         <br />
+         The technical part of the meeting wrapped-up around 21:45, and around 10 of us continued
+         to a new place called "The Sil-Bar", across the street from Dapey Zahav.
+         The atmosphere was nice, the drinks okay and so was the food, and the conversation
+         was interesting. In short, we all had a lot of good time :-)<br />
+         <br />
+         Thanks and see you next time!
 
     </p>
 20050303:
@@ -103,7 +103,7 @@
     - item: '18:45-19:15 -- Light refreshments'
     - item: |-
         19:15-21:45 -- <em>Gabor Szabo</em> will lecture about "Code Review - A review of 2 Web based projects"
-        		 <a href="http://www.szabgab.com/talks.html#code-reading">Read more</a>
+                 <a href="http://www.szabgab.com/talks.html#code-reading">Read more</a>
     - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
   items:
     - description: ''
@@ -118,7 +118,7 @@
       title: 'Code Review - A review of 2 Web based projects'
   location: Ramat Gan
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ""
 20050421:
   agenda_items:
     - item: '18:00-19:00 -- Assembly and light refreshments'
@@ -132,7 +132,7 @@
       title: Perl to Queen's Level 3
   location: Ramat Gan
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ""
 20050519:
   agenda_items:
     - item: '19:00-19:30 -- Assembly and light refreshments'
@@ -229,7 +229,7 @@
       title: 'Informal Meeting, Chat, and Food'
   location: Azrieli Center
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ""
 20050602:
   agenda_items:
     - item: '19:00-19:30 -- Assembly and light refreshments'
@@ -343,38 +343,38 @@
     <p>
 
              First of all, the
-    	 <a href="/presentations/stas_bekman_mod_perl-2.0-tutorial/mod_perl-2.0-tutorial-slides.pdf.gz">slides</a> and
-    	 <a href="/presentations/stas_bekman_mod_perl-2.0-tutorial/mod_perl-2.0-tutorial-handouts.pdf.gz">handouts</a>
-    	 from the lecture
-    	 are available here. Download and enjoy.
-    	 <br /><br />
+         <a href="/presentations/stas_bekman_mod_perl-2.0-tutorial/mod_perl-2.0-tutorial-slides.pdf.gz">slides</a> and
+         <a href="/presentations/stas_bekman_mod_perl-2.0-tutorial/mod_perl-2.0-tutorial-handouts.pdf.gz">handouts</a>
+         from the lecture
+         are available here. Download and enjoy.
+         <br /><br />
              Stas and I arrived just after the beginning of the assembly, so most people had already
-    	 arrived by the time we got there. Luckily for us there were not too many, so there
-    	 were many bourekas left over... :)
+         arrived by the time we got there. Luckily for us there were not too many, so there
+         were many bourekas left over... :)
              <br /><br />
              Stas began by explaining that he usualy requires 5-6 hours to cover the entire
-    	 tutorial, so since we only had about 2 hours there was only time to skim over the
-    	 top. So we decided to go over the HTTP protocol handler, filters and if time permitted
-    	 some of the other protocol handlers.
+         tutorial, so since we only had about 2 hours there was only time to skim over the
+         top. So we decided to go over the HTTP protocol handler, filters and if time permitted
+         some of the other protocol handlers.
              <br /><br />
              Stas began with a short overview of installing mod_perl (you need Apache2 installed).
-    	 Pinkhas asked about the benefits of static compilation, Stas said there weren't any.
-    	 I asked about adding a PREFIX argument to the "perl Makefile.pl" stage, Stas said
-    	 there was no problem with that.
+         Pinkhas asked about the benefits of static compilation, Stas said there weren't any.
+         I asked about adding a PREFIX argument to the "perl Makefile.pl" stage, Stas said
+         there was no problem with that.
              <br /><br />
              The lecture continued with a quick overview of some of the new features in mod_perl2
-    	 compared to mod_perl. Basically the real power of mod_perl2 is the access to Apache's
-    	 API - over 400 functions are accessible using mod_perl2.
+         compared to mod_perl. Basically the real power of mod_perl2 is the access to Apache's
+         API - over 400 functions are accessible using mod_perl2.
              <br /><br />
              There was a lot more to the lecture, more than I can remember now, but all of
-    	 it was very interesting and informative. Also during a 10 minute break we had
-    	 Stas showed some pictures he took while he was in Honolulu, those were
-    	 simply amazing :)
+         it was very interesting and informative. Also during a 10 minute break we had
+         Stas showed some pictures he took while he was in Honolulu, those were
+         simply amazing :)
              <br /><br />
              After the technical meeting most of us continued to the nearby coffee-shop
-    	 where we drank beer and talked some more about mod_perl, Perl in general and
-    	 other stuff. It was fun and tasty, and I'm looking forward to the next meeting...
-    	 See you all there! :)
+         where we drank beer and talked some more about mod_perl, Perl in general and
+         other stuff. It was fun and tasty, and I'm looking forward to the next meeting...
+         See you all there! :)
 
     </p>
 20050811:
@@ -397,7 +397,7 @@
       title: GUI Development using GTK2
   location: Tel-Aviv University
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ""
 20050915:
   agenda_items:
     - item: '19:00-19:30 -- Assembly and light refreshments'
@@ -413,15 +413,15 @@
       title: 'Visual Perl/Tk - GUI development solution for beginners and professionals'
     - description: |-2
 
-        				Perl 5 is a great language. It has a few quirks and unfortunate gotchas,
-        				though; and although it is well-known for its versatility and flexibility,
-        				the Perl 5 community wants something better.
-        				<br /><br />
-        				The good news is that Perl 6 is coming. The Pugs Project has given
-        				language design and implementation a huge push forward.
-        				<br /><br />
-        				In this talk we'll showcase a few language constructs that make the
-        				programmer's life easier, side by side with Perl 5 code.
+                        Perl 5 is a great language. It has a few quirks and unfortunate gotchas,
+                        though; and although it is well-known for its versatility and flexibility,
+                        the Perl 5 community wants something better.
+                        <br /><br />
+                        The good news is that Perl 6 is coming. The Pugs Project has given
+                        language design and implementation a huge push forward.
+                        <br /><br />
+                        In this talk we'll showcase a few language constructs that make the
+                        programmer's life easier, side by side with Perl 5 code.
 
       end: 21:45
       speaker: Gaal Yahas
@@ -448,52 +448,52 @@
   report_text: |
     <p>
 
-    			Can't beat the university surrounding. It is much more inspiring to talk Perl and eat burekas
-    			when surrounded by live satellite imagery and cases with moon rocks, than when surrounded
-    			with aging yellow-pages books. And there was plenty of fine refreshments for all.
-    			<br /><br />
-    			After a long absence from these meetings, it was easy to remember why I started coming here
-    			in the first place.
-    			<br /><br />
-    			1st talk was about "Visual Perl/Tk". A beginner oriented tool for building Tk GUIs visually.
-    			He built it. A reasonably convincing argument was made about the need for such a tool.
-    			Then we saw a nice demo. The code generated looks excellent. There is limited support for
-    			theming. I especially liked the various types of online help he showed- there is an
-    			internal help area where tips are shown, and you get external POD windows. Great for
-    			learning PerlTk.
-    			<br /><br />
-    			He was thinking of round trip code generation and other stuff, but then we got into a long
-    			session of RTL unicode hacking in Tk. The words "locale", "UTF8", and "BIDI" were thrown
-    			around, and strange characters appeared on the screen. This specific topic seems to be a
-    			major obsession with several mongers. It keeps appearing in every meeting. Or it could be
-    			just coincidence.
-    			<br /><br />
-    			Then came Gaal's talk about Perl6 for Perl5 people. The talk was great and left us with
-    			an appetite for more of the same. Each slide had some Perl5 vs. Perl6 code. The Pugs
-    			interpreter was used for demos and answering the many questions that were asked. He
-    			specifically focused on existing Pelr5 pains and their solution. He could have ranted
-    			about the sexier features of Perl6 (continuations, roles, etc.), but the approach he
-    			took was much better.
-    			<br /><br />
-    			Migo and others asked some difficult questions, which always started with
-    			"but can I do...?". As expected the answer was always yes. Offer focused on questions of
-    			the type "but can I do ... as I did in Perl5?". Again the answers were always yes.
-    			<br /><br />
-    			Secondary sigils, adverbial modifiers, topicalization, hyper operators, the splat operator...
-    			<br /><br />
-    			Some notable quotes:
-    			<br /><br />
-    			"The behavior in this case is well defined, or will be well defined"
-    			"Perl code that has MAGNIVUT (stealing quality)"
-    			"Perl5, when seen in this way, is slightly clunky"
-    			<br /><br />
-    			He promised a talk about the Perl6 project. I can hardly wait.
-    			<br /><br />
-    			Then came the bomb: Larry Wall and Autrijus Tang are coming to the next YAPC in Israel.
-    			<br /><br />
-    			Then we went to the coffee house, and there too talked about Perl.
-    			<br /><br />
-    			See you next time.
+                Can't beat the university surrounding. It is much more inspiring to talk Perl and eat burekas
+                when surrounded by live satellite imagery and cases with moon rocks, than when surrounded
+                with aging yellow-pages books. And there was plenty of fine refreshments for all.
+                <br /><br />
+                After a long absence from these meetings, it was easy to remember why I started coming here
+                in the first place.
+                <br /><br />
+                1st talk was about "Visual Perl/Tk". A beginner oriented tool for building Tk GUIs visually.
+                He built it. A reasonably convincing argument was made about the need for such a tool.
+                Then we saw a nice demo. The code generated looks excellent. There is limited support for
+                theming. I especially liked the various types of online help he showed- there is an
+                internal help area where tips are shown, and you get external POD windows. Great for
+                learning PerlTk.
+                <br /><br />
+                He was thinking of round trip code generation and other stuff, but then we got into a long
+                session of RTL unicode hacking in Tk. The words "locale", "UTF8", and "BIDI" were thrown
+                around, and strange characters appeared on the screen. This specific topic seems to be a
+                major obsession with several mongers. It keeps appearing in every meeting. Or it could be
+                just coincidence.
+                <br /><br />
+                Then came Gaal's talk about Perl6 for Perl5 people. The talk was great and left us with
+                an appetite for more of the same. Each slide had some Perl5 vs. Perl6 code. The Pugs
+                interpreter was used for demos and answering the many questions that were asked. He
+                specifically focused on existing Pelr5 pains and their solution. He could have ranted
+                about the sexier features of Perl6 (continuations, roles, etc.), but the approach he
+                took was much better.
+                <br /><br />
+                Migo and others asked some difficult questions, which always started with
+                "but can I do...?". As expected the answer was always yes. Offer focused on questions of
+                the type "but can I do ... as I did in Perl5?". Again the answers were always yes.
+                <br /><br />
+                Secondary sigils, adverbial modifiers, topicalization, hyper operators, the splat operator...
+                <br /><br />
+                Some notable quotes:
+                <br /><br />
+                "The behavior in this case is well defined, or will be well defined"
+                "Perl code that has MAGNIVUT (stealing quality)"
+                "Perl5, when seen in this way, is slightly clunky"
+                <br /><br />
+                He promised a talk about the Perl6 project. I can hardly wait.
+                <br /><br />
+                Then came the bomb: Larry Wall and Autrijus Tang are coming to the next YAPC in Israel.
+                <br /><br />
+                Then we went to the coffee house, and there too talked about Perl.
+                <br /><br />
+                See you next time.
 
     </p>
 20051006:
@@ -506,13 +506,13 @@
   items:
     - description: |-2
 
-        				So you've heard about Perl 6 and know you might want it. But making a
-        				language sounds like a complex project. When would you get it? How is
-        				it being made, anyway? Who's who, how are things coordinated, and can
-        				anyone join in? (yes!)
-        				In this talk we'll describe the implementation process of Perl 6,
-        				hilighting Pugs, the experimental interpreter that turned into one of
-        				the hottest Open Source projects of the past few years.
+                        So you've heard about Perl 6 and know you might want it. But making a
+                        language sounds like a complex project. When would you get it? How is
+                        it being made, anyway? Who's who, how are things coordinated, and can
+                        anyone join in? (yes!)
+                        In this talk we'll describe the implementation process of Perl 6,
+                        hilighting Pugs, the experimental interpreter that turned into one of
+                        the hottest Open Source projects of the past few years.
 
       end: 20:45
       speaker: Gaal Yahas
@@ -525,7 +525,7 @@
       title: SVN::RaWeb::Light
   location: Tel-Aviv University
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ""
 20051208:
   agenda_items:
     - item: '19:00-19:30 -- Assembly and light refreshments'
@@ -534,4 +534,4 @@
   items: []
   location: Tel-Aviv University
   participants: []
-  report_text: "<p>\n\n      \n</p>\n"
+  report_text: ""
