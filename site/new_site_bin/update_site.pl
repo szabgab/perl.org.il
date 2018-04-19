@@ -17,7 +17,8 @@ my %opts;
 GetOptions(\%opts, "revision=s", "sendmail", "repo=s", 'help', 'outdir=s') or usage();
 usage() if $opts{help};
 
-usage() if not $opts{outdir} or not -d $opts{outdir};
+my $outdir = $opts{outdir};
+usage() if not $outdir or not -d $outdir;
 
 eval "use HTML::Template";
 if ($@) {
@@ -27,12 +28,21 @@ if ($@) {
 my $dir = tempdir(CLEAUP => 1);
 
 
-copy_static_files($opts{outdir});
+copy_static_files($outdir);
 
 # We don't have the library any more
-system("$^X $Bin/books.pl     --outdir $opts{outdir}    2>> $dir/err");
-system("$^X $Bin/meetings.pl  --outdir $opts{outdir}    2>> $dir/err");
-system("$^X $Bin/main.pl      --outdir $opts{outdir}    2>> $dir/err");
+system("$^X $Bin/books.pl     --outdir $outdir    2>> $dir/err");
+system("$^X $Bin/meetings.pl  --outdir $outdir    2>> $dir/err");
+system("$^X $Bin/main.pl      --outdir $outdir    2>> $dir/err");
+
+use Test::HTML::Tidy::Recursive::Strict;
+
+Test::HTML::Tidy::Recursive::Strict->new(
+    {
+        filename_filter => sub { return shift !~ m#/presentations/#; },
+        targets => [$outdir],
+    }
+)->run;
 
 my $err;
 if (open my $fh, "<", "$dir/err") {

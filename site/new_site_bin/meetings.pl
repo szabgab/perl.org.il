@@ -44,7 +44,7 @@ for my $output_file (@outfiles) {
 	# Print the template output
 	my $dir = dirname $output_file;
 	mkpath $dir if not -e $dir;
-	open(OUT,">$output_file") or die "Couldn't open $output_file for writing: $!\n";
+	open(OUT,">:encoding(utf8)", $output_file) or die "Couldn't open $output_file for writing: $!\n";
 	print OUT $template->output;
 	close(OUT) or die "Couldn't close $output_file after writing: $!\n";
 }

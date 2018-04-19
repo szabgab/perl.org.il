@@ -169,8 +169,9 @@ foreach my $auth_in (@authors)
         . qq#$id</a>#
         . qq# - $auth_struct->{name}#
         . qq#$auth_comment<br />\n#
-        . qq#<ul>\n#
         ;
+
+    my $out_l = '';
 
     my $filter = delete($auth_in->{filter});
     DISTS_LOOP:
@@ -185,7 +186,7 @@ foreach my $auth_in (@authors)
         {
             $comment = " " . $comment;
         }
-        $output .=
+        $out_l .=
             qq#<li><a href="http://metacpan.org/release/$d">$d</a>$comment</li>\n#
             ;
     }
@@ -196,7 +197,11 @@ foreach my $auth_in (@authors)
             join(",", keys(%$mod_comments));
     }
 
-    $output .= qq#</ul>\n</li>\n#;
+    if ($out_l)
+    {
+        $output .= "<ul>\n$out_l\n</ul>\n";
+    }
+    $output .= qq#</li>\n#;
 
     if (exists($auth_in->{exclude_from_list}))
     {
