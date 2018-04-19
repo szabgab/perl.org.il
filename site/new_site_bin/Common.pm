@@ -34,7 +34,7 @@ sub get_common_tmpl_params
 =begin Rejects
 
         'banner' => <<"EOF",
-<a href="http://august.penguin.org.il/AUG5/" title="August Penguin 5">
+<a href="http://ap.hamakor.org.il/2006/" title="August Penguin 5">
 <img src="/images/ap5-banner-alex-em.png" style="border-width:0" alt="August Penguin 5" /></a>
 EOF
 
