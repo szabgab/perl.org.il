@@ -13,8 +13,7 @@
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 'Apache: The Definitive Guide':
   author: 'Ben Laurie, Peter Laurie'
   book_cover_image: apache_the_def_guide.gif
@@ -73,8 +72,7 @@ Beginning Perl for Bioinformatics:
     Kfir Lavi: '2004.02.05 - 2004.06.01'
   review: {}
   users:
-    - -
-    - -
+    -
 C Language Guide (Hebrew):
   author: -
   book_cover_image: ''
@@ -90,8 +88,7 @@ C Language Guide (Hebrew):
     Herve Guez: '2004.03.11 - 2004.04.01'
   review: {}
   users:
-    - -
-    - -
+    -
 CGI Programming with Perl:
   author: Shishir Gundavaram
   book_cover_image: ''
@@ -106,8 +103,7 @@ CGI Programming with Perl:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 'Computer Algorithms - Introduction to Design & Analysis':
   author: 'Sara Baase, Allen Van Gelder'
   book_cover_image: comp_alg_intro.gif
@@ -123,8 +119,7 @@ CGI Programming with Perl:
     Shlomi Fish: '2004.05.06 - 2004.06.01'
   review: {}
   users:
-    - -
-    - -
+    -
 'Computer Science and Perl Programming: Best of TPJ':
   author: Jon Orwant
   book_cover_image: cs_and_perl-tpj.gif
@@ -164,7 +159,6 @@ CGI Programming with Perl:
     Shlomi Fish: http://perl.org.il/bookreviews/computer_science_and_perl_programming_by_shlomif.html
   users:
     - Mikhael Goikhman
-    - -
 Data Munging with Perl:
   author: David Cross
   book_cover_image: data_mun_with_perl.gif
@@ -287,8 +281,7 @@ Data Munging with Perl:
   review:
     Gabor Szabo: http://perl.org.il/bookreviews/data_munging_by_gabor.html
   users:
-    - -
-    - -
+    -
 Database Nation:
   author: Simson Garfinkel
   book_cover_image: db_nation.gif
@@ -303,8 +296,7 @@ Database Nation:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 'Design Concepts with Code: An Approach for Developers':
   author: 'Kelly Carey,Stanko Blatnik'
   book_cover_image: des_cons_with_code.gif
@@ -319,8 +311,7 @@ Database Nation:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Design Patterns:
   author: 'Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides'
   book_cover_image: des_patt.gif
@@ -393,8 +384,7 @@ Effective Perl Programming:
   review:
     Shlomi Fish: http://perl.org.il/kwiki/index.cgi?BookReviewEffectivePerlProgrammingByShlomif
   users:
-    - -
-    - -
+    -
 Elements of Programming with Perl:
   author: Andrew L. Johnson
   book_cover_image: elem_of_prog_with_perl.gif
@@ -705,8 +695,7 @@ Extending and Embedding Perl:
     Shlomi Fish: '2003.07.17 - 2003.08.14'
   review: {}
   users:
-    - -
-    - -
+    -
 Graphics Programming with Perl:
   author: Martien Verbruggen
   book_cover_image: ''
@@ -740,8 +729,7 @@ HTML Programmer's Reference:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 'Herding Cats: A Primer for Programmers Who Lead Programmers':
   author: J.Hank Rainwater
   book_cover_image: ''
@@ -756,8 +744,7 @@ HTML Programmer's Reference:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Higher Order Perl:
   author: Mark Jason Dominus
   book_cover_image: ''
@@ -798,8 +785,7 @@ Higher Order Perl:
     Shlomi Fish: 2005.08.20-2006.02.08
   review: {}
   users:
-    - -
-    - -
+    -
 Instant CGI/Perl:
   author: 'Selena Sol, Gunther Birznieks, Peter Chines'
   book_cover_image: ''
@@ -814,8 +800,7 @@ Instant CGI/Perl:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Internet Site Security:
   author: 'Erik Schetina, Ken Green, Jacob Carlson'
   book_cover_image: ''
@@ -832,7 +817,6 @@ Internet Site Security:
   review: {}
   users:
     - Gabor Szabo
-    - -
 Introduction to Parallel Computing:
   author: 'Ananth Grama,Anshul Gupta,George Karypis,Vipin Kumar'
   book_cover_image: ''
@@ -847,8 +831,7 @@ Introduction to Parallel Computing:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Java in a Nutshell:
   author: David Flanagan
   book_cover_image: ''
@@ -863,8 +846,7 @@ Java in a Nutshell:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Learning Perl:
   author: 'Randal L. Schwartz, Tom Phoenix'
   book_cover_image: ''
@@ -880,8 +862,7 @@ Learning Perl:
     Kfir Lavi: '2003.04.10 - 2005.01.06'
   review: {}
   users:
-    - -
-    - -
+    -
 Linux & Unix Programming Tools:
   author: 'Syed Mansoor Sarwar, Khaled Al-Saqabi'
   book_cover_image: ''
@@ -896,8 +877,7 @@ Linux & Unix Programming Tools:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Linux Device Drivers:
   author: Alessandro Rubini
   book_cover_image: ''
@@ -912,8 +892,7 @@ Linux Device Drivers:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 "Linux in Small Business: A Practical User's Guide":
   author: John P. Lathrop
   book_cover_image: ''
@@ -929,8 +908,7 @@ Linux Device Drivers:
     Kfir Lavi: '2004.02.05 - 2005.01.06'
   review: {}
   users:
-    - -
-    - -
+    -
 Mac OS X for Unix Geeks:
   author: Brian Jepson and Ernest E. Rothman
   book_cover_image: ''
@@ -962,8 +940,7 @@ Mac OS X for Unix Geeks:
   review:
     Jaime Prilusky: http://perl.org.il/bookreviews/mac_osx_unix_geeks_by_jaime.html
   users:
-    - -
-    - -
+    -
 'Mac OS X: The Missing Manual':
   author: David Pogue
   book_cover_image: ''
@@ -979,8 +956,7 @@ Mac OS X for Unix Geeks:
     David Lee Heyman: '2003.03.14 - 2003.04.13'
   review: {}
   users:
-    - -
-    - -
+    -
 Managing IMAP:
   author: 'Dianna Mullet, Kevin Mullet'
   book_cover_image: ''
@@ -996,8 +972,7 @@ Managing IMAP:
     Uri Itscowits: 2002.11.07-2002.12.12
   review: {}
   users:
-    - -
-    - -
+    -
 Mastering Algorithms with Perl:
   author: 'Jon Orwant, Jarkko Hietaniemi, Joh Macdonald'
   book_cover_image: ''
@@ -1080,8 +1055,7 @@ Mastering Algorithms with Perl:
     Mikhael Goikhman: http://perl.org.il/bookreviews/mastering_algorithms_by_mikhael.html
     Shlomi Fish: http://www.oreilly.com/catalog/maperl/
   users:
-    - -
-    - -
+    -
 Mastering Perl/Tk:
   author: 'Stephen Lidie, Nancy Walsh'
   book_cover_image: ''
@@ -1098,7 +1072,6 @@ Mastering Perl/Tk:
   review: {}
   users:
     - Offer Kaye
-    - -
 Mastering Regular Expressions:
   author: Jeffrey E. F. Friedl
   book_cover_image: ''
@@ -1117,7 +1090,6 @@ Mastering Regular Expressions:
   review: {}
   users:
     - Gabor Szabo
-    - -
 Mathematics for New Technologies:
   author: 'Don Hutchison, Mark Yannotta'
   book_cover_image: ''
@@ -1149,8 +1121,7 @@ Network Programming with Perl:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Object Oriented Perl:
   author: Damian Conway
   book_cover_image: ''
@@ -1203,8 +1174,7 @@ Open Source Web Development with LAMP:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Oracle PL/SQL Programming:
   author: Steven Feuerstein With Bill Pribyl
   book_cover_image: ''
@@ -1219,8 +1189,7 @@ Oracle PL/SQL Programming:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Oracle SQL*Plus (Pocket Reference):
   author: Jonathan Gennick
   book_cover_image: ''
@@ -1277,8 +1246,7 @@ Oracle SQL*Plus (Pocket Reference):
   review:
     Gabor Szabo: http://perl.org.il/bookreviews/oracle_sql_plus_by_gabor.html
   users:
-    - -
-    - -
+    -
 Perl & LWP:
   author: Sean M. Burke
   book_cover_image: ''
@@ -1297,7 +1265,6 @@ Perl & LWP:
   review: {}
   users:
     - Sagiv Barhoom
-    - -
 Perl & XML:
   author: 'Erik T. Ray, Jason McIntosh'
   book_cover_image: ''
@@ -1334,7 +1301,6 @@ Perl & XML:
   review: {}
   users:
     - Offer Kaye
-    - -
 Perl Graphics Programming:
   author: Shawn Wallace
   book_cover_image: ''
@@ -1352,8 +1318,7 @@ Perl Graphics Programming:
     Mikhael Goikhman: '2003.07.17 - 2003.08.14'
   review: {}
   users:
-    - -
-    - -
+    -
 Perl by Example:
   author: Ellie Quigley
   book_cover_image: ''
@@ -1368,8 +1333,7 @@ Perl by Example:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Perl for C Programmers:
   author: Steve Oualline
   book_cover_image: ''
@@ -1386,7 +1350,6 @@ Perl for C Programmers:
   review: {}
   users:
     - Shany Pozin
-    - -
 Perl for Oracle DBAs:
   author: 'Andy Duncan, Jared Still'
   book_cover_image: ''
@@ -1401,8 +1364,7 @@ Perl for Oracle DBAs:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Perl for System Administrators:
   author: David N. Blank-Edelman
   book_cover_image: ''
@@ -1418,8 +1380,7 @@ Perl for System Administrators:
     Uri Itscowits: 2002.10.10-2002.11.07
   review: {}
   users:
-    - -
-    - -
+    -
 'Perl: The Complete Reference':
   author: Martin C. Brown
   book_cover_image: ''
@@ -1434,8 +1395,7 @@ Perl for System Administrators:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Planning Extreme Programming:
   author: 'Kent Beck,Martin Fowler'
   book_cover_image: ''
@@ -1450,8 +1410,7 @@ Planning Extreme Programming:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 PostgreSQL Essential Reference:
   author: Barry Stinson
   book_cover_image: ''
@@ -1467,8 +1426,7 @@ PostgreSQL Essential Reference:
     Paolo Supino: '2002.12.12 - 2003.01.16'
   review: {}
   users:
-    - -
-    - -
+    -
 Practical mod_perl:
   author: 'Stas Bekman, Eric Cholet'
   book_cover_image: ''
@@ -1507,8 +1465,7 @@ Practical mod_perl:
     Yuval Yaari: '2004.05.06 - 2004.11.04'
   review: {}
   users:
-    - -
-    - -
+    -
 Programming ColdFusion MX:
   author: Rob Brooks-Blison
   book_cover_image: ''
@@ -1523,8 +1480,7 @@ Programming ColdFusion MX:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Programming Perl:
   author: 'Larry Wall,Tom Christiansen,Jon Orwant'
   book_cover_image: ''
@@ -1574,8 +1530,7 @@ Programming Perl:
   review:
     Shlomi Fish: http://perl.org.il/bookreviews/programming_perl_by_shlomif.html
   users:
-    - -
-    - -
+    -
 Programming Perl in the .NET Environment:
   author: 'Yevgeny Menaker, Michael Saltzman, Robert J. Oberg'
   book_cover_image: ''
@@ -1592,8 +1547,7 @@ Programming Perl in the .NET Environment:
     Oded Reznik: '2002.12.12 - 2003.04.10'
   review: {}
   users:
-    - -
-    - -
+    -
 Programming Web Services with Perl:
   author: 'Randy J. Ray, Pavel Kulchenko'
   book_cover_image: ''
@@ -1610,7 +1564,6 @@ Programming Web Services with Perl:
   review: {}
   users:
     - David Baird
-    - -
 Programming Web Services with SOAP:
   author: 'James Snell, Doug Tidwell, Pavel Kulchenko'
   book_cover_image: ''
@@ -1625,8 +1578,7 @@ Programming Web Services with SOAP:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Programming Web Services with XML-RPC:
   author: 'Simon St. Laurent, Joe Johnston, Edd Dumbill Foreword by Dave Winer'
   book_cover_image: ''
@@ -1641,8 +1593,7 @@ Programming Web Services with XML-RPC:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Programming the Perl DBI:
   author: 'Alligator Descartes, Tim Bunce'
   book_cover_image: ''
@@ -1657,8 +1608,7 @@ Programming the Perl DBI:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 'Red Hat Linux 8: The Complete Reference DVD Edition':
   author: 'Richard Petersen, Lyssa Wald, Michael Mueller'
   book_cover_image: ''
@@ -1676,7 +1626,6 @@ Programming the Perl DBI:
   review: {}
   users:
     - Gabor Szabo
-    - -
 'Refactoring - Improving The Design of Existing Code':
   author: Martin Fowler
   book_cover_image: ''
@@ -1739,8 +1688,7 @@ Programming the Perl DBI:
     Shlomi Fish: '2004.05.23 - 2004.07.22'
   review: {}
   users:
-    - -
-    - -
+    -
 Running Weblogs with Slash:
   author: 'chromatic, Brian Aker, David Krieger'
   book_cover_image: ''
@@ -1780,8 +1728,7 @@ Running Weblogs with Slash:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 'Software Craftsmanship: The New Imperative':
   author: Pete McBreen
   book_cover_image: ''
@@ -1798,7 +1745,6 @@ Running Weblogs with Slash:
   review: {}
   users:
     - Pinkhas Nisanov
-    - -
 'Sys Admin, the journal for Unix system administrators':
   author: -
   book_cover_image: ''
@@ -1813,8 +1759,7 @@ Running Weblogs with Slash:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 'The Career Programmer: Guerilla Tactics for an Imperfect World':
   author: Christopher Duncan
   book_cover_image: ''
@@ -1831,7 +1776,6 @@ Running Weblogs with Slash:
   review: {}
   users:
     - Shlomo Yona
-    - -
 The Practice of Programming:
   author: 'Brian W. Kernighan, Rob Pike'
   book_cover_image: ''
@@ -1848,8 +1792,7 @@ The Practice of Programming:
     Ronen Kfir: '2003.10.09 - 2004.02.26'
   review: {}
   users:
-    - -
-    - -
+    -
 Troubleshooting Your PC (Hebrew):
   author: M. David Stone and Alfred Poor
   book_cover_image: ''
@@ -1864,8 +1807,7 @@ Troubleshooting Your PC (Hebrew):
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 UML Distilled Second Edition:
   author: Martin Fowler with Kendall Scott
   book_cover_image: ''
@@ -1881,8 +1823,7 @@ UML Distilled Second Edition:
     Issac Goldstand: '2003.07.17 - 2004.04.01'
   review: {}
   users:
-    - -
-    - -
+    -
 'Upgrading PCs - Ilustrated (Hebrew)':
   author: Jim Boyce
   book_cover_image: ''
@@ -1897,8 +1838,7 @@ UML Distilled Second Edition:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 User Friendly the comic strip:
   author: J. D. Illiad Frazer
   book_cover_image: ''
@@ -2052,7 +1992,6 @@ User Friendly the comic strip:
     Offer Kaye: http://perl.org.il/bookreviews/user_friendly_by_offer.html
   users:
     - Sefy Twito
-    - -
 Using Samba:
   author: 'Robert Eckstain, David Collier-Brown, Peter Kelly'
   book_cover_image: ''
@@ -2113,8 +2052,7 @@ Using Samba:
   review:
     Jaime Prilusky: http://perl.org.il/bookreviews/using_samba_by_jaime.html
   users:
-    - -
-    - -
+    -
 Voice Enabling Web Applications:
   author: Kenneth R. Abbott
   book_cover_image: ''
@@ -2129,8 +2067,7 @@ Voice Enabling Web Applications:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Web Development with Apache and Perl:
   author: Theo Petersen
   book_cover_image: ''
@@ -2149,7 +2086,6 @@ Web Development with Apache and Perl:
   review: {}
   users:
     - Gabor Szabo
-    - -
 Win32 Perl Programming:
   author: Dave Roth
   book_cover_image: ''
@@ -2215,8 +2151,7 @@ Win32 Perl Programming:
   review:
     Gabor Szabo: http://perl.org.il/bookreviews/win32_perl_programming_by_gabor.html
   users:
-    - -
-    - -
+    -
 Windows NT in a Nutshell:
   author: Kathy Ivens
   book_cover_image: ''
@@ -2231,8 +2166,7 @@ Windows NT in a Nutshell:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 'Windows Scripting Solutions - Magazines':
   author: -
   book_cover_image: ''
@@ -2247,8 +2181,7 @@ Windows NT in a Nutshell:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Writing CGI Applications with Perl:
   author: 'Kevin Meltzer, Brent Michalski'
   book_cover_image: ''
@@ -2263,8 +2196,7 @@ Writing CGI Applications with Perl:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Writing Perl Modules for CPAN:
   author: Sam Tregar
   book_cover_image: ''
@@ -2329,8 +2261,7 @@ Writing Perl Modules for CPAN:
     Shlomi Fish: '2003.10.09 - 2003.12.10'
   review: {}
   users:
-    - -
-    - -
+    -
 XML Language Mechanics & Applications:
   author: Dwight Peltzer
   book_cover_image: ''
@@ -2345,8 +2276,7 @@ XML Language Mechanics & Applications:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 Zope Web Application Development and Content Management:
   author: 'Steve Spicklemire, Kevin Friedly, Jerry Spicklemire, Kim Brand'
   book_cover_image: ''
@@ -2361,8 +2291,7 @@ Zope Web Application Development and Content Management:
   read: {}
   review: {}
   users:
-    - -
-    - -
+    -
 mod_perl Tutorial:
   author: Stas Bekman
   book_cover_image: ''
@@ -2379,4 +2308,3 @@ mod_perl Tutorial:
   review: {}
   users:
     - Hezi Golan
-    - -
