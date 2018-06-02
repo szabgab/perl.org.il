@@ -84,7 +84,7 @@ C Language Guide (Hebrew):
     - -
     - -
     - ''
-    - -
+    - 'Unknown'
   link: http://www.focus.co.il
   read:
     Herve Guez: '2004.03.11 - 2004.04.01'
@@ -1808,7 +1808,7 @@ Running Weblogs with Slash:
     - -
     - 2001-2003
     - ''
-    - -
+    - 'Unknown'
   link: ~
   read: {}
   review: {}
@@ -1859,7 +1859,7 @@ Troubleshooting Your PC (Hebrew):
     - 1
     - 2001
     - ''
-    - -
+    - 'Unknown'
   link: http://www.focus.co.il
   read: {}
   review: {}
@@ -1892,7 +1892,7 @@ UML Distilled Second Edition:
     - 2
     - 2000
     - ''
-    - -
+    - 'Unknown'
   link: http://www.focus.co.il
   read: {}
   review: {}
@@ -2242,7 +2242,7 @@ Windows NT in a Nutshell:
     - -
     - 2002-2003
     - ''
-    - -
+    - 'Unknown'
   link: ~
   read: {}
   review: {}
@@ -2372,7 +2372,7 @@ mod_perl Tutorial:
     - -
     - -
     - ''
-    - -
+    - 'Unknown'
   link: http://www.stason.org
   read:
     Hezi Golan: '2004.03.11 - '

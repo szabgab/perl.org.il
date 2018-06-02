@@ -388,6 +388,14 @@ sub populate_books_table {
 		my $isbn      = $books->{$name}->{"details"}->[-1];
 		my $publisher = $books->{$name}->{"details"}->[0];
 		my $cuser     = $books->{$name}->{"users"}->[0];
+        if (ref $cuser eq 'ARRAY') {
+            if (! grep { defined } @$cuser) {
+                $cuser = '';
+            }
+            else {
+                die "Non empty array as cuser for '$name' - please fix.";
+            }
+        }
 		if (-e "$outfiles_basedir/books/$isbn.html") {
 			$name = '<a href="books/' . $isbn . '.html">' . CGI::escapeHTML($name) . "</a>";
 		}
