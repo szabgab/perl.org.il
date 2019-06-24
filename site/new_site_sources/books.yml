@@ -1344,7 +1344,7 @@ Perl for C Programmers:
     - 2002
     - 432
     - 073571228X
-  link: 'http://www.newriders.com/books/product.asp?session_id={E869DFDF-BC7B-4B20-889E-D4C65BDF10AA},&product_id={722B23E1-A2F1-4D43-9241-8698286B524C},'
+  link: 'http://www.newriders.com/books/product.asp?session_id=%7bE869DFDF-BC7B-4B20-889E-D4C65BDF10AA%7d,&product_id=%7b722B23E1-A2F1-4D43-9241-8698286B524C%7d,'
   read:
     Shany Pozin: '2003.02.13 - '
   review: {}
@@ -1421,7 +1421,7 @@ PostgreSQL Essential Reference:
     - ' 2001'
     - 400
     - 0735711216
-  link: 'http://www.newriders.com/books/product.asp?session_id={E869DFDF-BC7B-4B20-889E-D4C65BDF10AA},&product_id={B263BD65-73B3-4498-A4A5-55E1A1AFEC89},'
+  link: 'http://www.newriders.com/books/product.asp?session_id=%7bE869DFDF-BC7B-4B20-889E-D4C65BDF10AA%7d,&product_id=%7bB263BD65-73B3-4498-A4A5-55E1A1AFEC89%7d,'
   read:
     Paolo Supino: '2002.12.12 - 2003.01.16'
   review: {}
@@ -2141,7 +2141,7 @@ Win32 Perl Programming:
     - 2001
     - 752
     - 157870216X
-  link: 'http://www.newriders.com/books/product.asp?session_id={E869DFDF-BC7B-4B20-889E-D4C65BDF10AA},&product_id={287FCA85-4FBD-429D-B786-3AE96A2F9436},'
+  link: 'http://www.newriders.com/books/product.asp?session_id=%7bE869DFDF-BC7B-4B20-889E-D4C65BDF10AA%7d,&product_id=%7b287FCA85-4FBD-429D-B786-3AE96A2F9436%7d,'
   read:
     Offer Kaye: '2003.07.17 - 2003.11.06'
     Ronen Kfir: '2003.11.06 - 2004.01.08'
@@ -2287,7 +2287,7 @@ Zope Web Application Development and Content Management:
     - 2001
     - 480
     - 0735711100
-  link: 'http://www.newriders.com/books/product.asp?session_id={E869DFDF-BC7B-4B20-889E-D4C65BDF10AA},&product_id={73A31039-4F0B-447C-82FE-BAA2D94AB3C1},'
+  link: 'http://www.newriders.com/books/product.asp?session_id=%7bE869DFDF-BC7B-4B20-889E-D4C65BDF10AA%7d,&product_id=%7b73A31039-4F0B-447C-82FE-BAA2D94AB3C1%7d,'
   read: {}
   review: {}
   users:
