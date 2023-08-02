@@ -10,7 +10,7 @@ sub get_common_tmpl_params
 {
     return ('nav_bar' => [
 			{ nav_page => 'about.html'         , nav_name => 'About Us'      },
-			{ nav_page => 'mailing_lists.html' , nav_name => 'Mailing Lists' },
+            #			{ nav_page => 'mailing_lists.html' , nav_name => 'Mailing Lists' },
 			{ nav_page => 'meetings.html'      , nav_name => 'Meetings'      },
 			{ nav_page => 'yapc.html'          , nav_name => 'Conferences'   },
 #			{ nav_page => 'library.html'       , nav_name => 'Library'       },
