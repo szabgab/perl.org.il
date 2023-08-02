@@ -3,3 +3,8 @@
 /www/
 /_site/
 *.swp
+
+MYMETA.json
+MYMETA.yml
+Makefile
+
