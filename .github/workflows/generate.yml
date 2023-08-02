@@ -38,6 +38,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          mkdir _site
           cd site
           cpanm --notest --installdeps .
       - name: Build
