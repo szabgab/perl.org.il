@@ -4,7 +4,7 @@ use strict;
 use FindBin      qw($Bin);
 use File::Temp   qw(tempdir);
 use Getopt::Long qw(GetOptions);
-use Mail::Sendmail qw(sendmail);
+#use Mail::Sendmail qw(sendmail);
 
 use File::Path qw(mkpath);
 use File::Copy::Recursive qw(rcopy fcopy);
@@ -14,7 +14,7 @@ use File::Spec;
 my $SVNLOOK = '/usr/bin/svnlook';
 
 my %opts;
-GetOptions(\%opts, "revision=s", "sendmail", "repo=s", 'help', 'outdir=s') or usage();
+GetOptions(\%opts, "revision=s", "repo=s", 'help', 'outdir=s') or usage();
 usage() if $opts{help};
 
 my $outdir = $opts{outdir};
@@ -50,36 +50,36 @@ if (open my $fh, "<", "$dir/err") {
 	$err = <$fh>;
 }
 
-if ($opts{sendmail}) {
-	my $text = '';
-	if ($opts{revision} and $opts{repo}) {
-		my $author = `$SVNLOOK author -r $opts{revision} $opts{repo}`;
-		$text .= "Author: $author\n";
-		$text .= "Revision: $opts{revision}\n";
-		$text .= "Repo: $opts{repo}\n";
-		$text .= "\n\n";
-		$text .= `$SVNLOOK log -r $opts{revision} $opts{repo}`;
-		$text .= "\n\n";
-		$text .= `$SVNLOOK diff -r $opts{revision} $opts{repo}`;
-		$text .= "\n\n";
-	}
-	my $subject = ($err ? 'Error' : 'Success' ) . ' in the perl.org.il web creation script';
-	if ($err) {
-		$text .= "Errors:\n\n";
-		$text .= $err;
-		$text .= "\n\n";
-	}
-	my %mail = (
-		To       => 'gabor@perl.org.il',
-#		Cc       => 'offer.kaye@gmail.com',
-		From     => 'gabor@perl.org.il',
-		Subject  => $subject,
-		Message  => $text,
-	);
-	sendmail(%mail);
-} else {
-	print STDERR $err;
-}
+#if ($opts{sendmail}) {
+#	my $text = '';
+#	if ($opts{revision} and $opts{repo}) {
+#		my $author = `$SVNLOOK author -r $opts{revision} $opts{repo}`;
+#		$text .= "Author: $author\n";
+#		$text .= "Revision: $opts{revision}\n";
+#		$text .= "Repo: $opts{repo}\n";
+#		$text .= "\n\n";
+#		$text .= `$SVNLOOK log -r $opts{revision} $opts{repo}`;
+#		$text .= "\n\n";
+#		$text .= `$SVNLOOK diff -r $opts{revision} $opts{repo}`;
+#		$text .= "\n\n";
+#	}
+#	my $subject = ($err ? 'Error' : 'Success' ) . ' in the perl.org.il web creation script';
+#	if ($err) {
+#		$text .= "Errors:\n\n";
+#		$text .= $err;
+#		$text .= "\n\n";
+#	}
+#	my %mail = (
+#		To       => 'gabor@perl.org.il',
+##		Cc       => 'offer.kaye@gmail.com',
+#		From     => 'gabor@perl.org.il',
+#		Subject  => $subject,
+#		Message  => $text,
+#	);
+#	sendmail(%mail);
+#} else {
+#	print STDERR $err;
+#}
 
 # Copies all the "static" files listed in the MANIFEST file to the target
 # directory
@@ -103,7 +103,6 @@ sub usage {
 	print <<"END_USAGE";
 Usage: $0
            --revision REV
-           --sendmail
            --repo     REPO
            --help             This help
 
