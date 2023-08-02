@@ -1,6 +1,0 @@
-
-To re-generate the web site on my development machine:
-
-cd ~/work/perl.org.il/site/
-perl new_site_bin/update_site.pl --repo . --outdir ~/work/perl.org.il/www/
-
