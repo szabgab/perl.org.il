@@ -47,6 +47,10 @@ jobs:
           perl new_site_bin/update_site.pl --repo . --outdir ../_site
           cp -r YAPC ../_site/
 
+      - name: Tree
+        run: tree _site
+
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
