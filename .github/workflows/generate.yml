@@ -30,9 +30,16 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
+      - name: Set up perl
+        uses: shogo82148/actions-setup-perl@v1
+        with:
+            perl-version: 5.36
+            distribution: 'default'
+
       - name: Install dependencies
         run: |
-          cpanm --notest Alien::Tidyp HTML::Tidy Acme::CPANAuthors CGI CPANPLUS::Backend Data::Dumper Exporter Fcntl File::Basename File::Copy::Recursive File::Path File::Spec File::Temp FindBin Geo::IP Getopt::Long HTML::Template HTML::TokeParser List::MoreUtils LWP::Simple Test::HTML::Tidy::Recursive::Strict Test::More YAML
+          cd site
+          cpanm --notest --installdeps .
       - name: Build
         run: |
           cd site
