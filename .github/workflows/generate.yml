@@ -45,6 +45,7 @@ jobs:
         run: |
           cd site
           perl new_site_bin/update_site.pl --repo . --outdir ../_site
+          cp -r YAPC ../_site/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
