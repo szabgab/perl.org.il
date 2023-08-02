@@ -1,3 +1,5 @@
 .svn/
 /logs/
 /www/
+/_site/
+*.swp
