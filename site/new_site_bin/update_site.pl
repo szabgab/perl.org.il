@@ -18,7 +18,7 @@ GetOptions(\%opts, "revision=s", "repo=s", 'help', 'outdir=s') or usage();
 usage() if $opts{help};
 
 my $outdir = $opts{outdir};
-usage() if not $outdir or not -d $outdir;
+usage("Outdir '$outdir' does not exist") if not $outdir or not -d $outdir;
 
 eval "use HTML::Template";
 if ($@) {
@@ -100,7 +100,12 @@ sub copy_static_files {
 
 
 sub usage {
+    my ($msg) = @_;
+    $msg //= "";
+
 	print <<"END_USAGE";
+$msg
+
 Usage: $0
            --revision REV
            --repo     REPO
