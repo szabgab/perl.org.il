@@ -14,6 +14,7 @@ WriteMakefile
     PREREQ_PM     => {
         'File::Copy::Recursive' => 0,
         'HTML::Template'        => 0,
+        'Test::HTML::Tidy::Recursive::Strict' => 0,
         #Alien::Tidyp HTML::Tidy Acme::CPANAuthors CGI CPANPLUS::Backend Data::Dumper Exporter Fcntl File::Basename File::Copy::Recursive File::Path File::Spec File::Temp FindBin Geo::IP Getopt::Long HTML::Template HTML::TokeParser List::MoreUtils LWP::Simple Test::HTML::Tidy::Recursive::Strict Test::More YAML
     },
     TEST_REQUIRES => {
