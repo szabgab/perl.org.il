@@ -18,7 +18,6 @@ body {
   color: black;
   background-color: rgb(243,242,235);
   font-family: verdana, helvetica, arial, sans-serif;
-  font-size: 73%;  /* Enables font size scaling in MSIE */
   margin: 0;
   padding: 0;
 }
