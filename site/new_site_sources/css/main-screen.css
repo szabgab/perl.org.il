@@ -147,7 +147,6 @@ acronym, .titleTip {
 .leftSideBar .sideBarText {
   color: rgb(166,140,83);
   background-color: transparent;
-  line-height: 1.25em;
   margin: 1ex 0.25ex 1.5em 0.75ex;
   padding: 0;
   display: block;
@@ -204,7 +203,6 @@ acronym, .titleTip {
 }
 
 .rightSideBar .sideBarText {
-  line-height: 1.5em;
   margin: 0;
   padding: 0 2ex 1em 2ex;
 }
@@ -228,7 +226,6 @@ acronym, .titleTip {
   color: black;
   background-color: white;
 /*  text-align: justify; */
-  line-height: 2em;
   margin: 0 0 0 12.5em;
   padding: 0.5ex 15em 1em 3em;
   border-left: 1px solid rgb(216,210,195);
@@ -290,7 +287,6 @@ dd {
   background-color: rgb(230,223,207);
   font-size: 92%;
   text-align: center;
-  line-height: 1.25em;
   margin: 0;
   padding: 1em 4mm 1em 4mm;
   clear: both;
@@ -334,9 +330,6 @@ table.sortable span.sortarrow {
     text-decoration: none;
 }
 
-#copyright {
-  font-size: 9px;
-}
 /*
 #introduction {
   border-top: none;
