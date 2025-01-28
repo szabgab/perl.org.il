@@ -1,7 +1,7 @@
 <STYLE>
 BODY
 {
-	FONT-SIZE: 14px;
+#	FONT-SIZE: 14px;
 #   COLOR: #a5a5a5;
    COLOR: #000000;
     FONT-FAMILY: Arial;
@@ -11,32 +11,32 @@ BODY
 }
 TD
 {
-	FONT-SIZE: 14px;
+#	FONT-SIZE: 14px;
 	COLOR: #4a4d4a;
     FONT-FAMILY: Arial;
     TEXT-DECORATION: none;
 }
 A:link
 {
-	FONT-SIZE: 14px;
+#	FONT-SIZE: 14px;
 	COLOR: #0033cc;
     FONT-FAMILY:Arial;
 }
 A:visited
 {
-	FONT-SIZE: 14px;
+#	FONT-SIZE: 14px;
     COLOR: #cc0000;
     FONT-FAMILY: Arial;
 }
 A:hover
 {
-	FONT-SIZE: 14px;
+#	FONT-SIZE: 14px;
     COLOR: #cc3333;
     FONT-FAMILY: Arial;
 }
 A:active
 {
-FONT-SIZE: 14px;
+#FONT-SIZE: 14px;
     COLOR: #000033;
     FONT-FAMILY: Arial;
 }
