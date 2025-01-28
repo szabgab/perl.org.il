@@ -23,10 +23,6 @@ body {
   padding: 0;
 }
 
-html > body {
-  font-size: 9pt;
-}
-
 acronym, .titleTip {
   border-bottom: 1px dotted rgb(168,140,83);
   cursor: help;
