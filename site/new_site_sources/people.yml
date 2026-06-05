@@ -1,11 +1,9 @@
 ---
 - name: Gabor Szabo
-  irc: szabgab
   pause: SZABGAB
-  blog: http://szabgab.com/
-  linkedin: http://www.linkedin.com/in/szabgab
+  blog: https://szabgab.com/
+  linkedin: https://www.linkedin.com/in/szabgab
   github: szabgab
-  twitter: szabgab
   projects:
     - title: Padre
     - title: DWIM Perl
