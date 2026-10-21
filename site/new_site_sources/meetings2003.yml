@@ -3,8 +3,8 @@
   agenda_items:
     - item: '18:00 -- Assembly and light refreshments'
     - item: '18:50 -- Book review by Mikhael'
-    - item: '19:00 -- Shlomi Fish talks about <a href="http://www.shlomifish.org/lecture/WebMetaLecture/">Web Meta Language</a>'
-  comment: 'Location - <a href="http://www.interbit.co.il/">Interbit</a>, Ramat Gan, Shlomi Fish: Web Meta Language.'
+    - item: '19:00 -- Shlomi Fish talks about <a href="https://www.shlomifish.org/lecture/WebMetaLecture/">Web Meta Language</a>'
+  comment: 'Location - Interbit, Ramat Gan, Shlomi Fish: Web Meta Language.'
   other_summarizer: This meeting summary was written by Gabor Szabo.
   participants:
     - name: Gabor Szabo
@@ -20,15 +20,11 @@
     - name: Thomas Maier
   report_text: |
     <p>
-
-             The meeting report can be found here:<br />
-             <a href="http://mail.perl.org.il/pipermail/perl/2003-January/000903.html">
-             http://mail.perl.org.il/pipermail/perl/2003-January/000903.html</a>
-
+             The meeting report could be found on the mail server.
     </p>
 20030213:
   agenda_items:
-    - item: We are going to have lightening talks (see <a href="http://mail.perl.org.il/pipermail/perl/2003-January/000918.html">this thread</a> for more details)
+    - item: We are going to have lightening talks (see this thread for more details)
     - item: 'Ido Trivizky: Sexegers'
     - item: 'Shlomi Fish: All kinds of things'
     - item: 'Oleg Sverdlov: PerlScript on Windows'
@@ -36,7 +32,7 @@
     - item: 'Pinkhas Nisanov: network tunel'
     - item: 'Shlomo Yona: Automating the process of building Stemmers'
     - item: 'Offer Kaye: SuffixTree'
-  comment: 'Location - <a href="http://www.interbit.co.il/">Interbit</a>, Ramat Gan, Lightning talks by various people.'
+  comment: 'Location - Interbit, Ramat Gan, Lightning talks by various people.'
   other_summarizer: This meeting summary was written by Gabor Szabo.
   participants: []
   report_text: ''
@@ -45,44 +41,36 @@
     - item: Thomas Maier from Radware will talk about how he is using Perl in the QA department for testing the devices Radware produces.
     - item: Itzik Lerner
     - item: Gabor Szabo
-  comment: 'Location - <a href="http://www.sela.co.il/">Sela</a>, Ramat Gan - Expect (!) that Thomas Maier will talk about using Perl for QA.'
+  comment: 'Location - Sela, Ramat Gan - Expect (!) that Thomas Maier will talk about using Perl for QA.'
   other_summarizer: This meeting summary was written by Gabor Szabo.
   participants: []
   report_text: |
     <p>
-
-             The meeting report can be found here:<br />
-             <a href="http://mail.perl.org.il/pipermail/perl/2003-March/001299.html">
-             http://mail.perl.org.il/pipermail/perl/2003-March/001299.html</a>
-
+             The meeting report can be found here:
     </p>
 20030410:
   agenda_items:
-    - item: 'The meeting will start immediately after <a href="http://www.pc.co.il/go-linux">GO-Linux</a> ends, probably at 4-5pm.'
+    - item: 'The meeting will start immediately after GO-Linux ends, probably at 4-5pm.'
     - item: '<em>Pinkhas Nisanov</em>: "MailTools on CPAN" (~30 min)'
     - item: '<em>Offer Kaye</em>: "Integrating C code with Perl" (~10 min)'
     - item: '<em>Mikhael Goikhman</em>: "<a href="http://migo.sixbit.org/papers/Geo_Location_of_Inet/">Geo Location of Internet Users</a>" (<a href="http://migo.sixbit.org/papers/Geo_Location_of_Inet.tar.gz">download link</a>) (~15 min)'
-    - item: '<em>Gabor Szabo</em>: "<a href="http://pti.co.il/talks/Israel_pm_2003/">Israel.pm, YAPC, and MJD</a>" (<a href="http://pti.co.il/talks/Israel_pm_2003/Israel_pm_2003.tar.gz">download link</a>) (~30 min)'
+    - item: '<em>Gabor Szabo</em>: "Israel.pm, YAPC, and MJD" (download link) (~30 min)'
     - item: '<em>Gabor Szabo</em>: "Web development on Linux" (~20 min), given in the developers track of the GO-Linux conference'
-  comment: '<a href="http://www.pc.co.il/go-linux">GO-Linux</a> Hotel Hilton, Tel Aviv - Short Talks by Various People: (Pinkhas Nisanov, Offer Kaye, Mikhael Goikhman, Gabor Szabo).'
+  comment: 'GO-Linux Hotel Hilton, Tel Aviv - Short Talks by Various People: (Pinkhas Nisanov, Offer Kaye, Mikhael Goikhman, Gabor Szabo).'
   other_summarizer: This meeting summary was written by Gabor Szabo.
   participants: []
   report_text: |
     <p>
-
-             The meeting report can be found here:<br />
-             <a href="http://mail.perl.org.il/pipermail/perl/2003-April/001563.html">
-             http://mail.perl.org.il/pipermail/perl/2003-April/001563.html</a>
-
+             The meeting report can be found here:
     </p>
 20030612:
   agenda_items:
     - item: '18:00-19:00 -- Assembly and light refreshments'
     - item: '19:00-19:40 -- <em>Roey Almog</em>: "Search engine that indexes MS-Word documents"'
     - item: '19:40-20:00 -- Break and refreshments'
-    - item: '20:00-20:40 -- <em>Ran Eilam</em>: "OO persistence using <a href="http://www.soundobjectlogic.com/tangram/">Tangram</a>"'
+    - item: '20:00-20:40 -- <em>Ran Eilam</em>: "OO persistence using Tangram"'
     - item: '20:40-21:00 -- <em>Gabor Szabo</em>: "Debugging in Perl"'
-  comment: 'Ramat Gan (Roey Almog - "Search engine that indexes MS-Word documents"; Ran Eilam - "OO persistence using <a href="http://www.soundobjectlogic.com/tangram/">Tangram</a>"; Gabor Szabo - "Debugging in Perl")'
+  comment: 'Ramat Gan (Roey Almog - "Search engine that indexes MS-Word documents"; Ran Eilam - "OO persistence using Tangram"; Gabor Szabo - "Debugging in Perl")'
   other_summarizer: This meeting summary was written by Gabor Szabo.
   participants:
     - name: Gabor Szabo
@@ -108,7 +96,7 @@
              Several people who attended told me they think this was one of
              the best meetings so far and I was glad to hear that.<br />
              We had a fair mixture of simple and complicated things.<br />
-             This time <a href="http://www.d.co.il/">Dapey Zahav</a> provided us with
+             This time <a href="https://www.d.co.il/">Dapey Zahav</a> provided us with
              their presentation room, which is actually their bomb shelter.
              <br />
              <strong>use safe;</strong><br />
@@ -141,7 +129,7 @@
              problem of data persistence and why they don't really do a good job.
              Finally and for most of his presentation he showed us how to write a
              very simple Object Oriented application using
-             <a href="http://www.soundobjectlogic.com/tangram/">Tangram</a><br />
+             Tangram<br />
              I enjoyed his presentation style very much and you can see he
              has lots of things to say on the subject. Ran was wondering why in
              Perl there is only one such implementation while in Java - where it
@@ -158,7 +146,7 @@
              people consider them self experts. (I don't want to tell you what we
              really are :-). So I think teaching people all kinds of debugging
              techniques was a good choice to propose on <a
-             href="http://yapc.mongueurs.net/">YAPC::EU::2003</a> and my talks were indeed accepted.<br />
+             YAPC::EU::2003 and my talks were indeed accepted.<br />
              <br />
              Anyway, while I was presenting I think most of the talking was done by
              the audience and I personally learned quite a lot from this
@@ -182,17 +170,17 @@
   agenda_items:
     - item: |-2
 
-        <a href="http://stason.org/">Stas Bekman</a> - is one of the leading personalities in
+        <a href="https://stason.org/">Stas Bekman</a> - is one of the leading personalities in
         the Apache/Perl/mod_perl world.<br />
         Stas was the original creator of the mod_perl 1.0 guide. He is the author of
-        <a href="http://www.modperlbook.com/">Practical mod_perl</a> that was published by
+        <a href="https://www.modperlbook.com/">Practical mod_perl</a> that was published by
         O'Reilly and Associates.<br />
         Stas is going to give us a 3.5 hour long tutorial about mod_perl that he is also giving
         on the O'Reilly Open Source Convention (OSCON) in Portland Oregon and on YAPC::EU::2003 in Paris.<br />
         Stas has an EE B.Sc. degree from the Technion in Haifa.<br />
-        <a href="http://stason.org/talks/index.html">Slides and handouts</a> are available.
+        <a href="https://stason.org/talks/index.html">Slides and handouts</a> are available.
 
-  comment: 'Ramat Gan (<a href="http://stason.org/">Stas Bekman</a> - "<a href="http://stason.org/talks/index.html">mod_perl tutorial</a>")'
+  comment: 'Ramat Gan (<a href="https://stason.org/">Stas Bekman</a> - "<a href="https://stason.org/talks/index.html">mod_perl tutorial</a>")'
   other_summarizer: This meeting summary was written by Gabor Szabo.
   participants:
     - name: Asaf Bartov
@@ -229,7 +217,7 @@
              <br />
              While we were still waiting for more people to arrive we asked him about Australia
              where he lives now and I asked him how does he make a living from Perl. As it turns
-             out for <a href="http://www.ticketmaster.com/">Ticketmaster</a> mod_perl
+             out for <a href="https://www.ticketmaster.com/">Ticketmaster</a> mod_perl
              is such a critical tool that they are ready to finance him and let him develop
              mod_perl 2.0 so it will be ready faster and be better without putting any constraints
              on him, not even his location. That's very clever of them. I wish Israeli
@@ -257,8 +245,8 @@
     - item: '18:00-19:00 -- Assembly and light refreshments'
     - item: 'Shlomi Fish: "Finding the Graham Function"'
     - item: 'Ran Eilam: "A Project I did for Dapey Zahav"'
-    - item: 'Itzik Lerner: "<a href="http://yapc.mongueurs.net/">YAPC::EU::2003</a> Experiences"'
-  comment: 'Ramat Gan (Shlomi Fish - "Finding the Graham Function"; Ran Eilam - "A Project I did for Dapey Zahav"; Itzik Lerner - "<a href="http://yapc.mongueurs.net/">YAPC::EU::2003</a> Experiences" )'
+    - item: 'Itzik Lerner: "YAPC::EU::2003 Experiences"'
+  comment: 'Ramat Gan (Shlomi Fish - "Finding the Graham Function"; Ran Eilam - "A Project I did for Dapey Zahav"; Itzik Lerner - "YAPC::EU::2003 Experiences" )'
   other_summarizer: This meeting summary was written by Shlomi Fish.
   participants:
     - name: Itzik Lerner
@@ -364,11 +352,11 @@
 20031009:
   agenda_items:
     - item: '18:00-19:00 -- Assembly and light refreshments'
-    - item: '19:00-19:15 -- <em>Yehuda Berlinger</em>: "<a href="http://podindex.pti.co.il/">podindex</a>" (English)'
+    - item: '19:00-19:15 -- <em>Yehuda Berlinger</em>: "podindex" (English)'
     - item: '19:15-19:30 -- <em>Gabor Szabo</em>: "podindex with WxPerl"'
-    - item: '19:30-21:45 -- <em>Mikhael Goikhman</em>: "<a href="http://migo.sixbit.org/papers/Introduction_to_Ruby/">Ruby for Perl Programmers</a>" (<a href="http://migo.sixbit.org/papers/Introduction_to_Ruby.tar.gz">download link</a>)'
+    - item: '19:30-21:45 -- <em>Mikhael Goikhman</em>: "<a href="http://migo.sixbit.org/papers/Introduction_to_Ruby/">Ruby for Perl Programmers</a>"'
     - item: "20:40-21:00 -- Break and refreshments (in the middle of Mikhael's lecture"
-  comment: 'Ramat Gan (Yehuda Berlinger - "<a href="http://podindex.pti.co.il/">podindex</a>"; Gabor Szabo - podindex with WxPerl"; Mikhael Goikhman - "<a href="http://migo.sixbit.org/papers/Introduction_to_Ruby/">Ruby for Perl Programmers</a>" (<a href="http://migo.sixbit.org/papers/Introduction_to_Ruby.tar.gz">download link</a>))'
+  comment: 'Ramat Gan (Yehuda Berlinger - "podindex"; Gabor Szabo - podindex with WxPerl"; Mikhael Goikhman - "<a href="http://migo.sixbit.org/papers/Introduction_to_Ruby/">Ruby for Perl Programmers</a>" (<a href="http://migo.sixbit.org/papers/Introduction_to_Ruby.tar.gz">download link</a>))'
   participants:
     - name: Damian Monafo
     - name: Gabor Szabo
@@ -432,12 +420,12 @@
 20031106:
   agenda_items:
     - item: '18:00-19:00 -- Assembly and light refreshments'
-    - item: '19:00-19:40 -- <em>Avraham Bernstein</em>: "<a href="http://www.tcl.tk/">Tcl</a> for Perl Programmers"'
+    - item: '19:00-19:40 -- <em>Avraham Bernstein</em>: "Tcl for Perl Programmers"'
     - item: '19:40-20:00 -- Break and refreshments'
-    - item: '20:00-20:15 -- <em>Gabor Szabo</em>: "The <a href="http://occamstoothbrush.com/perl/talks/phalanx_talk/slides/">Phalanx Project</a>"'
+    - item: '20:00-20:15 -- <em>Gabor Szabo</em>: "The <a href="https://occamstoothbrush.com/perl/talks/phalanx_talk/slides/">Phalanx Project</a>"'
     - item: '20:15-21:15 -- <em>Ran Eilam</em>: "Introduction to Extreme Programming"'
     - item: As usual after the meeting we will go out to a nearby pub/coffee-shop/etc. for a post-meeting social gathering.
-  comment: 'Ramat Gan (Avraham Bernstein - "Tcl for Perl Programmers"; Gabor Szabo - The <a href="http://occamstoothbrush.com/perl/talks/phalanx_talk/slides/">Phalanx Project</a> ;Ran Eilam - "Introduction to Extreme Programming")'
+  comment: 'Ramat Gan (Avraham Bernstein - "Tcl for Perl Programmers"; Gabor Szabo - The <a href="https://occamstoothbrush.com/perl/talks/phalanx_talk/slides/">Phalanx Project</a> ;Ran Eilam - "Introduction to Extreme Programming")'
   participants:
     - name: Avraham Bernstein
     - name: Eli Marmor
@@ -462,10 +450,10 @@
              We talked for an hour and also ate and drank from the refreshments Gabor brought - Thanks Gabor! :-)<br />
              Then at 19:00 it was time for the first lecture.<br />
              The first lecture was given by Avraham Bernstein and was an introduction to
-             <a href="http://www.tcl.tk/">Tcl, the Tool Command Language</a>.
+             Tcl, the Tool Command Language.
              Avraham actually started in the middle of his slides, first introducing the strengths of Tcl (such as full Unicode
              support and the ability to easily create compilers, interpreters and Domain Specific Languages). This generated
-             some discussion with it being pointed out that thanks to <a href="http://www.swig.org/">SWIG</a> and
+             some discussion with it being pointed out that thanks to <a href="https://www.swig.org/">SWIG</a> and
              <a href="https://metacpan.org/search?q=Inline%3A%3AC">Inline::C</a> Perl had, during the last couple of years,
              gotten closer to Tcl in terms of how easy it is to expand the language.<br />
              There were a lot more slides with Avraham telling us about Tcl's history, language structure and lots more. I thought
@@ -543,11 +531,11 @@
              be a subject close to the heart of many programmers &#x263A;<br />
              A local copy of the lecture is linked to above- if you wish to read more about GC start there, or go to the sources
              mentioned at the end of the lecture.
-             Wikipedia's <a href="http://en2.wikipedia.org/wiki/Automatic_garbage_collection/">
+             Wikipedia's <a href="https://en.wikipedia.org/wiki/Automatic_garbage_collection">
              Automatic Garbage Collection</a> page is also a good starting point. In addition, if you're curious about
              Perl 6's garbage collection, you can read
-             <a href="http://dev.perl.org/perl6/pdd/pdd09_gc.html">PDD 9</a> and the
-             <a href="http://www.parrotcode.org/docs/dev/dod.dev.html">Dead Object Detection</a>
+             PDD 9 and the
+             Dead Object Detection
              page on parrotecode.org.
              </p>
 
@@ -558,21 +546,21 @@
 
              <p>
              At 20:30 Ran Eilam gave a short 15 minute lecture about
-             <a href="http://www.objectmentor.com/writeUps/TestDrivenDevelopment/">Test Driven Development</a>
-             with <a href="http://java.sun.com/">Java</a> and <a href="http://www.eclipse.org/">Eclipse</a>.
+             <a href="https://www.objectmentor.com/writeUps/TestDrivenDevelopment/">Test Driven Development</a>
+             with <a href="https://java.sun.com/">Java</a> and <a href="https://www.eclipse.org/">Eclipse</a>.
              Actually, Ran didn't settle for a dry lecture, he actually gave the lecture while at the same time developing in front
              of our eyes a basic "checkbook" application written in Java, thus demonstrating at every step of the way the
-             concepts he was talking about such as "test first" and <a href="http://en2.wikipedia.org/wiki/Refactoring/">
+             concepts he was talking about such as "test first" and <a href="https://en.wikipedia.org/wiki/Refactoring">
              refactoring</a>.
              The lecture was a truely impressive example of both Ran's virtuosity as a lecturer and rapid code
              developer and the ability of Eclipse to automatically refactor Java code. We were all sorry to hear that Perl cannot
              be automatically refactored in a similar manner, due to its complex syntax. Oh well, at least there is always the option
-             of <a href="http://www.perl.com/pub/a/2003/10/09/refactoring.html">manual refactoring</a>.
+             of <a href="https://www.perl.com/pub/a/2003/10/09/refactoring.html">manual refactoring</a>.
              </p>
 
              <p>
-             The final lecture was an <a href="http://www.shlomifis.org/lecture/Perl/Haskell/slides/">Introduction
-             to Haskell</a> by Shlomi Fish. <a href="http://en2.wikipedia.org/wiki/Haskell">Haskell</a> is a
+             The final lecture was an <a href="https://www.shlomifish.org/lecture/Perl/Haskell/slides/">Introduction
+             to Haskell</a> by Shlomi Fish. <a href="https://en.wikipedia.org/wiki/Haskell">Haskell</a> is a
              functional programming language with support for such interesting features such as recursive functions. Like all functional
              languages its syntax is very different from Perl's, a fact which made it difficult for Shlomi to explain the examples he gave
              in the lecture. However the example code he ran was very nice, I especially liked the infinite lists code examples.
@@ -581,7 +569,7 @@
              <p>
              Due to lack of time (as always we had to wrap up at 21:45) Shlomi did not give the entire lecture but for the interested
              the slides are linked above. More info on Haskell can also be found on the
-             <a href="http://www.haskell.org/">haskell.org website</a>.
+             <a href="https://www.haskell.org/">haskell.org website</a>.
              </p>
 
              <p> After the technical meeting wrapped up five of us decided to
@@ -617,7 +605,7 @@
              There were many questions during the talk, and at least 3 arguments.
              Another reference to the subject, which shows the weaken solution Shlomo talked about, and a technique using
              proxies (for when you cannot use weak refs), is at http://www.perl.com/pub/a/2002/08/07/proxyobject.html.
-             (note - here's <a href="http://developers.slashdot.org/article.pl?sid=04/01/07/1535206">a slashdot thread about memory allocation with some interesting and relevent posts</a> - Offer Kaye)
+             (note - here's <a href="https://developers.slashdot.org/article.pl?sid=04/01/07/1535206">a slashdot thread about memory allocation with some interesting and relevent posts</a> - Offer Kaye)
              </p>
              <p>
              <strong>TDD with Eclipse</strong><br />
@@ -650,10 +638,7 @@
              </p>
 
              <p> <em>Update</em>: Shlomi Fish and Mikhael Goikhman have
-             provided Perl <a
-             href="http://mail.perl.org.il/pipermail/perl/2003-December/003635.html">imperative</a>
-             and <a
-             href="http://mail.perl.org.il/pipermail/perl/2003-December/003636.html">functional</a>
+             provided Perl imperative and functional
              solutions respectively.  Thus we are able to see that this is a
              problem that lends itself better to a functional solution.  Which
              opens questions like: <em>what kinds of problems are best solved
